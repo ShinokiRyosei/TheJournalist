@@ -182,10 +182,8 @@
 		39D85ED01CC661D1002F017D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				39D85EC91CC6618B002F017D /* HomeCell.swift */,
-				39D85ECA1CC6618B002F017D /* HomeCell.xib */,
-				39D85EE81CC68F1B002F017D /* CommentCell.swift */,
-				39D85EE91CC68F1B002F017D /* CommentCell.xib */,
+				39D85EF01CC68F5B002F017D /* HomeCell */,
+				39D85EF11CC68F64002F017D /* CommentCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -196,6 +194,24 @@
 				39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */,
 			);
 			name = Labels;
+			sourceTree = "<group>";
+		};
+		39D85EF01CC68F5B002F017D /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				39D85EC91CC6618B002F017D /* HomeCell.swift */,
+				39D85ECA1CC6618B002F017D /* HomeCell.xib */,
+			);
+			name = HomeCell;
+			sourceTree = "<group>";
+		};
+		39D85EF11CC68F64002F017D /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				39D85EE81CC68F1B002F017D /* CommentCell.swift */,
+				39D85EE91CC68F1B002F017D /* CommentCell.xib */,
+			);
+			name = CommentCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
