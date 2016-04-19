@@ -9,6 +9,10 @@
 import UIKit
 
 class CommentCell: UITableViewCell {
+    
+    @IBOutlet var profileImageView: UIImageView!
+    
+    @IBOutlet var commentContentLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

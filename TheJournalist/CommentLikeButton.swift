@@ -1,5 +1,5 @@
 //
-//  CommentTweetButton.swift
+//  CommentLikeButton.swift
 //  TheJournalist
 //
 //  Created by ShinokiRyosei on 2016/04/20.
@@ -8,19 +8,18 @@
 
 import UIKit
 
-class CommentTweetButton: UIButton {
+class CommentLikeButton: UIButton {
 
+    
     override func drawRect(rect: CGRect) {
         // Drawing code
-        self.updateLayout()
     }
     
-    func updateLayout()  {
-        self.setTitle(String.fontAwesomeIconWithName(.Twitter), forState: .Normal)
-        self.titleLabel?.font = UIFont.fontAwesomeOfSize(24)
+    func updateLayout() {
+        self.setTitle(String.fontAwesomeIconWithName(.Heart), forState: .Normal)
+        self.titleLabel?.font = UIFont.fontAwesomeOfSize(30)
         self.setTitleColor(UIColor.grayColor(), forState: .Normal)
         
     }
- 
 
 }
