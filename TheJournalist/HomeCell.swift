@@ -10,6 +10,8 @@ import UIKit
 
 class HomeCell: UITableViewCell {
 
+    @IBOutlet var topicImageView: UIImageView!
+    @IBOutlet var descriptionLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

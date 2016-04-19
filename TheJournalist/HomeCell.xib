@@ -15,35 +15,57 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="239.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-H1-PX6">
-                        <rect key="frame" x="0.0" y="193" width="320" height="46.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DXs-58-7rK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="185" id="KDq-DU-USc"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-H1-PX6">
+                        <rect key="frame" x="0.0" y="193" width="320" height="46.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neg-FK-d21">
+                        <rect key="frame" x="0.0" y="147" width="320" height="37.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37.5" id="wnd-k2-nP8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="DXs-58-7rK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="3Tq-Ae-gMg"/>
+                    <constraint firstItem="Neg-FK-d21" firstAttribute="top" secondItem="DXs-58-7rK" secondAttribute="bottom" constant="-40" id="3iU-ra-zP7"/>
+                    <constraint firstItem="ruk-H1-PX6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Bk5-of-VuZ"/>
+                    <constraint firstItem="Neg-FK-d21" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Fr3-n2-GhH"/>
                     <constraint firstItem="DXs-58-7rK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="LyJ-r1-m1X"/>
+                    <constraint firstItem="ruk-H1-PX6" firstAttribute="top" secondItem="DXs-58-7rK" secondAttribute="bottom" constant="8" id="QXB-H8-c4N"/>
                     <constraint firstItem="DXs-58-7rK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SZg-sM-fiE"/>
                     <constraint firstAttribute="trailingMargin" secondItem="DXs-58-7rK" secondAttribute="trailing" constant="-8" id="fXY-eq-JQu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ruk-H1-PX6" secondAttribute="trailing" constant="-8" id="gHC-Xz-BOr"/>
                     <constraint firstAttribute="trailingMargin" secondItem="DXs-58-7rK" secondAttribute="trailing" constant="-8" id="h5G-J5-THl"/>
+                    <constraint firstItem="DXs-58-7rK" firstAttribute="bottom" secondItem="Neg-FK-d21" secondAttribute="bottom" id="le8-cd-r5n"/>
                     <constraint firstItem="DXs-58-7rK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="pDD-QI-eEh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ruk-H1-PX6" secondAttribute="bottom" constant="-8" id="te2-6Q-8qw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Neg-FK-d21" secondAttribute="trailing" constant="-8" id="wMM-G9-5fK"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="LyJ-r1-m1X"/>
                         <exclude reference="SZg-sM-fiE"/>
                         <exclude reference="fXY-eq-JQu"/>
+                        <exclude reference="3iU-ra-zP7"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="ruk-H1-PX6" id="tFU-CP-5tD"/>
+                <outlet property="topicImageView" destination="DXs-58-7rK" id="wSK-4R-09u"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

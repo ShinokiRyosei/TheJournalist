@@ -20,6 +20,13 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
         
         topicTable.registerNib(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        topicTable.estimatedRowHeight = 240
+        topicTable.rowHeight = UITableViewAutomaticDimension
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

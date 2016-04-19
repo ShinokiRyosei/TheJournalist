@@ -9,13 +9,15 @@
 import UIKit
 
 class HomeTopicTitleLabel: UILabel {
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    
     override func drawRect(rect: CGRect) {
-        // Drawing code
+        
     }
-    */
+
+    func updateLayout()  {
+        self.textAlignment = .Right
+        self.textColor = UIColor.whiteColor()
+        self.font = UIFont(name: "Axis-Std-Regular", size: 24)
+    }
 
 }
