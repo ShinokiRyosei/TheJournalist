@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommentViewController: UIViewController {
+class CommentViewController: NavigationViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
