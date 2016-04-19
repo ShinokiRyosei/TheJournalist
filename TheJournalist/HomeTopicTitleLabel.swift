@@ -11,7 +11,7 @@ import UIKit
 class HomeTopicTitleLabel: UILabel {
     
     override func drawRect(rect: CGRect) {
-        
+        self.updateLayout()
     }
 
     func updateLayout()  {
