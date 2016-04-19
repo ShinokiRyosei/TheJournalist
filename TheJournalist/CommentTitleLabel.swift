@@ -1,5 +1,5 @@
 //
-//  CommentTweetButton.swift
+//  CommentTitleLabel.swift
 //  TheJournalist
 //
 //  Created by ShinokiRyosei on 2016/04/20.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class CommentTweetButton: UIButton {
+class CommentTitleLabel: UILabel {
+
 
     override func drawRect(rect: CGRect) {
         // Drawing code
     }
- 
+    
 
 }
