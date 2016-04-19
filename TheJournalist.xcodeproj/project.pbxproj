@@ -14,6 +14,10 @@
 		39D85E9D1CC65891002F017D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E9B1CC65891002F017D /* LaunchScreen.storyboard */; };
 		39D85EA81CC65891002F017D /* TheJournalistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EA71CC65891002F017D /* TheJournalistTests.swift */; };
 		39D85EB31CC65891002F017D /* TheJournalistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EB21CC65891002F017D /* TheJournalistUITests.swift */; };
+		39D85EC11CC660DA002F017D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC01CC660DA002F017D /* NavigationController.swift */; };
+		39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC21CC660F1002F017D /* HomeViewController.swift */; };
+		39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC41CC660FB002F017D /* ProfileViewController.swift */; };
+		39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC61CC6610B002F017D /* CommentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		39D85EAE1CC65891002F017D /* TheJournalistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheJournalistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85EB21CC65891002F017D /* TheJournalistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheJournalistUITests.swift; sourceTree = "<group>"; };
 		39D85EB41CC65891002F017D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39D85EC01CC660DA002F017D /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		39D85EC21CC660F1002F017D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		39D85EC41CC660FB002F017D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		39D85EC61CC6610B002F017D /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				39D85E991CC65891002F017D /* Assets.xcassets */,
 				39D85E9B1CC65891002F017D /* LaunchScreen.storyboard */,
 				39D85E9E1CC65891002F017D /* Info.plist */,
+				39D85EC01CC660DA002F017D /* NavigationController.swift */,
+				39D85EC21CC660F1002F017D /* HomeViewController.swift */,
+				39D85EC41CC660FB002F017D /* ProfileViewController.swift */,
+				39D85EC61CC6610B002F017D /* CommentViewController.swift */,
 			);
 			path = TheJournalist;
 			sourceTree = "<group>";
@@ -257,7 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D85E951CC65891002F017D /* ViewController.swift in Sources */,
+				39D85EC11CC660DA002F017D /* NavigationController.swift in Sources */,
+				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
+				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
+				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +498,7 @@
 				39D85EB91CC65891002F017D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39D85EBA1CC65891002F017D /* Build configuration list for PBXNativeTarget "TheJournalistTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				39D85EBC1CC65891002F017D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39D85EBD1CC65891002F017D /* Build configuration list for PBXNativeTarget "TheJournalistUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				39D85EBF1CC65891002F017D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
