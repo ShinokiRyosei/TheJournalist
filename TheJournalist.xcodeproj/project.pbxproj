@@ -33,6 +33,9 @@
 		39D85EED1CC68F1B002F017D /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D85EE91CC68F1B002F017D /* CommentCell.xib */; };
 		39D85EEE1CC68F1B002F017D /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D85EE91CC68F1B002F017D /* CommentCell.xib */; };
 		39D85EEF1CC68F1B002F017D /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D85EE91CC68F1B002F017D /* CommentCell.xib */; };
+		39D85EF31CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
+		39D85EF41CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
+		39D85EF51CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,7 @@
 		39D85EE41CC67E86002F017D /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		39D85EE81CC68F1B002F017D /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		39D85EE91CC68F1B002F017D /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		39D85EF21CC69AA0002F017D /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 				39D85ED01CC661D1002F017D /* Cells */,
 				39D85ED11CC661D7002F017D /* Labels */,
 				39D85ED21CC662AE002F017D /* Colors.swift */,
+				39D85EF21CC69AA0002F017D /* ProfileImageView.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
+				39D85EF31CC69AA0002F017D /* ProfileImageView.swift in Sources */,
 				39D85EEA1CC68F1B002F017D /* CommentCell.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
@@ -369,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D85EF41CC69AA0002F017D /* ProfileImageView.swift in Sources */,
 				39D85EE61CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				39D85EA81CC65891002F017D /* TheJournalistTests.swift in Sources */,
 				39D85EEB1CC68F1B002F017D /* CommentCell.swift in Sources */,
@@ -379,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D85EF51CC69AA0002F017D /* ProfileImageView.swift in Sources */,
 				39D85EE71CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				39D85EB31CC65891002F017D /* TheJournalistUITests.swift in Sources */,
 				39D85EEC1CC68F1B002F017D /* CommentCell.swift in Sources */,
