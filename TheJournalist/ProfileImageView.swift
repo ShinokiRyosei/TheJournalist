@@ -9,6 +9,14 @@
 import UIKit
 
 class ProfileImageView: UIImageView {
-
+    
+    override func drawRect(rect: CGRect) {
+        self.upadteLayout()
+    }
+    
+    func upadteLayout()  {
+        self.layer.cornerRadius = self.layer.bounds.width/2
+        self.layer.borderWidth = 2.0
+    }
 
 }

@@ -179,7 +179,7 @@
 				39D85ED01CC661D1002F017D /* Cells */,
 				39D85ED11CC661D7002F017D /* Labels */,
 				39D85ED21CC662AE002F017D /* Colors.swift */,
-				39D85EF21CC69AA0002F017D /* ProfileImageView.swift */,
+				39D85EF61CC69B3E002F017D /* ImageVIew */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -217,6 +217,14 @@
 				39D85EE91CC68F1B002F017D /* CommentCell.xib */,
 			);
 			name = CommentCell;
+			sourceTree = "<group>";
+		};
+		39D85EF61CC69B3E002F017D /* ImageVIew */ = {
+			isa = PBXGroup;
+			children = (
+				39D85EF21CC69AA0002F017D /* ProfileImageView.swift */,
+			);
+			name = ImageVIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
