@@ -1,0 +1,4 @@
+# TheJournalist
+
+ファイル構成
+
