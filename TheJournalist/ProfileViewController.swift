@@ -16,6 +16,17 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        profileTable.delegate = self
+        profileTable.dataSource = self
+        
+        profileTable.registerNib(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        profileTable.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +39,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = profileTable.dequeueReusableCellWithIdentifier("", forIndexPath: indexPath)
+        let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
         
         
         return cell
