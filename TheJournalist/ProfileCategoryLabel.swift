@@ -12,10 +12,12 @@ class ProfileCategoryLabel: UILabel {
 
     override func drawRect(rect: CGRect) {
         // Drawing code
+        self.updateLayout()
     }
     
     func updateLayout() {
-        
+        self.textColor = UIColor.grayColor()
+        self.font = UIFont(name: "AxisStd-Regular", size: 24)
     }
 
 }
