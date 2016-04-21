@@ -31,6 +31,7 @@
 		3955E64D1CC9204000E88BDC /* CommentAgreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E64B1CC9204000E88BDC /* CommentAgreeCell.swift */; };
 		3955E64E1CC9204000E88BDC /* CommentAgreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E64C1CC9204000E88BDC /* CommentAgreeCell.xib */; };
 		3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6511CC94C0E00E88BDC /* VoteViewController.swift */; };
+		3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6531CC94C6600E88BDC /* VoteTitleLabel.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
@@ -104,6 +105,7 @@
 		3955E64B1CC9204000E88BDC /* CommentAgreeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentAgreeCell.swift; sourceTree = "<group>"; };
 		3955E64C1CC9204000E88BDC /* CommentAgreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentAgreeCell.xib; sourceTree = "<group>"; };
 		3955E6511CC94C0E00E88BDC /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		3955E6531CC94C6600E88BDC /* VoteTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteTitleLabel.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -315,6 +317,7 @@
 				39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */,
 				39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */,
 				3955E6281CC9151500E88BDC /* ProfileTitleLabel.swift */,
+				3955E6531CC94C6600E88BDC /* VoteTitleLabel.swift */,
 			);
 			name = Labels;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				39D85ED31CC662AE002F017D /* Colors.swift in Sources */,
 				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
+				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				3955E64D1CC9204000E88BDC /* CommentAgreeCell.swift in Sources */,
