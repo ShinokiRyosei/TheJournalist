@@ -10,17 +10,22 @@ import UIKit
 
 class CommentViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var commentTable: UITableView!
+    @IBOutlet var commentAgreeTable: UITableView!
+    
+    @IBOutlet var commentDisagreeTable: UITableView!
     
     @IBOutlet var commentTitleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        commentTable.delegate = self
-        commentTable.dataSource = self
+        commentAgreeTable.delegate = self
+        commentAgreeTable.dataSource = self
         
-        commentTable.registerNib(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
+        commentDisagreeTable.delegate = self
+        commentDisagreeTable.dataSource = self
+        
+        commentAgreeTable.registerNib(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -28,10 +33,10 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
         
         commentTitleLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変素晴らしいものであった"
         
-        commentTable.estimatedRowHeight = 90
-        commentTable.rowHeight = UITableViewAutomaticDimension
+        commentAgreeTable.estimatedRowHeight = 90
+        commentAgreeTable.rowHeight = UITableViewAutomaticDimension
         
-        commentTable.tableFooterView = UIView()
+        commentAgreeTable.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,10 +49,10 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = commentTable.dequeueReusableCellWithIdentifier("CommentCell", forIndexPath: indexPath) as! CommentCell
+        let cell = commentAgreeTable.dequeueReusableCellWithIdentifier("CommentCell", forIndexPath: indexPath) as! CommentAgreeCell
         
-        cell.commentContentLabel.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。"
-        cell.profileImageView.image = UIImage(named: "profile_image.jpg")
+//        cell.commentContentLabel.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。"
+//        cell.profileImageView.image = UIImage(named: "profile_image.jpg")
         
         return cell
     }

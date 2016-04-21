@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CommentDisAgreeCell" customModule="TheJournalist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="162.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Or5-zQ-ON8">
+                        <rect key="frame" x="76" y="8" width="236" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tct-ai-EUG" customClass="ProfileImageView" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="GHO-w2-I1E"/>
+                            <constraint firstAttribute="width" constant="60" id="QjI-3v-Mrj"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-Pt-eXz" customClass="CommentClipButton" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="8" y="83" width="60" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="OzH-We-hjw"/>
+                            <constraint firstAttribute="height" constant="71" id="uU9-kM-H62"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ca8-Pt-eXz" firstAttribute="top" secondItem="Tct-ai-EUG" secondAttribute="bottom" constant="15" id="0SK-0a-gCk"/>
+                    <constraint firstItem="Or5-zQ-ON8" firstAttribute="leading" secondItem="Tct-ai-EUG" secondAttribute="trailing" constant="8" id="ClY-j1-ccL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Or5-zQ-ON8" secondAttribute="trailing" id="NHu-td-qap"/>
+                    <constraint firstAttribute="topMargin" secondItem="Tct-ai-EUG" secondAttribute="top" id="ZRx-eH-bO7"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="ca8-Pt-eXz" secondAttribute="leading" id="jdv-0z-bPL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ca8-Pt-eXz" secondAttribute="bottom" constant="0.5" id="orT-WM-2gD"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Tct-ai-EUG" secondAttribute="leading" id="rC9-Pc-JOr"/>
+                    <constraint firstAttribute="topMargin" secondItem="Or5-zQ-ON8" secondAttribute="top" id="wRu-Ez-Far"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

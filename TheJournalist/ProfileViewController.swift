@@ -26,6 +26,9 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        profileTable.estimatedRowHeight = 96
+        profileTable.rowHeight = UITableViewAutomaticDimension
+        
         profileTable.tableFooterView = UIView()
     }
 
