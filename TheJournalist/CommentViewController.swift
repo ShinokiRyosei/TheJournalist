@@ -26,7 +26,7 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
         commentDisagreeTable.dataSource = self
         
         commentAgreeTable.registerNib(UINib(nibName: "CommentAgreeCell", bundle: nil), forCellReuseIdentifier: "CommentAgreeCell")
-        commentDisagreeTable.registerNib(UINib(nibName: "CommentDisagreeCell", bundle: nil), forCellReuseIdentifier: "CommentDisagreeCell")
+        commentDisagreeTable.registerNib(UINib(nibName: "CommentDisAgreeCell", bundle: nil), forCellReuseIdentifier: "CommentDisagreeCell")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -67,7 +67,10 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
             
             return cell
         }
-        
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.transitionToProfile()
     }
     
     func transitionToProfile() {

@@ -4,7 +4,7 @@
 use_frameworks!
 
 target 'TheJournalist' do
-pod 'FontAwesome.swift'
+pod 'FontAwesome.swift' 
 end
 
 target 'TheJournalistTests' do

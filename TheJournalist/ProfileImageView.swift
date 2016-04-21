@@ -29,7 +29,7 @@ class ProfileImageView: UIImageView {
     func upadteLayout()  {
         self.layer.cornerRadius = self.layer.bounds.width/2
         self.layer.borderWidth = 2.0
-        self.layer.borderColor = UIColor.redColor().CGColor
+        self.layer.borderColor = UIColor.grayColor().CGColor
     }
 
 }
