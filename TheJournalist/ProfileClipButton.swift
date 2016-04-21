@@ -13,6 +13,7 @@ class ProfileClipButton: UIButton {
 
     override func drawRect(rect: CGRect) {
         // Drawing code
+        self.updateLayout()
     }
     
     private func updateLayout() {

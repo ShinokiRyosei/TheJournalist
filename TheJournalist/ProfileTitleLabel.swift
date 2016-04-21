@@ -10,12 +10,23 @@ import UIKit
 
 class ProfileTitleLabel: UILabel {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.updateLayout()
     }
-    */
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.updateLayout()
+    }
+    
+    override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
+        self.updateLayout()
+    }
+    
+    func updateLayout() {
+        
+    }
 
 }

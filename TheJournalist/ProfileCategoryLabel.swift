@@ -9,8 +9,19 @@
 import UIKit
 
 class ProfileCategoryLabel: UILabel {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.updateLayout()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.updateLayout()
+    }
 
     override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
         // Drawing code
         self.updateLayout()
     }
