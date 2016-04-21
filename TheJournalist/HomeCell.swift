@@ -11,7 +11,12 @@ import UIKit
 class HomeCell: UITableViewCell {
 
     @IBOutlet var topicImageView: UIImageView!
+    
     @IBOutlet var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var topicTitleLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

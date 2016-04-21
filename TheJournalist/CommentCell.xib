@@ -15,13 +15,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="162.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-14-R6p" customClass="ProfileImageView" customModule="TheJournalist" customModuleProvider="target">
-                        <rect key="frame" x="8" y="8" width="60" height="60"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="60" id="5IA-Ue-lUm"/>
-                            <constraint firstAttribute="width" constant="60" id="OYJ-Ro-VfT"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9w7-qU-kOw">
                         <rect key="frame" x="76" y="8" width="236" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -36,6 +29,13 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-14-R6p" customClass="ProfileImageView" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="5IA-Ue-lUm"/>
+                            <constraint firstAttribute="width" constant="60" id="OYJ-Ro-VfT"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="topMargin" secondItem="KaK-14-R6p" secondAttribute="top" id="0nT-Jg-7cy"/>

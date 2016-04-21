@@ -9,7 +9,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="HomeViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" id="rAz-N7-kcK"/>
                     <connections>
                         <outlet property="topicTable" destination="zg7-vp-vlu" id="J9H-XV-138"/>
-                        <segue destination="ANA-H5-G3P" kind="show" id="m2y-xa-fH6"/>
+                        <segue destination="ANA-H5-G3P" kind="show" identifier="toTopicView" id="m2y-xa-fH6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -44,7 +44,7 @@
         <!--Comment View Controller-->
         <scene sceneID="fju-pw-ifz">
             <objects>
-                <viewController id="ANA-H5-G3P" customClass="CommentViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ANA-H5-G3P" customClass="CommentViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xa2-JT-Nkk"/>
                         <viewControllerLayoutGuide type="bottom" id="9qg-XJ-75j"/>
@@ -121,7 +121,7 @@
         <!--Profile View Controller-->
         <scene sceneID="QTa-zq-c8S">
             <objects>
-                <viewController id="CAP-Dh-3Ra" customClass="ProfileViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="CAP-Dh-3Ra" customClass="ProfileViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kMU-kx-XDr"/>
                         <viewControllerLayoutGuide type="bottom" id="ZLC-rk-oVU"/>
@@ -299,6 +299,9 @@
                             <constraint firstItem="R6R-6M-Afe" firstAttribute="leading" secondItem="PDi-vb-aT2" secondAttribute="leadingMargin" constant="-20" id="gB3-6d-ylK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileTable" destination="6ru-8z-1WO" id="HKU-Tv-pff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDw-5z-y1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

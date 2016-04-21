@@ -40,7 +40,18 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = topicTable.dequeueReusableCellWithIdentifier("HomeCell", forIndexPath: indexPath) as! HomeCell
         
+        cell.topicTitleLabel.text = "東京五輪2020エンブレム問題"
+        cell.descriptionLabel.text = "4年後、東京でオリンピック・パラリンピックが開催される。佐藤研二郎氏のエンブレム盗作疑惑が取り沙汰された。論点は、これこれこういうもので"
+        
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.transitionToTopicView()
+    }
+    
+    func transitionToTopicView() {
+        self.performSegueWithIdentifier("toTopicView", sender: self)
     }
 
 }

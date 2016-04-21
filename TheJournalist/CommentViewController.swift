@@ -26,6 +26,8 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        commentTitleLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変素晴らしいものであった"
+        
         commentTable.estimatedRowHeight = 90
         commentTable.rowHeight = UITableViewAutomaticDimension
         
@@ -43,6 +45,9 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = commentTable.dequeueReusableCellWithIdentifier("CommentCell", forIndexPath: indexPath) as! CommentCell
+        
+        cell.commentContentLabel.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。"
+        cell.profileImageView.image = UIImage(named: "profile_image.jpg")
         
         return cell
     }

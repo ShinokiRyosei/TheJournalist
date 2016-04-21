@@ -15,7 +15,7 @@ class CommentTweetButton: UIButton {
         self.updateLayout()
     }
     
-    func updateLayout()  {
+    private func updateLayout()  {
         self.setTitle(String.fontAwesomeIconWithName(.Twitter), forState: .Normal)
         self.titleLabel?.font = UIFont.fontAwesomeOfSize(24)
         self.setTitleColor(UIColor.grayColor(), forState: .Normal)
