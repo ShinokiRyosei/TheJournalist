@@ -11,6 +11,8 @@ import UIKit
 class CommentViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var commentTable: UITableView!
+    
+    @IBOutlet var commentTitleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,8 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
         
         commentTable.estimatedRowHeight = 90
         commentTable.rowHeight = UITableViewAutomaticDimension
+        
+        commentTable.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {

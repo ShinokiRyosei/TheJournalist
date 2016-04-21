@@ -38,6 +38,8 @@
 		39D85EF31CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
 		39D85EF41CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
 		39D85EF51CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
+		39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF648F1CC891E90012B8EC /* ProfileCell.swift */; };
+		39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EF64901CC891E90012B8EC /* ProfileCell.xib */; };
 		53EE5D810E471B7E5F7C6D91 /* Pods_TheJournalist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B66DA7C9CDF7101BFAF7CA /* Pods_TheJournalist.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,8 @@
 		39D85EE81CC68F1B002F017D /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		39D85EE91CC68F1B002F017D /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		39D85EF21CC69AA0002F017D /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		39EF648F1CC891E90012B8EC /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		39EF64901CC891E90012B8EC /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		C4C59A928568E5D7C4EE2B53 /* Pods-TheJournalist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheJournalist.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheJournalist/Pods-TheJournalist.release.xcconfig"; sourceTree = "<group>"; };
 		E7151ADFF68766CDC5185B9D /* Pods-TheJournalist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheJournalist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheJournalist/Pods-TheJournalist.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +214,7 @@
 			children = (
 				39D85EF01CC68F5B002F017D /* HomeCell */,
 				39D85EF11CC68F64002F017D /* CommentCell */,
+				39EF64931CC891F00012B8EC /* ProfileCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -246,6 +251,15 @@
 				39D85EF21CC69AA0002F017D /* ProfileImageView.swift */,
 			);
 			name = ImageVIew;
+			sourceTree = "<group>";
+		};
+		39EF64931CC891F00012B8EC /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				39EF648F1CC891E90012B8EC /* ProfileCell.swift */,
+				39EF64901CC891E90012B8EC /* ProfileCell.xib */,
+			);
+			name = ProfileCell;
 			sourceTree = "<group>";
 		};
 		999C172170DE3F83B761A2B3 /* Pods */ = {
@@ -375,6 +389,7 @@
 				39D85EE11CC676D9002F017D /* AxisStd-Regular.otf in Resources */,
 				39D85E9D1CC65891002F017D /* LaunchScreen.storyboard in Resources */,
 				39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */,
+				39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */,
 				39D85EED1CC68F1B002F017D /* CommentCell.xib in Resources */,
 				39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */,
 				39D85E981CC65891002F017D /* Main.storyboard in Resources */,
@@ -467,6 +482,7 @@
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
 				396931E61CC6AD5F0061808D /* CommentLikeButton.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
+				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
