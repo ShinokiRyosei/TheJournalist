@@ -28,11 +28,11 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-6D-hS4" customClass="CommentLikeButton" customModule="TheJournalist" customModuleProvider="target">
-                        <rect key="frame" x="8" y="94" width="60" height="60"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-6D-hS4" customClass="CommentClipButton" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="8" y="83" width="60" height="71"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="BCe-2H-d2v"/>
-                            <constraint firstAttribute="height" constant="60" id="yzV-oY-n4P"/>
+                            <constraint firstAttribute="height" constant="71" id="yzV-oY-n4P"/>
                         </constraints>
                         <state key="normal" title="Button"/>
                     </button>
@@ -40,7 +40,7 @@
                 <constraints>
                     <constraint firstAttribute="topMargin" secondItem="KaK-14-R6p" secondAttribute="top" id="0nT-Jg-7cy"/>
                     <constraint firstItem="9w7-qU-kOw" firstAttribute="leading" secondItem="KaK-14-R6p" secondAttribute="trailing" constant="8" id="BJS-lg-Jje"/>
-                    <constraint firstItem="GbR-6D-hS4" firstAttribute="top" secondItem="KaK-14-R6p" secondAttribute="bottom" constant="26" id="Ead-40-Wam"/>
+                    <constraint firstItem="GbR-6D-hS4" firstAttribute="top" secondItem="KaK-14-R6p" secondAttribute="bottom" constant="15" id="Ead-40-Wam"/>
                     <constraint firstAttribute="topMargin" secondItem="9w7-qU-kOw" secondAttribute="top" id="H0O-ix-zsh"/>
                     <constraint firstAttribute="bottomMargin" secondItem="GbR-6D-hS4" secondAttribute="bottom" constant="0.5" id="Hwe-E4-Als"/>
                     <constraint firstAttribute="trailingMargin" secondItem="9w7-qU-kOw" secondAttribute="trailing" id="asR-cC-ege"/>
@@ -48,7 +48,11 @@
                     <constraint firstAttribute="leadingMargin" secondItem="GbR-6D-hS4" secondAttribute="leading" id="mHS-wz-mcr"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="305" y="494"/>
+            <connections>
+                <outlet property="commentContentLabel" destination="9w7-qU-kOw" id="cWN-Wt-fbF"/>
+                <outlet property="profileImageView" destination="KaK-14-R6p" id="2h4-2c-buZ"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="493.5"/>
         </tableViewCell>
     </objects>
 </document>

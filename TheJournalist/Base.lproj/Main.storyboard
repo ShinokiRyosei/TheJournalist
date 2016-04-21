@@ -110,6 +110,7 @@
                     </view>
                     <connections>
                         <outlet property="commentTable" destination="Zg1-tt-UHW" id="9rr-gt-cSm"/>
+                        <outlet property="commentTitleLabel" destination="7wA-qR-4V4" id="XJK-2B-W7c"/>
                         <segue destination="CAP-Dh-3Ra" kind="show" id="N4F-X6-eOh"/>
                     </connections>
                 </viewController>
