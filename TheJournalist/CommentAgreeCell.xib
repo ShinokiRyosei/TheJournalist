@@ -48,6 +48,10 @@
                     <constraint firstItem="1qW-FV-64M" firstAttribute="top" secondItem="nDh-y2-Hwm" secondAttribute="bottom" constant="15" id="zEt-B2-qXn"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="L2d-Jj-Prk" id="8OA-QM-wZF"/>
+                <outlet property="profileImageView" destination="nDh-y2-Hwm" id="imA-9e-Bq0"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

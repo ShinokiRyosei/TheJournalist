@@ -26,6 +26,8 @@ class ProfileTitleLabel: UILabel {
     }
     
     func updateLayout() {
+        self.textColor = UIColor.grayColor()
+        self.font = UIFont(name: "AxisStd-Regular", size: 20)
         
     }
 
