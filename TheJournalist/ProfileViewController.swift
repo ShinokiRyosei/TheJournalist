@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ProfileViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet var profileTable: UITableView!
 
@@ -44,6 +44,4 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         return cell
     }
-    
-
 }

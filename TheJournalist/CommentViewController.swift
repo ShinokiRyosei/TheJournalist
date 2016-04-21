@@ -51,5 +51,9 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
         
         return cell
     }
+    
+    func transitionToProfile() {
+        self.performSegueWithIdentifier("toProfileView", sender: self)
+    }
 
 }

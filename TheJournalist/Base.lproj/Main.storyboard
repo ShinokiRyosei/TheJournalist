@@ -111,7 +111,7 @@
                     <connections>
                         <outlet property="commentTable" destination="Zg1-tt-UHW" id="9rr-gt-cSm"/>
                         <outlet property="commentTitleLabel" destination="7wA-qR-4V4" id="XJK-2B-W7c"/>
-                        <segue destination="CAP-Dh-3Ra" kind="show" id="N4F-X6-eOh"/>
+                        <segue destination="CAP-Dh-3Ra" kind="show" identifier="toProfileView" id="N4F-X6-eOh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtw-bB-4bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
