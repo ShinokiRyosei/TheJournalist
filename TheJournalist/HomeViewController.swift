@@ -42,8 +42,5 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
         
         return cell
     }
-    
-    
-    
 
 }

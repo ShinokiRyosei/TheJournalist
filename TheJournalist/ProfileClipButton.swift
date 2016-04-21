@@ -10,12 +10,17 @@ import UIKit
 
 class ProfileClipButton: UIButton {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+
     override func drawRect(rect: CGRect) {
         // Drawing code
     }
-    */
+    
+    private func updateLayout() {
+        self.setTitle(String.fontAwesomeIconWithName(.Clipboard)+"  クリップ", forState: .Normal)
+        
+        self.setTitleColor(UIColor.grayColor(), forState: .Normal)
+        
+        self.backgroundColor = UIColor.whiteColor()
+    }
 
 }
