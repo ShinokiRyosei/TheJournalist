@@ -25,7 +25,8 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
         commentDisagreeTable.delegate = self
         commentDisagreeTable.dataSource = self
         
-        commentAgreeTable.registerNib(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
+        commentAgreeTable.registerNib(UINib(nibName: "CommentAgreeCell", bundle: nil), forCellReuseIdentifier: "CommentAgreeCell")
+        commentDisagreeTable.registerNib(UINib(nibName: "CommentDisagreeCell", bundle: nil), forCellReuseIdentifier: "CommentDisagreeCell")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -53,12 +54,20 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = commentAgreeTable.dequeueReusableCellWithIdentifier("CommentCell", forIndexPath: indexPath) as! CommentAgreeCell
         
-//        cell.commentContentLabel.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。"
-//        cell.profileImageView.image = UIImage(named: "profile_image.jpg")
+        if tableView.tag == 1 {
+            let cell = commentAgreeTable.dequeueReusableCellWithIdentifier("CommentAgreeCell", forIndexPath: indexPath) as! CommentAgreeCell
+            
+            //        cell.commentContentLabel.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。"
+            //        cell.profileImageView.image = UIImage(named: "profile_image.jpg")
+            
+            return cell
+        }else {
+            let cell = commentDisagreeTable.dequeueReusableCellWithIdentifier("CommentDisagreeCell", forIndexPath: indexPath) as! CommentDisAgreeCell
+            
+            return cell
+        }
         
-        return cell
     }
     
     func transitionToProfile() {

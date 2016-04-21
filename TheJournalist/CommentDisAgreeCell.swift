@@ -9,6 +9,12 @@
 import UIKit
 
 class CommentDisAgreeCell: UITableViewCell {
+    
+    @IBOutlet var profileImageView: UIImageView!
+    
+    @IBOutlet var titleLabel: UILabel!
+    
+    @IBOutlet var contentLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

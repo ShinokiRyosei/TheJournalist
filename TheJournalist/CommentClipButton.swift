@@ -23,7 +23,5 @@ class CommentClipButton: UIButton {
         self.titleLabel?.font = UIFont.fontAwesomeOfSize(24)
         self.layer.cornerRadius = 5.0
         self.backgroundColor = UIColor.whiteColor()
-        
     }
-
 }
