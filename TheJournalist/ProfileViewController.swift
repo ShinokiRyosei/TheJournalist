@@ -14,8 +14,6 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         profileTable.delegate = self
         profileTable.dataSource = self
