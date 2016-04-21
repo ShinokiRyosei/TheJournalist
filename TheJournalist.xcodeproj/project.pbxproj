@@ -40,6 +40,7 @@
 		39D85EF51CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
 		39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF648F1CC891E90012B8EC /* ProfileCell.swift */; };
 		39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EF64901CC891E90012B8EC /* ProfileCell.xib */; };
+		39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */; };
 		53EE5D810E471B7E5F7C6D91 /* Pods_TheJournalist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B66DA7C9CDF7101BFAF7CA /* Pods_TheJournalist.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		39D85EF21CC69AA0002F017D /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		39EF648F1CC891E90012B8EC /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		39EF64901CC891E90012B8EC /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCategoryLabel.swift; sourceTree = "<group>"; };
 		C4C59A928568E5D7C4EE2B53 /* Pods-TheJournalist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheJournalist.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheJournalist/Pods-TheJournalist.release.xcconfig"; sourceTree = "<group>"; };
 		E7151ADFF68766CDC5185B9D /* Pods-TheJournalist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheJournalist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheJournalist/Pods-TheJournalist.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */,
+				39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */,
 			);
 			name = Labels;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */,
+				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				39D85ED31CC662AE002F017D /* Colors.swift in Sources */,
 				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
