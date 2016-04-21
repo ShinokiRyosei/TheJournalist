@@ -32,6 +32,8 @@
 		3955E64E1CC9204000E88BDC /* CommentAgreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E64C1CC9204000E88BDC /* CommentAgreeCell.xib */; };
 		3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6511CC94C0E00E88BDC /* VoteViewController.swift */; };
 		3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6531CC94C6600E88BDC /* VoteTitleLabel.swift */; };
+		3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6551CC94D1400E88BDC /* VoteAgreeButton.swift */; };
+		3955E6581CC94D7900E88BDC /* VoteDisagreeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6571CC94D7900E88BDC /* VoteDisagreeButton.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
@@ -106,6 +108,8 @@
 		3955E64C1CC9204000E88BDC /* CommentAgreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentAgreeCell.xib; sourceTree = "<group>"; };
 		3955E6511CC94C0E00E88BDC /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
 		3955E6531CC94C6600E88BDC /* VoteTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteTitleLabel.swift; sourceTree = "<group>"; };
+		3955E6551CC94D1400E88BDC /* VoteAgreeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteAgreeButton.swift; sourceTree = "<group>"; };
+		3955E6571CC94D7900E88BDC /* VoteDisagreeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteDisagreeButton.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,13 +215,81 @@
 			name = DisagreeCell;
 			sourceTree = "<group>";
 		};
-		396931E21CC6A3A00061808D /* Button */ = {
+		3955E6591CC94DD500E88BDC /* Comment */ = {
 			isa = PBXGroup;
 			children = (
 				396931DE1CC6A3880061808D /* CommentFbButton.swift */,
 				396931E01CC6A3990061808D /* CommentTweetButton.swift */,
 				3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		3955E65A1CC94DDB00E88BDC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
 				3955E6211CC8D10300E88BDC /* ProfileClipButton.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		3955E65B1CC94DE200E88BDC /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6551CC94D1400E88BDC /* VoteAgreeButton.swift */,
+				3955E6571CC94D7900E88BDC /* VoteDisagreeButton.swift */,
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
+		3955E65C1CC94DEC00E88BDC /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6431CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift */,
+				3955E6451CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		3955E65D1CC94DF200E88BDC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				39D85EF21CC69AA0002F017D /* ProfileImageView.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		3955E65E1CC94DF900E88BDC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */,
+				3955E6281CC9151500E88BDC /* ProfileTitleLabel.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		3955E65F1CC94E0000E88BDC /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6531CC94C6600E88BDC /* VoteTitleLabel.swift */,
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
+		3955E6601CC94E0900E88BDC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		396931E21CC6A3A00061808D /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6591CC94DD500E88BDC /* Comment */,
+				3955E65A1CC94DDB00E88BDC /* Profile */,
+				3955E65B1CC94DE200E88BDC /* Vote */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -314,10 +386,9 @@
 		39D85ED11CC661D7002F017D /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */,
-				39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */,
-				3955E6281CC9151500E88BDC /* ProfileTitleLabel.swift */,
-				3955E6531CC94C6600E88BDC /* VoteTitleLabel.swift */,
+				3955E6601CC94E0900E88BDC /* Home */,
+				3955E65E1CC94DF900E88BDC /* Profile */,
+				3955E65F1CC94E0000E88BDC /* Vote */,
 			);
 			name = Labels;
 			sourceTree = "<group>";
@@ -343,9 +414,8 @@
 		39D85EF61CC69B3E002F017D /* ImageVIew */ = {
 			isa = PBXGroup;
 			children = (
-				39D85EF21CC69AA0002F017D /* ProfileImageView.swift */,
-				3955E6431CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift */,
-				3955E6451CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift */,
+				3955E65D1CC94DF200E88BDC /* Profile */,
+				3955E65C1CC94DEC00E88BDC /* Comment */,
 			);
 			name = ImageVIew;
 			sourceTree = "<group>";
@@ -580,6 +650,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */,
+				3955E6581CC94D7900E88BDC /* VoteDisagreeButton.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				39D85ED31CC662AE002F017D /* Colors.swift in Sources */,
@@ -587,6 +658,7 @@
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
+				3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */,
 				3955E64D1CC9204000E88BDC /* CommentAgreeCell.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */,
