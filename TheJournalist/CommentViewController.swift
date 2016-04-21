@@ -33,10 +33,14 @@ class CommentViewController: NavigationViewController, UITableViewDelegate, UITa
         
         commentTitleLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変素晴らしいものであった"
         
-        commentAgreeTable.estimatedRowHeight = 90
+        commentAgreeTable.estimatedRowHeight = 163
         commentAgreeTable.rowHeight = UITableViewAutomaticDimension
         
+        commentDisagreeTable.estimatedRowHeight = 163
+        commentDisagreeTable.rowHeight = UITableViewAutomaticDimension
+        
         commentAgreeTable.tableFooterView = UIView()
+        commentDisagreeTable.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
