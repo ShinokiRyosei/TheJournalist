@@ -27,6 +27,9 @@ class CommentProfileDisagreeImageView: UIImageView {
     }
     
     func updateLayout() {
+        self.layer.cornerRadius = self.layer.bounds.width/2
+        self.layer.borderWidth = 2.0
+        self.layer.borderColor = UIColor.blueColor().CGColor
         
     }
 
