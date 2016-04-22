@@ -11,77 +11,67 @@
             <rect key="frame" x="0.0" y="0.0" width="601" height="362"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YKd-Cv-LQV">
-                    <rect key="frame" x="8" y="28" width="584" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N8D-15-A15" customClass="EmailTextField" customModule="TheJournalist" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="585" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgO-K6-84v">
-                    <rect key="frame" x="252" y="170" width="97" height="32"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oda-GR-j6y">
+                    <rect key="frame" x="252" y="150" width="97" height="32"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="32" id="KCz-Xo-HTT"/>
-                        <constraint firstAttribute="width" constant="97" id="ZEl-Ji-nJp"/>
+                        <constraint firstAttribute="height" constant="32" id="Qrg-Y4-vBC"/>
+                        <constraint firstAttribute="width" constant="97" id="dez-TR-eJI"/>
                     </constraints>
                     <state key="normal" backgroundImage="loginButton.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jE-hm-leJ">
-                    <rect key="frame" x="203" y="247" width="195" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gc-ao-amB">
+                    <rect key="frame" x="203" y="227" width="195" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="195" id="2vO-BK-UxQ"/>
-                        <constraint firstAttribute="height" constant="30" id="ZsF-Lr-Hyv"/>
+                        <constraint firstAttribute="width" constant="195" id="26Y-jh-1JT"/>
+                        <constraint firstAttribute="height" constant="30" id="hpB-D8-vjs"/>
                     </constraints>
                     <state key="normal" backgroundImage="facebookLogin.png"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFt-wy-aE5">
-                    <rect key="frame" x="203" y="312" width="195" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yne-tg-Co1">
+                    <rect key="frame" x="203" y="292" width="195" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="195" id="aQC-sG-rgv"/>
-                        <constraint firstAttribute="height" constant="30" id="ndr-jm-Rim"/>
+                        <constraint firstAttribute="height" constant="30" id="48f-Ka-F09"/>
+                        <constraint firstAttribute="width" constant="195" id="ay3-rT-nJa"/>
                     </constraints>
                     <state key="normal" backgroundImage="twitterLogin.png"/>
                 </button>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="643-Al-vhU">
-                    <rect key="frame" x="38" y="224" width="524" height="4"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2a-jM-jFv">
+                    <rect key="frame" x="38" y="204" width="524" height="4"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="4" id="PSM-hI-dtD"/>
+                        <constraint firstAttribute="height" constant="4" id="FFM-6N-sJV"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wb8-TI-oLc">
-                    <rect key="frame" x="8" y="89" width="585" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oo1-tG-5sp" customClass="PasswordTextField" customModule="TheJournalist" customModuleProvider="target">
+                    <rect key="frame" x="8" y="69" width="585" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="fgO-K6-84v" firstAttribute="top" secondItem="wb8-TI-oLc" secondAttribute="bottom" constant="51" id="2hN-UQ-6OP"/>
-                <constraint firstItem="643-Al-vhU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="4ev-6P-up8"/>
-                <constraint firstAttribute="trailing" secondItem="643-Al-vhU" secondAttribute="trailing" constant="38" id="BCO-vc-1Xk"/>
-                <constraint firstItem="643-Al-vhU" firstAttribute="top" secondItem="fgO-K6-84v" secondAttribute="bottom" constant="22" id="BdB-vX-MYT"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uFt-wy-aE5" secondAttribute="bottom" constant="20" id="RK1-uT-xdx"/>
-                <constraint firstItem="YKd-Cv-LQV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aau-sY-8r3"/>
-                <constraint firstAttribute="trailing" secondItem="wb8-TI-oLc" secondAttribute="trailing" constant="8" id="bfd-Wd-ZCO"/>
-                <constraint firstItem="wb8-TI-oLc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cGO-vb-q65"/>
-                <constraint firstAttribute="trailing" secondItem="YKd-Cv-LQV" secondAttribute="trailing" constant="8" id="fYm-K2-byo"/>
-                <constraint firstItem="fgO-K6-84v" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hIH-TQ-h09"/>
-                <constraint firstItem="uFt-wy-aE5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kHi-SQ-XNj"/>
-                <constraint firstItem="uFt-wy-aE5" firstAttribute="top" secondItem="7jE-hm-leJ" secondAttribute="bottom" constant="35" id="lvD-b5-YKh"/>
-                <constraint firstItem="YKd-Cv-LQV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="nfD-A0-8pV"/>
-                <constraint firstItem="7jE-hm-leJ" firstAttribute="top" secondItem="643-Al-vhU" secondAttribute="bottom" constant="19" id="pLl-1R-bM1"/>
-                <constraint firstItem="wb8-TI-oLc" firstAttribute="top" secondItem="YKd-Cv-LQV" secondAttribute="bottom" constant="31" id="pmr-PK-LdH"/>
-                <constraint firstItem="YKd-Cv-LQV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="28" id="px7-EL-gJR"/>
-                <constraint firstItem="wb8-TI-oLc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="tsw-2z-y1F"/>
-                <constraint firstItem="7jE-hm-leJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="z2J-63-ULd"/>
+                <constraint firstAttribute="trailing" secondItem="N8D-15-A15" secondAttribute="trailing" constant="8" id="4Jm-gb-4pK"/>
+                <constraint firstItem="oda-GR-j6y" firstAttribute="top" secondItem="oo1-tG-5sp" secondAttribute="bottom" constant="51" id="4OV-No-t2K"/>
+                <constraint firstItem="Yne-tg-Co1" firstAttribute="top" secondItem="5Gc-ao-amB" secondAttribute="bottom" constant="35" id="5cm-xL-3Ai"/>
+                <constraint firstItem="K2a-jM-jFv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="5tb-4C-yXc"/>
+                <constraint firstAttribute="trailing" secondItem="oo1-tG-5sp" secondAttribute="trailing" constant="8" id="66U-uV-173"/>
+                <constraint firstItem="N8D-15-A15" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="7Db-Dw-dWl"/>
+                <constraint firstItem="oo1-tG-5sp" firstAttribute="top" secondItem="N8D-15-A15" secondAttribute="bottom" constant="31" id="G0v-B2-Ai3"/>
+                <constraint firstItem="K2a-jM-jFv" firstAttribute="top" secondItem="oda-GR-j6y" secondAttribute="bottom" constant="22" id="I9E-x2-nbx"/>
+                <constraint firstAttribute="trailing" secondItem="K2a-jM-jFv" secondAttribute="trailing" constant="39" id="WBl-3L-QOP"/>
+                <constraint firstItem="oo1-tG-5sp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="hW6-5M-anc"/>
+                <constraint firstItem="N8D-15-A15" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="hwU-z1-v9s"/>
+                <constraint firstItem="5Gc-ao-amB" firstAttribute="top" secondItem="K2a-jM-jFv" secondAttribute="bottom" constant="19" id="iyD-tU-gxc"/>
+                <constraint firstItem="5Gc-ao-amB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kFN-Or-Bia"/>
+                <constraint firstItem="Yne-tg-Co1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rfn-61-qWS"/>
+                <constraint firstItem="oda-GR-j6y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="y5w-q5-ABg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="emailTextField" destination="YKd-Cv-LQV" id="RiL-is-Txb"/>
-                <outlet property="fbLoginButton" destination="7jE-hm-leJ" id="Xws-yd-BzC"/>
-                <outlet property="loginButton" destination="fgO-K6-84v" id="lDG-NV-ONH"/>
-                <outlet property="passwordTextField" destination="wb8-TI-oLc" id="B1C-e9-6Q7"/>
-                <outlet property="twitterLoginButton" destination="uFt-wy-aE5" id="49C-am-9oD"/>
-            </connections>
             <point key="canvasLocation" x="424.5" y="113"/>
         </view>
     </objects>

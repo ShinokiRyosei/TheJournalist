@@ -15,7 +15,12 @@ class FirstnameTextField: UITextField {
     }
     
     func addIcon() {
+        let imageView = UIImageView(frame: CGRectMake(5, 2.5, 25, 25))
+        imageView.image = UIImage(named: "firstnameIcon.png")
+        self.addSubview(imageView)
         
+        let leftView = UIView(frame: CGRectMake(0, 0, 21, 30))
+        self.leftView = leftView
+        self.leftViewMode = UITextFieldViewMode.Always
     }
-
 }
