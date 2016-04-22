@@ -145,32 +145,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-cr-eQM">
-                                <rect key="frame" x="402" y="407" width="97" height="62"/>
-                                <state key="normal" title="Button" image="agreeButton.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-gh-azp">
-                                <rect key="frame" x="278" y="326" width="97" height="62"/>
-                                <state key="normal" title="Button" image="disagreeButton.png"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaj-GK-8cy">
-                                <rect key="frame" x="288" y="242" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投票" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pD-Qu-Apj" customClass="VoteTitleLabel" customModule="TheJournalist" customModuleProvider="target">
+                                <rect key="frame" x="237" y="63" width="126" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="P9L-y9-v1c"/>
+                                    <constraint firstAttribute="width" constant="126" id="U23-gw-Sou"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bns-Wg-UXf">
-                                <rect key="frame" x="185" y="460" width="198" height="27"/>
-                                <state key="normal" title="Button" image="laterDecideButton.png"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-cr-eQM">
+                                <rect key="frame" x="127" y="183" width="147" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="Wyn-jK-QsF"/>
+                                    <constraint firstAttribute="width" constant="147" id="gf7-Nr-h8F"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="agreeButton.png"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="投票" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pD-Qu-Apj" customClass="VoteTitleLabel" customModule="TheJournalist" customModuleProvider="target">
-                                <rect key="frame" x="41" y="34" width="126" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-gh-azp">
+                                <rect key="frame" x="326" y="183" width="147" height="115"/>
+                                <state key="normal" backgroundImage="disagreeButton.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaj-GK-8cy">
+                                <rect key="frame" x="40" y="119" width="520" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5w-sH-tdL">
+                                <rect key="frame" x="290" y="224" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="acX-An-L2w"/>
+                                    <constraint firstAttribute="height" constant="20" id="tid-zJ-LLx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bns-Wg-UXf">
+                                <rect key="frame" x="161" y="336" width="278" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="ixN-db-sjz"/>
+                                    <constraint firstAttribute="width" constant="278" id="yso-So-wcr"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="laterDecideButton.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gmG-gh-azp" firstAttribute="width" secondItem="i8g-cr-eQM" secondAttribute="width" id="2zn-Lt-TXK"/>
+                            <constraint firstItem="gmG-gh-azp" firstAttribute="height" secondItem="i8g-cr-eQM" secondAttribute="height" id="55u-HE-AMs"/>
+                            <constraint firstItem="2pD-Qu-Apj" firstAttribute="centerX" secondItem="ZaT-Sx-abS" secondAttribute="centerX" id="BfU-w8-NOI"/>
+                            <constraint firstItem="2pD-Qu-Apj" firstAttribute="top" secondItem="sPa-FV-Ys1" secondAttribute="bottom" constant="43" id="Oqo-j3-u4r"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="gmG-gh-azp" secondAttribute="trailing" constant="62" id="QH4-Bu-lB7"/>
+                            <constraint firstItem="Uaj-GK-8cy" firstAttribute="top" secondItem="2pD-Qu-Apj" secondAttribute="bottom" constant="8" id="Szt-Ql-Cvu"/>
+                            <constraint firstItem="gmG-gh-azp" firstAttribute="leading" secondItem="r5w-sH-tdL" secondAttribute="trailing" constant="16" id="Trq-9h-Wp8"/>
+                            <constraint firstItem="Uaj-GK-8cy" firstAttribute="leading" secondItem="ZaT-Sx-abS" secondAttribute="leadingMargin" constant="20" id="VEc-O5-Z03"/>
+                            <constraint firstItem="bns-Wg-UXf" firstAttribute="centerX" secondItem="ZaT-Sx-abS" secondAttribute="centerX" id="X86-pX-OA8"/>
+                            <constraint firstItem="bns-Wg-UXf" firstAttribute="top" secondItem="gmG-gh-azp" secondAttribute="bottom" constant="38" id="bJy-w5-XSK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uaj-GK-8cy" secondAttribute="trailing" constant="20" id="c52-Br-g8b"/>
+                            <constraint firstItem="r5w-sH-tdL" firstAttribute="centerX" secondItem="ZaT-Sx-abS" secondAttribute="centerX" id="deh-jz-Hex"/>
+                            <constraint firstItem="gmG-gh-azp" firstAttribute="top" secondItem="Uaj-GK-8cy" secondAttribute="bottom" constant="40" id="eGi-fh-Qwq"/>
+                            <constraint firstItem="r5w-sH-tdL" firstAttribute="leading" secondItem="i8g-cr-eQM" secondAttribute="trailing" constant="16" id="hSr-qc-NX9"/>
+                            <constraint firstItem="bns-Wg-UXf" firstAttribute="top" secondItem="i8g-cr-eQM" secondAttribute="bottom" constant="38" id="kHE-I0-h1R"/>
+                            <constraint firstItem="i8g-cr-eQM" firstAttribute="top" secondItem="Uaj-GK-8cy" secondAttribute="bottom" constant="40" id="raT-XZ-2qE"/>
+                            <constraint firstItem="i8g-cr-eQM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZaT-Sx-abS" secondAttribute="leadingMargin" constant="62" id="sVh-TK-sLZ"/>
+                            <constraint firstItem="r5w-sH-tdL" firstAttribute="top" secondItem="Uaj-GK-8cy" secondAttribute="bottom" constant="81" id="tt0-jg-RDT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37t-KF-31n" userLabel="First Responder" sceneMemberID="firstResponder"/>
