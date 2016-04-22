@@ -75,10 +75,10 @@
 		3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */; };
 		3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */; };
 		3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */; };
-		3955E6C11CCA7E2500E88BDC /* SelectedLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6C01CCA7E2500E88BDC /* SelectedLoginButton.swift */; };
-		3955E6C31CCA7E3100E88BDC /* SelectedSignupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6C21CCA7E3100E88BDC /* SelectedSignupButton.swift */; };
-		3955E6C51CCA7E3E00E88BDC /* UnselectedLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6C41CCA7E3E00E88BDC /* UnselectedLoginButton.swift */; };
-		3955E6C71CCA7E5400E88BDC /* UnselectedSignupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6C61CCA7E5400E88BDC /* UnselectedSignupButton.swift */; };
+		3955E7501CCA822100E88BDC /* selectedLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E70E1CCA822100E88BDC /* selectedLoginButton.png */; };
+		3955E7511CCA822100E88BDC /* selectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E70F1CCA822100E88BDC /* selectedSignupButton.png */; };
+		3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7101CCA822100E88BDC /* unselectedLoginButton.png */; };
+		3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7111CCA822100E88BDC /* unselectedSignupButton.png */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
@@ -196,10 +196,10 @@
 		3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstnameTextField.swift; sourceTree = "<group>"; };
 		3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastnameTextField.swift; sourceTree = "<group>"; };
-		3955E6C01CCA7E2500E88BDC /* SelectedLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedLoginButton.swift; sourceTree = "<group>"; };
-		3955E6C21CCA7E3100E88BDC /* SelectedSignupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedSignupButton.swift; sourceTree = "<group>"; };
-		3955E6C41CCA7E3E00E88BDC /* UnselectedLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnselectedLoginButton.swift; sourceTree = "<group>"; };
-		3955E6C61CCA7E5400E88BDC /* UnselectedSignupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnselectedSignupButton.swift; sourceTree = "<group>"; };
+		3955E70E1CCA822100E88BDC /* selectedLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedLoginButton.png; sourceTree = "<group>"; };
+		3955E70F1CCA822100E88BDC /* selectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedSignupButton.png; sourceTree = "<group>"; };
+		3955E7101CCA822100E88BDC /* unselectedLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedLoginButton.png; sourceTree = "<group>"; };
+		3955E7111CCA822100E88BDC /* unselectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedSignupButton.png; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -378,6 +378,10 @@
 		3955E6611CCA18BD00E88BDC /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				3955E70E1CCA822100E88BDC /* selectedLoginButton.png */,
+				3955E70F1CCA822100E88BDC /* selectedSignupButton.png */,
+				3955E7101CCA822100E88BDC /* unselectedLoginButton.png */,
+				3955E7111CCA822100E88BDC /* unselectedSignupButton.png */,
 				3955E6621CCA18CD00E88BDC /* searchButton.png */,
 				3955E6631CCA18CD00E88BDC /* plusButton.png */,
 				3955E6641CCA18CD00E88BDC /* commentButton.png */,
@@ -444,37 +448,18 @@
 		3955E6BD1CCA73CC00E88BDC /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
-				3955E6B21CCA730B00E88BDC /* EmailTextField.swift */,
-				3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */,
-				3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */,
-				3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */,
+				3955E6CB1CCA809000E88BDC /* Login */,
 			);
 			name = TextFields;
 			sourceTree = "<group>";
 		};
-		3955E6C81CCA7E5C00E88BDC /* Login */ = {
+		3955E6CB1CCA809000E88BDC /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				3955E6CA1CCA7E7B00E88BDC /* Login */,
-				3955E6C91CCA7E7000E88BDC /* Signup */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		3955E6C91CCA7E7000E88BDC /* Signup */ = {
-			isa = PBXGroup;
-			children = (
-				3955E6C21CCA7E3100E88BDC /* SelectedSignupButton.swift */,
-				3955E6C41CCA7E3E00E88BDC /* UnselectedLoginButton.swift */,
-			);
-			name = Signup;
-			sourceTree = "<group>";
-		};
-		3955E6CA1CCA7E7B00E88BDC /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				3955E6C01CCA7E2500E88BDC /* SelectedLoginButton.swift */,
-				3955E6C61CCA7E5400E88BDC /* UnselectedSignupButton.swift */,
+				3955E6B21CCA730B00E88BDC /* EmailTextField.swift */,
+				3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */,
+				3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */,
+				3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -485,7 +470,6 @@
 				3955E6591CC94DD500E88BDC /* Comment */,
 				3955E65A1CC94DDB00E88BDC /* Profile */,
 				3955E65B1CC94DE200E88BDC /* Vote */,
-				3955E6C81CCA7E5C00E88BDC /* Login */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -756,6 +740,7 @@
 				39D85EE11CC676D9002F017D /* AxisStd-Regular.otf in Resources */,
 				3955E63E1CC91CCF00E88BDC /* icon-60@2x.png in Resources */,
 				3955E64A1CC9202300E88BDC /* CommentDisAgreeCell.xib in Resources */,
+				3955E7511CCA822100E88BDC /* selectedSignupButton.png in Resources */,
 				3955E6991CCA18CD00E88BDC /* agreeIcon.png in Resources */,
 				3955E6851CCA18CD00E88BDC /* commentButton.png in Resources */,
 				3955E6901CCA18CD00E88BDC /* disagreeButton.png in Resources */,
@@ -772,6 +757,7 @@
 				39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */,
 				3955E63D1CC91CCF00E88BDC /* icon-40@3x.png in Resources */,
 				3955E63B1CC91CCF00E88BDC /* icon-40.png in Resources */,
+				3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */,
 				3955E6961CCA18CD00E88BDC /* clipButton.png in Resources */,
 				3955E68B1CCA18CD00E88BDC /* menuButton.png in Resources */,
 				3955E6371CC91CCF00E88BDC /* Contents.json in Resources */,
@@ -783,8 +769,10 @@
 				3955E6381CC91CCF00E88BDC /* icon-29.png in Resources */,
 				3955E6921CCA18CD00E88BDC /* mailIcon.png in Resources */,
 				3955E69B1CCA18CD00E88BDC /* loginButton.png in Resources */,
+				3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */,
 				3955E68C1CCA18CD00E88BDC /* settingButton.png in Resources */,
 				3955E6931CCA18CD00E88BDC /* laterDecideButton.png in Resources */,
+				3955E7501CCA822100E88BDC /* selectedLoginButton.png in Resources */,
 				3955E6911CCA18CD00E88BDC /* lastnameIcon.png in Resources */,
 				3955E69A1CCA18CD00E88BDC /* clipedButton.png in Resources */,
 				3955E69C1CCA18CD00E88BDC /* postButton.png in Resources */,
@@ -884,11 +872,9 @@
 			files = (
 				396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */,
 				3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */,
-				3955E6C71CCA7E5400E88BDC /* UnselectedSignupButton.swift in Sources */,
 				3955E6581CC94D7900E88BDC /* VoteDisagreeButton.swift in Sources */,
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
-				3955E6C31CCA7E3100E88BDC /* SelectedSignupButton.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				39D85ED31CC662AE002F017D /* Colors.swift in Sources */,
 				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
@@ -902,7 +888,6 @@
 				3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */,
 				3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */,
 				39D85EF31CC69AA0002F017D /* ProfileImageView.swift in Sources */,
-				3955E6C11CCA7E2500E88BDC /* SelectedLoginButton.swift in Sources */,
 				3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */,
 				3955E6B31CCA730B00E88BDC /* EmailTextField.swift in Sources */,
 				3955E6291CC9151500E88BDC /* ProfileTitleLabel.swift in Sources */,
@@ -910,7 +895,6 @@
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
 				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
-				3955E6C51CCA7E3E00E88BDC /* UnselectedLoginButton.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,

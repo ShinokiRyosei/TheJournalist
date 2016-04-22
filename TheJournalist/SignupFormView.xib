@@ -11,6 +11,11 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IcN-Uo-Ces" customClass="FirstnameTextField" customModule="TheJournalist" customModuleProvider="target">
+                    <rect key="frame" x="8" y="8" width="584" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z3D-dJ-v5M" customClass="LastnameTextField" customModule="TheJournalist" customModuleProvider="target">
                     <rect key="frame" x="8" y="66" width="584" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -33,14 +38,6 @@
                         <constraint firstAttribute="height" constant="4" id="AGF-iV-9lI"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS0-AO-2WG">
-                    <rect key="frame" x="252" y="240" width="97" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="97" id="Jrg-vt-KEc"/>
-                        <constraint firstAttribute="height" constant="32" id="W7E-hi-ldG"/>
-                    </constraints>
-                    <state key="normal" backgroundImage="loginButton.png"/>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DT-x7-dDx">
                     <rect key="frame" x="203" y="332" width="195" height="30"/>
                     <constraints>
@@ -57,11 +54,14 @@
                     </constraints>
                     <state key="normal" backgroundImage="twitterLogin.png"/>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IcN-Uo-Ces" customClass="FirstnameTextField" customModule="TheJournalist" customModuleProvider="target">
-                    <rect key="frame" x="8" y="8" width="584" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS0-AO-2WG">
+                    <rect key="frame" x="254" y="241" width="93" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="93" id="Jrg-vt-KEc"/>
+                        <constraint firstAttribute="height" constant="35" id="W7E-hi-ldG"/>
+                    </constraints>
+                    <state key="normal" image="newuserButton.png"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -75,11 +75,11 @@
                 <constraint firstItem="HlL-3f-bY2" firstAttribute="top" secondItem="3DT-x7-dDx" secondAttribute="bottom" constant="28" id="Hm0-GJ-fBN"/>
                 <constraint firstItem="HlL-3f-bY2" firstAttribute="top" secondItem="3DT-x7-dDx" secondAttribute="bottom" constant="28" id="KU8-m1-FdP"/>
                 <constraint firstItem="QS0-AO-2WG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LmX-Zd-qox"/>
-                <constraint firstItem="duV-cX-DcQ" firstAttribute="top" secondItem="QS0-AO-2WG" secondAttribute="bottom" constant="28" id="OL0-rh-7yH"/>
+                <constraint firstItem="duV-cX-DcQ" firstAttribute="top" secondItem="QS0-AO-2WG" secondAttribute="bottom" constant="24" id="OL0-rh-7yH"/>
                 <constraint firstAttribute="trailing" secondItem="duV-cX-DcQ" secondAttribute="trailing" constant="38" id="Rkd-lZ-Ktk"/>
                 <constraint firstItem="IcN-Uo-Ces" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Skw-X0-BsB"/>
                 <constraint firstAttribute="trailing" secondItem="l4A-4I-NXH" secondAttribute="trailing" constant="8" id="U0g-nm-dMU"/>
-                <constraint firstItem="QS0-AO-2WG" firstAttribute="top" secondItem="l4A-4I-NXH" secondAttribute="bottom" constant="28" id="UJP-t0-Cjs"/>
+                <constraint firstItem="QS0-AO-2WG" firstAttribute="top" secondItem="l4A-4I-NXH" secondAttribute="bottom" constant="29" id="UJP-t0-Cjs"/>
                 <constraint firstItem="z3D-dJ-v5M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Xml-Sn-akz"/>
                 <constraint firstItem="duV-cX-DcQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="38" id="YQf-Nh-ccr"/>
                 <constraint firstItem="3DT-x7-dDx" firstAttribute="top" secondItem="duV-cX-DcQ" secondAttribute="bottom" constant="28" id="cSh-eg-ncG"/>
@@ -102,7 +102,7 @@
     </objects>
     <resources>
         <image name="facebookLogin.png" width="201" height="26"/>
-        <image name="loginButton.png" width="59" height="22"/>
+        <image name="newuserButton.png" width="59" height="22"/>
         <image name="twitterLogin.png" width="201" height="26"/>
     </resources>
 </document>
