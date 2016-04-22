@@ -93,7 +93,6 @@
 		39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC91CC6618B002F017D /* HomeCell.swift */; };
 		39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D85ECA1CC6618B002F017D /* HomeCell.xib */; };
 		39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */; };
-		39D85ED31CC662AE002F017D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85ED21CC662AE002F017D /* Colors.swift */; };
 		39D85EE11CC676D9002F017D /* AxisStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */; };
 		39D85EE21CC676D9002F017D /* AxisStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */; };
 		39D85EE31CC676D9002F017D /* AxisStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */; };
@@ -220,7 +219,6 @@
 		39D85EC91CC6618B002F017D /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		39D85ECA1CC6618B002F017D /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTopicTitleLabel.swift; sourceTree = "<group>"; };
-		39D85ED21CC662AE002F017D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AxisStd-Regular.otf"; sourceTree = "<group>"; };
 		39D85EE41CC67E86002F017D /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		39D85EF21CC69AA0002F017D /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
@@ -547,7 +545,6 @@
 			children = (
 				39D85ED01CC661D1002F017D /* Cells */,
 				39D85ED11CC661D7002F017D /* Labels */,
-				39D85ED21CC662AE002F017D /* Colors.swift */,
 				39D85EF61CC69B3E002F017D /* ImageVIew */,
 				396931E21CC6A3A00061808D /* Button */,
 				3955E6B41CCA737000E88BDC /* LoginXIB */,
@@ -876,7 +873,6 @@
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
-				39D85ED31CC662AE002F017D /* Colors.swift in Sources */,
 				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
