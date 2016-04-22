@@ -1,16 +1,14 @@
 //
-//  VoteViewController.swift
+//  TopicViewController.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/22.
+//  Created by ShinokiRyosei on 2016/04/23.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class VoteViewController: NavigationViewController {
-    
-    @IBOutlet var contentLabel: UILabel!
+class TopicViewController: NavigationViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +21,7 @@ class VoteViewController: NavigationViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func selectAgree() {
-        
-    }
-    
-    @IBAction func selectDisagree() {
-        
+    func transition() {
+        self.performSegueWithIdentifier("toVoteView", sender: self)
     }
 }

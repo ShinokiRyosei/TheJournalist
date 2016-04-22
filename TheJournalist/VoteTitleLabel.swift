@@ -12,23 +12,24 @@ class VoteTitleLabel: UILabel {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.updateLayout()
+        self.addUnderLine()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.updateLayout()
-        
+        self.addUnderLine()
     }
 
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
-        self.updateLayout()
+        self.addUnderLine()
     }
     
-    func updateLayout() {
-        
+    func addUnderLine() {
+        let border = CALayer()
+        border.borderColor = UIColor.blackColor().CGColor
+        border.frame = CGRect(x: 0, y: self.bounds.height - 2, width: self.layer.bounds.width, height: 2.0)
+        border.borderWidth = 2.0
+        self.layer.addSublayer(border)
     }
-    
-
 }
