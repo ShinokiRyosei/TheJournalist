@@ -9,6 +9,10 @@
 import UIKit
 
 class TopicCell: UITableViewCell {
+    
+    @IBOutlet var commentLabel: UILabel!
+    
+    @IBOutlet var voteNumberLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
