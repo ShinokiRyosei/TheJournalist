@@ -1,5 +1,5 @@
 //
-//  EmailTextField.swift
+//  PasswordTextField.swift
 //  TheJournalist
 //
 //  Created by ShinokiRyosei on 2016/04/22.
@@ -8,15 +8,13 @@
 
 import UIKit
 
-class EmailTextField: UITextField {
+class PasswordTextField: UITextField {
 
- 
     override func drawRect(rect: CGRect) {
         self.addIcon()
     }
     
-    func  addIcon() {
+    func addIcon() {
         
     }
-
 }

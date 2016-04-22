@@ -72,6 +72,9 @@
 		3955E6AD1CCA22FA00E88BDC /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6AC1CCA22FA00E88BDC /* LoginFormView.xib */; };
 		3955E6B11CCA232F00E88BDC /* SignupFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6B01CCA232F00E88BDC /* SignupFormView.xib */; };
 		3955E6B31CCA730B00E88BDC /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B21CCA730B00E88BDC /* EmailTextField.swift */; };
+		3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */; };
+		3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */; };
+		3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
@@ -186,6 +189,9 @@
 		3955E6AC1CCA22FA00E88BDC /* LoginFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
 		3955E6B01CCA232F00E88BDC /* SignupFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupFormView.xib; sourceTree = "<group>"; };
 		3955E6B21CCA730B00E88BDC /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstnameTextField.swift; sourceTree = "<group>"; };
+		3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastnameTextField.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +406,44 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
+		3955E6B41CCA737000E88BDC /* LoginXIB */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6B61CCA738800E88BDC /* Login */,
+				3955E6B51CCA737F00E88BDC /* Signup */,
+			);
+			name = LoginXIB;
+			sourceTree = "<group>";
+		};
+		3955E6B51CCA737F00E88BDC /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6AA1CCA22BF00E88BDC /* SignupFormView.swift */,
+				3955E6B01CCA232F00E88BDC /* SignupFormView.xib */,
+			);
+			name = Signup;
+			sourceTree = "<group>";
+		};
+		3955E6B61CCA738800E88BDC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6A81CCA22AE00E88BDC /* LoginFormView.swift */,
+				3955E6AC1CCA22FA00E88BDC /* LoginFormView.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		3955E6BD1CCA73CC00E88BDC /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6B21CCA730B00E88BDC /* EmailTextField.swift */,
+				3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */,
+				3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */,
+				3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */,
+			);
+			name = TextFields;
+			sourceTree = "<group>";
+		};
 		396931E21CC6A3A00061808D /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,11 +530,8 @@
 				39D85ED21CC662AE002F017D /* Colors.swift */,
 				39D85EF61CC69B3E002F017D /* ImageVIew */,
 				396931E21CC6A3A00061808D /* Button */,
-				3955E6A81CCA22AE00E88BDC /* LoginFormView.swift */,
-				3955E6AA1CCA22BF00E88BDC /* SignupFormView.swift */,
-				3955E6AC1CCA22FA00E88BDC /* LoginFormView.xib */,
-				3955E6B01CCA232F00E88BDC /* SignupFormView.xib */,
-				3955E6B21CCA730B00E88BDC /* EmailTextField.swift */,
+				3955E6B41CCA737000E88BDC /* LoginXIB */,
+				3955E6BD1CCA73CC00E88BDC /* TextFields */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -806,7 +847,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */,
+				3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */,
 				3955E6581CC94D7900E88BDC /* VoteDisagreeButton.swift in Sources */,
+				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				39D85ED31CC662AE002F017D /* Colors.swift in Sources */,
@@ -815,6 +858,7 @@
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */,
+				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
 				3955E64D1CC9204000E88BDC /* CommentAgreeCell.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */,
