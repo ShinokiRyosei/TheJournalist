@@ -47,6 +47,10 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
         return 3
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.transition()
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = topicTable.dequeueReusableCellWithIdentifier("TopicCell", forIndexPath: indexPath) as! TopicCell
         
