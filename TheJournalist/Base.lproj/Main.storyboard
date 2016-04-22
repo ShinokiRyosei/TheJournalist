@@ -349,6 +349,42 @@
             </objects>
             <point key="canvasLocation" x="2495" y="441"/>
         </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="IbZ-nX-3CQ">
+            <objects>
+                <viewController id="rD9-cE-Ma4" customClass="SignupViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xig-fX-fy9"/>
+                        <viewControllerLayoutGuide type="bottom" id="TkU-JJ-DHd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QFN-cF-Dpt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlT-KW-lat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="-933"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="mzZ-w8-z9D">
+            <objects>
+                <viewController id="gT9-7E-N3O" customClass="LoginViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gxC-ZH-cJp"/>
+                        <viewControllerLayoutGuide type="bottom" id="jRz-n7-ZHH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hDS-Ql-rhU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3H-OG-Lbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253" y="-933"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ce7-oI-q4L">
             <objects>
