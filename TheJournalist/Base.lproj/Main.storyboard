@@ -34,12 +34,34 @@
                     <navigationItem key="navigationItem" id="rAz-N7-kcK"/>
                     <connections>
                         <outlet property="topicTable" destination="zg7-vp-vlu" id="J9H-XV-138"/>
-                        <segue destination="ANA-H5-G3P" kind="show" identifier="toTopicView" id="m2y-xa-fH6"/>
+                        <segue destination="ANA-H5-G3P" kind="show" identifier="" id="m2y-xa-fH6"/>
+                        <segue destination="lDa-VO-9wL" kind="show" identifier="toTopicView" id="qFg-uA-UyZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="441"/>
+        </scene>
+        <!--Topic View Controller-->
+        <scene sceneID="mgb-DC-6u6">
+            <objects>
+                <viewController id="lDa-VO-9wL" customClass="TopicViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vfK-8r-3lZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xVJ-jm-ZAg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e43-jC-Llc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="lod-da-Rjg" kind="show" identifier="toVoteView" id="mKr-lZ-m8O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lax-yj-nTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="1154"/>
         </scene>
         <!--Comment View Controller-->
         <scene sceneID="fju-pw-ifz">
@@ -146,7 +168,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投票" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pD-Qu-Apj" customClass="VoteTitleLabel" customModule="TheJournalist" customModuleProvider="target">
-                                <rect key="frame" x="237" y="63" width="126" height="48"/>
+                                <rect key="frame" x="237" y="93" width="126" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="P9L-y9-v1c"/>
                                     <constraint firstAttribute="width" constant="126" id="U23-gw-Sou"/>
@@ -156,7 +178,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-cr-eQM">
-                                <rect key="frame" x="127" y="183" width="147" height="115"/>
+                                <rect key="frame" x="127" y="213" width="147" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="115" id="Wyn-jK-QsF"/>
                                     <constraint firstAttribute="width" constant="147" id="gf7-Nr-h8F"/>
@@ -164,17 +186,17 @@
                                 <state key="normal" backgroundImage="agreeButton.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-gh-azp">
-                                <rect key="frame" x="326" y="183" width="147" height="115"/>
+                                <rect key="frame" x="326" y="213" width="147" height="115"/>
                                 <state key="normal" backgroundImage="disagreeButton.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaj-GK-8cy">
-                                <rect key="frame" x="40" y="119" width="520" height="24"/>
+                                <rect key="frame" x="40" y="149" width="520" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5w-sH-tdL">
-                                <rect key="frame" x="290" y="224" width="20" height="20"/>
+                                <rect key="frame" x="290" y="254" width="20" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="acX-An-L2w"/>
@@ -182,7 +204,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bns-Wg-UXf">
-                                <rect key="frame" x="161" y="336" width="278" height="38"/>
+                                <rect key="frame" x="161" y="366" width="278" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="ixN-db-sjz"/>
                                     <constraint firstAttribute="width" constant="278" id="yso-So-wcr"/>
@@ -195,7 +217,7 @@
                             <constraint firstItem="gmG-gh-azp" firstAttribute="width" secondItem="i8g-cr-eQM" secondAttribute="width" id="2zn-Lt-TXK"/>
                             <constraint firstItem="gmG-gh-azp" firstAttribute="height" secondItem="i8g-cr-eQM" secondAttribute="height" id="55u-HE-AMs"/>
                             <constraint firstItem="2pD-Qu-Apj" firstAttribute="centerX" secondItem="ZaT-Sx-abS" secondAttribute="centerX" id="BfU-w8-NOI"/>
-                            <constraint firstItem="2pD-Qu-Apj" firstAttribute="top" secondItem="sPa-FV-Ys1" secondAttribute="bottom" constant="43" id="Oqo-j3-u4r"/>
+                            <constraint firstItem="2pD-Qu-Apj" firstAttribute="top" secondItem="sPa-FV-Ys1" secondAttribute="bottom" constant="29" id="Oqo-j3-u4r"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="gmG-gh-azp" secondAttribute="trailing" constant="62" id="QH4-Bu-lB7"/>
                             <constraint firstItem="Uaj-GK-8cy" firstAttribute="top" secondItem="2pD-Qu-Apj" secondAttribute="bottom" constant="8" id="Szt-Ql-Cvu"/>
                             <constraint firstItem="gmG-gh-azp" firstAttribute="leading" secondItem="r5w-sH-tdL" secondAttribute="trailing" constant="16" id="Trq-9h-Wp8"/>
@@ -215,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37t-KF-31n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585" y="1229"/>
+            <point key="canvasLocation" x="1847" y="1127"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="QTa-zq-c8S">

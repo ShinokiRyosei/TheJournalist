@@ -79,6 +79,7 @@
 		3955E7511CCA822100E88BDC /* selectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E70F1CCA822100E88BDC /* selectedSignupButton.png */; };
 		3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7101CCA822100E88BDC /* unselectedLoginButton.png */; };
 		3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7111CCA822100E88BDC /* unselectedSignupButton.png */; };
+		3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7541CCA9D3500E88BDC /* TopicViewController.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
@@ -199,6 +200,7 @@
 		3955E70F1CCA822100E88BDC /* selectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedSignupButton.png; sourceTree = "<group>"; };
 		3955E7101CCA822100E88BDC /* unselectedLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedLoginButton.png; sourceTree = "<group>"; };
 		3955E7111CCA822100E88BDC /* unselectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedSignupButton.png; sourceTree = "<group>"; };
+		3955E7541CCA9D3500E88BDC /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -536,6 +538,7 @@
 				39D85EE41CC67E86002F017D /* NavigationViewController.swift */,
 				3955E6511CC94C0E00E88BDC /* VoteViewController.swift */,
 				3955E6A61CCA1F3200E88BDC /* LoginViewController.swift */,
+				3955E7541CCA9D3500E88BDC /* TopicViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -881,6 +884,7 @@
 				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
 				3955E64D1CC9204000E88BDC /* CommentAgreeCell.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
+				3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */,
 				3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */,
 				3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */,
 				39D85EF31CC69AA0002F017D /* ProfileImageView.swift in Sources */,
