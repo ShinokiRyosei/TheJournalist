@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lod-da-Rjg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hQJ-b2-pl6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -46,7 +46,7 @@
         <!--Topic View Controller-->
         <scene sceneID="mgb-DC-6u6">
             <objects>
-                <viewController id="lDa-VO-9wL" customClass="TopicViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="lDa-VO-9wL" customClass="TopicViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vfK-8r-3lZ"/>
                         <viewControllerLayoutGuide type="bottom" id="xVJ-jm-ZAg"/>
@@ -107,6 +107,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="contentLabel" destination="dju-DO-WjC" id="11V-ep-0Qc"/>
+                        <outlet property="titleLabel" destination="pFJ-R8-bEG" id="3g1-bE-iLh"/>
+                        <outlet property="topicImageView" destination="r1f-0C-nec" id="UDU-M3-Xfl"/>
+                        <outlet property="topicTable" destination="ZUo-2L-7sS" id="E9L-lI-zVZ"/>
                         <segue destination="lod-da-Rjg" kind="show" identifier="toVoteView" id="mKr-lZ-m8O"/>
                     </connections>
                 </viewController>
@@ -288,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37t-KF-31n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847" y="1127"/>
+            <point key="canvasLocation" x="1847" y="1154"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="QTa-zq-c8S">

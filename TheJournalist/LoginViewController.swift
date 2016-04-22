@@ -25,7 +25,7 @@ class LoginViewController: NavigationViewController {
         self.loginNib = UINib(nibName: "LoginFormView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! LoginFormView
         loginNib.translatesAutoresizingMaskIntoConstraints = false
         signupNib = UINib(nibName: "SignupFormView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! SignupFormView
-        
+        signupNib.translatesAutoresizingMaskIntoConstraints = false
         addSubviewWithAutoLayout(loginNib, parentView: containerView)
         
     }
@@ -43,7 +43,6 @@ class LoginViewController: NavigationViewController {
     }
     
     @IBAction func didSelectSignup(sender: UIButton) {
-        signupNib.translatesAutoresizingMaskIntoConstraints = false
         addSubviewWithAutoLayout(signupNib, parentView: containerView)
         switchSelectedButton(sender)
     }

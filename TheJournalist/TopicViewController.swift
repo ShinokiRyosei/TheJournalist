@@ -10,6 +10,12 @@ import UIKit
 
 class TopicViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var topicImageView: UIImageView!
+    
+    @IBOutlet var titleLabel: UILabel!
+    
+    @IBOutlet var contentLabel: UILabel!
+    
     @IBOutlet var topicTable: UITableView!
 
     override func viewDidLoad() {
