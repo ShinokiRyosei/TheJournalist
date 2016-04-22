@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VoteViewController: UIViewController {
+class VoteViewController: NavigationViewController {
     
     @IBOutlet var contentLabel: UILabel!
 

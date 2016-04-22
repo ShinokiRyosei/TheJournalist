@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: NavigationViewController {
 
     @IBOutlet var containerView: UIView!
     //ログインを選ぶボタン tag 1
