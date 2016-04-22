@@ -80,6 +80,8 @@
 		3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7101CCA822100E88BDC /* unselectedLoginButton.png */; };
 		3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7111CCA822100E88BDC /* unselectedSignupButton.png */; };
 		3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7541CCA9D3500E88BDC /* TopicViewController.swift */; };
+		3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7561CCAA24F00E88BDC /* TopicCell.swift */; };
+		3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7571CCAA24F00E88BDC /* TopicCell.xib */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
@@ -201,6 +203,8 @@
 		3955E7101CCA822100E88BDC /* unselectedLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedLoginButton.png; sourceTree = "<group>"; };
 		3955E7111CCA822100E88BDC /* unselectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedSignupButton.png; sourceTree = "<group>"; };
 		3955E7541CCA9D3500E88BDC /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		3955E7561CCAA24F00E88BDC /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
+		3955E7571CCAA24F00E88BDC /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -464,6 +468,15 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		3955E75A1CCAA25500E88BDC /* TopicCell */ = {
+			isa = PBXGroup;
+			children = (
+				3955E7561CCAA24F00E88BDC /* TopicCell.swift */,
+				3955E7571CCAA24F00E88BDC /* TopicCell.xib */,
+			);
+			name = TopicCell;
+			sourceTree = "<group>";
+		};
 		396931E21CC6A3A00061808D /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -562,6 +575,7 @@
 				39D85EF01CC68F5B002F017D /* HomeCell */,
 				39D85EF11CC68F64002F017D /* CommentCell */,
 				39EF64931CC891F00012B8EC /* ProfileCell */,
+				3955E75A1CCAA25500E88BDC /* TopicCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -773,6 +787,7 @@
 				3955E68C1CCA18CD00E88BDC /* settingButton.png in Resources */,
 				3955E6931CCA18CD00E88BDC /* laterDecideButton.png in Resources */,
 				3955E7501CCA822100E88BDC /* selectedLoginButton.png in Resources */,
+				3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */,
 				3955E6911CCA18CD00E88BDC /* lastnameIcon.png in Resources */,
 				3955E69A1CCA18CD00E88BDC /* clipedButton.png in Resources */,
 				3955E69C1CCA18CD00E88BDC /* postButton.png in Resources */,
@@ -879,6 +894,7 @@
 				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
+				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */,
 				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
