@@ -66,8 +66,12 @@
 		3955E6A01CCA18CD00E88BDC /* facebookNewuser.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E67F1CCA18CD00E88BDC /* facebookNewuser.png */; };
 		3955E6A11CCA18CD00E88BDC /* postBoardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6801CCA18CD00E88BDC /* postBoardButton.png */; };
 		3955E6A21CCA18CD00E88BDC /* twitterNewuser.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6811CCA18CD00E88BDC /* twitterNewuser.png */; };
-		3955E6A51CCA1F1B00E88BDC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6A41CCA1F1B00E88BDC /* SignupViewController.swift */; };
 		3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6A61CCA1F3200E88BDC /* LoginViewController.swift */; };
+		3955E6A91CCA22AE00E88BDC /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6A81CCA22AE00E88BDC /* LoginFormView.swift */; };
+		3955E6AB1CCA22BF00E88BDC /* SignupFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6AA1CCA22BF00E88BDC /* SignupFormView.swift */; };
+		3955E6AD1CCA22FA00E88BDC /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6AC1CCA22FA00E88BDC /* LoginFormView.xib */; };
+		3955E6B11CCA232F00E88BDC /* SignupFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6B01CCA232F00E88BDC /* SignupFormView.xib */; };
+		3955E6B31CCA730B00E88BDC /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B21CCA730B00E88BDC /* EmailTextField.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
@@ -176,8 +180,12 @@
 		3955E67F1CCA18CD00E88BDC /* facebookNewuser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebookNewuser.png; sourceTree = "<group>"; };
 		3955E6801CCA18CD00E88BDC /* postBoardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = postBoardButton.png; sourceTree = "<group>"; };
 		3955E6811CCA18CD00E88BDC /* twitterNewuser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterNewuser.png; sourceTree = "<group>"; };
-		3955E6A41CCA1F1B00E88BDC /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3955E6A61CCA1F3200E88BDC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3955E6A81CCA22AE00E88BDC /* LoginFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		3955E6AA1CCA22BF00E88BDC /* SignupFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupFormView.swift; sourceTree = "<group>"; };
+		3955E6AC1CCA22FA00E88BDC /* LoginFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
+		3955E6B01CCA232F00E88BDC /* SignupFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupFormView.xib; sourceTree = "<group>"; };
+		3955E6B21CCA730B00E88BDC /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -465,7 +473,6 @@
 				39D85EC61CC6610B002F017D /* CommentViewController.swift */,
 				39D85EE41CC67E86002F017D /* NavigationViewController.swift */,
 				3955E6511CC94C0E00E88BDC /* VoteViewController.swift */,
-				3955E6A41CCA1F1B00E88BDC /* SignupViewController.swift */,
 				3955E6A61CCA1F3200E88BDC /* LoginViewController.swift */,
 			);
 			name = Controllers;
@@ -479,6 +486,11 @@
 				39D85ED21CC662AE002F017D /* Colors.swift */,
 				39D85EF61CC69B3E002F017D /* ImageVIew */,
 				396931E21CC6A3A00061808D /* Button */,
+				3955E6A81CCA22AE00E88BDC /* LoginFormView.swift */,
+				3955E6AA1CCA22BF00E88BDC /* SignupFormView.swift */,
+				3955E6AC1CCA22FA00E88BDC /* LoginFormView.xib */,
+				3955E6B01CCA232F00E88BDC /* SignupFormView.xib */,
+				3955E6B21CCA730B00E88BDC /* EmailTextField.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -699,9 +711,11 @@
 				3955E6911CCA18CD00E88BDC /* lastnameIcon.png in Resources */,
 				3955E69A1CCA18CD00E88BDC /* clipedButton.png in Resources */,
 				3955E69C1CCA18CD00E88BDC /* postButton.png in Resources */,
+				3955E6AD1CCA22FA00E88BDC /* LoginFormView.xib in Resources */,
 				3955E6831CCA18CD00E88BDC /* searchButton.png in Resources */,
 				3955E68F1CCA18CD00E88BDC /* agreeButton.png in Resources */,
 				39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */,
+				3955E6B11CCA232F00E88BDC /* SignupFormView.xib in Resources */,
 				3955E6271CC909E500E88BDC /* profile_image.jpg in Resources */,
 				3955E68A1CCA18CD00E88BDC /* titleButton.png in Resources */,
 				3955E6881CCA18CD00E88BDC /* trendButton.png in Resources */,
@@ -807,15 +821,17 @@
 				3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */,
 				39D85EF31CC69AA0002F017D /* ProfileImageView.swift in Sources */,
 				3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */,
+				3955E6B31CCA730B00E88BDC /* EmailTextField.swift in Sources */,
 				3955E6291CC9151500E88BDC /* ProfileTitleLabel.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
 				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
-				3955E6A51CCA1F1B00E88BDC /* SignupViewController.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
+				3955E6AB1CCA22BF00E88BDC /* SignupFormView.swift in Sources */,
+				3955E6A91CCA22AE00E88BDC /* LoginFormView.swift in Sources */,
 				3955E6491CC9202300E88BDC /* CommentDisAgreeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
