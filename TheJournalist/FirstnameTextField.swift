@@ -12,6 +12,7 @@ class FirstnameTextField: UITextField {
 
     override func drawRect(rect: CGRect) {
         self.addIcon()
+        self.addBorder()
     }
     
     func addIcon() {
@@ -22,5 +23,11 @@ class FirstnameTextField: UITextField {
         let leftView = UIView(frame: CGRectMake(0, 0, 21, 30))
         self.leftView = leftView
         self.leftViewMode = UITextFieldViewMode.Always
+    }
+    
+    func addBorder() {
+        self.layer.borderColor = UIColor.blackColor().CGColor
+        self.layer.borderWidth = 1.5
+        self.layer.cornerRadius = 5.0
     }
 }
