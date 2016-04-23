@@ -87,6 +87,7 @@
 		39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */; };
 		39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AF1CCB6FFB00277847 /* MakeBoardTitleLabel.swift */; };
 		39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */; };
+		39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
 		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
@@ -213,6 +214,7 @@
 		39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardViewController.swift; sourceTree = "<group>"; };
 		39ADF1AF1CCB6FFB00277847 /* MakeBoardTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardTitleLabel.swift; sourceTree = "<group>"; };
 		39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardNumberLabel.swift; sourceTree = "<group>"; };
+		39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPostButton.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -489,6 +491,7 @@
 				3955E6591CC94DD500E88BDC /* Comment */,
 				3955E65A1CC94DDB00E88BDC /* Profile */,
 				3955E65B1CC94DE200E88BDC /* Vote */,
+				39ADF1B61CCB8D3700277847 /* MakeBoard */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -498,6 +501,14 @@
 			children = (
 				39ADF1AF1CCB6FFB00277847 /* MakeBoardTitleLabel.swift */,
 				39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */,
+			);
+			name = MakeBoard;
+			sourceTree = "<group>";
+		};
+		39ADF1B61CCB8D3700277847 /* MakeBoard */ = {
+			isa = PBXGroup;
+			children = (
+				39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */,
 			);
 			name = MakeBoard;
 			sourceTree = "<group>";
@@ -918,6 +929,7 @@
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */,
 				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
+				39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */,
 				3955E64D1CC9204000E88BDC /* CommentAgreeCell.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */,

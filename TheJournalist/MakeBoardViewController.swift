@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MakeBoardViewController: NavigationViewController {
+class MakeBoardViewController: NavigationViewController, UITextViewDelegate {
 
     @IBOutlet var topicLabel: MakeBoardTitleLabel!
     
@@ -26,10 +26,17 @@ class MakeBoardViewController: NavigationViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        makeBoardTextView.delegate = self
+        boardDescriptionTextView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        
+        return true
     }
 }
