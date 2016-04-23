@@ -69,6 +69,9 @@
                                     <constraint firstAttribute="width" constant="30" id="oJO-OA-eY3"/>
                                 </constraints>
                                 <state key="normal" image="plusButton.png"/>
+                                <connections>
+                                    <segue destination="LiK-DK-H85" kind="show" id="OUW-zd-fe6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFJ-R8-bEG">
                                 <rect key="frame" x="20" y="232" width="560" height="29"/>
@@ -117,6 +120,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lax-yj-nTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="1154"/>
+        </scene>
+        <!--Make Board View Controller-->
+        <scene sceneID="iGu-L9-7qG">
+            <objects>
+                <viewController id="LiK-DK-H85" customClass="MakeBoardViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tnd-dC-oqu"/>
+                        <viewControllerLayoutGuide type="bottom" id="4M7-FA-QZt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aN2-7S-pjH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHj-YI-axN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="1868"/>
         </scene>
         <!--Comment View Controller-->
         <scene sceneID="fju-pw-ifz">
