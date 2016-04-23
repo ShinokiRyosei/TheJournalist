@@ -30,6 +30,7 @@ class CommentProfileAgreeImageVIew: UIImageView {
         self.layer.cornerRadius = self.layer.bounds.width/2
         self.layer.borderWidth = 2.0
         self.layer.borderColor = UIColor.redColor().CGColor
+        self.layer.masksToBounds = true
     }
 
 }

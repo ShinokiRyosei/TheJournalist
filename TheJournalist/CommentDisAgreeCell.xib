@@ -36,13 +36,23 @@
                         </constraints>
                         <state key="normal" title="Button" image="clip.png"/>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdS-Oe-whD">
+                        <rect key="frame" x="0.0" y="0.0" width="3" height="162.5"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="JYA-Nk-tfy"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ca8-Pt-eXz" firstAttribute="top" secondItem="Tct-ai-EUG" secondAttribute="bottom" constant="15" id="0SK-0a-gCk"/>
                     <constraint firstItem="Or5-zQ-ON8" firstAttribute="leading" secondItem="Tct-ai-EUG" secondAttribute="trailing" constant="8" id="ClY-j1-ccL"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Or5-zQ-ON8" secondAttribute="trailing" id="NHu-td-qap"/>
                     <constraint firstAttribute="topMargin" secondItem="Tct-ai-EUG" secondAttribute="top" id="ZRx-eH-bO7"/>
+                    <constraint firstItem="cdS-Oe-whD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="cHa-4o-jT7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cdS-Oe-whD" secondAttribute="bottom" constant="-8" id="g9D-Bi-HbC"/>
                     <constraint firstAttribute="leadingMargin" secondItem="ca8-Pt-eXz" secondAttribute="leading" id="jdv-0z-bPL"/>
+                    <constraint firstItem="cdS-Oe-whD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="m5y-jm-PUX"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ca8-Pt-eXz" secondAttribute="bottom" constant="0.5" id="orT-WM-2gD"/>
                     <constraint firstAttribute="leadingMargin" secondItem="Tct-ai-EUG" secondAttribute="leading" id="rC9-Pc-JOr"/>
                     <constraint firstAttribute="topMargin" secondItem="Or5-zQ-ON8" secondAttribute="top" id="wRu-Ez-Far"/>

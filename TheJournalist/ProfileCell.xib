@@ -27,13 +27,13 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVr-Ti-QqW">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVr-Ti-QqW">
                         <rect key="frame" x="237" y="66" width="68" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="68" id="Mk9-n1-wQY"/>
                             <constraint firstAttribute="height" constant="21" id="RUl-Ta-mZr"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="Button" image="clipButton.png"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfR-an-dz9" customClass="ProfileCategoryLabel" customModule="TheJournalist" customModuleProvider="target">
                         <rect key="frame" x="8" y="66" width="221" height="21"/>
@@ -45,6 +45,13 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwe-IO-Ul6">
+                        <rect key="frame" x="0.0" y="-1" width="3" height="97.5"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="PqI-1k-nKH"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="pfR-an-dz9" secondAttribute="bottom" constant="0.5" id="A1D-sI-zOq"/>
@@ -53,11 +60,14 @@
                     <constraint firstAttribute="trailingMargin" secondItem="tVr-Ti-QqW" secondAttribute="trailing" constant="7" id="R2M-kF-r2d"/>
                     <constraint firstAttribute="bottomMargin" secondItem="tVr-Ti-QqW" secondAttribute="bottom" constant="0.5" id="REK-Ey-Ef9"/>
                     <constraint firstAttribute="leadingMargin" secondItem="tIa-dv-UHw" secondAttribute="leading" id="TXs-kC-vFC"/>
+                    <constraint firstItem="Qwe-IO-Ul6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="Ujo-V5-7CL"/>
+                    <constraint firstItem="Qwe-IO-Ul6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="WGw-7v-YLW"/>
                     <constraint firstAttribute="trailingMargin" secondItem="tIa-dv-UHw" secondAttribute="trailing" id="XXd-Mt-6U2"/>
                     <constraint firstItem="pfR-an-dz9" firstAttribute="top" secondItem="tIa-dv-UHw" secondAttribute="bottom" constant="8" id="Xea-ui-5to"/>
                     <constraint firstItem="tVr-Ti-QqW" firstAttribute="top" secondItem="tIa-dv-UHw" secondAttribute="bottom" constant="8" id="YRi-75-XXP"/>
                     <constraint firstAttribute="leadingMargin" secondItem="pfR-an-dz9" secondAttribute="leading" id="eIr-vT-VkF"/>
                     <constraint firstAttribute="topMargin" secondItem="clO-TF-rA9" secondAttribute="top" id="jXN-Qs-gHn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Qwe-IO-Ul6" secondAttribute="bottom" constant="-9" id="lLS-ov-wt6"/>
                     <constraint firstItem="tIa-dv-UHw" firstAttribute="top" secondItem="clO-TF-rA9" secondAttribute="bottom" constant="8" id="smj-aB-Q2G"/>
                     <constraint firstAttribute="trailingMargin" secondItem="clO-TF-rA9" secondAttribute="trailing" constant="7" id="ycM-9A-H32"/>
                 </constraints>
@@ -68,10 +78,14 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="agreeBar" destination="Qwe-IO-Ul6" id="K4g-Xm-QPD"/>
                 <outlet property="categoryLabel" destination="pfR-an-dz9" id="N64-Jl-f7G"/>
                 <outlet property="contentLabel" destination="tIa-dv-UHw" id="4R1-B3-76P"/>
                 <outlet property="titleLabel" destination="clO-TF-rA9" id="oLx-wE-lVa"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="clipButton.png" width="235" height="65"/>
+    </resources>
 </document>

@@ -36,11 +36,21 @@
                         </constraints>
                         <state key="normal" title="Button" image="clip.png"/>
                     </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzG-0Z-JAT">
+                        <rect key="frame" x="0.0" y="0.0" width="3" height="162.5"/>
+                        <color key="backgroundColor" red="1" green="0.35755061469999999" blue="0.24445075560000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="rxK-GQ-Vta"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="leadingMargin" secondItem="1qW-FV-64M" secondAttribute="leading" id="8Vs-uY-Xvy"/>
                     <constraint firstAttribute="leadingMargin" secondItem="nDh-y2-Hwm" secondAttribute="leading" id="9XM-bv-H1K"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wzG-0Z-JAT" secondAttribute="bottom" constant="-8" id="Itu-MT-04U"/>
                     <constraint firstAttribute="topMargin" secondItem="nDh-y2-Hwm" secondAttribute="top" id="K1q-Oz-Smf"/>
+                    <constraint firstItem="wzG-0Z-JAT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="U9p-Dh-WDh"/>
+                    <constraint firstItem="wzG-0Z-JAT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="bMS-bm-jhn"/>
                     <constraint firstAttribute="bottomMargin" secondItem="1qW-FV-64M" secondAttribute="bottom" constant="0.5" id="ciz-uT-SVf"/>
                     <constraint firstAttribute="trailingMargin" secondItem="L2d-Jj-Prk" secondAttribute="trailing" id="hNi-EB-frl"/>
                     <constraint firstAttribute="topMargin" secondItem="L2d-Jj-Prk" secondAttribute="top" id="viq-eI-zxO"/>
