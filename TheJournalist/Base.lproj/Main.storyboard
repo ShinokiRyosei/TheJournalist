@@ -55,7 +55,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-0C-nec">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="olympic.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-0C-nec">
                                 <rect key="frame" x="0.0" y="64" width="600" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="160" id="bGI-yN-9rj"/>
@@ -80,12 +80,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZUo-2L-7sS">
-                                <rect key="frame" x="0.0" y="298" width="600" height="302"/>
+                                <rect key="frame" x="0.0" y="293" width="600" height="307"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dju-DO-WjC">
-                                <rect key="frame" x="20" y="269" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="269" width="572" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -100,7 +100,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ZUo-2L-7sS" secondAttribute="trailing" constant="-20" id="apg-Ek-Ihc"/>
                             <constraint firstAttribute="leadingMargin" secondItem="pFJ-R8-bEG" secondAttribute="leading" id="c2D-w9-uzY"/>
                             <constraint firstItem="ZUo-2L-7sS" firstAttribute="leading" secondItem="e43-jC-Llc" secondAttribute="leadingMargin" constant="-20" id="mI2-Eg-Ks8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dju-DO-WjC" secondAttribute="trailing" id="nQB-cQ-zHP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dju-DO-WjC" secondAttribute="trailing" constant="-12" id="nQB-cQ-zHP"/>
                             <constraint firstItem="dju-DO-WjC" firstAttribute="top" secondItem="pFJ-R8-bEG" secondAttribute="bottom" constant="8" id="qEa-Jp-E0Q"/>
                             <constraint firstItem="r1f-0C-nec" firstAttribute="leading" secondItem="e43-jC-Llc" secondAttribute="leadingMargin" constant="-20" id="tZt-lL-Mj7"/>
                             <constraint firstItem="Yni-FT-zeL" firstAttribute="top" secondItem="r1f-0C-nec" secondAttribute="bottom" constant="-36" id="toq-f5-XmO"/>
@@ -710,6 +710,7 @@
         <image name="agreeButton.png" width="94" height="62"/>
         <image name="disagreeButton.png" width="94" height="63"/>
         <image name="laterDecideButton.png" width="195" height="27"/>
+        <image name="olympic.jpeg" width="2000" height="1000"/>
         <image name="plusButton.png" width="21" height="21"/>
         <image name="selectedLoginButton.png" width="64" height="20"/>
         <image name="unselectedSignupButton.png" width="58" height="18"/>

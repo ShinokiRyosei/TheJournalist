@@ -88,6 +88,8 @@
 		39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AF1CCB6FFB00277847 /* MakeBoardTitleLabel.swift */; };
 		39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */; };
 		39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */; };
+		39ADF1BB1CCBDCCB00277847 /* clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1B91CCBDCCB00277847 /* clip.png */; };
+		39ADF1BC1CCBDCCB00277847 /* cliped.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1BA1CCBDCCB00277847 /* cliped.png */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
 		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
@@ -215,6 +217,8 @@
 		39ADF1AF1CCB6FFB00277847 /* MakeBoardTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardTitleLabel.swift; sourceTree = "<group>"; };
 		39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardNumberLabel.swift; sourceTree = "<group>"; };
 		39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPostButton.swift; sourceTree = "<group>"; };
+		39ADF1B91CCBDCCB00277847 /* clip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clip.png; sourceTree = "<group>"; };
+		39ADF1BA1CCBDCCB00277847 /* cliped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cliped.png; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -390,6 +394,8 @@
 		3955E6611CCA18BD00E88BDC /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				39ADF1B91CCBDCCB00277847 /* clip.png */,
+				39ADF1BA1CCBDCCB00277847 /* cliped.png */,
 				3955E70E1CCA822100E88BDC /* selectedLoginButton.png */,
 				3955E70F1CCA822100E88BDC /* selectedSignupButton.png */,
 				3955E7101CCA822100E88BDC /* unselectedLoginButton.png */,
@@ -795,7 +801,9 @@
 				3955E6861CCA18CD00E88BDC /* homeButton.png in Resources */,
 				3955E6421CC91CCF00E88BDC /* icon-83.5@2x.png in Resources */,
 				3955E6A21CCA18CD00E88BDC /* twitterNewuser.png in Resources */,
+				39ADF1BC1CCBDCCB00277847 /* cliped.png in Resources */,
 				39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */,
+				39ADF1BB1CCBDCCB00277847 /* clip.png in Resources */,
 				39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */,
 				3955E63D1CC91CCF00E88BDC /* icon-40@3x.png in Resources */,
 				3955E63B1CC91CCF00E88BDC /* icon-40.png in Resources */,

@@ -28,13 +28,13 @@
                             <constraint firstAttribute="width" constant="60" id="QjI-3v-Mrj"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-Pt-eXz" customClass="CommentClipButton" customModule="TheJournalist" customModuleProvider="target">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-Pt-eXz" customClass="CommentClipButton" customModule="TheJournalist" customModuleProvider="target">
                         <rect key="frame" x="8" y="83" width="60" height="71"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="OzH-We-hjw"/>
                             <constraint firstAttribute="height" constant="71" id="uU9-kM-H62"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="Button" image="clip.png"/>
                     </button>
                 </subviews>
                 <constraints>
@@ -54,4 +54,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="clip.png" width="79" height="90"/>
+    </resources>
 </document>
