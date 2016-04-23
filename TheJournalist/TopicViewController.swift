@@ -17,6 +17,8 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     @IBOutlet var contentLabel: UILabel!
     
     @IBOutlet var topicTable: UITableView!
+    
+    var comment: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +34,21 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
         
         topicTable.estimatedRowHeight = 120
         topicTable.rowHeight = UITableViewAutomaticDimension
+        
+        topicTable.tableFooterView = UIView()
+        
+        self.dammy()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //後で消す
+    func dammy() {
+        titleLabel.text = "東京五輪2020エンブレム問題"
+        contentLabel.text = "4年後、東京でオリンピック・パラリンピックが開催される。佐藤研二郎氏のエンブレム盗作疑惑が取り沙汰された。論点は、これこれこういうもので"
     }
     
     func transition() {
@@ -54,6 +66,17 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = topicTable.dequeueReusableCellWithIdentifier("TopicCell", forIndexPath: indexPath) as! TopicCell
         
+        cell.voteNumberLabel.text = "124"
+        cell.commentLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
+        
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toVoteView" {
+            let voteVC = segue.destinationViewController as! VoteViewController
+            voteVC.content = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
+            
+        }
     }
 }

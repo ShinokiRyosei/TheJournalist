@@ -47,7 +47,7 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.transitionToTopicView()
+            self.transitionToTopicView()
     }
     
     func transitionToTopicView() {
