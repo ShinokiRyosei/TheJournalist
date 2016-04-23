@@ -10,7 +10,6 @@
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
 		3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6211CC8D10300E88BDC /* ProfileClipButton.swift */; };
 		3955E6241CC8D4DD00E88BDC /* olympic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6231CC8D4DD00E88BDC /* olympic.jpeg */; };
-		3955E6271CC909E500E88BDC /* profile_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6261CC909E500E88BDC /* profile_image.jpg */; };
 		3955E6291CC9151500E88BDC /* ProfileTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6281CC9151500E88BDC /* ProfileTitleLabel.swift */; };
 		3955E6371CC91CCF00E88BDC /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 3955E62B1CC91CCE00E88BDC /* Contents.json */; };
 		3955E6381CC91CCF00E88BDC /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E62C1CC91CCF00E88BDC /* icon-29.png */; };
@@ -90,6 +89,7 @@
 		39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */; };
 		39ADF1BB1CCBDCCB00277847 /* clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1B91CCBDCCB00277847 /* clip.png */; };
 		39ADF1BC1CCBDCCB00277847 /* cliped.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1BA1CCBDCCB00277847 /* cliped.png */; };
+		39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1C01CCBE55E00277847 /* profile_image.jpg */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
 		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
@@ -139,7 +139,6 @@
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
 		3955E6211CC8D10300E88BDC /* ProfileClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileClipButton.swift; sourceTree = "<group>"; };
 		3955E6231CC8D4DD00E88BDC /* olympic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = olympic.jpeg; sourceTree = "<group>"; };
-		3955E6261CC909E500E88BDC /* profile_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile_image.jpg; sourceTree = "<group>"; };
 		3955E6281CC9151500E88BDC /* ProfileTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTitleLabel.swift; sourceTree = "<group>"; };
 		3955E62B1CC91CCE00E88BDC /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		3955E62C1CC91CCF00E88BDC /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29.png"; sourceTree = "<group>"; };
@@ -219,6 +218,7 @@
 		39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPostButton.swift; sourceTree = "<group>"; };
 		39ADF1B91CCBDCCB00277847 /* clip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clip.png; sourceTree = "<group>"; };
 		39ADF1BA1CCBDCCB00277847 /* cliped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cliped.png; sourceTree = "<group>"; };
+		39ADF1C01CCBE55E00277847 /* profile_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile_image.jpg; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -278,9 +278,8 @@
 			children = (
 				3955E6611CCA18BD00E88BDC /* Buttons */,
 				3955E62A1CC91CCE00E88BDC /* AppIcon.appiconset */,
-				3955E6261CC909E500E88BDC /* profile_image.jpg */,
 				39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */,
-				3955E6231CC8D4DD00E88BDC /* olympic.jpeg */,
+				39ADF1C21CCBE56300277847 /* DammyResource */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -517,6 +516,15 @@
 				39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */,
 			);
 			name = MakeBoard;
+			sourceTree = "<group>";
+		};
+		39ADF1C21CCBE56300277847 /* DammyResource */ = {
+			isa = PBXGroup;
+			children = (
+				39ADF1C01CCBE55E00277847 /* profile_image.jpg */,
+				3955E6231CC8D4DD00E88BDC /* olympic.jpeg */,
+			);
+			name = DammyResource;
 			sourceTree = "<group>";
 		};
 		39D85E861CC65891002F017D = {
@@ -818,6 +826,7 @@
 				3955E6401CC91CCF00E88BDC /* icon-76.png in Resources */,
 				3955E6381CC91CCF00E88BDC /* icon-29.png in Resources */,
 				3955E6921CCA18CD00E88BDC /* mailIcon.png in Resources */,
+				39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */,
 				3955E69B1CCA18CD00E88BDC /* loginButton.png in Resources */,
 				3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */,
 				3955E68C1CCA18CD00E88BDC /* settingButton.png in Resources */,
@@ -832,7 +841,6 @@
 				3955E68F1CCA18CD00E88BDC /* agreeButton.png in Resources */,
 				39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */,
 				3955E6B11CCA232F00E88BDC /* SignupFormView.xib in Resources */,
-				3955E6271CC909E500E88BDC /* profile_image.jpg in Resources */,
 				3955E68A1CCA18CD00E88BDC /* titleButton.png in Resources */,
 				3955E6881CCA18CD00E88BDC /* trendButton.png in Resources */,
 				3955E69E1CCA18CD00E88BDC /* twitterLogin.png in Resources */,

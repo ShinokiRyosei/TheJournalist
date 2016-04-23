@@ -11,6 +11,16 @@ import UIKit
 class ProfileViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet var profileTable: UITableView!
+    
+    @IBOutlet var usernameLabel: UILabel!
+    
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    @IBOutlet var pointLabel: UILabel!
+    
+    @IBOutlet var clipLabel: UILabel!
+    
+    @IBOutlet var boardLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +43,15 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //後で消す
+    func dammy() {
+        usernameLabel.text = "小谷篤信"
+        descriptionLabel.text = "清掃員 at The Journalist\nStudies Computer Science at ブラウン大学"
+        pointLabel.text = "125"
+        clipLabel.text = "512"
+        boardLabel.text = "387"
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -27,7 +27,7 @@ class TopicCell: UITableViewCell {
     }
     
     func changeBackground() {
-        self.backgroundColor = UIColor.grayColor()
+        self.backgroundColor = UIColor.lightGrayColor()
         
     }
     
