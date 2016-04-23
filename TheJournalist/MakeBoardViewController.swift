@@ -10,6 +10,18 @@ import UIKit
 
 class MakeBoardViewController: NavigationViewController {
 
+    @IBOutlet var topicLabel: MakeBoardTitleLabel!
+    
+    @IBOutlet var makeBoardTextView: UITextView!
+    
+    @IBOutlet var descriptionAgreeLabel: UILabel!
+    
+    @IBOutlet var boardDescriptionTextView: UITextView!
+    
+    @IBOutlet var descriptionNumberLabel: UILabel!
+    
+    @IBOutlet var postButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
