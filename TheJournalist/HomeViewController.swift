@@ -47,20 +47,11 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.row == 1 {
             self.transitionToTopicView()
-        }else if indexPath.row == 2 {
-            self.transitoinToCommentView()
-        }
-        
     }
     
     func transitionToTopicView() {
         self.performSegueWithIdentifier("toTopicView", sender: self)
-    }
-    
-    func transitoinToCommentView() {
-        self.performSegueWithIdentifier("toCommentView", sender: self)
     }
 
 }

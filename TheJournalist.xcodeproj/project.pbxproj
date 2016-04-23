@@ -102,7 +102,6 @@
 		39D85EB31CC65891002F017D /* TheJournalistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EB21CC65891002F017D /* TheJournalistUITests.swift */; };
 		39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC21CC660F1002F017D /* HomeViewController.swift */; };
 		39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC41CC660FB002F017D /* ProfileViewController.swift */; };
-		39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC61CC6610B002F017D /* CommentViewController.swift */; };
 		39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC91CC6618B002F017D /* HomeCell.swift */; };
 		39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D85ECA1CC6618B002F017D /* HomeCell.xib */; };
 		39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */; };
@@ -241,7 +240,6 @@
 		39D85EB41CC65891002F017D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39D85EC21CC660F1002F017D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		39D85EC41CC660FB002F017D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		39D85EC61CC6610B002F017D /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		39D85EC91CC6618B002F017D /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		39D85ECA1CC6618B002F017D /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTopicTitleLabel.swift; sourceTree = "<group>"; };
@@ -596,7 +594,6 @@
 			children = (
 				39D85EC21CC660F1002F017D /* HomeViewController.swift */,
 				39D85EC41CC660FB002F017D /* ProfileViewController.swift */,
-				39D85EC61CC6610B002F017D /* CommentViewController.swift */,
 				39D85EE41CC67E86002F017D /* NavigationViewController.swift */,
 				3955E6511CC94C0E00E88BDC /* VoteViewController.swift */,
 				3955E6A61CCA1F3200E88BDC /* LoginViewController.swift */,
@@ -952,7 +949,6 @@
 				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
-				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,

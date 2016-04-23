@@ -17,6 +17,8 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     @IBOutlet var contentLabel: UILabel!
     
     @IBOutlet var topicTable: UITableView!
+    
+    var comment: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,5 +70,13 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
         cell.commentLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
         
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toVoteView" {
+            let voteVC = segue.destinationViewController as! VoteViewController
+            voteVC.content = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
+            
+        }
     }
 }

@@ -287,12 +287,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtw-bB-4bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2488" y="1154"/>
+            <point key="canvasLocation" x="2545" y="1154"/>
         </scene>
-        <!--View Controller-->
+        <!--Vote View Controller-->
         <scene sceneID="Xll-KQ-lM9">
             <objects>
-                <viewController id="lod-da-Rjg" sceneMemberID="viewController">
+                <viewController id="lod-da-Rjg" customClass="VoteViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sPa-FV-Ys1"/>
                         <viewControllerLayoutGuide type="bottom" id="Xcu-9A-zG7"/>
@@ -318,10 +318,16 @@
                                     <constraint firstAttribute="width" constant="147" id="gf7-Nr-h8F"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="agreeButton.png"/>
+                                <connections>
+                                    <action selector="selectAgree" destination="lod-da-Rjg" eventType="touchUpInside" id="oDh-Yr-WC1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-gh-azp">
                                 <rect key="frame" x="326" y="213" width="147" height="115"/>
                                 <state key="normal" backgroundImage="disagreeButton.png"/>
+                                <connections>
+                                    <action selector="selectDisagree" destination="lod-da-Rjg" eventType="touchUpInside" id="von-2l-fTP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaj-GK-8cy">
                                 <rect key="frame" x="40" y="149" width="520" height="24"/>
@@ -344,6 +350,9 @@
                                     <constraint firstAttribute="width" constant="278" id="yso-So-wcr"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="laterDecideButton.png"/>
+                                <connections>
+                                    <action selector="selectLater" destination="lod-da-Rjg" eventType="touchUpInside" id="ira-oe-SiB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -369,7 +378,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="ANA-H5-G3P" kind="show" id="Fvq-YC-ad3"/>
+                        <outlet property="contentLabel" destination="Uaj-GK-8cy" id="Vm0-Jt-psy"/>
+                        <segue destination="ANA-H5-G3P" kind="show" identifier="toBoardView" id="Fvq-YC-ad3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37t-KF-31n" userLabel="First Responder" sceneMemberID="firstResponder"/>
