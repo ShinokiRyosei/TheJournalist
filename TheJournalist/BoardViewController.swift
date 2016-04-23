@@ -52,14 +52,5 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
         cell.profileImageView.image = UIImage(named: "profile_image.jpg")
         
         return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.transitionToProfile()
-    }
-    
-    func transitionToProfile() {
-        self.performSegueWithIdentifier("toProfileView", sender: self)
-    }
-    
+    }    
 }
