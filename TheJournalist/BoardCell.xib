@@ -93,6 +93,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="clip.png" width="79" height="90"/>
+        <image name="clip.png" width="149" height="161"/>
     </resources>
 </document>

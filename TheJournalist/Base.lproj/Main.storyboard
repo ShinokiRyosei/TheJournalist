@@ -67,7 +67,7 @@
                                     <constraint firstAttribute="height" constant="30" id="mBD-LX-Lut"/>
                                     <constraint firstAttribute="width" constant="30" id="oJO-OA-eY3"/>
                                 </constraints>
-                                <state key="normal" image="plusButton.png"/>
+                                <state key="normal" image="plus.png"/>
                                 <connections>
                                     <segue destination="LiK-DK-H85" kind="show" id="OUW-zd-fe6"/>
                                 </connections>
@@ -344,12 +344,12 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bns-Wg-UXf">
-                                <rect key="frame" x="161" y="366" width="278" height="38"/>
+                                <rect key="frame" x="161" y="366" width="279" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="ixN-db-sjz"/>
-                                    <constraint firstAttribute="width" constant="278" id="yso-So-wcr"/>
+                                    <constraint firstAttribute="width" constant="279" id="1Mg-Z0-4Ea"/>
+                                    <constraint firstAttribute="height" constant="55" id="226-g0-awe"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="laterDecideButton.png"/>
+                                <state key="normal" backgroundImage="later.png"/>
                                 <connections>
                                     <action selector="selectLater" destination="lod-da-Rjg" eventType="touchUpInside" id="ira-oe-SiB"/>
                                 </connections>
@@ -736,10 +736,10 @@
     <resources>
         <image name="EditProfileButton.png" width="502" height="127"/>
         <image name="agreeButton.png" width="94" height="62"/>
-        <image name="disagreeButton.png" width="94" height="63"/>
-        <image name="laterDecideButton.png" width="195" height="27"/>
+        <image name="disagreeButton.png" width="459" height="327"/>
+        <image name="later.png" width="878" height="180"/>
         <image name="olympic.jpeg" width="2000" height="1000"/>
-        <image name="plusButton.png" width="21" height="21"/>
+        <image name="plus.png" width="154" height="154"/>
         <image name="selectedLoginButton.png" width="64" height="20"/>
         <image name="unselectedSignupButton.png" width="58" height="18"/>
     </resources>

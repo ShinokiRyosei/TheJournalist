@@ -33,7 +33,7 @@
                             <constraint firstAttribute="width" constant="68" id="Mk9-n1-wQY"/>
                             <constraint firstAttribute="height" constant="21" id="RUl-Ta-mZr"/>
                         </constraints>
-                        <state key="normal" title="Button" image="clipButton.png"/>
+                        <state key="normal" title="Button" backgroundImage="clipButton.png"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfR-an-dz9" customClass="ProfileCategoryLabel" customModule="TheJournalist" customModuleProvider="target">
                         <rect key="frame" x="8" y="66" width="221" height="21"/>
