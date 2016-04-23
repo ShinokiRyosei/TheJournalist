@@ -64,7 +64,7 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = topicTable.dequeueReusableCellWithIdentifier("TopicCell", forIndexPath: indexPath) as! TopicCell
         
-        cell.voteNumberLabel.text = "124\nVOTES"
+        cell.voteNumberLabel.text = "124"
         cell.commentLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
         
         return cell

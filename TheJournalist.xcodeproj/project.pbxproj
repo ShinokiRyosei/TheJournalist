@@ -90,7 +90,6 @@
 		39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */; };
 		39ADF1BB1CCBDCCB00277847 /* clip.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1B91CCBDCCB00277847 /* clip.png */; };
 		39ADF1BC1CCBDCCB00277847 /* cliped.png in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1BA1CCBDCCB00277847 /* cliped.png */; };
-		39ADF1BE1CCBDFA400277847 /* TopicNumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1BD1CCBDFA400277847 /* TopicNumberLabel.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
 		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
@@ -220,7 +219,6 @@
 		39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPostButton.swift; sourceTree = "<group>"; };
 		39ADF1B91CCBDCCB00277847 /* clip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clip.png; sourceTree = "<group>"; };
 		39ADF1BA1CCBDCCB00277847 /* cliped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cliped.png; sourceTree = "<group>"; };
-		39ADF1BD1CCBDFA400277847 /* TopicNumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicNumberLabel.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -521,14 +519,6 @@
 			name = MakeBoard;
 			sourceTree = "<group>";
 		};
-		39ADF1BF1CCBDFAB00277847 /* Topic */ = {
-			isa = PBXGroup;
-			children = (
-				39ADF1BD1CCBDFA400277847 /* TopicNumberLabel.swift */,
-			);
-			name = Topic;
-			sourceTree = "<group>";
-		};
 		39D85E861CC65891002F017D = {
 			isa = PBXGroup;
 			children = (
@@ -630,7 +620,6 @@
 				3955E65E1CC94DF900E88BDC /* Profile */,
 				3955E65F1CC94E0000E88BDC /* Vote */,
 				39ADF1B11CCB700200277847 /* MakeBoard */,
-				39ADF1BF1CCBDFAB00277847 /* Topic */,
 			);
 			name = Labels;
 			sourceTree = "<group>";
@@ -942,7 +931,6 @@
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				39D85EC71CC6610B002F017D /* CommentViewController.swift in Sources */,
-				39ADF1BE1CCBDFA400277847 /* TopicNumberLabel.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
