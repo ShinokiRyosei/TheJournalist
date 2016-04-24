@@ -15,7 +15,12 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
         
         self.navigationController?.delegate = self
 
-        // Do any additional setup after loading the view.
+//        self.setIconOnNavigatinBar()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setIconOnNavigatinBar()
     }
     
     override func viewWillLayoutSubviews() {
@@ -32,10 +37,18 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
     
 
     func layoutNavigationBar()  {
+        
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
+//        imageView.contentMode = .ScaleAspectFit
+//        imageView.image = image
+//        self.navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
-        self.navigationController?.navigationBar.topItem?.title = "The Journalist"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor(), NSFontAttributeName: UIFont(name: "AxisStd-Regular",size: 24)!]
+    }
+    
+    func setIconOnNavigatinBar() {
+        let image = UIImage(named: "logo")
+        self.navigationController?.navigationBar.setBackgroundImage(image?.resizableImageWithCapInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .Stretch), forBarMetrics: .Default)
     }
     
     func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
