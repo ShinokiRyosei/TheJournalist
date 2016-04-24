@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: NavigationViewController {
 
     @IBOutlet var containerView: UIView!
     //ログインを選ぶボタン tag 1
@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         self.loginNib = UINib(nibName: "LoginFormView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! LoginFormView
         loginNib.translatesAutoresizingMaskIntoConstraints = false
         signupNib = UINib(nibName: "SignupFormView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! SignupFormView
-        
+        signupNib.translatesAutoresizingMaskIntoConstraints = false
         addSubviewWithAutoLayout(loginNib, parentView: containerView)
         
     }
@@ -43,7 +43,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func didSelectSignup(sender: UIButton) {
-        signupNib.translatesAutoresizingMaskIntoConstraints = false
         addSubviewWithAutoLayout(signupNib, parentView: containerView)
         switchSelectedButton(sender)
     }

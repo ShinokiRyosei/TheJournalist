@@ -28,8 +28,8 @@ class HomeTopicTitleLabel: UILabel {
     }
 
     func updateLayout()  {
+        self.font = UIFont(name: "AxisStd-Regular", size: 24)
         self.textAlignment = .Left
-        self.font = UIFont(name: "Axis-Std-Regular", size: 24)
         self.textColor = UIColor.whiteColor()
     }
 
