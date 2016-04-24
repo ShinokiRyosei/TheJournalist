@@ -16,20 +16,20 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
         self.navigationController?.delegate = self
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         
-        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.setIconOnNavigatinBar()
         self.navigationController?.interactivePopGestureRecognizer?.enabled = true
+        
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         self.layoutNavigationBar()
-        
+        self.setNavBarButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +46,15 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
     func setIconOnNavigatinBar() {
         let image = UIImage(named: "logo")
         self.navigationController?.navigationBar.setBackgroundImage(image?.resizableImageWithCapInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .Stretch), forBarMetrics: .Default)
+    }
+    
+    func setNavBarButton() {
+        let navBarButton = UIBarButtonItem(image: UIImage(named: "NavBar"), style: .Done, target: self, action: #selector(self.shouwNavBar))
+        self.navigationItem.leftBarButtonItem = navBarButton
+    }
+    
+    func shouwNavBar() {
+        
     }
     
     func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
