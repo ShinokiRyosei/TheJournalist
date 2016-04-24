@@ -18,22 +18,22 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-TF-rA9" customClass="ProfileTitleLabel" customModule="TheJournalist" customModuleProvider="target">
                         <rect key="frame" x="15" y="8" width="290" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIa-dv-UHw">
                         <rect key="frame" x="8" y="37" width="304" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVr-Ti-QqW">
-                        <rect key="frame" x="237" y="66" width="68" height="21"/>
+                        <rect key="frame" x="230" y="66" width="75" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="68" id="Mk9-n1-wQY"/>
+                            <constraint firstAttribute="width" constant="75" id="Mk9-n1-wQY"/>
                             <constraint firstAttribute="height" constant="21" id="RUl-Ta-mZr"/>
                         </constraints>
-                        <state key="normal" title="Button" backgroundImage="clipButton.png"/>
+                        <state key="normal" backgroundImage="buttons-08.png"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfR-an-dz9" customClass="ProfileCategoryLabel" customModule="TheJournalist" customModuleProvider="target">
                         <rect key="frame" x="8" y="66" width="221" height="21"/>
@@ -42,7 +42,7 @@
                             <constraint firstAttribute="width" constant="221" id="Ftw-4w-oRK"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qwe-IO-Ul6">
@@ -86,6 +86,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="clipButton.png" width="235" height="65"/>
+        <image name="buttons-08.png" width="235" height="65"/>
     </resources>
 </document>
