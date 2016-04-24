@@ -100,6 +100,16 @@
 		39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644471CCCCE5100B43C13 /* mobile-login-for-may1st-03.png */; };
 		39C6444C1CCCCE5100B43C13 /* mobile-login-for-may1st-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644481CCCCE5100B43C13 /* mobile-login-for-may1st-04.png */; };
 		39C6444D1CCCCE5100B43C13 /* mobile-login-for-may1st-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644491CCCCE5100B43C13 /* mobile-login-for-may1st-05.png */; };
+		39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C6444E1CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png */; };
+		39C644591CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C6444F1CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png */; };
+		39C6445A1CCCD28000B43C13 /* mobile-navbar-for-may1st-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644501CCCD28000B43C13 /* mobile-navbar-for-may1st-04.png */; };
+		39C6445B1CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644511CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png */; };
+		39C6445C1CCCD28000B43C13 /* mobile-navbar-for-may1st-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644521CCCD28000B43C13 /* mobile-navbar-for-may1st-06.png */; };
+		39C6445D1CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644531CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png */; };
+		39C6445E1CCCD28000B43C13 /* mobile-navbar-for-may1st-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644541CCCD28000B43C13 /* mobile-navbar-for-may1st-08.png */; };
+		39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644551CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png */; };
+		39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644561CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png */; };
+		39C644611CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644571CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
 		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
@@ -238,6 +248,16 @@
 		39C644471CCCCE5100B43C13 /* mobile-login-for-may1st-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-login-for-may1st-03.png"; sourceTree = "<group>"; };
 		39C644481CCCCE5100B43C13 /* mobile-login-for-may1st-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-login-for-may1st-04.png"; sourceTree = "<group>"; };
 		39C644491CCCCE5100B43C13 /* mobile-login-for-may1st-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-login-for-may1st-05.png"; sourceTree = "<group>"; };
+		39C6444E1CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-02.png"; sourceTree = "<group>"; };
+		39C6444F1CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-03.png"; sourceTree = "<group>"; };
+		39C644501CCCD28000B43C13 /* mobile-navbar-for-may1st-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-04.png"; sourceTree = "<group>"; };
+		39C644511CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-05.png"; sourceTree = "<group>"; };
+		39C644521CCCD28000B43C13 /* mobile-navbar-for-may1st-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-06.png"; sourceTree = "<group>"; };
+		39C644531CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-07.png"; sourceTree = "<group>"; };
+		39C644541CCCD28000B43C13 /* mobile-navbar-for-may1st-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-08.png"; sourceTree = "<group>"; };
+		39C644551CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-09.png"; sourceTree = "<group>"; };
+		39C644561CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-10.png"; sourceTree = "<group>"; };
+		39C644571CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-11.png"; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -330,6 +350,16 @@
 				39295E011CCC98DF0002DD67 /* buttons-34.png */,
 				39295E021CCC98DF0002DD67 /* buttons-35.png */,
 				39C644441CCCC01300B43C13 /* LogoTitle.png */,
+				39C6444E1CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png */,
+				39C6444F1CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png */,
+				39C644501CCCD28000B43C13 /* mobile-navbar-for-may1st-04.png */,
+				39C644511CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png */,
+				39C644521CCCD28000B43C13 /* mobile-navbar-for-may1st-06.png */,
+				39C644531CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png */,
+				39C644541CCCD28000B43C13 /* mobile-navbar-for-may1st-08.png */,
+				39C644551CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png */,
+				39C644561CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png */,
+				39C644571CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png */,
 				39C644461CCCCE5100B43C13 /* mobile-login-for-may1st-02.png */,
 				39C644471CCCCE5100B43C13 /* mobile-login-for-may1st-03.png */,
 				39C644481CCCCE5100B43C13 /* mobile-login-for-may1st-04.png */,
@@ -836,6 +866,7 @@
 				3955E64A1CC9202300E88BDC /* CommentDisAgreeCell.xib in Resources */,
 				3955E7511CCA822100E88BDC /* selectedSignupButton.png in Resources */,
 				39295E121CCC98DF0002DD67 /* buttons-15.png in Resources */,
+				39C6445D1CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png in Resources */,
 				39295E201CCC98DF0002DD67 /* buttons-29.png in Resources */,
 				39295E0E1CCC98DF0002DD67 /* buttons-11.png in Resources */,
 				39295E111CCC98DF0002DD67 /* buttons-14.png in Resources */,
@@ -849,9 +880,14 @@
 				39295E241CCC98DF0002DD67 /* buttons-33.png in Resources */,
 				39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */,
 				3955E63D1CC91CCF00E88BDC /* icon-40@3x.png in Resources */,
+				39C6445A1CCCD28000B43C13 /* mobile-navbar-for-may1st-04.png in Resources */,
+				39C644611CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png in Resources */,
+				39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */,
 				39295E0D1CCC98DF0002DD67 /* buttons-10.png in Resources */,
 				3955E63B1CC91CCF00E88BDC /* icon-40.png in Resources */,
 				3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */,
+				39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */,
+				39C6445B1CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png in Resources */,
 				39295E181CCC98DF0002DD67 /* buttons-21.png in Resources */,
 				39295E081CCC98DF0002DD67 /* buttons-05.png in Resources */,
 				3955E6371CC91CCF00E88BDC /* Contents.json in Resources */,
@@ -859,10 +895,12 @@
 				39C6444D1CCCCE5100B43C13 /* mobile-login-for-may1st-05.png in Resources */,
 				3955E63A1CC91CCF00E88BDC /* icon-29@3x.png in Resources */,
 				3955E6241CC8D4DD00E88BDC /* olympic.jpeg in Resources */,
+				39C6445E1CCCD28000B43C13 /* mobile-navbar-for-may1st-08.png in Resources */,
 				39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */,
 				3955E6401CC91CCF00E88BDC /* icon-76.png in Resources */,
 				39295E091CCC98DF0002DD67 /* buttons-06.png in Resources */,
 				3955E6381CC91CCF00E88BDC /* icon-29.png in Resources */,
+				39C6445C1CCCD28000B43C13 /* mobile-navbar-for-may1st-06.png in Resources */,
 				39295E1A1CCC98DF0002DD67 /* buttons-23.png in Resources */,
 				39295E1C1CCC98DF0002DD67 /* buttons-25.png in Resources */,
 				39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */,
@@ -875,6 +913,8 @@
 				39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */,
 				3955E7501CCA822100E88BDC /* selectedLoginButton.png in Resources */,
 				3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */,
+				39C644591CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png in Resources */,
+				39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */,
 				3955E6AD1CCA22FA00E88BDC /* LoginFormView.xib in Resources */,
 				39C6444A1CCCCE5100B43C13 /* mobile-login-for-may1st-02.png in Resources */,
 				39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */,
