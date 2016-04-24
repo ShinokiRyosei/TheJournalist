@@ -8,19 +8,21 @@
 
 import UIKit
 
-class NavigationViewController: UIViewController, UINavigationControllerDelegate {
+class NavigationViewController: UIViewController, UINavigationControllerDelegate, UIGestureRecognizerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.delegate = self
-
-//        self.setIconOnNavigatinBar()
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.setIconOnNavigatinBar()
+        self.navigationController?.interactivePopGestureRecognizer?.enabled = true
     }
     
     override func viewWillLayoutSubviews() {
@@ -37,11 +39,6 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
     
 
     func layoutNavigationBar()  {
-        
-//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
-//        imageView.contentMode = .ScaleAspectFit
-//        imageView.image = image
-//        self.navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
     }
@@ -52,9 +49,13 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
     }
     
     func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
-        let backBtn = UIBarButtonItem()
-        backBtn.title = ""
-        viewController.navigationItem.backBarButtonItem = backBtn
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationController?.interactivePopGestureRecognizer?.enabled = true
+        
+    }
+    
+    func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
 
 }
