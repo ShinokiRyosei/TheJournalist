@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */; };
+		390FC4E61CCCF4BC006EFEF1 /* NavbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FC4E41CCCF4BC006EFEF1 /* NavbarCell.swift */; };
+		390FC4E71CCCF4BC006EFEF1 /* NavbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390FC4E51CCCF4BC006EFEF1 /* NavbarCell.xib */; };
+		390FC4E91CCCFA3C006EFEF1 /* NavbarSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FC4E81CCCFA3C006EFEF1 /* NavbarSearchTextField.swift */; };
 		39295E041CCC98DF0002DD67 /* buttons-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295DE01CCC98DF0002DD67 /* buttons-01.png */; };
 		39295E051CCC98DF0002DD67 /* buttons-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295DE11CCC98DF0002DD67 /* buttons-02.png */; };
 		39295E061CCC98DF0002DD67 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295DE21CCC98DF0002DD67 /* logo.png */; };
@@ -153,6 +157,10 @@
 
 /* Begin PBXFileReference section */
 		00B66DA7C9CDF7101BFAF7CA /* Pods_TheJournalist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheJournalist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarViewController.swift; sourceTree = "<group>"; };
+		390FC4E41CCCF4BC006EFEF1 /* NavbarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarCell.swift; sourceTree = "<group>"; };
+		390FC4E51CCCF4BC006EFEF1 /* NavbarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavbarCell.xib; sourceTree = "<group>"; };
+		390FC4E81CCCFA3C006EFEF1 /* NavbarSearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarSearchTextField.swift; sourceTree = "<group>"; };
 		39295DE01CCC98DF0002DD67 /* buttons-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-01.png"; sourceTree = "<group>"; };
 		39295DE11CCC98DF0002DD67 /* buttons-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-02.png"; sourceTree = "<group>"; };
 		39295DE21CCC98DF0002DD67 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -512,6 +520,7 @@
 			isa = PBXGroup;
 			children = (
 				3955E6CB1CCA809000E88BDC /* Login */,
+				390FC4E81CCCFA3C006EFEF1 /* NavbarSearchTextField.swift */,
 			);
 			name = TextFields;
 			sourceTree = "<group>";
@@ -641,6 +650,7 @@
 				39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */,
 				39ADF1CF1CCC086900277847 /* BoardViewController.swift */,
 				39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */,
+				390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -666,6 +676,8 @@
 				39D85EF11CC68F64002F017D /* BoardCell */,
 				39EF64931CC891F00012B8EC /* ProfileCell */,
 				3955E75A1CCAA25500E88BDC /* TopicCell */,
+				390FC4E41CCCF4BC006EFEF1 /* NavbarCell.swift */,
+				390FC4E51CCCF4BC006EFEF1 /* NavbarCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -892,6 +904,7 @@
 				3955E6401CC91CCF00E88BDC /* icon-76.png in Resources */,
 				39295E091CCC98DF0002DD67 /* buttons-06.png in Resources */,
 				3955E6381CC91CCF00E88BDC /* icon-29.png in Resources */,
+				390FC4E71CCCF4BC006EFEF1 /* NavbarCell.xib in Resources */,
 				39C6445C1CCCD28000B43C13 /* mobile-navbar-for-may1st-06.png in Resources */,
 				39295E1A1CCC98DF0002DD67 /* buttons-23.png in Resources */,
 				39295E1C1CCC98DF0002DD67 /* buttons-25.png in Resources */,
@@ -996,6 +1009,7 @@
 				396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */,
 				3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */,
 				3955E6581CC94D7900E88BDC /* VoteDisagreeButton.swift in Sources */,
+				390FC4E61CCCF4BC006EFEF1 /* NavbarCell.swift in Sources */,
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
 				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
@@ -1003,6 +1017,7 @@
 				39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */,
 				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
+				390FC4E91CCCFA3C006EFEF1 /* NavbarSearchTextField.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
@@ -1027,6 +1042,7 @@
 				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
+				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
 				3955E6AB1CCA22BF00E88BDC /* SignupFormView.swift in Sources */,

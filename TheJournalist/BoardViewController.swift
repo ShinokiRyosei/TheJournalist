@@ -39,6 +39,14 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func selectPostComment() {
+        self.transition()
+    }
+    
+    func transition() {
+        self.performSegueWithIdentifier("toCommentFormView", sender: self)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }

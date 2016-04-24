@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TheJournalist/FontAwesome_swift.framework"
+  install_framework "Pods-TheJournalist/SWRevealViewController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TheJournalist/FontAwesome_swift.framework"
+  install_framework "Pods-TheJournalist/SWRevealViewController.framework"
 fi

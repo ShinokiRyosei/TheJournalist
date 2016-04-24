@@ -47,6 +47,42 @@
             </objects>
             <point key="canvasLocation" x="1117" y="441"/>
         </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="9CD-Ee-20D">
+            <objects>
+                <viewController id="I33-YU-6gG" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="moq-6L-kkn"/>
+                        <viewControllerLayoutGuide type="bottom" id="JP0-oi-Y67"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VYD-1m-iwX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5a-9l-RGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="1196"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DrJ-Wq-bbv">
+            <objects>
+                <viewController id="WKj-Lm-AWb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gg4-dn-GQf"/>
+                        <viewControllerLayoutGuide type="bottom" id="EI5-Gs-MhX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zL7-2T-g4v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yiq-Yp-a4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="1858"/>
+        </scene>
         <!--Topic View Controller-->
         <scene sceneID="mgb-DC-6u6">
             <objects>
@@ -244,7 +280,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zg1-tt-UHW">
-                                <rect key="frame" x="0.0" y="140.5" width="600" height="459"/>
+                                <rect key="frame" x="0.0" y="141" width="600" height="459"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VA-0U-l5v">
@@ -260,7 +296,7 @@
                                         <rect key="frame" x="24" y="41" width="552" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="A78-p0-e6c" kind="modal" id="FHo-Zn-WKN"/>
+                                            <action selector="selectPostComment" destination="ANA-H5-G3P" eventType="touchUpInside" id="TyJ-3N-bQP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -291,6 +327,7 @@
                     <connections>
                         <outlet property="boardTitleLabel" destination="7wA-qR-4V4" id="eys-Oy-Tvz"/>
                         <outlet property="commentTable" destination="Zg1-tt-UHW" id="CpQ-QM-nLQ"/>
+                        <segue destination="A78-p0-e6c" kind="presentation" identifier="toCommentFormView" id="MvY-Yo-EzD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtw-bB-4bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -331,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iI9-7z-047" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2545" y="1854"/>
+            <point key="canvasLocation" x="2545" y="1850"/>
         </scene>
         <!--Vote View Controller-->
         <scene sceneID="Xll-KQ-lM9">
@@ -517,7 +554,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ba-FA-DOa">
-                                        <rect key="frame" x="363" y="57" width="72.5" height="79"/>
+                                        <rect key="frame" x="363" y="57" width="73" height="79"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="79" id="2j3-vT-LHd"/>

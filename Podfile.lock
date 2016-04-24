@@ -1,10 +1,13 @@
 PODS:
   - FontAwesome.swift (0.7.1)
+  - SWRevealViewController (2.3.0)
 
 DEPENDENCIES:
   - FontAwesome.swift
+  - SWRevealViewController
 
 SPEC CHECKSUMS:
   FontAwesome.swift: 21ec9db57af8b92d4b4d6ca8208b9ae07031e828
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
 COCOAPODS: 0.39.0
