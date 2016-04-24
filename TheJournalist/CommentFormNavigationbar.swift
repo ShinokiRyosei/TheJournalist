@@ -20,6 +20,7 @@ class CommentFormNavigationbar: UINavigationBar {
     }
 
     override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
         self.changeColor()
         self.addUnderline()
     }

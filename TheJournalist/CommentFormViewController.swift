@@ -10,11 +10,14 @@ import UIKit
 
 class CommentFormViewController: UIViewController {
     
+//    @IBOutlet var leftButton: UIBarButtonItem!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        leftButton.title = "Left"
     }
 
     override func didReceiveMemoryWarning() {

@@ -280,7 +280,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zg1-tt-UHW">
-                                <rect key="frame" x="0.0" y="141" width="600" height="459"/>
+                                <rect key="frame" x="0.0" y="140.5" width="600" height="459"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VA-0U-l5v">
@@ -297,6 +297,7 @@
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="selectPostComment" destination="ANA-H5-G3P" eventType="touchUpInside" id="TyJ-3N-bQP"/>
+                                            <segue destination="ZA0-Ep-UQt" kind="presentation" id="xkg-zH-C1B"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -327,7 +328,6 @@
                     <connections>
                         <outlet property="boardTitleLabel" destination="7wA-qR-4V4" id="eys-Oy-Tvz"/>
                         <outlet property="commentTable" destination="Zg1-tt-UHW" id="CpQ-QM-nLQ"/>
-                        <segue destination="A78-p0-e6c" kind="presentation" identifier="toCommentFormView" id="MvY-Yo-EzD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtw-bB-4bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -335,40 +335,44 @@
             <point key="canvasLocation" x="2545" y="1154"/>
         </scene>
         <!--Comment Form View Controller-->
-        <scene sceneID="dRh-fQ-U2I">
+        <scene sceneID="LxG-Zl-FTt">
             <objects>
-                <viewController id="A78-p0-e6c" customClass="CommentFormViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZA0-Ep-UQt" customClass="CommentFormViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KbK-5g-oDZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="r3S-Ni-PrW"/>
+                        <viewControllerLayoutGuide type="top" id="tDd-ov-PqH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qq9-o5-xDB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="502-ap-6pO">
+                    <view key="view" contentMode="scaleToFill" id="uMq-YJ-dAK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTy-KW-IMQ" customClass="CommentFormNavigationbar" customModule="TheJournalist" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmL-2e-Rh1">
+                                <rect key="frame" x="265" y="145" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-cC-hsw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="cGV-x1-onL"/>
+                                    <constraint firstAttribute="height" constant="64" id="fHt-Ce-Apm"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem id="Vl9-pd-Ngv">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="Own-jp-hum"/>
-                                    </navigationItem>
+                                    <navigationItem title="Title" id="8WS-zP-Rvu"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lTy-KW-IMQ" firstAttribute="top" secondItem="502-ap-6pO" secondAttribute="topMargin" id="Aqz-ur-mqZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lTy-KW-IMQ" secondAttribute="trailing" constant="-20" id="Ccq-at-CFf"/>
-                            <constraint firstItem="lTy-KW-IMQ" firstAttribute="leading" secondItem="502-ap-6pO" secondAttribute="leadingMargin" constant="-20" id="cyX-lN-aUn"/>
+                            <constraint firstItem="BLa-cC-hsw" firstAttribute="top" secondItem="uMq-YJ-dAK" secondAttribute="topMargin" id="kMl-8T-DSc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BLa-cC-hsw" secondAttribute="trailing" constant="-20" id="ku1-da-UN3"/>
+                            <constraint firstItem="BLa-cC-hsw" firstAttribute="leading" secondItem="uMq-YJ-dAK" secondAttribute="leadingMargin" constant="-20" id="tPg-8I-APJ"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iI9-7z-047" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjk-Ho-TTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2545" y="1850"/>
+            <point key="canvasLocation" x="2912" y="1648"/>
         </scene>
         <!--Vote View Controller-->
         <scene sceneID="Xll-KQ-lM9">
@@ -554,7 +558,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ba-FA-DOa">
-                                        <rect key="frame" x="363" y="57" width="73" height="79"/>
+                                        <rect key="frame" x="363" y="57" width="72.5" height="79"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="79" id="2j3-vT-LHd"/>

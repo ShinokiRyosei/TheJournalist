@@ -44,7 +44,8 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
     }
     
     func transition() {
-        self.performSegueWithIdentifier("toCommentFormView", sender: self)
+        let commentVC = CommentFormViewController()
+        self.presentViewController(commentVC, animated: true, completion: nil)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
