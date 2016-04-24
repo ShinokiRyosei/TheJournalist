@@ -77,10 +77,6 @@
 		3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */; };
 		3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */; };
 		3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */; };
-		3955E7501CCA822100E88BDC /* selectedLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E70E1CCA822100E88BDC /* selectedLoginButton.png */; };
-		3955E7511CCA822100E88BDC /* selectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E70F1CCA822100E88BDC /* selectedSignupButton.png */; };
-		3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7101CCA822100E88BDC /* unselectedLoginButton.png */; };
-		3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7111CCA822100E88BDC /* unselectedSignupButton.png */; };
 		3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7541CCA9D3500E88BDC /* TopicViewController.swift */; };
 		3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7561CCAA24F00E88BDC /* TopicCell.swift */; };
 		3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7571CCAA24F00E88BDC /* TopicCell.xib */; };
@@ -111,6 +107,7 @@
 		39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644561CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png */; };
 		39C644611CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644571CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png */; };
 		39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */; };
+		39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
 		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
@@ -226,10 +223,6 @@
 		3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstnameTextField.swift; sourceTree = "<group>"; };
 		3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastnameTextField.swift; sourceTree = "<group>"; };
-		3955E70E1CCA822100E88BDC /* selectedLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedLoginButton.png; sourceTree = "<group>"; };
-		3955E70F1CCA822100E88BDC /* selectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedSignupButton.png; sourceTree = "<group>"; };
-		3955E7101CCA822100E88BDC /* unselectedLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedLoginButton.png; sourceTree = "<group>"; };
-		3955E7111CCA822100E88BDC /* unselectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedSignupButton.png; sourceTree = "<group>"; };
 		3955E7541CCA9D3500E88BDC /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		3955E7561CCAA24F00E88BDC /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		3955E7571CCAA24F00E88BDC /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
@@ -260,6 +253,7 @@
 		39C644561CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-10.png"; sourceTree = "<group>"; };
 		39C644571CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-11.png"; sourceTree = "<group>"; };
 		39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormViewController.swift; sourceTree = "<group>"; };
+		39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormNavigationbar.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -374,10 +368,6 @@
 			isa = PBXGroup;
 			children = (
 				39295DDF1CCC98DF0002DD67 /* Icons */,
-				3955E70E1CCA822100E88BDC /* selectedLoginButton.png */,
-				3955E70F1CCA822100E88BDC /* selectedSignupButton.png */,
-				3955E7101CCA822100E88BDC /* unselectedLoginButton.png */,
-				3955E7111CCA822100E88BDC /* unselectedSignupButton.png */,
 				3955E62A1CC91CCE00E88BDC /* AppIcon.appiconset */,
 				39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */,
 				39ADF1C21CCBE56300277847 /* DammyResource */,
@@ -664,6 +654,7 @@
 				396931E21CC6A3A00061808D /* Button */,
 				3955E6B41CCA737000E88BDC /* LoginXIB */,
 				3955E6BD1CCA73CC00E88BDC /* TextFields */,
+				39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -867,7 +858,6 @@
 				39295E151CCC98DF0002DD67 /* buttons-18.png in Resources */,
 				39295E0F1CCC98DF0002DD67 /* buttons-12.png in Resources */,
 				3955E64A1CC9202300E88BDC /* CommentDisAgreeCell.xib in Resources */,
-				3955E7511CCA822100E88BDC /* selectedSignupButton.png in Resources */,
 				39295E121CCC98DF0002DD67 /* buttons-15.png in Resources */,
 				39C6445D1CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png in Resources */,
 				39295E201CCC98DF0002DD67 /* buttons-29.png in Resources */,
@@ -888,7 +878,6 @@
 				39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */,
 				39295E0D1CCC98DF0002DD67 /* buttons-10.png in Resources */,
 				3955E63B1CC91CCF00E88BDC /* icon-40.png in Resources */,
-				3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */,
 				39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */,
 				39C6445B1CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png in Resources */,
 				39295E181CCC98DF0002DD67 /* buttons-21.png in Resources */,
@@ -909,12 +898,10 @@
 				39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */,
 				39295E061CCC98DF0002DD67 /* logo.png in Resources */,
 				39295E131CCC98DF0002DD67 /* buttons-16.png in Resources */,
-				3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */,
 				39295E161CCC98DF0002DD67 /* buttons-19.png in Resources */,
 				39295E1E1CCC98DF0002DD67 /* buttons-27.png in Resources */,
 				39ADF1CE1CCC085100277847 /* BoardCell.xib in Resources */,
 				39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */,
-				3955E7501CCA822100E88BDC /* selectedLoginButton.png in Resources */,
 				3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */,
 				39C644591CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png in Resources */,
 				39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */,
@@ -1011,6 +998,7 @@
 				3955E6581CC94D7900E88BDC /* VoteDisagreeButton.swift in Sources */,
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
+				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
 				39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */,
 				39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */,
 				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
