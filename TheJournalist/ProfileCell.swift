@@ -15,6 +15,8 @@ class ProfileCell: UITableViewCell {
     @IBOutlet var contentLabel: UILabel!
     
     @IBOutlet var categoryLabel: UILabel!
+    
+    @IBOutlet var agreeBar: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

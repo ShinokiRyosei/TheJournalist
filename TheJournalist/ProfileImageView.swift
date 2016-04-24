@@ -22,7 +22,7 @@ class ProfileImageView: UIImageView {
     }
     
     override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
+        
         self.upadteLayout()
     }
     
@@ -30,6 +30,7 @@ class ProfileImageView: UIImageView {
         self.layer.cornerRadius = self.layer.bounds.width/2
         self.layer.borderWidth = 2.0
         self.layer.borderColor = UIColor.grayColor().CGColor
+        self.layer.masksToBounds = true
     }
 
 }
