@@ -27,7 +27,6 @@ class CommentFormViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         commentTextView.becomeFirstResponder()
-        navBar.barTintColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,7 +41,11 @@ class CommentFormViewController: UIViewController {
     
     
     
-    @IBAction func leftDismiss() {
+    func leftDismiss() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func selectComment() {
+        print("did select comment button")
     }
 }

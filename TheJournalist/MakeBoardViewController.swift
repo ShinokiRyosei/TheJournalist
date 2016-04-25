@@ -35,6 +35,10 @@ class MakeBoardViewController: NavigationViewController, UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func didSelectPost() {
+        
+    }
+    
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         
         return true

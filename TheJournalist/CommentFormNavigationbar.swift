@@ -12,22 +12,35 @@ class CommentFormNavigationbar: UINavigationBar {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addUnderline()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.addUnderline()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.changeColor()
+        self.setLogo()
     }
 
     override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
-        self.changeColor()
-        self.addUnderline()
+        
     }
     
     func changeColor()  {
         self.barTintColor = UIColor.whiteColor()
     }
+    
+    func setImage() {
+        self.setBackgroundImage(UIImage(named: "logo")?.resizableImageWithCapInsets(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .Stretch), forBarMetrics: .Default)
+    }
+    
+    func setLogo() {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 60, height: 20))
+        imageView.image = UIImage(named: "logo.png")
+        self.topItem?.titleView = imageView
+    }
+    
     
     func addUnderline() {
        let border = CALayer()

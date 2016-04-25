@@ -115,7 +115,7 @@
                                 </constraints>
                                 <state key="normal" image="buttons-01.png"/>
                                 <connections>
-                                    <segue destination="LiK-DK-H85" kind="show" id="OUW-zd-fe6"/>
+                                    <segue destination="LiK-DK-H85" kind="presentation" id="OUW-zd-fe6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFJ-R8-bEG">
@@ -178,7 +178,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ab0-Y3-rab">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ab0-Y3-rab">
                                 <rect key="frame" x="0.0" y="93" width="600" height="122"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -188,13 +188,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLh-F5-tAo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLh-F5-tAo">
                                 <rect key="frame" x="0.0" y="215" width="600" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E7x-J2-Myy">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E7x-J2-Myy">
                                 <rect key="frame" x="0.0" y="244" width="600" height="309"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -209,7 +209,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-SY-OkQ" customClass="MakeBoardNumberLabel" customModule="TheJournalist" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-SY-OkQ" customClass="MakeBoardNumberLabel" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="512" y="190" width="55" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="59j-AL-vEn"/>
@@ -219,7 +219,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wA7-rj-lBf" customClass="MakeBoardTitleLabel" customModule="TheJournalist" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wA7-rj-lBf" customClass="MakeBoardTitleLabel" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="600" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -235,15 +235,29 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-K6-1mu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="U42-QK-K98"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="LH9-W8-JnD">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="k13-yg-ZWj" customClass="CommentFormDismissButton" customModule="TheJournalist" customModuleProvider="target"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Dxf-Re-eLr"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="E7x-J2-Myy" secondAttribute="trailing" constant="-20" id="8Ag-tS-g8L"/>
                             <constraint firstItem="ab0-Y3-rab" firstAttribute="top" secondItem="wA7-rj-lBf" secondAttribute="bottom" id="9gQ-6h-Mh5"/>
+                            <constraint firstItem="nW3-K6-1mu" firstAttribute="leading" secondItem="aN2-7S-pjH" secondAttribute="leadingMargin" constant="-20" id="DjD-3G-Kdn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wA7-rj-lBf" secondAttribute="trailing" constant="-20" id="E1d-Qv-KQb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uLh-F5-tAo" secondAttribute="trailing" constant="-20" id="Idl-vf-WbZ"/>
                             <constraint firstItem="uLh-F5-tAo" firstAttribute="leading" secondItem="aN2-7S-pjH" secondAttribute="leadingMargin" constant="-20" id="LFv-et-41l"/>
                             <constraint firstItem="4M7-FA-QZt" firstAttribute="top" secondItem="RxD-Tc-sdC" secondAttribute="bottom" constant="18" id="O8j-4b-OuT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nW3-K6-1mu" secondAttribute="trailing" constant="-20" id="S07-lU-8gM"/>
                             <constraint firstItem="E7x-J2-Myy" firstAttribute="top" secondItem="uLh-F5-tAo" secondAttribute="bottom" id="V7f-5C-r4I"/>
                             <constraint firstItem="uLh-F5-tAo" firstAttribute="top" secondItem="ab0-Y3-rab" secondAttribute="bottom" id="Vxl-du-l92"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ab0-Y3-rab" secondAttribute="trailing" constant="-20" id="c6S-Jh-1le"/>
@@ -255,6 +269,7 @@
                             <constraint firstItem="ab0-Y3-rab" firstAttribute="leading" secondItem="aN2-7S-pjH" secondAttribute="leadingMargin" constant="-20" id="oOK-3A-HsS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QWz-uz-7OT" secondAttribute="trailing" constant="6" id="pKP-xN-koh"/>
                             <constraint firstItem="4M7-FA-QZt" firstAttribute="top" secondItem="QWz-uz-7OT" secondAttribute="bottom" constant="8" id="qhn-1K-ivb"/>
+                            <constraint firstItem="nW3-K6-1mu" firstAttribute="top" secondItem="aN2-7S-pjH" secondAttribute="topMargin" id="vZm-wR-OdX"/>
                             <constraint firstItem="Uhs-SY-OkQ" firstAttribute="top" secondItem="ab0-Y3-rab" secondAttribute="bottom" constant="-25" id="vla-ha-Adm"/>
                             <constraint firstItem="Uhs-SY-OkQ" firstAttribute="leading" secondItem="ab0-Y3-rab" secondAttribute="trailing" constant="-88" id="ybB-dd-gu1"/>
                         </constraints>
@@ -351,18 +366,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-cC-hsw">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-cC-hsw" customClass="CommentFormNavigationbar" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="fHt-Ce-Apm"/>
                                 </constraints>
                                 <items>
                                     <navigationItem id="8WS-zP-Rvu">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="nsV-Q6-BBd" customClass="CommentFormDismissButton" customModule="TheJournalist" customModuleProvider="target">
-                                            <connections>
-                                                <action selector="leftDismiss" destination="ZA0-Ep-UQt" id="tpn-x4-zTK"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="nsV-Q6-BBd" customClass="CommentFormDismissButton" customModule="TheJournalist" customModuleProvider="target"/>
                                         <barButtonItem key="rightBarButtonItem" title="Item" id="CMx-T6-41A" customClass="CommentFormCommentButton" customModule="TheJournalist" customModuleProvider="target"/>
                                     </navigationItem>
                                 </items>
@@ -903,7 +914,7 @@
                                     <constraint firstAttribute="height" constant="64" id="lKQ-v0-t9p"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="05K-YL-xZ3"/>
+                                    <navigationItem id="05K-YL-xZ3"/>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -1087,7 +1098,7 @@
                                     <constraint firstAttribute="height" constant="64" id="eoG-ai-bnk"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="qDE-s3-xaZ"/>
+                                    <navigationItem id="qDE-s3-xaZ"/>
                                 </items>
                             </navigationBar>
                         </subviews>
