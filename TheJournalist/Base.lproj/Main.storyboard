@@ -362,8 +362,9 @@
                                     <constraint firstAttribute="height" constant="64" id="fHt-Ce-Apm"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="8WS-zP-Rvu">
+                                    <navigationItem id="8WS-zP-Rvu">
                                         <barButtonItem key="leftBarButtonItem" title="Item" id="nsV-Q6-BBd" customClass="CommentFormDismissButton" customModule="TheJournalist" customModuleProvider="target"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="CMx-T6-41A" customClass="CommentFormCommentButton" customModule="TheJournalist" customModuleProvider="target"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

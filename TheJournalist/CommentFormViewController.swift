@@ -9,9 +9,6 @@
 import UIKit
 
 class CommentFormViewController: UIViewController {
-    
-    @IBOutlet var leftButton: UIBarButtonItem!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
