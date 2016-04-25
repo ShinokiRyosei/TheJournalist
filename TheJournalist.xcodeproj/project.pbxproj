@@ -84,6 +84,7 @@
 		3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7541CCA9D3500E88BDC /* TopicViewController.swift */; };
 		3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7561CCAA24F00E88BDC /* TopicCell.swift */; };
 		3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7571CCAA24F00E88BDC /* TopicCell.xib */; };
+		395F17651CCE0FDA007DAC66 /* CommentFormDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */; };
@@ -234,6 +235,7 @@
 		3955E7541CCA9D3500E88BDC /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		3955E7561CCAA24F00E88BDC /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		3955E7571CCAA24F00E88BDC /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
+		395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormDismissButton.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardViewController.swift; sourceTree = "<group>"; };
@@ -665,6 +667,7 @@
 				3955E6B41CCA737000E88BDC /* LoginXIB */,
 				3955E6BD1CCA73CC00E88BDC /* TextFields */,
 				39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */,
+				395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -1014,6 +1017,7 @@
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
 				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
 				39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */,
+				395F17651CCE0FDA007DAC66 /* CommentFormDismissButton.swift in Sources */,
 				39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */,
 				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
