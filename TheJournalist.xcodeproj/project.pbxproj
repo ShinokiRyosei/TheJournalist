@@ -96,6 +96,7 @@
 		395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17851CCE83F3007DAC66 /* MakeBoardDismissButton.swift */; };
 		395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */; };
 		395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */; };
+		395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */; };
@@ -258,6 +259,7 @@
 		395F17851CCE83F3007DAC66 /* MakeBoardDismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardDismissButton.swift; sourceTree = "<group>"; };
 		395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardDescriptionView.swift; sourceTree = "<group>"; };
 		395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPositionExtension.swift; sourceTree = "<group>"; };
+		395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarExtension.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardViewController.swift; sourceTree = "<group>"; };
@@ -742,6 +744,7 @@
 				395F177D1CCE1AB6007DAC66 /* CommentFormPosition */,
 				395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */,
 				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
+				395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -1091,6 +1094,7 @@
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
 				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
+				395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */,
 				39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */,
 				395F17651CCE0FDA007DAC66 /* CommentFormDismissButton.swift in Sources */,
 				39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */,

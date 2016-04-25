@@ -178,15 +178,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-K6-1mu">
+                            <navigationBar contentMode="scaleToFill" backIndicatorImage="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-K6-1mu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="U42-QK-K98"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Title" id="LH9-W8-JnD">
+                                    <navigationItem id="LH9-W8-JnD">
                                         <barButtonItem key="leftBarButtonItem" title="Item" id="k13-yg-ZWj" customClass="MakeBoardDismissButton" customModule="TheJournalist" customModuleProvider="target"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Dxf-Re-eLr"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Dxf-Re-eLr" customClass="MakeBoardBarButton" customModule="TheJournalist" customModuleProvider="target"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -247,6 +247,12 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zhM-Qh-0TA" customClass="MakeBoardDescriptionView" customModule="TheJournalist" customModuleProvider="target">
+                                <rect key="frame" x="6" y="230" width="588" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TO-0n-VIR">
                                 <rect key="frame" x="0.0" y="225" width="600" height="2"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -261,17 +267,20 @@
                                     <constraint firstAttribute="height" constant="2" id="G4K-kY-NCJ"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zhM-Qh-0TA" customClass="MakeBoardDescriptionView" customModule="TheJournalist" customModuleProvider="target">
-                                <rect key="frame" x="6" y="230" width="588" height="370"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-AK-wlr">
+                                <rect key="frame" x="0.0" y="64" width="600" height="2"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="oKg-tP-HNt"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MUm-AK-wlr" firstAttribute="leading" secondItem="aN2-7S-pjH" secondAttribute="leadingMargin" constant="-20" id="0nZ-Bq-vMc"/>
                             <constraint firstItem="7TO-0n-VIR" firstAttribute="top" secondItem="Pl5-Yl-Sxg" secondAttribute="bottom" constant="-2" id="1jd-9D-Z1V"/>
                             <constraint firstItem="HMt-IU-O8Y" firstAttribute="top" secondItem="Mpp-ER-obY" secondAttribute="bottom" constant="-2" id="4HM-KJ-hws"/>
+                            <constraint firstItem="MUm-AK-wlr" firstAttribute="top" secondItem="nW3-K6-1mu" secondAttribute="bottom" id="85e-On-uwY"/>
                             <constraint firstItem="7TO-0n-VIR" firstAttribute="top" secondItem="HMt-IU-O8Y" secondAttribute="bottom" constant="-2" id="DVP-Vt-aZB"/>
                             <constraint firstItem="nW3-K6-1mu" firstAttribute="leading" secondItem="aN2-7S-pjH" secondAttribute="leadingMargin" constant="-20" id="DjD-3G-Kdn"/>
                             <constraint firstItem="Pl5-Yl-Sxg" firstAttribute="leading" secondItem="HMt-IU-O8Y" secondAttribute="trailing" constant="15" id="HSa-Ie-1mU"/>
@@ -290,6 +299,7 @@
                             <constraint firstItem="KXc-OU-5md" firstAttribute="top" secondItem="Mpp-ER-obY" secondAttribute="bottom" constant="2" id="gsX-bg-rJ4"/>
                             <constraint firstItem="Mpp-ER-obY" firstAttribute="leading" secondItem="aN2-7S-pjH" secondAttribute="leadingMargin" constant="-20" id="h4M-8I-l9U"/>
                             <constraint firstItem="Of5-r2-bL7" firstAttribute="leading" secondItem="aN2-7S-pjH" secondAttribute="leadingMargin" constant="-14" id="hU7-vf-EIz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MUm-AK-wlr" secondAttribute="trailing" constant="-20" id="hVe-sm-eJm"/>
                             <constraint firstItem="7TO-0n-VIR" firstAttribute="top" secondItem="KXc-OU-5md" secondAttribute="bottom" constant="3" id="ntw-Dh-Smd"/>
                             <constraint firstAttribute="leadingMargin" secondItem="8OY-1U-DkB" secondAttribute="leading" id="o7C-ad-elX"/>
                             <constraint firstItem="HMt-IU-O8Y" firstAttribute="leading" secondItem="Of5-r2-bL7" secondAttribute="trailing" constant="10" id="sg6-3a-oaC"/>
@@ -304,6 +314,7 @@
                         <outlet property="boardDescriptionTextView" destination="zhM-Qh-0TA" id="BrZ-eD-UhT"/>
                         <outlet property="disagreeButton" destination="Pl5-Yl-Sxg" id="mOg-4p-Clh"/>
                         <outlet property="makeBoardTextView" destination="8OY-1U-DkB" id="POP-ls-IKY"/>
+                        <outlet property="navBar" destination="nW3-K6-1mu" id="U2Y-70-cfn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHj-YI-axN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -389,7 +400,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-cC-hsw" customClass="CommentFormNavigationbar" customModule="TheJournalist" customModuleProvider="target">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-cC-hsw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="fHt-Ce-Apm"/>
@@ -1186,6 +1197,7 @@
         <image name="buttons-06.png" width="388" height="256"/>
         <image name="buttons-07.png" width="807" height="109"/>
         <image name="buttons-13.png" width="226" height="41"/>
+        <image name="logo" width="918" height="145"/>
         <image name="mobile-login-for-may1st-02.png" width="311" height="311"/>
         <image name="mobile-login-for-may1st-03.png" width="790" height="118"/>
         <image name="mobile-login-for-may1st-04.png" width="790" height="100"/>

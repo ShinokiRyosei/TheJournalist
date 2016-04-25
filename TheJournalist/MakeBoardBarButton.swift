@@ -12,6 +12,7 @@ class MakeBoardBarButton: UIBarButtonItem {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.setLabel()
     }
     
     private func setLabel() {

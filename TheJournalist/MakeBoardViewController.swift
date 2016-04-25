@@ -18,6 +18,8 @@ class MakeBoardViewController: UIViewController {
     
     @IBOutlet var disagreeButton: UIButton!
     
+    @IBOutlet var navBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,6 +27,8 @@ class MakeBoardViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         agreeButton.selectAgree()
+        navBar.updateLayout()
+        
     }
 
     override func didReceiveMemoryWarning() {
