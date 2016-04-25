@@ -416,6 +416,8 @@
                     <connections>
                         <outlet property="commentTextView" destination="MOy-AQ-Hmx" id="bjl-Dh-Od5"/>
                         <outlet property="leftDismissButton" destination="nsV-Q6-BBd" id="beX-Su-fUL"/>
+                        <outlet property="navBar" destination="BLa-cC-hsw" id="xhL-Tb-QAJ"/>
+                        <outlet property="positionImageView" destination="pWm-CR-GSf" id="mSy-BU-kjN"/>
                         <outlet property="textNumberLabel" destination="crd-Mu-cxw" id="uvl-t7-vAe"/>
                     </connections>
                 </viewController>

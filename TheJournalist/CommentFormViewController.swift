@@ -10,11 +10,16 @@ import UIKit
 
 class CommentFormViewController: UIViewController {
     
+    @IBOutlet var navBar: UINavigationBar!
+    
     @IBOutlet var textNumberLabel: UILabel!
     
     @IBOutlet var commentTextView: UITextView!
 
     @IBOutlet var leftDismissButton: CommentFormDismissButton!
+    
+    @IBOutlet var positionImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,6 +27,7 @@ class CommentFormViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         commentTextView.becomeFirstResponder()
+        navBar.barTintColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +39,8 @@ class CommentFormViewController: UIViewController {
         super.viewWillDisappear(animated)
         commentTextView.resignFirstResponder()
     }
+    
+    
     
     @IBAction func leftDismiss() {
         self.dismissViewControllerAnimated(true, completion: nil)
