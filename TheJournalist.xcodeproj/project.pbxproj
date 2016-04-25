@@ -90,6 +90,7 @@
 		395F17761CCE1A56007DAC66 /* CommentFormDisagreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F17751CCE1A56007DAC66 /* CommentFormDisagreeView.xib */; };
 		395F17781CCE1A79007DAC66 /* CommentFormAgreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17771CCE1A79007DAC66 /* CommentFormAgreeView.swift */; };
 		395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17791CCE1A8E007DAC66 /* CommentFormDisagreeView.swift */; };
+		395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F177E1CCE3B66007DAC66 /* SignupViewController.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */; };
@@ -246,6 +247,7 @@
 		395F17751CCE1A56007DAC66 /* CommentFormDisagreeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentFormDisagreeView.xib; sourceTree = "<group>"; };
 		395F17771CCE1A79007DAC66 /* CommentFormAgreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormAgreeView.swift; sourceTree = "<group>"; };
 		395F17791CCE1A8E007DAC66 /* CommentFormDisagreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormDisagreeView.swift; sourceTree = "<group>"; };
+		395F177E1CCE3B66007DAC66 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardViewController.swift; sourceTree = "<group>"; };
@@ -699,6 +701,7 @@
 				39ADF1CF1CCC086900277847 /* BoardViewController.swift */,
 				39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */,
 				390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */,
+				395F177E1CCE3B66007DAC66 /* SignupViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1100,6 +1103,7 @@
 				395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */,
 				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
+				395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
 				3955E6AB1CCA22BF00E88BDC /* SignupFormView.swift in Sources */,
 				3955E6A91CCA22AE00E88BDC /* LoginFormView.swift in Sources */,
