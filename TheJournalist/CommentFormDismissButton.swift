@@ -17,11 +17,10 @@ class CommentFormDismissButton: UIBarButtonItem {
     }
     
     private func setIcon() {
-        let containerView = UIView(frame: CGRectMake(0, 0, 20, 20))
-        let imageView = UIImageView(frame: CGRectMake(0, 0, 20, 20))
-        imageView.image = UIImage(named: "close")
-        containerView.addSubview(imageView)
-        self.customView = containerView
+       let button = UIButton()
+        button.addTarget(CommentFormViewController(), action: #selector(CommentFormViewController.leftDismiss), forControlEvents: .TouchUpInside)
+        button.setImage(UIImage(named: "close"), forState: .Normal)
+        button.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        self.customView = button
     }
-
 }
