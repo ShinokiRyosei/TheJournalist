@@ -92,6 +92,10 @@
 		395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17791CCE1A8E007DAC66 /* CommentFormDisagreeView.swift */; };
 		395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F177E1CCE3B66007DAC66 /* SignupViewController.swift */; };
 		395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17801CCE7484007DAC66 /* MakeBoardBarButton.swift */; };
+		395F17841CCE7DF6007DAC66 /* MakeBoardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */; };
+		395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17851CCE83F3007DAC66 /* MakeBoardDismissButton.swift */; };
+		395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */; };
+		395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */; };
@@ -250,6 +254,10 @@
 		395F17791CCE1A8E007DAC66 /* CommentFormDisagreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormDisagreeView.swift; sourceTree = "<group>"; };
 		395F177E1CCE3B66007DAC66 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		395F17801CCE7484007DAC66 /* MakeBoardBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardBarButton.swift; sourceTree = "<group>"; };
+		395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardTitleView.swift; sourceTree = "<group>"; };
+		395F17851CCE83F3007DAC66 /* MakeBoardDismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardDismissButton.swift; sourceTree = "<group>"; };
+		395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardDescriptionView.swift; sourceTree = "<group>"; };
+		395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPositionExtension.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardViewController.swift; sourceTree = "<group>"; };
@@ -567,6 +575,7 @@
 				395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */,
 				395F176C1CCE15FF007DAC66 /* CommentFormCommentButton.swift */,
 				395F17801CCE7484007DAC66 /* MakeBoardBarButton.swift */,
+				395F17851CCE83F3007DAC66 /* MakeBoardDismissButton.swift */,
 			);
 			name = BarButtonItem;
 			sourceTree = "<group>";
@@ -598,6 +607,15 @@
 			name = CommentFormPosition;
 			sourceTree = "<group>";
 		};
+		395F17821CCE7DD4007DAC66 /* NavbarCell */ = {
+			isa = PBXGroup;
+			children = (
+				390FC4E41CCCF4BC006EFEF1 /* NavbarCell.swift */,
+				390FC4E51CCCF4BC006EFEF1 /* NavbarCell.xib */,
+			);
+			name = NavbarCell;
+			sourceTree = "<group>";
+		};
 		396931E21CC6A3A00061808D /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +624,7 @@
 				3955E65B1CC94DE200E88BDC /* Vote */,
 				39ADF1B61CCB8D3700277847 /* MakeBoard */,
 				39ADF1D11CCC0C4D00277847 /* BoardPostButton.swift */,
+				395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -721,6 +740,8 @@
 				39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */,
 				395F176E1CCE1904007DAC66 /* BarButtonItem */,
 				395F177D1CCE1AB6007DAC66 /* CommentFormPosition */,
+				395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */,
+				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -732,8 +753,7 @@
 				39D85EF11CC68F64002F017D /* BoardCell */,
 				39EF64931CC891F00012B8EC /* ProfileCell */,
 				3955E75A1CCAA25500E88BDC /* TopicCell */,
-				390FC4E41CCCF4BC006EFEF1 /* NavbarCell.swift */,
-				390FC4E51CCCF4BC006EFEF1 /* NavbarCell.xib */,
+				395F17821CCE7DD4007DAC66 /* NavbarCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1078,6 +1098,7 @@
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				390FC4E91CCCFA3C006EFEF1 /* NavbarSearchTextField.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
+				395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
@@ -1088,8 +1109,11 @@
 				39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */,
 				395F176D1CCE15FF007DAC66 /* CommentFormCommentButton.swift in Sources */,
 				395F17781CCE1A79007DAC66 /* CommentFormAgreeView.swift in Sources */,
+				395F17841CCE7DF6007DAC66 /* MakeBoardTitleView.swift in Sources */,
+				395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */,
 				3955E64D1CC9204000E88BDC /* CommentAgreeCell.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
+				395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */,
 				3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */,
 				3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */,
 				3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */,

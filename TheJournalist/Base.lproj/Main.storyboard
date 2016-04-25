@@ -185,12 +185,12 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Title" id="LH9-W8-JnD">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="k13-yg-ZWj" customClass="CommentFormDismissButton" customModule="TheJournalist" customModuleProvider="target"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="k13-yg-ZWj" customClass="MakeBoardDismissButton" customModule="TheJournalist" customModuleProvider="target"/>
                                         <barButtonItem key="rightBarButtonItem" title="Item" id="Dxf-Re-eLr"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8OY-1U-DkB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8OY-1U-DkB" customClass="MakeBoardTitleView" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="20" y="64" width="560" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -219,6 +219,9 @@
                                 <state key="normal" title="賛成">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didSelectAgree" destination="LiK-DK-H85" eventType="touchUpInside" id="htA-aB-vPD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl5-Yl-Sxg">
                                 <rect key="frame" x="193" y="197" width="50" height="30"/>
@@ -230,6 +233,9 @@
                                 <state key="normal" title="反対">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didSelectDisagree" destination="LiK-DK-H85" eventType="touchUpInside" id="M5A-yJ-Ia1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="です。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXc-OU-5md">
                                 <rect key="frame" x="253" y="201" width="65" height="21"/>
@@ -255,10 +261,9 @@
                                     <constraint firstAttribute="height" constant="2" id="G4K-kY-NCJ"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zhM-Qh-0TA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zhM-Qh-0TA" customClass="MakeBoardDescriptionView" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="6" y="230" width="588" height="370"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -294,6 +299,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Mpp-ER-obY" secondAttribute="trailing" constant="-20" id="wia-eL-41G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="agreeButton" destination="HMt-IU-O8Y" id="4ww-XA-D87"/>
+                        <outlet property="boardDescriptionTextView" destination="zhM-Qh-0TA" id="BrZ-eD-UhT"/>
+                        <outlet property="disagreeButton" destination="Pl5-Yl-Sxg" id="mOg-4p-Clh"/>
+                        <outlet property="makeBoardTextView" destination="8OY-1U-DkB" id="POP-ls-IKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHj-YI-axN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
