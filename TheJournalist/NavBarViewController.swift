@@ -14,6 +14,8 @@ class NavBarViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet var searchBar: UITextField!
     
+    @IBOutlet var profileLabel: UILabel!
+    
     let navbarTitleArray = ["ホーム", "通知", "履歴", "急上昇", "設定", "ヘルプ"]
     
     let navbarIconArray = [UIImage(named:"mobile-navbar-for-may1st-03.png"), UIImage(named: "mobile-navbar-for-may1st-04.png"), UIImage(named: "mobile-navbar-for-may1st-05.png"), UIImage(named: "mobile-navbar-for-may1st-06.png"), UIImage(named: "mobile-navbar-for-may1st-07.png"), UIImage(named: "mobile-navbar-for-may1st-08.png")]
