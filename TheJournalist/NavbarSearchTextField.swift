@@ -19,6 +19,7 @@ class NavbarSearchTextField: UITextField {
     }
     override func drawRect(rect: CGRect) {
         self.setIcon()
+        self.setPlaceholder()
     }
     
     func setIcon() {

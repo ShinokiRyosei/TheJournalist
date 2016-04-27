@@ -46,6 +46,7 @@
 		39295E241CCC98DF0002DD67 /* buttons-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E001CCC98DF0002DD67 /* buttons-33.png */; };
 		39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E011CCC98DF0002DD67 /* buttons-34.png */; };
 		39295E261CCC98DF0002DD67 /* buttons-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E021CCC98DF0002DD67 /* buttons-35.png */; };
+		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
 		3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6211CC8D10300E88BDC /* ProfileClipButton.swift */; };
 		3955E6241CC8D4DD00E88BDC /* olympic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6231CC8D4DD00E88BDC /* olympic.jpeg */; };
@@ -209,6 +210,7 @@
 		39295E001CCC98DF0002DD67 /* buttons-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-33.png"; sourceTree = "<group>"; };
 		39295E011CCC98DF0002DD67 /* buttons-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-34.png"; sourceTree = "<group>"; };
 		39295E021CCC98DF0002DD67 /* buttons-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-35.png"; sourceTree = "<group>"; };
+		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
 		3955E6211CC8D10300E88BDC /* ProfileClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileClipButton.swift; sourceTree = "<group>"; };
 		3955E6231CC8D4DD00E88BDC /* olympic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = olympic.jpeg; sourceTree = "<group>"; };
@@ -726,6 +728,7 @@
 				39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */,
 				390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */,
 				395F177E1CCE3B66007DAC66 /* SignupViewController.swift */,
+				395271081CD0926F00B6676A /* NotificationViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1132,6 +1135,7 @@
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
 				395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */,
+				395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */,
 				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
 				395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
