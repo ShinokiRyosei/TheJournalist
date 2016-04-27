@@ -1,18 +1,14 @@
 //
-//  CommentAgreeCell.swift
+//  MakeBoardCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/21.
+//  Created by ShinokiRyosei on 2016/04/28.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class CommentAgreeCell: UITableViewCell {
-    
-    @IBOutlet var profileImageView: UIImageView!
-    
-    @IBOutlet var contentLabel: UILabel!
+class MakeBoardCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

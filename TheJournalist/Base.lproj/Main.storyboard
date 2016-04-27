@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5a-9l-RGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-245" y="441"/>
+            <point key="canvasLocation" x="-392" y="447"/>
         </scene>
         <!--Nav Bar View Controller-->
         <scene sceneID="DrJ-Wq-bbv">
@@ -293,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lax-yj-nTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="1154"/>
+            <point key="canvasLocation" x="1929" y="797"/>
         </scene>
         <!--Make Board View Controller-->
         <scene sceneID="iGu-L9-7qG">
@@ -515,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtw-bB-4bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3357" y="1154"/>
+            <point key="canvasLocation" x="3410" y="984"/>
         </scene>
         <!--Comment Form View Controller-->
         <scene sceneID="LxG-Zl-FTt">
@@ -598,7 +598,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjk-Ho-TTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3357" y="1911"/>
+            <point key="canvasLocation" x="3410" y="1835"/>
         </scene>
         <!--Vote View Controller-->
         <scene sceneID="Xll-KQ-lM9">
@@ -638,6 +638,9 @@
                                             <constraint firstAttribute="width" constant="138" id="wdN-Hf-qGX"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="buttons-06.png"/>
+                                        <connections>
+                                            <action selector="selectDisagree" destination="lod-da-Rjg" eventType="touchUpInside" id="0mR-ev-6ts"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcs-OH-9vT">
                                         <rect key="frame" x="8" y="8" width="138" height="138"/>
@@ -646,6 +649,9 @@
                                             <constraint firstAttribute="height" constant="138" id="jab-n9-rjc"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="buttons-05.png"/>
+                                        <connections>
+                                            <action selector="selectAgree" destination="lod-da-Rjg" eventType="touchUpInside" id="ha7-ox-p90"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -693,7 +699,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37t-KF-31n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2658" y="1153"/>
+            <point key="canvasLocation" x="2720" y="984"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="QTa-zq-c8S">
