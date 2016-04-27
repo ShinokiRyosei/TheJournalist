@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */; };
+		390FC4E61CCCF4BC006EFEF1 /* NavbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FC4E41CCCF4BC006EFEF1 /* NavbarCell.swift */; };
+		390FC4E71CCCF4BC006EFEF1 /* NavbarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390FC4E51CCCF4BC006EFEF1 /* NavbarCell.xib */; };
+		390FC4E91CCCFA3C006EFEF1 /* NavbarSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FC4E81CCCFA3C006EFEF1 /* NavbarSearchTextField.swift */; };
 		39295E041CCC98DF0002DD67 /* buttons-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295DE01CCC98DF0002DD67 /* buttons-01.png */; };
 		39295E051CCC98DF0002DD67 /* buttons-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295DE11CCC98DF0002DD67 /* buttons-02.png */; };
 		39295E061CCC98DF0002DD67 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295DE21CCC98DF0002DD67 /* logo.png */; };
@@ -42,6 +46,8 @@
 		39295E241CCC98DF0002DD67 /* buttons-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E001CCC98DF0002DD67 /* buttons-33.png */; };
 		39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E011CCC98DF0002DD67 /* buttons-34.png */; };
 		39295E261CCC98DF0002DD67 /* buttons-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E021CCC98DF0002DD67 /* buttons-35.png */; };
+		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
+		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
 		3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6211CC8D10300E88BDC /* ProfileClipButton.swift */; };
 		3955E6241CC8D4DD00E88BDC /* olympic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3955E6231CC8D4DD00E88BDC /* olympic.jpeg */; };
@@ -77,13 +83,22 @@
 		3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */; };
 		3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */; };
 		3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */; };
-		3955E7501CCA822100E88BDC /* selectedLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E70E1CCA822100E88BDC /* selectedLoginButton.png */; };
-		3955E7511CCA822100E88BDC /* selectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E70F1CCA822100E88BDC /* selectedSignupButton.png */; };
-		3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7101CCA822100E88BDC /* unselectedLoginButton.png */; };
-		3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7111CCA822100E88BDC /* unselectedSignupButton.png */; };
 		3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7541CCA9D3500E88BDC /* TopicViewController.swift */; };
 		3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7561CCAA24F00E88BDC /* TopicCell.swift */; };
 		3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7571CCAA24F00E88BDC /* TopicCell.xib */; };
+		395F17651CCE0FDA007DAC66 /* CommentFormDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */; };
+		395F176D1CCE15FF007DAC66 /* CommentFormCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F176C1CCE15FF007DAC66 /* CommentFormCommentButton.swift */; };
+		395F17741CCE1A44007DAC66 /* CommentFormAgreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F17731CCE1A44007DAC66 /* CommentFormAgreeView.xib */; };
+		395F17761CCE1A56007DAC66 /* CommentFormDisagreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F17751CCE1A56007DAC66 /* CommentFormDisagreeView.xib */; };
+		395F17781CCE1A79007DAC66 /* CommentFormAgreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17771CCE1A79007DAC66 /* CommentFormAgreeView.swift */; };
+		395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17791CCE1A8E007DAC66 /* CommentFormDisagreeView.swift */; };
+		395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F177E1CCE3B66007DAC66 /* SignupViewController.swift */; };
+		395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17801CCE7484007DAC66 /* MakeBoardBarButton.swift */; };
+		395F17841CCE7DF6007DAC66 /* MakeBoardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */; };
+		395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17851CCE83F3007DAC66 /* MakeBoardDismissButton.swift */; };
+		395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */; };
+		395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */; };
+		395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */; };
@@ -110,6 +125,8 @@
 		39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644551CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png */; };
 		39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644561CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png */; };
 		39C644611CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644571CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png */; };
+		39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */; };
+		39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
 		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
@@ -155,6 +172,10 @@
 
 /* Begin PBXFileReference section */
 		00B66DA7C9CDF7101BFAF7CA /* Pods_TheJournalist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheJournalist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarViewController.swift; sourceTree = "<group>"; };
+		390FC4E41CCCF4BC006EFEF1 /* NavbarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarCell.swift; sourceTree = "<group>"; };
+		390FC4E51CCCF4BC006EFEF1 /* NavbarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavbarCell.xib; sourceTree = "<group>"; };
+		390FC4E81CCCFA3C006EFEF1 /* NavbarSearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavbarSearchTextField.swift; sourceTree = "<group>"; };
 		39295DE01CCC98DF0002DD67 /* buttons-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-01.png"; sourceTree = "<group>"; };
 		39295DE11CCC98DF0002DD67 /* buttons-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-02.png"; sourceTree = "<group>"; };
 		39295DE21CCC98DF0002DD67 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -190,6 +211,8 @@
 		39295E001CCC98DF0002DD67 /* buttons-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-33.png"; sourceTree = "<group>"; };
 		39295E011CCC98DF0002DD67 /* buttons-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-34.png"; sourceTree = "<group>"; };
 		39295E021CCC98DF0002DD67 /* buttons-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-35.png"; sourceTree = "<group>"; };
+		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
 		3955E6211CC8D10300E88BDC /* ProfileClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileClipButton.swift; sourceTree = "<group>"; };
 		3955E6231CC8D4DD00E88BDC /* olympic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = olympic.jpeg; sourceTree = "<group>"; };
@@ -225,13 +248,22 @@
 		3955E6B71CCA739D00E88BDC /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstnameTextField.swift; sourceTree = "<group>"; };
 		3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastnameTextField.swift; sourceTree = "<group>"; };
-		3955E70E1CCA822100E88BDC /* selectedLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedLoginButton.png; sourceTree = "<group>"; };
-		3955E70F1CCA822100E88BDC /* selectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectedSignupButton.png; sourceTree = "<group>"; };
-		3955E7101CCA822100E88BDC /* unselectedLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedLoginButton.png; sourceTree = "<group>"; };
-		3955E7111CCA822100E88BDC /* unselectedSignupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unselectedSignupButton.png; sourceTree = "<group>"; };
 		3955E7541CCA9D3500E88BDC /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
 		3955E7561CCAA24F00E88BDC /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		3955E7571CCAA24F00E88BDC /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
+		395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormDismissButton.swift; sourceTree = "<group>"; };
+		395F176C1CCE15FF007DAC66 /* CommentFormCommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormCommentButton.swift; sourceTree = "<group>"; };
+		395F17731CCE1A44007DAC66 /* CommentFormAgreeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentFormAgreeView.xib; sourceTree = "<group>"; };
+		395F17751CCE1A56007DAC66 /* CommentFormDisagreeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentFormDisagreeView.xib; sourceTree = "<group>"; };
+		395F17771CCE1A79007DAC66 /* CommentFormAgreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormAgreeView.swift; sourceTree = "<group>"; };
+		395F17791CCE1A8E007DAC66 /* CommentFormDisagreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormDisagreeView.swift; sourceTree = "<group>"; };
+		395F177E1CCE3B66007DAC66 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		395F17801CCE7484007DAC66 /* MakeBoardBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardBarButton.swift; sourceTree = "<group>"; };
+		395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardTitleView.swift; sourceTree = "<group>"; };
+		395F17851CCE83F3007DAC66 /* MakeBoardDismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardDismissButton.swift; sourceTree = "<group>"; };
+		395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardDescriptionView.swift; sourceTree = "<group>"; };
+		395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPositionExtension.swift; sourceTree = "<group>"; };
+		395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarExtension.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardViewController.swift; sourceTree = "<group>"; };
@@ -258,6 +290,8 @@
 		39C644551CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-09.png"; sourceTree = "<group>"; };
 		39C644561CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-10.png"; sourceTree = "<group>"; };
 		39C644571CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobile-navbar-for-may1st-11.png"; sourceTree = "<group>"; };
+		39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormViewController.swift; sourceTree = "<group>"; };
+		39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormNavigationbar.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -372,10 +406,6 @@
 			isa = PBXGroup;
 			children = (
 				39295DDF1CCC98DF0002DD67 /* Icons */,
-				3955E70E1CCA822100E88BDC /* selectedLoginButton.png */,
-				3955E70F1CCA822100E88BDC /* selectedSignupButton.png */,
-				3955E7101CCA822100E88BDC /* unselectedLoginButton.png */,
-				3955E7111CCA822100E88BDC /* unselectedSignupButton.png */,
 				3955E62A1CC91CCE00E88BDC /* AppIcon.appiconset */,
 				39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */,
 				39ADF1C21CCBE56300277847 /* DammyResource */,
@@ -520,6 +550,7 @@
 			isa = PBXGroup;
 			children = (
 				3955E6CB1CCA809000E88BDC /* Login */,
+				390FC4E81CCCFA3C006EFEF1 /* NavbarSearchTextField.swift */,
 			);
 			name = TextFields;
 			sourceTree = "<group>";
@@ -544,6 +575,53 @@
 			name = TopicCell;
 			sourceTree = "<group>";
 		};
+		395F176E1CCE1904007DAC66 /* BarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */,
+				395F176C1CCE15FF007DAC66 /* CommentFormCommentButton.swift */,
+				395F17801CCE7484007DAC66 /* MakeBoardBarButton.swift */,
+				395F17851CCE83F3007DAC66 /* MakeBoardDismissButton.swift */,
+			);
+			name = BarButtonItem;
+			sourceTree = "<group>";
+		};
+		395F177B1CCE1A9B007DAC66 /* Agree */ = {
+			isa = PBXGroup;
+			children = (
+				395F17731CCE1A44007DAC66 /* CommentFormAgreeView.xib */,
+				395F17771CCE1A79007DAC66 /* CommentFormAgreeView.swift */,
+			);
+			name = Agree;
+			sourceTree = "<group>";
+		};
+		395F177C1CCE1AAD007DAC66 /* Disagree */ = {
+			isa = PBXGroup;
+			children = (
+				395F17751CCE1A56007DAC66 /* CommentFormDisagreeView.xib */,
+				395F17791CCE1A8E007DAC66 /* CommentFormDisagreeView.swift */,
+			);
+			name = Disagree;
+			sourceTree = "<group>";
+		};
+		395F177D1CCE1AB6007DAC66 /* CommentFormPosition */ = {
+			isa = PBXGroup;
+			children = (
+				395F177B1CCE1A9B007DAC66 /* Agree */,
+				395F177C1CCE1AAD007DAC66 /* Disagree */,
+			);
+			name = CommentFormPosition;
+			sourceTree = "<group>";
+		};
+		395F17821CCE7DD4007DAC66 /* NavbarCell */ = {
+			isa = PBXGroup;
+			children = (
+				390FC4E41CCCF4BC006EFEF1 /* NavbarCell.swift */,
+				390FC4E51CCCF4BC006EFEF1 /* NavbarCell.xib */,
+			);
+			name = NavbarCell;
+			sourceTree = "<group>";
+		};
 		396931E21CC6A3A00061808D /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +630,7 @@
 				3955E65B1CC94DE200E88BDC /* Vote */,
 				39ADF1B61CCB8D3700277847 /* MakeBoard */,
 				39ADF1D11CCC0C4D00277847 /* BoardPostButton.swift */,
+				395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -648,6 +727,11 @@
 				3955E7541CCA9D3500E88BDC /* TopicViewController.swift */,
 				39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */,
 				39ADF1CF1CCC086900277847 /* BoardViewController.swift */,
+				39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */,
+				390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */,
+				395F177E1CCE3B66007DAC66 /* SignupViewController.swift */,
+				395271081CD0926F00B6676A /* NotificationViewController.swift */,
+				3952710A1CD132B700B6676A /* CommentViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -661,6 +745,12 @@
 				396931E21CC6A3A00061808D /* Button */,
 				3955E6B41CCA737000E88BDC /* LoginXIB */,
 				3955E6BD1CCA73CC00E88BDC /* TextFields */,
+				39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */,
+				395F176E1CCE1904007DAC66 /* BarButtonItem */,
+				395F177D1CCE1AB6007DAC66 /* CommentFormPosition */,
+				395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */,
+				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
+				395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -672,6 +762,7 @@
 				39D85EF11CC68F64002F017D /* BoardCell */,
 				39EF64931CC891F00012B8EC /* ProfileCell */,
 				3955E75A1CCAA25500E88BDC /* TopicCell */,
+				395F17821CCE7DD4007DAC66 /* NavbarCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -864,7 +955,6 @@
 				39295E151CCC98DF0002DD67 /* buttons-18.png in Resources */,
 				39295E0F1CCC98DF0002DD67 /* buttons-12.png in Resources */,
 				3955E64A1CC9202300E88BDC /* CommentDisAgreeCell.xib in Resources */,
-				3955E7511CCA822100E88BDC /* selectedSignupButton.png in Resources */,
 				39295E121CCC98DF0002DD67 /* buttons-15.png in Resources */,
 				39C6445D1CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png in Resources */,
 				39295E201CCC98DF0002DD67 /* buttons-29.png in Resources */,
@@ -885,7 +975,7 @@
 				39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */,
 				39295E0D1CCC98DF0002DD67 /* buttons-10.png in Resources */,
 				3955E63B1CC91CCF00E88BDC /* icon-40.png in Resources */,
-				3955E7521CCA822100E88BDC /* unselectedLoginButton.png in Resources */,
+				395F17741CCE1A44007DAC66 /* CommentFormAgreeView.xib in Resources */,
 				39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */,
 				39C6445B1CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png in Resources */,
 				39295E181CCC98DF0002DD67 /* buttons-21.png in Resources */,
@@ -900,22 +990,22 @@
 				3955E6401CC91CCF00E88BDC /* icon-76.png in Resources */,
 				39295E091CCC98DF0002DD67 /* buttons-06.png in Resources */,
 				3955E6381CC91CCF00E88BDC /* icon-29.png in Resources */,
+				390FC4E71CCCF4BC006EFEF1 /* NavbarCell.xib in Resources */,
 				39C6445C1CCCD28000B43C13 /* mobile-navbar-for-may1st-06.png in Resources */,
 				39295E1A1CCC98DF0002DD67 /* buttons-23.png in Resources */,
 				39295E1C1CCC98DF0002DD67 /* buttons-25.png in Resources */,
 				39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */,
 				39295E061CCC98DF0002DD67 /* logo.png in Resources */,
 				39295E131CCC98DF0002DD67 /* buttons-16.png in Resources */,
-				3955E7531CCA822100E88BDC /* unselectedSignupButton.png in Resources */,
 				39295E161CCC98DF0002DD67 /* buttons-19.png in Resources */,
 				39295E1E1CCC98DF0002DD67 /* buttons-27.png in Resources */,
 				39ADF1CE1CCC085100277847 /* BoardCell.xib in Resources */,
 				39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */,
-				3955E7501CCA822100E88BDC /* selectedLoginButton.png in Resources */,
 				3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */,
 				39C644591CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png in Resources */,
 				39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */,
 				3955E6AD1CCA22FA00E88BDC /* LoginFormView.xib in Resources */,
+				395F17761CCE1A56007DAC66 /* CommentFormDisagreeView.xib in Resources */,
 				39C6444A1CCCCE5100B43C13 /* mobile-login-for-may1st-02.png in Resources */,
 				39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */,
 				39295E1F1CCC98DF0002DD67 /* buttons-28.png in Resources */,
@@ -1003,25 +1093,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */,
 				396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */,
 				3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */,
 				3955E6581CC94D7900E88BDC /* VoteDisagreeButton.swift in Sources */,
+				390FC4E61CCCF4BC006EFEF1 /* NavbarCell.swift in Sources */,
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
+				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
+				395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */,
 				39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */,
+				395F17651CCE0FDA007DAC66 /* CommentFormDismissButton.swift in Sources */,
 				39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */,
 				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
+				390FC4E91CCCFA3C006EFEF1 /* NavbarSearchTextField.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
+				395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
+				39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */,
 				3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */,
 				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
 				39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */,
+				395F176D1CCE15FF007DAC66 /* CommentFormCommentButton.swift in Sources */,
+				395F17781CCE1A79007DAC66 /* CommentFormAgreeView.swift in Sources */,
+				395F17841CCE7DF6007DAC66 /* MakeBoardTitleView.swift in Sources */,
+				395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */,
 				3955E64D1CC9204000E88BDC /* CommentAgreeCell.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
+				395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */,
 				3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */,
 				3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */,
 				3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */,
@@ -1035,7 +1138,12 @@
 				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
+				395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */,
+				395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */,
+				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
+				395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
+				395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
 				3955E6AB1CCA22BF00E88BDC /* SignupFormView.swift in Sources */,
 				3955E6A91CCA22AE00E88BDC /* LoginFormView.swift in Sources */,

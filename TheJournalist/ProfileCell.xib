@@ -61,11 +61,13 @@
                     <constraint firstAttribute="bottomMargin" secondItem="tVr-Ti-QqW" secondAttribute="bottom" constant="0.5" id="REK-Ey-Ef9"/>
                     <constraint firstAttribute="leadingMargin" secondItem="tIa-dv-UHw" secondAttribute="leading" id="TXs-kC-vFC"/>
                     <constraint firstItem="Qwe-IO-Ul6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="Ujo-V5-7CL"/>
+                    <constraint firstItem="pfR-an-dz9" firstAttribute="leading" secondItem="Qwe-IO-Ul6" secondAttribute="trailing" constant="5" id="V07-ee-HkB"/>
                     <constraint firstItem="Qwe-IO-Ul6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="WGw-7v-YLW"/>
                     <constraint firstAttribute="trailingMargin" secondItem="tIa-dv-UHw" secondAttribute="trailing" id="XXd-Mt-6U2"/>
                     <constraint firstItem="pfR-an-dz9" firstAttribute="top" secondItem="tIa-dv-UHw" secondAttribute="bottom" constant="8" id="Xea-ui-5to"/>
                     <constraint firstItem="tVr-Ti-QqW" firstAttribute="top" secondItem="tIa-dv-UHw" secondAttribute="bottom" constant="8" id="YRi-75-XXP"/>
                     <constraint firstAttribute="leadingMargin" secondItem="pfR-an-dz9" secondAttribute="leading" id="eIr-vT-VkF"/>
+                    <constraint firstItem="clO-TF-rA9" firstAttribute="leading" secondItem="Qwe-IO-Ul6" secondAttribute="trailing" constant="12" id="ewE-iI-wMU"/>
                     <constraint firstAttribute="topMargin" secondItem="clO-TF-rA9" secondAttribute="top" id="jXN-Qs-gHn"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Qwe-IO-Ul6" secondAttribute="bottom" constant="-9" id="lLS-ov-wt6"/>
                     <constraint firstItem="tIa-dv-UHw" firstAttribute="top" secondItem="clO-TF-rA9" secondAttribute="bottom" constant="8" id="smj-aB-Q2G"/>

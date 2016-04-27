@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SWRevealViewController
 
 class NavigationViewController: UIViewController, UINavigationControllerDelegate, UIGestureRecognizerDelegate{
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,22 +23,22 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
         super.viewWillAppear(animated)
         self.setIconOnNavigatinBar()
         self.navigationController?.interactivePopGestureRecognizer?.enabled = true
-        
+        self.setNavBarButton()
+        self.layoutNavigationBar()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        self.layoutNavigationBar()
-        self.setNavBarButton()
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     func layoutNavigationBar()  {
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
@@ -49,12 +50,19 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
     }
     
     func setNavBarButton() {
-        let navBarButton = UIBarButtonItem(image: UIImage(named: "NavBar"), style: .Done, target: self, action: #selector(self.shouwNavBar))
-        self.navigationItem.leftBarButtonItem = navBarButton
+        if self.revealViewController() != nil {
+            let navBarButton = UIBarButtonItem(image: UIImage(named: "NavBar"), style: .Done, target: revealViewController(), action: #selector(revealViewController().revealToggle(_:)))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.navigationItem.leftBarButtonItem = navBarButton
+        }else {
+            print("revealViewController is nil")
+        }
     }
     
-    func shouwNavBar() {
-        
+    func showNavBar() {
+        if self.revealViewController() != nil {
+            revealViewController().revealToggle(self)
+        }
     }
     
     func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
@@ -66,5 +74,5 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
     func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
-
+    
 }
