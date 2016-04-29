@@ -12,15 +12,16 @@ import SWRevealViewController
 class NavigationViewController: UIViewController, UINavigationControllerDelegate, UIGestureRecognizerDelegate{
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.navigationController?.delegate = self
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
-        
+        super.viewDidLoad()  
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.navigationController?.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
+        print("viewWillAppear")
         self.setIconOnNavigatinBar()
         self.disableRevealViewInteraction()
         self.navigationController?.interactivePopGestureRecognizer?.enabled = true

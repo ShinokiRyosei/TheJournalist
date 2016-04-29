@@ -49,6 +49,12 @@
 		395010AF1CD2DBF500E63DC4 /* EntryCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */; };
 		395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B01CD3504C00E63DC4 /* HistoryViewController.swift */; };
 		395010B31CD3518200E63DC4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B21CD3518200E63DC4 /* SettingViewController.swift */; };
+		395010B91CD373C400E63DC4 /* NotificationCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B71CD373C400E63DC4 /* NotificationCommentCell.swift */; };
+		395010BA1CD373C400E63DC4 /* NotificationCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010B81CD373C400E63DC4 /* NotificationCommentCell.xib */; };
+		395010BF1CD373F300E63DC4 /* NotificationVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010BD1CD373F300E63DC4 /* NotificationVoteCell.swift */; };
+		395010C01CD373F300E63DC4 /* NotificationVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010BE1CD373F300E63DC4 /* NotificationVoteCell.xib */; };
+		395010C31CD3756F00E63DC4 /* NotificationNoVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010C11CD3756F00E63DC4 /* NotificationNoVoteCell.swift */; };
+		395010C41CD3756F00E63DC4 /* NotificationNoVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -217,6 +223,12 @@
 		395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCellRepresentable.swift; sourceTree = "<group>"; };
 		395010B01CD3504C00E63DC4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		395010B21CD3518200E63DC4 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		395010B71CD373C400E63DC4 /* NotificationCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCommentCell.swift; sourceTree = "<group>"; };
+		395010B81CD373C400E63DC4 /* NotificationCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCommentCell.xib; sourceTree = "<group>"; };
+		395010BD1CD373F300E63DC4 /* NotificationVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVoteCell.swift; sourceTree = "<group>"; };
+		395010BE1CD373F300E63DC4 /* NotificationVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationVoteCell.xib; sourceTree = "<group>"; };
+		395010C11CD3756F00E63DC4 /* NotificationNoVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNoVoteCell.swift; sourceTree = "<group>"; };
+		395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationNoVoteCell.xib; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -415,6 +427,43 @@
 				395F177E1CCE3B66007DAC66 /* SignupViewController.swift */,
 			);
 			name = Authentication;
+			sourceTree = "<group>";
+		};
+		395010C51CD3757500E63DC4 /* NotificationCell */ = {
+			isa = PBXGroup;
+			children = (
+				395010C61CD3766300E63DC4 /* Comment */,
+				395010C71CD3766D00E63DC4 /* Vote */,
+				395010C81CD3767700E63DC4 /* NoVote */,
+			);
+			name = NotificationCell;
+			sourceTree = "<group>";
+		};
+		395010C61CD3766300E63DC4 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				395010B71CD373C400E63DC4 /* NotificationCommentCell.swift */,
+				395010B81CD373C400E63DC4 /* NotificationCommentCell.xib */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		395010C71CD3766D00E63DC4 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				395010BD1CD373F300E63DC4 /* NotificationVoteCell.swift */,
+				395010BE1CD373F300E63DC4 /* NotificationVoteCell.xib */,
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
+		395010C81CD3767700E63DC4 /* NoVote */ = {
+			isa = PBXGroup;
+			children = (
+				395010C11CD3756F00E63DC4 /* NotificationNoVoteCell.swift */,
+				395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */,
+			);
+			name = NoVote;
 			sourceTree = "<group>";
 		};
 		3955E6251CC8D4E300E88BDC /* Resources */ = {
@@ -799,6 +848,7 @@
 				3955E75A1CCAA25500E88BDC /* TopicCell */,
 				395F17821CCE7DD4007DAC66 /* NavbarCell */,
 				39721E521CD140C8008C963C /* CommentCell */,
+				395010C51CD3757500E63DC4 /* NotificationCell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -988,6 +1038,7 @@
 				39295E151CCC98DF0002DD67 /* buttons-18.png in Resources */,
 				39295E0F1CCC98DF0002DD67 /* buttons-12.png in Resources */,
 				39295E121CCC98DF0002DD67 /* buttons-15.png in Resources */,
+				395010C01CD373F300E63DC4 /* NotificationVoteCell.xib in Resources */,
 				39C6445D1CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png in Resources */,
 				39721E561CD140EE008C963C /* MakeBoardCell.xib in Resources */,
 				39295E201CCC98DF0002DD67 /* buttons-29.png in Resources */,
@@ -1011,6 +1062,7 @@
 				395F17741CCE1A44007DAC66 /* CommentFormAgreeView.xib in Resources */,
 				39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */,
 				39C6445B1CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png in Resources */,
+				395010BA1CD373C400E63DC4 /* NotificationCommentCell.xib in Resources */,
 				39295E181CCC98DF0002DD67 /* buttons-21.png in Resources */,
 				39295E081CCC98DF0002DD67 /* buttons-05.png in Resources */,
 				3955E6371CC91CCF00E88BDC /* Contents.json in Resources */,
@@ -1030,6 +1082,7 @@
 				39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */,
 				39295E061CCC98DF0002DD67 /* logo.png in Resources */,
 				39295E131CCC98DF0002DD67 /* buttons-16.png in Resources */,
+				395010C41CD3756F00E63DC4 /* NotificationNoVoteCell.xib in Resources */,
 				39295E161CCC98DF0002DD67 /* buttons-19.png in Resources */,
 				39295E1E1CCC98DF0002DD67 /* buttons-27.png in Resources */,
 				39ADF1CE1CCC085100277847 /* BoardCell.xib in Resources */,
@@ -1167,6 +1220,7 @@
 				3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */,
 				3955E6B31CCA730B00E88BDC /* EmailTextField.swift in Sources */,
 				39721E501CD140BE008C963C /* CommentCell.swift in Sources */,
+				395010C31CD3756F00E63DC4 /* NotificationNoVoteCell.swift in Sources */,
 				3955E6291CC9151500E88BDC /* ProfileTitleLabel.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
@@ -1175,6 +1229,7 @@
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
 				39721E551CD140EE008C963C /* MakeBoardCell.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
+				395010BF1CD373F300E63DC4 /* NotificationVoteCell.swift in Sources */,
 				395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */,
 				395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */,
 				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
@@ -1184,6 +1239,7 @@
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
 				3955E6AB1CCA22BF00E88BDC /* SignupFormView.swift in Sources */,
 				3955E6A91CCA22AE00E88BDC /* LoginFormView.swift in Sources */,
+				395010B91CD373C400E63DC4 /* NotificationCommentCell.swift in Sources */,
 				39ADF1D21CCC0C4D00277847 /* BoardPostButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
