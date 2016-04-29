@@ -47,6 +47,8 @@
 		39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E011CCC98DF0002DD67 /* buttons-34.png */; };
 		39295E261CCC98DF0002DD67 /* buttons-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E021CCC98DF0002DD67 /* buttons-35.png */; };
 		395010AF1CD2DBF500E63DC4 /* EntryCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */; };
+		395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B01CD3504C00E63DC4 /* HistoryViewController.swift */; };
+		395010B31CD3518200E63DC4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B21CD3518200E63DC4 /* SettingViewController.swift */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -213,6 +215,8 @@
 		39295E011CCC98DF0002DD67 /* buttons-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-34.png"; sourceTree = "<group>"; };
 		39295E021CCC98DF0002DD67 /* buttons-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-35.png"; sourceTree = "<group>"; };
 		395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCellRepresentable.swift; sourceTree = "<group>"; };
+		395010B01CD3504C00E63DC4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		395010B21CD3518200E63DC4 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -760,6 +764,8 @@
 				390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */,
 				395271081CD0926F00B6676A /* NotificationViewController.swift */,
 				3952710A1CD132B700B6676A /* CommentViewController.swift */,
+				395010B01CD3504C00E63DC4 /* HistoryViewController.swift */,
+				395010B21CD3518200E63DC4 /* SettingViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1120,6 +1126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395010B31CD3518200E63DC4 /* SettingViewController.swift in Sources */,
 				3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */,
 				396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */,
 				3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */,
@@ -1149,6 +1156,7 @@
 				395F176D1CCE15FF007DAC66 /* CommentFormCommentButton.swift in Sources */,
 				395F17781CCE1A79007DAC66 /* CommentFormAgreeView.swift in Sources */,
 				395F17841CCE7DF6007DAC66 /* MakeBoardTitleView.swift in Sources */,
+				395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */,
 				395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */,

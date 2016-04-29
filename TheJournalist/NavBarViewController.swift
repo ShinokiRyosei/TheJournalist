@@ -69,7 +69,7 @@ class NavBarViewController: UIViewController, UITextFieldDelegate, UITableViewDe
         }else if indexPath.row == 1 {
             transitionToProfile("NotificationView")
         }else if indexPath.row == 2 {
-            transitionToProfile("NotificationView")
+            transitionToProfile("HistoryView")
         }else if indexPath.row == 3 {
             transitionToProfile("NotificationView")
         }
