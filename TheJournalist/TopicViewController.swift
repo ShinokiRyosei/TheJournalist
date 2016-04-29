@@ -8,6 +8,7 @@
 
 import UIKit
 
+//ホームから遷移してTopicに応じたBoardを表示します
 class TopicViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var topicImageView: UIImageView!
@@ -23,7 +24,8 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        topicTable.registerNib(UINib(nibName: "TopicCell",bundle: nil), forCellReuseIdentifier: "TopicCell")
+        topicTable.registerNib(UINib(nibName: "TopicCell",bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "TopicCell")
+        topicTable.registerNib(UINib(nibName: "MakeBoardCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "MakeBoardCell")
         
         topicTable.delegate = self
         topicTable.dataSource = self
@@ -55,22 +57,37 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
         self.performSegueWithIdentifier("toVoteView", sender: self)
     }
     
+    func transitionToMakeBoard() {
+        self.performSegueWithIdentifier("toMakeBoard", sender: self)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.transition()
+        if indexPath.row < 3 {
+            self.transition()
+        }else {
+            self.transitionToMakeBoard()
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = topicTable.dequeueReusableCellWithIdentifier("TopicCell", forIndexPath: indexPath) as! TopicCell
-        
-        cell.voteNumberLabel.text = "124"
-        cell.commentLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
-        
-        return cell
+        if indexPath.row < 3 {
+            let cell = topicTable.dequeueReusableCellWithIdentifier("TopicCell", forIndexPath: indexPath) as! TopicCell
+            
+            cell.voteNumberLabel.text = "124"
+            cell.commentLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
+            
+            return cell
+        }else {
+            let cell = topicTable.dequeueReusableCellWithIdentifier("MakeBoardCell", forIndexPath: indexPath) as! MakeBoardCell
+            
+            return cell
+        }
     }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toVoteView" {

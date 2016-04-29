@@ -9,10 +9,12 @@
 import UIKit
 
 class MakeBoardCell: UITableViewCell {
+    
+    @IBOutlet var hiddenLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.backgroundColor = UIColor.lightGrayColor()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

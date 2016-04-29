@@ -1,18 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MakeBoardCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MakeBoardCell" rowHeight="73" id="KGk-i7-Jjw" customClass="MakeBoardCell" customModule="TheJournalist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PE7-WR-nlp">
+                        <rect key="frame" x="5" y="3" width="310" height="66.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新しいボードを作る" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RB-Rg-2zr">
+                                <rect key="frame" x="81" y="2" width="153" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1io-BY-69J"/>
+                                    <constraint firstAttribute="width" constant="153" id="hjI-FB-W7A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新しいボードを作るには10ポイント必要です" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjI-dJ-JxY">
+                                <rect key="frame" x="0.0" y="45" width="207" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9Hs-IT-Sf3"/>
+                                    <constraint firstAttribute="width" constant="207" id="wpA-S8-hDL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10ポイント不足" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vB2-CU-BhC">
+                                <rect key="frame" x="225" y="45" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="chE-YV-hSE"/>
+                                    <constraint firstAttribute="width" constant="80" id="iPw-Tb-LqK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vB2-CU-BhC" secondAttribute="trailing" constant="8" id="A5D-8n-kQY"/>
+                            <constraint firstItem="6RB-Rg-2zr" firstAttribute="centerX" secondItem="PE7-WR-nlp" secondAttribute="centerX" constant="2.5" id="CRV-Se-0RD"/>
+                            <constraint firstAttribute="bottom" secondItem="LjI-dJ-JxY" secondAttribute="bottom" constant="0.5" id="I1z-Ea-VaN"/>
+                            <constraint firstAttribute="bottom" secondItem="vB2-CU-BhC" secondAttribute="bottom" constant="0.5" id="RTY-kE-S20"/>
+                            <constraint firstAttribute="trailing" secondItem="vB2-CU-BhC" secondAttribute="trailing" constant="8" id="ZK1-LY-pMI"/>
+                            <constraint firstItem="LjI-dJ-JxY" firstAttribute="leading" secondItem="PE7-WR-nlp" secondAttribute="leading" id="cmn-oa-7c1"/>
+                            <constraint firstItem="6RB-Rg-2zr" firstAttribute="top" secondItem="PE7-WR-nlp" secondAttribute="top" constant="2" id="gkS-Ec-eu6"/>
+                            <constraint firstItem="LjI-dJ-JxY" firstAttribute="top" secondItem="6RB-Rg-2zr" secondAttribute="bottom" constant="22" id="p60-dF-ZUo"/>
+                            <constraint firstAttribute="trailing" secondItem="vB2-CU-BhC" secondAttribute="trailing" constant="5" id="xmp-aR-xcR"/>
+                            <constraint firstItem="vB2-CU-BhC" firstAttribute="top" secondItem="6RB-Rg-2zr" secondAttribute="bottom" constant="22" id="ySP-hL-DS0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="A5D-8n-kQY"/>
+                                <exclude reference="ZK1-LY-pMI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="LjI-dJ-JxY" secondAttribute="bottom" constant="-4.5" id="4q3-9g-5Uc"/>
+                    <constraint firstItem="PE7-WR-nlp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="Owc-Z0-CuZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PE7-WR-nlp" secondAttribute="bottom" constant="-5" id="eL9-zh-4sf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PE7-WR-nlp" secondAttribute="trailing" constant="-3" id="gzg-gX-GEQ"/>
+                    <constraint firstItem="6RB-Rg-2zr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="jer-7t-MOy"/>
+                    <constraint firstItem="LjI-dJ-JxY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-5" id="vuJ-s3-SON"/>
+                    <constraint firstItem="PE7-WR-nlp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="zS7-S0-XN8"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="4q3-9g-5Uc"/>
+                        <exclude reference="vuJ-s3-SON"/>
+                        <exclude reference="jer-7t-MOy"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="hiddenLabel" destination="vB2-CU-BhC" id="WhW-Cb-7tm"/>
+            </connections>
+            <point key="canvasLocation" x="445" y="459.5"/>
         </tableViewCell>
     </objects>
 </document>

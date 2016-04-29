@@ -46,6 +46,7 @@
 		39295E241CCC98DF0002DD67 /* buttons-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E001CCC98DF0002DD67 /* buttons-33.png */; };
 		39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E011CCC98DF0002DD67 /* buttons-34.png */; };
 		39295E261CCC98DF0002DD67 /* buttons-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E021CCC98DF0002DD67 /* buttons-35.png */; };
+		395010AF1CD2DBF500E63DC4 /* EntryCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -211,6 +212,7 @@
 		39295E001CCC98DF0002DD67 /* buttons-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-33.png"; sourceTree = "<group>"; };
 		39295E011CCC98DF0002DD67 /* buttons-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-34.png"; sourceTree = "<group>"; };
 		39295E021CCC98DF0002DD67 /* buttons-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-35.png"; sourceTree = "<group>"; };
+		395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCellRepresentable.swift; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -400,6 +402,15 @@
 				39C644491CCCCE5100B43C13 /* mobile-login-for-may1st-05.png */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		395010AD1CD2D28F00E63DC4 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3955E6A61CCA1F3200E88BDC /* LoginViewController.swift */,
+				395F177E1CCE3B66007DAC66 /* SignupViewController.swift */,
+			);
+			name = Authentication;
 			sourceTree = "<group>";
 		};
 		3955E6251CC8D4E300E88BDC /* Resources */ = {
@@ -737,17 +748,16 @@
 		39D85EC81CC66151002F017D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				395010AD1CD2D28F00E63DC4 /* Authentication */,
 				39D85EC21CC660F1002F017D /* HomeViewController.swift */,
 				39D85EC41CC660FB002F017D /* ProfileViewController.swift */,
 				39D85EE41CC67E86002F017D /* NavigationViewController.swift */,
 				3955E6511CC94C0E00E88BDC /* VoteViewController.swift */,
-				3955E6A61CCA1F3200E88BDC /* LoginViewController.swift */,
 				3955E7541CCA9D3500E88BDC /* TopicViewController.swift */,
 				39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */,
 				39ADF1CF1CCC086900277847 /* BoardViewController.swift */,
 				39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */,
 				390FC4E01CCCF3FE006EFEF1 /* NavBarViewController.swift */,
-				395F177E1CCE3B66007DAC66 /* SignupViewController.swift */,
 				395271081CD0926F00B6676A /* NotificationViewController.swift */,
 				3952710A1CD132B700B6676A /* CommentViewController.swift */,
 			);
@@ -769,6 +779,7 @@
 				395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */,
 				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
 				395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */,
+				395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -1127,6 +1138,7 @@
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
+				395010AF1CD2DBF500E63DC4 /* EntryCellRepresentable.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
