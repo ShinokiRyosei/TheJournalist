@@ -52,13 +52,9 @@ class NavBarViewController: UIViewController, UITextFieldDelegate, UITableViewDe
         
     }
     
-    func transitionToProfile() {
-        print("transitionToProfile")
-    }
-    
-    func  transition() {
+    func  transitionToProfile(toView: String) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let notificationView = storyboard.instantiateViewControllerWithIdentifier("notificationView")
+        let notificationView = storyboard.instantiateViewControllerWithIdentifier(toView)
         
         let navController = UINavigationController(rootViewController: notificationView)
         navController.setViewControllers([notificationView], animated: true)
@@ -66,9 +62,17 @@ class NavBarViewController: UIViewController, UITextFieldDelegate, UITableViewDe
         self.revealViewController().setFrontViewController(navController, animated: true)
         self.revealViewController().setFrontViewPosition(FrontViewPosition.Left, animated: true)
     }
-    
+
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        transition()
+        if indexPath.row == 0 {
+            transitionToProfile("HomeView")
+        }else if indexPath.row == 1 {
+            transitionToProfile("NotificationView")
+        }else if indexPath.row == 2 {
+            transitionToProfile("HistoryView")
+        }else if indexPath.row == 3 {
+            transitionToProfile("NotificationView")
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

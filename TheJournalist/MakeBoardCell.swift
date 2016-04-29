@@ -1,22 +1,20 @@
 //
-//  CommentAgreeCell.swift
+//  MakeBoardCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/21.
+//  Created by ShinokiRyosei on 2016/04/28.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class CommentAgreeCell: UITableViewCell {
+class MakeBoardCell: UITableViewCell {
     
-    @IBOutlet var profileImageView: UIImageView!
-    
-    @IBOutlet var contentLabel: UILabel!
+    @IBOutlet var hiddenLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.backgroundColor = UIColor.lightGrayColor()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

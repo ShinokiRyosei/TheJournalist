@@ -22,15 +22,10 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.setIconOnNavigatinBar()
+        self.disableRevealViewInteraction()
         self.navigationController?.interactivePopGestureRecognizer?.enabled = true
         self.setNavBarButton()
         self.layoutNavigationBar()
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +33,10 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
         // Dispose of any resources that can be recreated.
     }
     
+    func disableRevealViewInteraction() {
+        let revealviewcontroller = self.revealViewController()
+        revealviewcontroller.panGestureRecognizer().enabled = false
+    }
     
     func layoutNavigationBar()  {
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
