@@ -20,18 +20,21 @@ class ProfileEditChangePasswordButton: UIButton {
 
     override func drawRect(rect: CGRect) {
         self.setImageAndText()
+        self.setBorder()
     }
     
-    func changeCustom() {
+    func setBorder() {
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = UIColor.lightGrayColor().CGColor
     }
     
     func setImageAndText() {
-        let imageView  = UIImageView (frame: CGRectMake(2.5, 2.5, 25, 25))
+        let imageView  = UIImageView (frame: CGRectMake(2.5, 5, 20, 20))
         imageView.image = UIImage(named: "profile-edit-04.png")
         self.addSubview(imageView)
-//        self.setImage(UIImage(named: ""), forState: .Normal)
-        self.titleEdgeInsets = UIEdgeInsetsMake(2.5, 30, 1, 120)
-        self.setTitle("パスワードを変更", forState: .Normal)
-        self.titleLabel?.font = UIFont(name: "AxisStd-Regular", size: 15)
+        let label = UILabel(frame: CGRectMake(30, 0, 240, 35))
+        label.text = "パスワードを変更"
+        label.font = UIFont(name: "AxisStd-Regular", size: 15)
+        self.addSubview(label)
     }
 }

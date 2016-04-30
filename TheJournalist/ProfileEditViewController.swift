@@ -12,6 +12,8 @@ class ProfileEditViewController: NavigationViewController, UITextFieldDelegate {
     
     @IBOutlet var profileImageView: UIImageView!
     
+    @IBOutlet var usernameLabel: UILabel!
+    
     @IBOutlet var teamTextField: UITextField!
     
     @IBOutlet var positionTextField: UITextField!
@@ -31,6 +33,14 @@ class ProfileEditViewController: NavigationViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func didSelectSave() {
+        print("didSelectSave")
+    }
+    
+    @IBAction func didSelectFacebook() {
+        print("didSelectFacebook")
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

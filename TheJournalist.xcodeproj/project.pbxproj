@@ -65,6 +65,7 @@
 		395010F31CD4E13000E63DC4 /* ProfileEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */; };
 		395010F61CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */; };
 		395010F81CD4E8A900E63DC4 /* profile-edit-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F71CD4E8A900E63DC4 /* profile-edit-04.png */; };
+		395010FA1CD4F16200E63DC4 /* profile-edit-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F91CD4F16200E63DC4 /* profile-edit-03.png */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -248,6 +249,7 @@
 		395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditImageView.swift; sourceTree = "<group>"; };
 		395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditSaveButton.swift; sourceTree = "<group>"; };
 		395010F71CD4E8A900E63DC4 /* profile-edit-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-04.png"; sourceTree = "<group>"; };
+		395010F91CD4F16200E63DC4 /* profile-edit-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-03.png"; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				395010F71CD4E8A900E63DC4 /* profile-edit-04.png */,
+				395010F91CD4F16200E63DC4 /* profile-edit-03.png */,
 				39295DE01CCC98DF0002DD67 /* buttons-01.png */,
 				39295DE11CCC98DF0002DD67 /* buttons-02.png */,
 				39295DE21CCC98DF0002DD67 /* logo.png */,
@@ -1138,6 +1141,7 @@
 				39295E161CCC98DF0002DD67 /* buttons-19.png in Resources */,
 				39295E1E1CCC98DF0002DD67 /* buttons-27.png in Resources */,
 				39ADF1CE1CCC085100277847 /* BoardCell.xib in Resources */,
+				395010FA1CD4F16200E63DC4 /* profile-edit-03.png in Resources */,
 				39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */,
 				3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */,
 				395010D81CD4460300E63DC4 /* HistoryCommentCell.xib in Resources */,

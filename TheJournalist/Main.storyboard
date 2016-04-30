@@ -606,10 +606,16 @@
                                             <constraint firstAttribute="height" constant="30" id="HHR-cH-VoP"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didSelectFacebook" destination="ZD1-ns-zcL" eventType="touchUpInside" id="Uft-1Z-yb1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5h-1T-6Mk" customClass="ProfileEditChangePasswordButton" customModule="TheJournalist" customModuleProvider="target">
                                         <rect key="frame" x="8" y="137" width="584" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didSelectSave" destination="ZD1-ns-zcL" eventType="touchUpInside" id="kDk-34-ubv"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faccebookと連携することによって詳細なシンクロ率を導き出すことができます。また、the Journalist での発言をFacebook上で投稿することも可能となります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01d-4Q-hzu">
                                         <rect key="frame" x="31" y="67" width="375" height="33"/>
@@ -686,7 +692,9 @@
                             <constraint firstItem="Wgb-rS-7Cf" firstAttribute="leading" secondItem="bob-g5-RG2" secondAttribute="leadingMargin" constant="-20" id="RnN-Hr-z1m"/>
                             <constraint firstItem="uVl-5Z-r4e" firstAttribute="top" secondItem="B2L-xz-kOq" secondAttribute="bottom" constant="16" id="SrY-3c-geE"/>
                             <constraint firstItem="8JR-in-2PH" firstAttribute="centerY" secondItem="eOG-fg-J8V" secondAttribute="centerY" id="TeV-0x-nhR"/>
-                            <constraint firstItem="b3h-1X-dL3" firstAttribute="leading" secondItem="JmV-Gf-UlW" secondAttribute="trailing" constant="-17" id="VMx-8f-uoE"/>
+                            <constraint firstItem="b3h-1X-dL3" firstAttribute="leading" secondItem="JmV-Gf-UlW" secondAttribute="trailing" constant="-17" id="VMx-8f-uoE">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-10"/>
+                            </constraint>
                             <constraint firstItem="X6B-iB-fdk" firstAttribute="centerY" secondItem="Chx-hP-FcM" secondAttribute="centerY" id="VVX-jF-G4Y"/>
                             <constraint firstItem="Chx-hP-FcM" firstAttribute="leading" secondItem="X6B-iB-fdk" secondAttribute="trailing" constant="30" id="dei-4w-h4N"/>
                             <constraint firstItem="lbm-vi-zNc" firstAttribute="top" secondItem="aUm-xC-dhb" secondAttribute="bottom" id="eny-Bq-W2k"/>
@@ -733,11 +741,12 @@
                         <outlet property="positionTextField" destination="B2L-xz-kOq" id="IRE-8a-Xoa"/>
                         <outlet property="profileImageView" destination="JmV-Gf-UlW" id="cjy-fh-Q4j"/>
                         <outlet property="teamTextField" destination="Chx-hP-FcM" id="oS2-xf-ofk"/>
+                        <outlet property="usernameLabel" destination="eOG-fg-J8V" id="EYA-oY-qn1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpz-OD-bF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450.5" y="2050.5"/>
+            <point key="canvasLocation" x="1450.5" y="2055"/>
         </scene>
         <!--Board View Controller-->
         <scene sceneID="fju-pw-ifz">
