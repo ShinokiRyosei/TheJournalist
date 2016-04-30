@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zyu-VT-dxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="2045"/>
+            <point key="canvasLocation" x="782" y="2055"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="9CD-Ee-20D">
@@ -459,6 +459,24 @@
             </objects>
             <point key="canvasLocation" x="1814" y="1195"/>
         </scene>
+        <!--Profile Edit View Controller-->
+        <scene sceneID="4oX-5O-O9e">
+            <objects>
+                <viewController id="ZD1-ns-zcL" customClass="ProfileEditViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NNU-5I-hTM"/>
+                        <viewControllerLayoutGuide type="bottom" id="b8T-LI-dOx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bob-g5-RG2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xpz-OD-bF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="2048"/>
+        </scene>
         <!--Board View Controller-->
         <scene sceneID="fju-pw-ifz">
             <objects>
@@ -754,7 +772,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THP-sn-5iL">
-                                        <rect key="frame" x="76" y="8" width="516" height="21"/>
+                                        <rect key="frame" x="76" y="8" width="397" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="eDN-2d-9gO"/>
                                         </constraints>
@@ -859,9 +877,21 @@
                                             </mask>
                                         </variation>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hl2-B2-pyx">
+                                        <rect key="frame" x="481" y="8" width="111" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="111" id="TYx-su-35Z"/>
+                                            <constraint firstAttribute="height" constant="24" id="bOL-Wx-LGA"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="buttons-13.png"/>
+                                        <connections>
+                                            <segue destination="ZD1-ns-zcL" kind="show" id="Wag-43-W4i"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Hl2-B2-pyx" firstAttribute="top" secondItem="R6R-6M-Afe" secondAttribute="top" constant="8" id="06i-Hf-9Fc"/>
                                     <constraint firstItem="SJ4-dA-fzf" firstAttribute="top" secondItem="THP-sn-5iL" secondAttribute="bottom" constant="11" id="3f6-qU-ShO">
                                         <variation key="heightClass=regular-widthClass=compact" constant="8"/>
                                     </constraint>
@@ -874,6 +904,7 @@
                                     <constraint firstItem="v85-P2-cta" firstAttribute="top" secondItem="SJ4-dA-fzf" secondAttribute="bottom" constant="17" id="IDV-4p-aly"/>
                                     <constraint firstItem="L0w-zn-myH" firstAttribute="leading" secondItem="R6R-6M-Afe" secondAttribute="leading" constant="8" id="IXe-kQ-fIB"/>
                                     <constraint firstAttribute="trailing" secondItem="v85-P2-cta" secondAttribute="trailing" constant="8" id="JH2-yv-V7b"/>
+                                    <constraint firstItem="Hl2-B2-pyx" firstAttribute="leading" secondItem="THP-sn-5iL" secondAttribute="trailing" constant="8" id="Kkb-61-L2F"/>
                                     <constraint firstItem="v85-P2-cta" firstAttribute="leading" secondItem="R6R-6M-Afe" secondAttribute="leading" constant="8" id="KwY-gc-vhr"/>
                                     <constraint firstItem="aaq-oq-YDk" firstAttribute="leading" secondItem="R6R-6M-Afe" secondAttribute="leading" id="Om1-a0-aYh"/>
                                     <constraint firstAttribute="bottom" secondItem="L0w-zn-myH" secondAttribute="bottom" constant="8" id="Uz1-P6-0em"/>
@@ -883,6 +914,7 @@
                                     <constraint firstAttribute="trailing" secondItem="SJ4-dA-fzf" secondAttribute="trailing" constant="8" id="bQN-q9-A9D"/>
                                     <constraint firstAttribute="bottom" secondItem="aaq-oq-YDk" secondAttribute="bottom" id="c6j-JV-hOa"/>
                                     <constraint firstAttribute="trailing" secondItem="THP-sn-5iL" secondAttribute="trailing" constant="8" id="df8-4w-RtI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hl2-B2-pyx" secondAttribute="trailing" constant="8" id="eS3-Zg-AA1"/>
                                     <constraint firstAttribute="trailing" secondItem="aaq-oq-YDk" secondAttribute="trailing" id="hzE-t6-dWm"/>
                                     <constraint firstItem="v85-P2-cta" firstAttribute="top" secondItem="nmB-JC-sz0" secondAttribute="bottom" constant="5" id="jUE-hO-kL1">
                                         <variation key="heightClass=regular-widthClass=compact" constant="10"/>
@@ -894,6 +926,7 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="df8-4w-RtI"/>
                                         <exclude reference="5nG-j0-vuW"/>
                                         <exclude reference="Om1-a0-aYh"/>
                                         <exclude reference="hzE-t6-dWm"/>
@@ -932,7 +965,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDw-5z-y1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1174.5" y="1194.75"/>
+            <point key="canvasLocation" x="1174" y="1194"/>
         </scene>
         <!--Notification View Controller-->
         <scene sceneID="Qm7-xj-xaW">
@@ -1467,6 +1500,7 @@
         <image name="buttons-05.png" width="388" height="254"/>
         <image name="buttons-06.png" width="388" height="256"/>
         <image name="buttons-07.png" width="807" height="109"/>
+        <image name="buttons-13.png" width="226" height="41"/>
         <image name="logo" width="918" height="145"/>
         <image name="logo.png" width="310" height="74"/>
         <image name="mobile-login-for-may1st-02.png" width="311" height="311"/>
