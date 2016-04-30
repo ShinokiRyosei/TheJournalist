@@ -10,7 +10,18 @@ import UIKit
 
 class ProfileEditImageView: UIImageView {
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.changeShape()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.changeShape()
+    }
+    
     override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
         self.changeShape()
     }
     

@@ -64,6 +64,7 @@
 		395010F11CD4E0BC00E63DC4 /* ProfileEditTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F01CD4E0BC00E63DC4 /* ProfileEditTextField.swift */; };
 		395010F31CD4E13000E63DC4 /* ProfileEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */; };
 		395010F61CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */; };
+		395010F81CD4E8A900E63DC4 /* profile-edit-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F71CD4E8A900E63DC4 /* profile-edit-04.png */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -246,6 +247,7 @@
 		395010F01CD4E0BC00E63DC4 /* ProfileEditTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditTextField.swift; sourceTree = "<group>"; };
 		395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditImageView.swift; sourceTree = "<group>"; };
 		395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditSaveButton.swift; sourceTree = "<group>"; };
+		395010F71CD4E8A900E63DC4 /* profile-edit-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-04.png"; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -382,6 +384,7 @@
 		39295DDF1CCC98DF0002DD67 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				395010F71CD4E8A900E63DC4 /* profile-edit-04.png */,
 				39295DE01CCC98DF0002DD67 /* buttons-01.png */,
 				39295DE11CCC98DF0002DD67 /* buttons-02.png */,
 				39295DE21CCC98DF0002DD67 /* logo.png */,
@@ -1110,6 +1113,7 @@
 				395010D01CD4455100E63DC4 /* HistoryVoteCell.xib in Resources */,
 				39721E511CD140BE008C963C /* CommentCell.xib in Resources */,
 				395F17741CCE1A44007DAC66 /* CommentFormAgreeView.xib in Resources */,
+				395010F81CD4E8A900E63DC4 /* profile-edit-04.png in Resources */,
 				39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */,
 				39C6445B1CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png in Resources */,
 				39295E181CCC98DF0002DD67 /* buttons-21.png in Resources */,
