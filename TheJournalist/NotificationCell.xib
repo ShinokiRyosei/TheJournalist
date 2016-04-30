@@ -15,6 +15,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="111.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Llc-RY-1Ud" customClass="NotificationProfileImageView" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="V69-Dm-qYx"/>
+                            <constraint firstAttribute="height" constant="40" id="osc-Go-J3W"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nD-uJ-7DW">
                         <rect key="frame" x="56" y="8" width="256" height="40"/>
                         <constraints>
@@ -24,28 +31,22 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHT-7x-wZA">
-                        <rect key="frame" x="8" y="56" width="42" height="43"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="42" id="5zm-SX-cLD"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbl-LE-bZz">
                         <rect key="frame" x="56" y="56" width="256" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Llc-RY-1Ud" customClass="NotificationProfileImageView" customModule="TheJournalist" customModuleProvider="target">
-                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHT-7x-wZA">
+                        <rect key="frame" x="8" y="56" width="42" height="43"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="V69-Dm-qYx"/>
-                            <constraint firstAttribute="height" constant="40" id="osc-Go-J3W"/>
+                            <constraint firstAttribute="width" constant="42" id="5zm-SX-cLD"/>
+                            <constraint firstAttribute="height" constant="43" id="cga-a6-Iep"/>
                         </constraints>
-                    </imageView>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="topMargin" secondItem="3nD-uJ-7DW" secondAttribute="top" id="BaL-Af-k04"/>
@@ -71,4 +72,7 @@
             <point key="canvasLocation" x="445" y="494"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="profile_image.jpg" width="960" height="960"/>
+    </resources>
 </document>

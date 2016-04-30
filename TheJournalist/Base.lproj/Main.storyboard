@@ -960,6 +960,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dmh-Hj-Bq4"/>
+                    <connections>
+                        <outlet property="notificationTable" destination="ctw-aT-NJZ" id="3BP-lg-MMa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPz-xg-UkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

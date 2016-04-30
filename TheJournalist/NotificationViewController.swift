@@ -11,9 +11,6 @@ import UIKit
 class NotificationViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var notificationTable: UITableView!
-    
-    //Comment 1, Vote 2, NoVote 3
-    let dammyContent: [[String: Int]] = [["actionType": 1], ["actionType": 2], ["actionType": 3], ["actionType": 1]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +29,6 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
         
         notificationTable.tableFooterView = UIView()
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -43,11 +36,15 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dammyContent.count
+        return 4
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = notificationTable.dequeueReusableCellWithIdentifier("NotificationCell", forIndexPath: indexPath) as! NotificationCell
+        
+        cell.notificationTitleLabel.text = "あなたのコメントを甲斐駿介さんがクリップしました。1ポイント獲得です。"
+        cell.boardDescriptionLabel.text = "SNSという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
+        cell.syncroLabel.text = "syncro\n6%"
         
         return cell
     }
