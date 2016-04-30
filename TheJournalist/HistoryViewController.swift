@@ -21,9 +21,9 @@ class HistoryViewController: NavigationViewController, UITableViewDelegate, UITa
         historyTable.delegate = self
         historyTable.dataSource = self
         
-        historyTable.registerNib(UINib(nibName: "NotificationVoteCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationVoteCell")
-        historyTable.registerNib(UINib(nibName: "NotificationCommentCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationCommentCell")
-        historyTable.registerNib(UINib(nibName: "NotificationNoVoteCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationNoVoteCell")
+        historyTable.registerNib(UINib(nibName: "HistoryVoteCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "HistoryVoteCell")
+        historyTable.registerNib(UINib(nibName: "HistoryCommentCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "HistoryCommentCell")
+        historyTable.registerNib(UINib(nibName: "HistoryNoVoteCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "HistoryNoVoteCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,26 +37,26 @@ class HistoryViewController: NavigationViewController, UITableViewDelegate, UITa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if dammyContent[indexPath.row]["actionType"] == 1{
-            let cell = historyTable.dequeueReusableCellWithIdentifier("NotificationCommentCell", forIndexPath: indexPath) as! NotificationCommentCell
+            let cell = historyTable.dequeueReusableCellWithIdentifier("HistoryCommentCell", forIndexPath: indexPath) as! HistoryCommentCell
             
             cell.boardTitleLabel.text = "フェイスブックの寡占が進み、フェイスブックを超えるプラットフォームはもう現れない"
             cell.boardCommentLabel.text = "SNSという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブック…"
-            cell.notificationCategoryLabel.text = "ボードで賛成派のコメントを投稿しました"
+            cell.historyCategoryLabel.text = "ボードで賛成派のコメントを投稿しました"
             
             return cell
         }else if dammyContent[indexPath.row]["actionType"] == 2 {
-            let cell = historyTable.dequeueReusableCellWithIdentifier("NotificationVoteCell", forIndexPath: indexPath) as! NotificationVoteCell
+            let cell = historyTable.dequeueReusableCellWithIdentifier("HistoryVoteCell", forIndexPath: indexPath) as! HistoryVoteCell
             
             cell.boardTitleLabel.text = "佐藤研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変素晴らしいものであった"
-            cell.notificationCategoryLabel.text = "ボードで反対に投票しました"
+            cell.historyCategoryLabel.text = "ボードで反対に投票しました"
             
             return cell
             
         }else {
-            let cell = historyTable.dequeueReusableCellWithIdentifier("NotificationNoVoteCell", forIndexPath: indexPath) as! NotificationNoVoteCell
+            let cell = historyTable.dequeueReusableCellWithIdentifier("HistoryNoVoteCell", forIndexPath: indexPath) as! HistoryNoVoteCell
             
             cell.boardTitleLabel.text = "新デザインの選考はマイナンバーを用いたウェブ上での国民投票にするべきである"
-            cell.notificationCategoryLabel.text = "ボードを閲覧、未だ投票していません"
+            cell.historyCategoryLabel.text = "ボードを閲覧、未だ投票していません"
             
             return cell
         }
