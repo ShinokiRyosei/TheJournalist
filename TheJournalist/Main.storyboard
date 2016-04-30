@@ -1773,7 +1773,7 @@
         <!--Other Account View Controller-->
         <scene sceneID="QVK-Ye-IKT">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" automaticallyAdjustsScrollViewInsets="NO" id="n2v-CT-Auc" customClass="OtherAccountViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="n2v-CT-Auc" customClass="OtherAccountViewController" customModule="TheJournalist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rR6-9j-hxG"/>
                         <viewControllerLayoutGuide type="bottom" id="bRp-xM-nzj"/>

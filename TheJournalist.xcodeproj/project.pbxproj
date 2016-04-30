@@ -67,6 +67,8 @@
 		395010F81CD4E8A900E63DC4 /* profile-edit-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F71CD4E8A900E63DC4 /* profile-edit-04.png */; };
 		395010FA1CD4F16200E63DC4 /* profile-edit-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F91CD4F16200E63DC4 /* profile-edit-03.png */; };
 		395010FC1CD4F31400E63DC4 /* OtherAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010FB1CD4F31400E63DC4 /* OtherAccountViewController.swift */; };
+		395010FF1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010FD1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift */; };
+		395011001CD4F76600E63DC4 /* OtherAccountSyncroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010FE1CD4F76600E63DC4 /* OtherAccountSyncroCell.xib */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -252,6 +254,8 @@
 		395010F71CD4E8A900E63DC4 /* profile-edit-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-04.png"; sourceTree = "<group>"; };
 		395010F91CD4F16200E63DC4 /* profile-edit-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-03.png"; sourceTree = "<group>"; };
 		395010FB1CD4F31400E63DC4 /* OtherAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAccountViewController.swift; sourceTree = "<group>"; };
+		395010FD1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAccountSyncroCell.swift; sourceTree = "<group>"; };
+		395010FE1CD4F76600E63DC4 /* OtherAccountSyncroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherAccountSyncroCell.xib; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -515,6 +519,15 @@
 				395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */,
 			);
 			name = ProfileEdit;
+			sourceTree = "<group>";
+		};
+		395011011CD4F77100E63DC4 /* OtherAccount */ = {
+			isa = PBXGroup;
+			children = (
+				395010FD1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift */,
+				395010FE1CD4F76600E63DC4 /* OtherAccountSyncroCell.xib */,
+			);
+			name = OtherAccount;
 			sourceTree = "<group>";
 		};
 		3955E6251CC8D4E300E88BDC /* Resources */ = {
@@ -904,6 +917,7 @@
 				39721E521CD140C8008C963C /* CommentCell */,
 				395010C51CD3757500E63DC4 /* NotificationCell */,
 				395010D91CD4460D00E63DC4 /* History */,
+				395011011CD4F77100E63DC4 /* OtherAccount */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1112,6 +1126,7 @@
 				39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */,
 				3955E63D1CC91CCF00E88BDC /* icon-40@3x.png in Resources */,
 				39C6445A1CCCD28000B43C13 /* mobile-navbar-for-may1st-04.png in Resources */,
+				395011001CD4F76600E63DC4 /* OtherAccountSyncroCell.xib in Resources */,
 				39C644611CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png in Resources */,
 				39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */,
 				39295E0D1CCC98DF0002DD67 /* buttons-10.png in Resources */,
@@ -1267,6 +1282,7 @@
 				39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */,
 				395010F11CD4E0BC00E63DC4 /* ProfileEditTextField.swift in Sources */,
 				3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */,
+				395010FF1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift in Sources */,
 				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
 				39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */,
 				395F176D1CCE15FF007DAC66 /* CommentFormCommentButton.swift in Sources */,

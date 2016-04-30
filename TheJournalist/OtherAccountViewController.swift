@@ -22,6 +22,9 @@ class OtherAccountViewController: NavigationViewController, UITableViewDelegate,
         super.viewDidLoad()
         accountTable.delegate = self
         accountTable.dataSource = self
+        
+        accountTable.registerNib(UINib(nibName: "OtherAccountSyncroCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "OtherAccountSyncroCell")
+        accountTable.registerNib(UINib(nibName: "ProfileCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "ProfileCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +37,8 @@ class OtherAccountViewController: NavigationViewController, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = accountTable.dequeueReusableCellWithIdentifier("OtherAccountSyncroCell", forIndexPath: indexPath) as! OtherAccountSyncroCell
         
+        return cell
     }
 }
