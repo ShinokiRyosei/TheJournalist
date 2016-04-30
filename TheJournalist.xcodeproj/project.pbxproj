@@ -58,8 +58,9 @@
 		395010E01CD4B8C700E63DC4 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */; };
 		395010E21CD4BFE900E63DC4 /* NotificationProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */; };
 		395010E41CD4C5BD00E63DC4 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010E31CD4C5BD00E63DC4 /* ProfileEditViewController.swift */; };
-		395010E71CD4C93D00E63DC4 /* ProfileEditTeamTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010E61CD4C93D00E63DC4 /* ProfileEditTeamTextField.swift */; };
-		395010E91CD4C95300E63DC4 /* ProfileEditPositionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010E81CD4C95300E63DC4 /* ProfileEditPositionTextField.swift */; };
+		395010EB1CD4CAAE00E63DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395010EA1CD4CAAE00E63DC4 /* Main.storyboard */; };
+		395010ED1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */; };
+		395010EF1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -142,7 +143,6 @@
 		39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */; };
 		39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
-		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
 		39D85E9D1CC65891002F017D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E9B1CC65891002F017D /* LaunchScreen.storyboard */; };
 		39D85EA81CC65891002F017D /* TheJournalistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EA71CC65891002F017D /* TheJournalistTests.swift */; };
@@ -237,8 +237,9 @@
 		395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 		395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationProfileImageView.swift; sourceTree = "<group>"; };
 		395010E31CD4C5BD00E63DC4 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
-		395010E61CD4C93D00E63DC4 /* ProfileEditTeamTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditTeamTextField.swift; sourceTree = "<group>"; };
-		395010E81CD4C95300E63DC4 /* ProfileEditPositionTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditPositionTextField.swift; sourceTree = "<group>"; };
+		395010EA1CD4CAAE00E63DC4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditFacebookButton.swift; sourceTree = "<group>"; };
+		395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditChangePasswordButton.swift; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -322,7 +323,6 @@
 		39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormNavigationbar.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39D85E991CC65891002F017D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39D85E9C1CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39D85E9E1CC65891002F017D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -624,8 +624,6 @@
 			children = (
 				3955E6CB1CCA809000E88BDC /* Login */,
 				395010E51CD4C92200E63DC4 /* Navbar */,
-				395010E61CD4C93D00E63DC4 /* ProfileEditTeamTextField.swift */,
-				395010E81CD4C95300E63DC4 /* ProfileEditPositionTextField.swift */,
 			);
 			name = TextFields;
 			sourceTree = "<group>";
@@ -706,6 +704,8 @@
 				39ADF1B61CCB8D3700277847 /* MakeBoard */,
 				39ADF1D11CCC0C4D00277847 /* BoardPostButton.swift */,
 				395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */,
+				395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */,
+				395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -799,7 +799,7 @@
 			children = (
 				3955E6251CC8D4E300E88BDC /* Resources */,
 				39D85E921CC65891002F017D /* AppDelegate.swift */,
-				39D85E961CC65891002F017D /* Main.storyboard */,
+				395010EA1CD4CAAE00E63DC4 /* Main.storyboard */,
 				39D85E991CC65891002F017D /* Assets.xcassets */,
 				39D85E9B1CC65891002F017D /* LaunchScreen.storyboard */,
 				39D85E9E1CC65891002F017D /* Info.plist */,
@@ -1123,12 +1123,12 @@
 				39C644591CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png in Resources */,
 				39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */,
 				3955E6AD1CCA22FA00E88BDC /* LoginFormView.xib in Resources */,
+				395010EB1CD4CAAE00E63DC4 /* Main.storyboard in Resources */,
 				395F17761CCE1A56007DAC66 /* CommentFormDisagreeView.xib in Resources */,
 				39C6444A1CCCCE5100B43C13 /* mobile-login-for-may1st-02.png in Resources */,
 				39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */,
 				39295E1F1CCC98DF0002DD67 /* buttons-28.png in Resources */,
 				3955E6B11CCA232F00E88BDC /* SignupFormView.xib in Resources */,
-				39D85E981CC65891002F017D /* Main.storyboard in Resources */,
 				3955E63F1CC91CCF00E88BDC /* icon-60@3x.png in Resources */,
 				39295E041CCC98DF0002DD67 /* buttons-01.png in Resources */,
 				3955E6411CC91CCF00E88BDC /* icon-76@2x.png in Resources */,
@@ -1219,6 +1219,7 @@
 				390FC4E61CCCF4BC006EFEF1 /* NavbarCell.swift in Sources */,
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
+				395010EF1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift in Sources */,
 				395010CF1CD4455100E63DC4 /* HistoryVoteCell.swift in Sources */,
 				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
 				395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */,
@@ -1246,8 +1247,8 @@
 				395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */,
+				395010ED1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift in Sources */,
 				3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */,
-				395010E91CD4C95300E63DC4 /* ProfileEditPositionTextField.swift in Sources */,
 				3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */,
 				3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */,
 				39D85EF31CC69AA0002F017D /* ProfileImageView.swift in Sources */,
@@ -1257,7 +1258,6 @@
 				3955E6291CC9151500E88BDC /* ProfileTitleLabel.swift in Sources */,
 				395010DF1CD4B8C700E63DC4 /* NotificationCell.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
-				395010E71CD4C93D00E63DC4 /* ProfileEditTeamTextField.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
 				39ADF1D01CCC086900277847 /* BoardViewController.swift in Sources */,
 				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
@@ -1316,14 +1316,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		39D85E961CC65891002F017D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				39D85E971CC65891002F017D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		39D85E9B1CC65891002F017D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

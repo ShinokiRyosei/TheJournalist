@@ -1,5 +1,5 @@
 //
-//  ProfileEditPositionTextField.swift
+//  ProfileEditFacebookButton.swift
 //  TheJournalist
 //
 //  Created by ShinokiRyosei on 2016/04/30.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ProfileEditPositionTextField: UITextField {
-
+class ProfileEditFacebookButton: UIButton {
+    
     override func drawRect(rect: CGRect) {
         // Drawing code
     }
