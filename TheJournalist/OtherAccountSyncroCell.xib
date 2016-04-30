@@ -3,17 +3,101 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OtherAccountSyncroCell" id="KGk-i7-Jjw" customClass="OtherAccountSyncroCell" customModule="TheJournalist" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OtherAccountSyncroCell" rowHeight="95" id="KGk-i7-Jjw" customClass="OtherAccountSyncroCell" customModule="TheJournalist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSQ-0l-QNK">
+                        <rect key="frame" x="8" y="8" width="304" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="other-account-syncro-02.png" translatesAutoresizingMaskIntoConstraints="NO" id="lTs-WS-U4e">
+                        <rect key="frame" x="140" y="39" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="U1g-G2-CLz"/>
+                            <constraint firstAttribute="height" constant="40" id="Z8j-f8-39g"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなた" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmz-h1-1Pq">
+                        <rect key="frame" x="224" y="31" width="45" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="osy-3a-PNH"/>
+                            <constraint firstAttribute="width" constant="45" id="tPv-6B-Orz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="賛成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wk-Ig-RbN">
+                        <rect key="frame" x="50" y="55" width="48" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="IGY-EP-vJO"/>
+                            <constraint firstAttribute="width" constant="48" id="SE7-OL-aZS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="反対" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzi-5u-0Nb">
+                        <rect key="frame" x="222" y="55" width="48" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="4y0-Eg-GND"/>
+                            <constraint firstAttribute="height" constant="24" id="bfZ-8Q-LaE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなた" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQb-92-5c0">
+                        <rect key="frame" x="46" y="31" width="57" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OaU-n7-wOA"/>
+                            <constraint firstAttribute="width" constant="57" id="eQO-HE-brg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fzi-5u-0Nb" firstAttribute="top" secondItem="Rmz-h1-1Pq" secondAttribute="bottom" constant="3" id="5ug-O6-b8e"/>
+                    <constraint firstItem="Rmz-h1-1Pq" firstAttribute="leading" secondItem="lTs-WS-U4e" secondAttribute="trailing" constant="44" id="8LL-gg-Aje"/>
+                    <constraint firstItem="FQb-92-5c0" firstAttribute="trailing" secondItem="lTs-WS-U4e" secondAttribute="leading" constant="-37" id="FkY-gg-gD9"/>
+                    <constraint firstItem="lTs-WS-U4e" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GzL-0g-R5P"/>
+                    <constraint firstItem="FQb-92-5c0" firstAttribute="top" secondItem="rSQ-0l-QNK" secondAttribute="bottom" constant="5" id="NAy-8v-MD5"/>
+                    <constraint firstAttribute="topMargin" secondItem="rSQ-0l-QNK" secondAttribute="top" id="O5Z-EZ-Jmg"/>
+                    <constraint firstItem="9wk-Ig-RbN" firstAttribute="top" secondItem="FQb-92-5c0" secondAttribute="bottom" constant="3" id="S8S-Dn-cTF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rSQ-0l-QNK" secondAttribute="trailing" id="VAC-Uk-ZcS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9wk-Ig-RbN" secondAttribute="bottom" constant="0.5" id="drN-Fd-F69"/>
+                    <constraint firstItem="lTs-WS-U4e" firstAttribute="top" secondItem="rSQ-0l-QNK" secondAttribute="bottom" constant="13" id="gbE-Ec-Hqo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Fzi-5u-0Nb" secondAttribute="bottom" constant="0.5" id="oVP-iI-r7q"/>
+                    <constraint firstItem="Fzi-5u-0Nb" firstAttribute="centerX" secondItem="Rmz-h1-1Pq" secondAttribute="centerX" id="rGW-QA-r5K"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="rSQ-0l-QNK" secondAttribute="leading" id="s1f-Nk-g0o"/>
+                    <constraint firstItem="Rmz-h1-1Pq" firstAttribute="top" secondItem="rSQ-0l-QNK" secondAttribute="bottom" constant="5" id="w2R-O1-d4b"/>
+                    <constraint firstItem="9wk-Ig-RbN" firstAttribute="centerX" secondItem="FQb-92-5c0" secondAttribute="centerX" id="x0T-cH-RQ9"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="boardTitleLabel" destination="rSQ-0l-QNK" id="Tmv-Ou-kTV"/>
+                <outlet property="myPositionLabel" destination="Fzi-5u-0Nb" id="bcb-bh-Zmo"/>
+                <outlet property="otherPositionLabel" destination="9wk-Ig-RbN" id="a45-nZ-3pH"/>
+                <outlet property="otherUsernameLabel" destination="FQb-92-5c0" id="JoE-9E-aKR"/>
+                <outlet property="syncroImageView" destination="lTs-WS-U4e" id="wZe-MK-HT4"/>
+            </connections>
+            <point key="canvasLocation" x="445" y="485"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="other-account-syncro-02.png" width="56" height="56"/>
+    </resources>
 </document>

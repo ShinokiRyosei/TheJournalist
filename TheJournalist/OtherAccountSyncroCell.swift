@@ -9,6 +9,16 @@
 import UIKit
 
 class OtherAccountSyncroCell: UITableViewCell {
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var otherUsernameLabel: UILabel!
+    
+    @IBOutlet var myPositionLabel: UILabel!
+    
+    @IBOutlet var otherPositionLabel: UILabel!
+    
+    @IBOutlet var syncroImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

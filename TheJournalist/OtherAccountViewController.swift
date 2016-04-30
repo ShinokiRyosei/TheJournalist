@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OtherAccountViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
+class OtherAccountViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var profileImageView: UIImageView!
     
@@ -26,6 +26,15 @@ class OtherAccountViewController: NavigationViewController, UITableViewDelegate,
         accountTable.registerNib(UINib(nibName: "OtherAccountSyncroCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "OtherAccountSyncroCell")
         accountTable.registerNib(UINib(nibName: "ProfileCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "ProfileCell")
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        accountTable.estimatedRowHeight = 97
+        accountTable.rowHeight = UITableViewAutomaticDimension
+        
+        accountTable.tableFooterView = UIView()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -38,6 +47,11 @@ class OtherAccountViewController: NavigationViewController, UITableViewDelegate,
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = accountTable.dequeueReusableCellWithIdentifier("OtherAccountSyncroCell", forIndexPath: indexPath) as! OtherAccountSyncroCell
+        
+        cell.boardTitleLabel.text = "Googleが開発したAlphaGoが韓国イ・セドル五段に勝利"
+        cell.myPositionLabel.text = "賛成"
+        cell.otherPositionLabel.text = "賛成"
+        cell.syncroImageView.image = UIImage(named: "other-account-syncro-02.png")
         
         return cell
     }

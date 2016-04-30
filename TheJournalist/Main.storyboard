@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I33-YU-6gG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wsd-s8-mCa">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -491,6 +491,9 @@
                                     <constraint firstItem="GJ8-yE-30i" firstAttribute="top" secondItem="aUm-xC-dhb" secondAttribute="top" constant="9" id="THx-mv-pj4"/>
                                     <constraint firstItem="GJ8-yE-30i" firstAttribute="leading" secondItem="aUm-xC-dhb" secondAttribute="leading" constant="21" id="XYc-0z-zzr"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="40"/>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbm-vi-zNc">
                                 <rect key="frame" x="0.0" y="104" width="600" height="1.5"/>
@@ -498,6 +501,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1.5" id="8f6-X3-P8n"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="104" width="400" height="1.5"/>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xkt-7e-MGX">
                                 <rect key="frame" x="14" y="203" width="572" height="1.5"/>
@@ -505,6 +511,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1.5" id="lRS-sd-JUa"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="14" y="203" width="372" height="1.5"/>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mk-iK-Upo">
                                 <rect key="frame" x="14" y="203" width="572" height="1.5"/>
@@ -512,6 +521,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1.5" id="waQ-Fh-Vvt"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="378" width="400" height="1.5"/>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-1X-dL3">
                                 <rect key="frame" x="321" y="173" width="17" height="17"/>
@@ -520,6 +532,9 @@
                                     <constraint firstAttribute="width" constant="17" id="mgo-ow-Oof"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="buttons-01.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="228" y="173" width="17" height="17"/>
+                                </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JR-in-2PH">
                                 <rect key="frame" x="38" y="225" width="34" height="21"/>
@@ -568,6 +583,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="102" y="267" width="278" height="23"/>
+                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 組織・学部名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-xz-kOq" customClass="ProfileEditTextField" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="102" y="304" width="478" height="23"/>
@@ -576,6 +594,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="102" y="304" width="278" height="23"/>
+                                </variation>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgb-rS-7Cf">
                                 <rect key="frame" x="0.0" y="381" width="600" height="219"/>
@@ -658,6 +679,9 @@
                                     <constraint firstItem="GSH-9f-bMA" firstAttribute="leading" secondItem="Wgb-rS-7Cf" secondAttribute="leading" constant="8" id="wfC-gC-XNi"/>
                                     <constraint firstItem="y5h-1T-6Mk" firstAttribute="leading" secondItem="Wgb-rS-7Cf" secondAttribute="leading" constant="8" id="yGG-AV-jIU"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="381" width="400" height="419"/>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVl-5Z-r4e" customClass="ProfileEditSaveButton" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="260" y="343" width="81" height="30"/>
@@ -666,6 +690,9 @@
                                     <constraint firstAttribute="width" constant="81" id="Ndf-ea-awm"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="160" y="343" width="81" height="30"/>
+                                </variation>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JmV-Gf-UlW" customClass="ProfileEditImageView" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="263" y="115" width="75" height="75"/>
@@ -673,6 +700,9 @@
                                     <constraint firstAttribute="width" constant="75" id="NDe-rD-u6f"/>
                                     <constraint firstAttribute="height" constant="75" id="VBp-DY-R1q"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="163" y="115" width="75" height="75"/>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
