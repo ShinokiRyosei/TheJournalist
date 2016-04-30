@@ -1,14 +1,22 @@
 //
-//  NotificationVoteCell.swift
+//  NotificationCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/29.
+//  Created by ShinokiRyosei on 2016/04/30.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class NotificationVoteCell: UITableViewCell {
+class NotificationCell: UITableViewCell {
+    
+    @IBOutlet var profileImageView: UIImageView!
+    
+    @IBOutlet var syncroLabel: UILabel!
+    
+    @IBOutlet var notificationTitleLabel: UILabel!
+    
+    @IBOutlet var boardDescriptionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

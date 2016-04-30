@@ -46,15 +46,32 @@
 		39295E241CCC98DF0002DD67 /* buttons-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E001CCC98DF0002DD67 /* buttons-33.png */; };
 		39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E011CCC98DF0002DD67 /* buttons-34.png */; };
 		39295E261CCC98DF0002DD67 /* buttons-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E021CCC98DF0002DD67 /* buttons-35.png */; };
-		395010AF1CD2DBF500E63DC4 /* EntryCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */; };
 		395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B01CD3504C00E63DC4 /* HistoryViewController.swift */; };
 		395010B31CD3518200E63DC4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B21CD3518200E63DC4 /* SettingViewController.swift */; };
-		395010B91CD373C400E63DC4 /* NotificationCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B71CD373C400E63DC4 /* NotificationCommentCell.swift */; };
-		395010BA1CD373C400E63DC4 /* NotificationCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010B81CD373C400E63DC4 /* NotificationCommentCell.xib */; };
-		395010BF1CD373F300E63DC4 /* NotificationVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010BD1CD373F300E63DC4 /* NotificationVoteCell.swift */; };
-		395010C01CD373F300E63DC4 /* NotificationVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010BE1CD373F300E63DC4 /* NotificationVoteCell.xib */; };
-		395010C31CD3756F00E63DC4 /* NotificationNoVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010C11CD3756F00E63DC4 /* NotificationNoVoteCell.swift */; };
-		395010C41CD3756F00E63DC4 /* NotificationNoVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */; };
+		395010CF1CD4455100E63DC4 /* HistoryVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */; };
+		395010D01CD4455100E63DC4 /* HistoryVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010CE1CD4455100E63DC4 /* HistoryVoteCell.xib */; };
+		395010D31CD4456600E63DC4 /* HistoryNoVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010D11CD4456600E63DC4 /* HistoryNoVoteCell.swift */; };
+		395010D41CD4456600E63DC4 /* HistoryNoVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010D21CD4456600E63DC4 /* HistoryNoVoteCell.xib */; };
+		395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010D51CD4460300E63DC4 /* HistoryCommentCell.swift */; };
+		395010D81CD4460300E63DC4 /* HistoryCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010D61CD4460300E63DC4 /* HistoryCommentCell.xib */; };
+		395010DF1CD4B8C700E63DC4 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */; };
+		395010E01CD4B8C700E63DC4 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */; };
+		395010E21CD4BFE900E63DC4 /* NotificationProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */; };
+		395010E41CD4C5BD00E63DC4 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010E31CD4C5BD00E63DC4 /* ProfileEditViewController.swift */; };
+		395010EB1CD4CAAE00E63DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395010EA1CD4CAAE00E63DC4 /* Main.storyboard */; };
+		395010ED1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */; };
+		395010EF1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */; };
+		395010F11CD4E0BC00E63DC4 /* ProfileEditTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F01CD4E0BC00E63DC4 /* ProfileEditTextField.swift */; };
+		395010F31CD4E13000E63DC4 /* ProfileEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */; };
+		395010F61CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */; };
+		395010F81CD4E8A900E63DC4 /* profile-edit-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F71CD4E8A900E63DC4 /* profile-edit-04.png */; };
+		395010FA1CD4F16200E63DC4 /* profile-edit-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F91CD4F16200E63DC4 /* profile-edit-03.png */; };
+		395010FC1CD4F31400E63DC4 /* OtherAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010FB1CD4F31400E63DC4 /* OtherAccountViewController.swift */; };
+		395010FF1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010FD1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift */; };
+		395011001CD4F76600E63DC4 /* OtherAccountSyncroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010FE1CD4F76600E63DC4 /* OtherAccountSyncroCell.xib */; };
+		395011051CD4FA1000E63DC4 /* other-account-syncro-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 395011021CD4FA1000E63DC4 /* other-account-syncro-02.png */; };
+		395011061CD4FA1000E63DC4 /* other-account-syncro-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 395011031CD4FA1000E63DC4 /* other-account-syncro-03.png */; };
+		395011071CD4FA1000E63DC4 /* other-account-syncro-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 395011041CD4FA1000E63DC4 /* other-account-syncro-04.png */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -137,7 +154,6 @@
 		39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C644621CCCDA2F00B43C13 /* CommentFormViewController.swift */; };
 		39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */; };
 		39D85E931CC65891002F017D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85E921CC65891002F017D /* AppDelegate.swift */; };
-		39D85E981CC65891002F017D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E961CC65891002F017D /* Main.storyboard */; };
 		39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E991CC65891002F017D /* Assets.xcassets */; };
 		39D85E9D1CC65891002F017D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D85E9B1CC65891002F017D /* LaunchScreen.storyboard */; };
 		39D85EA81CC65891002F017D /* TheJournalistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EA71CC65891002F017D /* TheJournalistTests.swift */; };
@@ -220,15 +236,32 @@
 		39295E001CCC98DF0002DD67 /* buttons-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-33.png"; sourceTree = "<group>"; };
 		39295E011CCC98DF0002DD67 /* buttons-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-34.png"; sourceTree = "<group>"; };
 		39295E021CCC98DF0002DD67 /* buttons-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-35.png"; sourceTree = "<group>"; };
-		395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCellRepresentable.swift; sourceTree = "<group>"; };
 		395010B01CD3504C00E63DC4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		395010B21CD3518200E63DC4 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		395010B71CD373C400E63DC4 /* NotificationCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCommentCell.swift; sourceTree = "<group>"; };
-		395010B81CD373C400E63DC4 /* NotificationCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCommentCell.xib; sourceTree = "<group>"; };
-		395010BD1CD373F300E63DC4 /* NotificationVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVoteCell.swift; sourceTree = "<group>"; };
-		395010BE1CD373F300E63DC4 /* NotificationVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationVoteCell.xib; sourceTree = "<group>"; };
-		395010C11CD3756F00E63DC4 /* NotificationNoVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNoVoteCell.swift; sourceTree = "<group>"; };
-		395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationNoVoteCell.xib; sourceTree = "<group>"; };
+		395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVoteCell.swift; sourceTree = "<group>"; };
+		395010CE1CD4455100E63DC4 /* HistoryVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVoteCell.xib; sourceTree = "<group>"; };
+		395010D11CD4456600E63DC4 /* HistoryNoVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryNoVoteCell.swift; sourceTree = "<group>"; };
+		395010D21CD4456600E63DC4 /* HistoryNoVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryNoVoteCell.xib; sourceTree = "<group>"; };
+		395010D51CD4460300E63DC4 /* HistoryCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCommentCell.swift; sourceTree = "<group>"; };
+		395010D61CD4460300E63DC4 /* HistoryCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCommentCell.xib; sourceTree = "<group>"; };
+		395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationProfileImageView.swift; sourceTree = "<group>"; };
+		395010E31CD4C5BD00E63DC4 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		395010EA1CD4CAAE00E63DC4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditFacebookButton.swift; sourceTree = "<group>"; };
+		395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditChangePasswordButton.swift; sourceTree = "<group>"; };
+		395010F01CD4E0BC00E63DC4 /* ProfileEditTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditTextField.swift; sourceTree = "<group>"; };
+		395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditImageView.swift; sourceTree = "<group>"; };
+		395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditSaveButton.swift; sourceTree = "<group>"; };
+		395010F71CD4E8A900E63DC4 /* profile-edit-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-04.png"; sourceTree = "<group>"; };
+		395010F91CD4F16200E63DC4 /* profile-edit-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-03.png"; sourceTree = "<group>"; };
+		395010FB1CD4F31400E63DC4 /* OtherAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAccountViewController.swift; sourceTree = "<group>"; };
+		395010FD1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAccountSyncroCell.swift; sourceTree = "<group>"; };
+		395010FE1CD4F76600E63DC4 /* OtherAccountSyncroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherAccountSyncroCell.xib; sourceTree = "<group>"; };
+		395011021CD4FA1000E63DC4 /* other-account-syncro-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "other-account-syncro-02.png"; sourceTree = "<group>"; };
+		395011031CD4FA1000E63DC4 /* other-account-syncro-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "other-account-syncro-03.png"; sourceTree = "<group>"; };
+		395011041CD4FA1000E63DC4 /* other-account-syncro-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "other-account-syncro-04.png"; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -312,7 +345,6 @@
 		39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormNavigationbar.swift; sourceTree = "<group>"; };
 		39D85E8F1CC65891002F017D /* TheJournalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheJournalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D85E921CC65891002F017D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39D85E971CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39D85E991CC65891002F017D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39D85E9C1CC65891002F017D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39D85E9E1CC65891002F017D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -366,6 +398,11 @@
 		39295DDF1CCC98DF0002DD67 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				395011021CD4FA1000E63DC4 /* other-account-syncro-02.png */,
+				395011031CD4FA1000E63DC4 /* other-account-syncro-03.png */,
+				395011041CD4FA1000E63DC4 /* other-account-syncro-04.png */,
+				395010F71CD4E8A900E63DC4 /* profile-edit-04.png */,
+				395010F91CD4F16200E63DC4 /* profile-edit-03.png */,
 				39295DE01CCC98DF0002DD67 /* buttons-01.png */,
 				39295DE11CCC98DF0002DD67 /* buttons-02.png */,
 				39295DE21CCC98DF0002DD67 /* logo.png */,
@@ -432,38 +469,74 @@
 		395010C51CD3757500E63DC4 /* NotificationCell */ = {
 			isa = PBXGroup;
 			children = (
-				395010C61CD3766300E63DC4 /* Comment */,
-				395010C71CD3766D00E63DC4 /* Vote */,
-				395010C81CD3767700E63DC4 /* NoVote */,
+				395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */,
+				395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */,
 			);
 			name = NotificationCell;
 			sourceTree = "<group>";
 		};
-		395010C61CD3766300E63DC4 /* Comment */ = {
+		395010D91CD4460D00E63DC4 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				395010B71CD373C400E63DC4 /* NotificationCommentCell.swift */,
-				395010B81CD373C400E63DC4 /* NotificationCommentCell.xib */,
+				395010DA1CD4461700E63DC4 /* Vote */,
+				395010DB1CD4461F00E63DC4 /* NoVote */,
+				395010DC1CD4462700E63DC4 /* Comment */,
 			);
-			name = Comment;
+			name = History;
 			sourceTree = "<group>";
 		};
-		395010C71CD3766D00E63DC4 /* Vote */ = {
+		395010DA1CD4461700E63DC4 /* Vote */ = {
 			isa = PBXGroup;
 			children = (
-				395010BD1CD373F300E63DC4 /* NotificationVoteCell.swift */,
-				395010BE1CD373F300E63DC4 /* NotificationVoteCell.xib */,
+				395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */,
+				395010CE1CD4455100E63DC4 /* HistoryVoteCell.xib */,
 			);
 			name = Vote;
 			sourceTree = "<group>";
 		};
-		395010C81CD3767700E63DC4 /* NoVote */ = {
+		395010DB1CD4461F00E63DC4 /* NoVote */ = {
 			isa = PBXGroup;
 			children = (
-				395010C11CD3756F00E63DC4 /* NotificationNoVoteCell.swift */,
-				395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */,
+				395010D11CD4456600E63DC4 /* HistoryNoVoteCell.swift */,
+				395010D21CD4456600E63DC4 /* HistoryNoVoteCell.xib */,
 			);
 			name = NoVote;
+			sourceTree = "<group>";
+		};
+		395010DC1CD4462700E63DC4 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				395010D51CD4460300E63DC4 /* HistoryCommentCell.swift */,
+				395010D61CD4460300E63DC4 /* HistoryCommentCell.xib */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		395010E51CD4C92200E63DC4 /* Navbar */ = {
+			isa = PBXGroup;
+			children = (
+				390FC4E81CCCFA3C006EFEF1 /* NavbarSearchTextField.swift */,
+			);
+			name = Navbar;
+			sourceTree = "<group>";
+		};
+		395010F41CD4E19A00E63DC4 /* ProfileEdit */ = {
+			isa = PBXGroup;
+			children = (
+				395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */,
+				395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */,
+				395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */,
+			);
+			name = ProfileEdit;
+			sourceTree = "<group>";
+		};
+		395011011CD4F77100E63DC4 /* OtherAccount */ = {
+			isa = PBXGroup;
+			children = (
+				395010FD1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift */,
+				395010FE1CD4F76600E63DC4 /* OtherAccountSyncroCell.xib */,
+			);
+			name = OtherAccount;
 			sourceTree = "<group>";
 		};
 		3955E6251CC8D4E300E88BDC /* Resources */ = {
@@ -596,7 +669,8 @@
 			isa = PBXGroup;
 			children = (
 				3955E6CB1CCA809000E88BDC /* Login */,
-				390FC4E81CCCFA3C006EFEF1 /* NavbarSearchTextField.swift */,
+				395010E51CD4C92200E63DC4 /* Navbar */,
+				395010F01CD4E0BC00E63DC4 /* ProfileEditTextField.swift */,
 			);
 			name = TextFields;
 			sourceTree = "<group>";
@@ -677,6 +751,7 @@
 				39ADF1B61CCB8D3700277847 /* MakeBoard */,
 				39ADF1D11CCC0C4D00277847 /* BoardPostButton.swift */,
 				395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */,
+				395010F41CD4E19A00E63DC4 /* ProfileEdit */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -770,7 +845,7 @@
 			children = (
 				3955E6251CC8D4E300E88BDC /* Resources */,
 				39D85E921CC65891002F017D /* AppDelegate.swift */,
-				39D85E961CC65891002F017D /* Main.storyboard */,
+				395010EA1CD4CAAE00E63DC4 /* Main.storyboard */,
 				39D85E991CC65891002F017D /* Assets.xcassets */,
 				39D85E9B1CC65891002F017D /* LaunchScreen.storyboard */,
 				39D85E9E1CC65891002F017D /* Info.plist */,
@@ -815,6 +890,8 @@
 				3952710A1CD132B700B6676A /* CommentViewController.swift */,
 				395010B01CD3504C00E63DC4 /* HistoryViewController.swift */,
 				395010B21CD3518200E63DC4 /* SettingViewController.swift */,
+				395010E31CD4C5BD00E63DC4 /* ProfileEditViewController.swift */,
+				395010FB1CD4F31400E63DC4 /* OtherAccountViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -834,7 +911,6 @@
 				395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */,
 				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
 				395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */,
-				395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -849,6 +925,8 @@
 				395F17821CCE7DD4007DAC66 /* NavbarCell */,
 				39721E521CD140C8008C963C /* CommentCell */,
 				395010C51CD3757500E63DC4 /* NotificationCell */,
+				395010D91CD4460D00E63DC4 /* History */,
+				395011011CD4F77100E63DC4 /* OtherAccount */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -886,6 +964,8 @@
 			children = (
 				3955E65D1CC94DF200E88BDC /* Profile */,
 				3955E65C1CC94DEC00E88BDC /* Comment */,
+				395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */,
+				395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */,
 			);
 			name = ImageVIew;
 			sourceTree = "<group>";
@@ -1030,15 +1110,17 @@
 				3955E63E1CC91CCF00E88BDC /* icon-60@2x.png in Resources */,
 				39295E261CCC98DF0002DD67 /* buttons-35.png in Resources */,
 				39295E0B1CCC98DF0002DD67 /* buttons-08.png in Resources */,
+				395011071CD4FA1000E63DC4 /* other-account-syncro-04.png in Resources */,
 				39295E211CCC98DF0002DD67 /* buttons-30.png in Resources */,
 				39295E0C1CCC98DF0002DD67 /* buttons-09.png in Resources */,
+				395010D41CD4456600E63DC4 /* HistoryNoVoteCell.xib in Resources */,
 				39295E221CCC98DF0002DD67 /* buttons-31.png in Resources */,
 				39295E1D1CCC98DF0002DD67 /* buttons-26.png in Resources */,
+				395010E01CD4B8C700E63DC4 /* NotificationCell.xib in Resources */,
 				39295E071CCC98DF0002DD67 /* buttons-04.png in Resources */,
 				39295E151CCC98DF0002DD67 /* buttons-18.png in Resources */,
 				39295E0F1CCC98DF0002DD67 /* buttons-12.png in Resources */,
 				39295E121CCC98DF0002DD67 /* buttons-15.png in Resources */,
-				395010C01CD373F300E63DC4 /* NotificationVoteCell.xib in Resources */,
 				39C6445D1CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png in Resources */,
 				39721E561CD140EE008C963C /* MakeBoardCell.xib in Resources */,
 				39295E201CCC98DF0002DD67 /* buttons-29.png in Resources */,
@@ -1054,21 +1136,24 @@
 				39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */,
 				3955E63D1CC91CCF00E88BDC /* icon-40@3x.png in Resources */,
 				39C6445A1CCCD28000B43C13 /* mobile-navbar-for-may1st-04.png in Resources */,
+				395011001CD4F76600E63DC4 /* OtherAccountSyncroCell.xib in Resources */,
 				39C644611CCCD28000B43C13 /* mobile-navbar-for-may1st-11.png in Resources */,
 				39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */,
 				39295E0D1CCC98DF0002DD67 /* buttons-10.png in Resources */,
 				3955E63B1CC91CCF00E88BDC /* icon-40.png in Resources */,
+				395010D01CD4455100E63DC4 /* HistoryVoteCell.xib in Resources */,
 				39721E511CD140BE008C963C /* CommentCell.xib in Resources */,
 				395F17741CCE1A44007DAC66 /* CommentFormAgreeView.xib in Resources */,
+				395010F81CD4E8A900E63DC4 /* profile-edit-04.png in Resources */,
 				39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */,
 				39C6445B1CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png in Resources */,
-				395010BA1CD373C400E63DC4 /* NotificationCommentCell.xib in Resources */,
 				39295E181CCC98DF0002DD67 /* buttons-21.png in Resources */,
 				39295E081CCC98DF0002DD67 /* buttons-05.png in Resources */,
 				3955E6371CC91CCF00E88BDC /* Contents.json in Resources */,
 				39C644451CCCC01300B43C13 /* LogoTitle.png in Resources */,
 				39C6444D1CCCCE5100B43C13 /* mobile-login-for-may1st-05.png in Resources */,
 				3955E63A1CC91CCF00E88BDC /* icon-29@3x.png in Resources */,
+				395011051CD4FA1000E63DC4 /* other-account-syncro-02.png in Resources */,
 				3955E6241CC8D4DD00E88BDC /* olympic.jpeg in Resources */,
 				39C6445E1CCCD28000B43C13 /* mobile-navbar-for-may1st-08.png in Resources */,
 				39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */,
@@ -1082,21 +1167,23 @@
 				39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */,
 				39295E061CCC98DF0002DD67 /* logo.png in Resources */,
 				39295E131CCC98DF0002DD67 /* buttons-16.png in Resources */,
-				395010C41CD3756F00E63DC4 /* NotificationNoVoteCell.xib in Resources */,
 				39295E161CCC98DF0002DD67 /* buttons-19.png in Resources */,
 				39295E1E1CCC98DF0002DD67 /* buttons-27.png in Resources */,
 				39ADF1CE1CCC085100277847 /* BoardCell.xib in Resources */,
+				395010FA1CD4F16200E63DC4 /* profile-edit-03.png in Resources */,
 				39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */,
 				3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */,
+				395010D81CD4460300E63DC4 /* HistoryCommentCell.xib in Resources */,
 				39C644591CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png in Resources */,
 				39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */,
 				3955E6AD1CCA22FA00E88BDC /* LoginFormView.xib in Resources */,
+				395010EB1CD4CAAE00E63DC4 /* Main.storyboard in Resources */,
 				395F17761CCE1A56007DAC66 /* CommentFormDisagreeView.xib in Resources */,
 				39C6444A1CCCCE5100B43C13 /* mobile-login-for-may1st-02.png in Resources */,
 				39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */,
+				395011061CD4FA1000E63DC4 /* other-account-syncro-03.png in Resources */,
 				39295E1F1CCC98DF0002DD67 /* buttons-28.png in Resources */,
 				3955E6B11CCA232F00E88BDC /* SignupFormView.xib in Resources */,
-				39D85E981CC65891002F017D /* Main.storyboard in Resources */,
 				3955E63F1CC91CCF00E88BDC /* icon-60@3x.png in Resources */,
 				39295E041CCC98DF0002DD67 /* buttons-01.png in Resources */,
 				3955E6411CC91CCF00E88BDC /* icon-76@2x.png in Resources */,
@@ -1187,6 +1274,8 @@
 				390FC4E61CCCF4BC006EFEF1 /* NavbarCell.swift in Sources */,
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
+				395010EF1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift in Sources */,
+				395010CF1CD4455100E63DC4 /* HistoryVoteCell.swift in Sources */,
 				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
 				395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */,
 				39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */,
@@ -1194,25 +1283,29 @@
 				39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */,
 				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
+				395010E41CD4C5BD00E63DC4 /* ProfileEditViewController.swift in Sources */,
 				390FC4E91CCCFA3C006EFEF1 /* NavbarSearchTextField.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
-				395010AF1CD2DBF500E63DC4 /* EntryCellRepresentable.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */,
+				395010F11CD4E0BC00E63DC4 /* ProfileEditTextField.swift in Sources */,
 				3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */,
+				395010FF1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift in Sources */,
 				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
 				39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */,
 				395F176D1CCE15FF007DAC66 /* CommentFormCommentButton.swift in Sources */,
 				395F17781CCE1A79007DAC66 /* CommentFormAgreeView.swift in Sources */,
 				395F17841CCE7DF6007DAC66 /* MakeBoardTitleView.swift in Sources */,
 				395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */,
+				395010FC1CD4F31400E63DC4 /* OtherAccountViewController.swift in Sources */,
 				395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */,
+				395010ED1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift in Sources */,
 				3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */,
 				3955E6521CC94C0E00E88BDC /* VoteViewController.swift in Sources */,
 				3955E6221CC8D10300E88BDC /* ProfileClipButton.swift in Sources */,
@@ -1220,27 +1313,30 @@
 				3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */,
 				3955E6B31CCA730B00E88BDC /* EmailTextField.swift in Sources */,
 				39721E501CD140BE008C963C /* CommentCell.swift in Sources */,
-				395010C31CD3756F00E63DC4 /* NotificationNoVoteCell.swift in Sources */,
 				3955E6291CC9151500E88BDC /* ProfileTitleLabel.swift in Sources */,
+				395010DF1CD4B8C700E63DC4 /* NotificationCell.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
 				39ADF1D01CCC086900277847 /* BoardViewController.swift in Sources */,
+				395010F31CD4E13000E63DC4 /* ProfileEditImageView.swift in Sources */,
 				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
+				395010F61CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift in Sources */,
 				39721E551CD140EE008C963C /* MakeBoardCell.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
-				395010BF1CD373F300E63DC4 /* NotificationVoteCell.swift in Sources */,
 				395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */,
 				395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */,
 				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
 				395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
+				395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */,
 				395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
 				3955E6AB1CCA22BF00E88BDC /* SignupFormView.swift in Sources */,
+				395010E21CD4BFE900E63DC4 /* NotificationProfileImageView.swift in Sources */,
 				3955E6A91CCA22AE00E88BDC /* LoginFormView.swift in Sources */,
-				395010B91CD373C400E63DC4 /* NotificationCommentCell.swift in Sources */,
 				39ADF1D21CCC0C4D00277847 /* BoardPostButton.swift in Sources */,
+				395010D31CD4456600E63DC4 /* HistoryNoVoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1280,14 +1376,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		39D85E961CC65891002F017D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				39D85E971CC65891002F017D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		39D85E9B1CC65891002F017D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1388,6 +1476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheJournalist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.shinokin.TheJournalist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1400,6 +1489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheJournalist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.shinokin.TheJournalist;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -30,6 +30,8 @@ class NavBarViewController: UIViewController, UITextFieldDelegate, UITableViewDe
         navbatTable.dataSource = self
         
         navbatTable.registerNib(UINib(nibName: "NavbarCell", bundle: nil), forCellReuseIdentifier: "NavbarCell")
+        
+        self.revealViewController().rearViewRevealWidth = self.view.frame.width - 64
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +45,6 @@ class NavBarViewController: UIViewController, UITextFieldDelegate, UITableViewDe
         navbatTable.tableFooterView = UIView()
         
         profileLabel.addGestureRecognizer(createGestureRecognizer())
-        
     }
     
     private func createGestureRecognizer() -> UITapGestureRecognizer  {

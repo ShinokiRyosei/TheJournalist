@@ -18,9 +18,16 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
         notificationTable.delegate = self
         notificationTable.dataSource = self
         
-        notificationTable.registerNib(UINib(nibName: "NotificationVoteCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationVoteCell")
-        notificationTable.registerNib(UINib(nibName: "NotificationCommentCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationCommentCell")
-        notificationTable.registerNib(UINib(nibName: "NotificationNoVoteCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationNoVoteCell")
+        notificationTable.registerNib(UINib(nibName: "NotificationCell", bundle: nil), forCellReuseIdentifier: "NotificationCell")
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        notificationTable.estimatedRowHeight = 64
+        notificationTable.rowHeight = UITableViewAutomaticDimension
+        
+        notificationTable.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,7 +40,11 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = notificationTable.dequeueReusableCellWithIdentifier("", forIndexPath: indexPath) as! NotificationVoteCell
+        let cell = notificationTable.dequeueReusableCellWithIdentifier("NotificationCell", forIndexPath: indexPath) as! NotificationCell
+        
+        cell.notificationTitleLabel.text = "あなたのコメントを甲斐駿介さんがクリップしました。1ポイント獲得です。"
+        cell.boardDescriptionLabel.text = "SNSという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
+        cell.syncroLabel.text = "syncro\n6%"
         
         return cell
     }

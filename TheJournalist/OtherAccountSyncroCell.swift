@@ -1,14 +1,24 @@
 //
-//  NotificationCommentCell.swift
+//  OtherAccountSyncroCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/29.
+//  Created by ShinokiRyosei on 2016/04/30.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class NotificationCommentCell: UITableViewCell {
+class OtherAccountSyncroCell: UITableViewCell {
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var otherUsernameLabel: UILabel!
+    
+    @IBOutlet var myPositionLabel: UILabel!
+    
+    @IBOutlet var otherPositionLabel: UILabel!
+    
+    @IBOutlet var syncroImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
