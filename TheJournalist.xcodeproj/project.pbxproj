@@ -61,6 +61,9 @@
 		395010EB1CD4CAAE00E63DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395010EA1CD4CAAE00E63DC4 /* Main.storyboard */; };
 		395010ED1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */; };
 		395010EF1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */; };
+		395010F11CD4E0BC00E63DC4 /* ProfileEditTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F01CD4E0BC00E63DC4 /* ProfileEditTextField.swift */; };
+		395010F31CD4E13000E63DC4 /* ProfileEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */; };
+		395010F61CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -240,6 +243,9 @@
 		395010EA1CD4CAAE00E63DC4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditFacebookButton.swift; sourceTree = "<group>"; };
 		395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditChangePasswordButton.swift; sourceTree = "<group>"; };
+		395010F01CD4E0BC00E63DC4 /* ProfileEditTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditTextField.swift; sourceTree = "<group>"; };
+		395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditImageView.swift; sourceTree = "<group>"; };
+		395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditSaveButton.swift; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -493,6 +499,16 @@
 			name = Navbar;
 			sourceTree = "<group>";
 		};
+		395010F41CD4E19A00E63DC4 /* ProfileEdit */ = {
+			isa = PBXGroup;
+			children = (
+				395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */,
+				395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */,
+				395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */,
+			);
+			name = ProfileEdit;
+			sourceTree = "<group>";
+		};
 		3955E6251CC8D4E300E88BDC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,6 +640,7 @@
 			children = (
 				3955E6CB1CCA809000E88BDC /* Login */,
 				395010E51CD4C92200E63DC4 /* Navbar */,
+				395010F01CD4E0BC00E63DC4 /* ProfileEditTextField.swift */,
 			);
 			name = TextFields;
 			sourceTree = "<group>";
@@ -704,8 +721,7 @@
 				39ADF1B61CCB8D3700277847 /* MakeBoard */,
 				39ADF1D11CCC0C4D00277847 /* BoardPostButton.swift */,
 				395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */,
-				395010EC1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift */,
-				395010EE1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift */,
+				395010F41CD4E19A00E63DC4 /* ProfileEdit */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -917,6 +933,7 @@
 				3955E65D1CC94DF200E88BDC /* Profile */,
 				3955E65C1CC94DEC00E88BDC /* Comment */,
 				395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */,
+				395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */,
 			);
 			name = ImageVIew;
 			sourceTree = "<group>";
@@ -1237,6 +1254,7 @@
 				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */,
+				395010F11CD4E0BC00E63DC4 /* ProfileEditTextField.swift in Sources */,
 				3955E6561CC94D1400E88BDC /* VoteAgreeButton.swift in Sources */,
 				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
 				39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */,
@@ -1260,8 +1278,10 @@
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
 				39ADF1D01CCC086900277847 /* BoardViewController.swift in Sources */,
+				395010F31CD4E13000E63DC4 /* ProfileEditImageView.swift in Sources */,
 				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
+				395010F61CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift in Sources */,
 				39721E551CD140EE008C963C /* MakeBoardCell.swift in Sources */,
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
 				395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */,

@@ -506,7 +506,7 @@
                                     <constraint firstAttribute="height" constant="1.5" id="lRS-sd-JUa"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JmV-Gf-UlW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JmV-Gf-UlW" customClass="ProfileEditImageView" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="263" y="115" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="NDe-rD-u6f"/>
@@ -561,7 +561,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="会社・学校名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-hP-FcM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="会社・学校名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-hP-FcM" customClass="ProfileEditTextField" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="102" y="267" width="478" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="rOD-MU-8Wv"/>
@@ -569,7 +569,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="組織・学部名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-xz-kOq">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="組織・学部名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-xz-kOq" customClass="ProfileEditTextField" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="102" y="304" width="478" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="gme-rE-xxw"/>
@@ -641,7 +641,9 @@
                                     <constraint firstAttribute="trailing" secondItem="GSH-9f-bMA" secondAttribute="trailing" constant="8" id="OI6-Wo-WeG"/>
                                     <constraint firstAttribute="trailing" secondItem="y5h-1T-6Mk" secondAttribute="trailing" constant="8" id="PGO-6r-W5I"/>
                                     <constraint firstItem="y5h-1T-6Mk" firstAttribute="height" secondItem="GSH-9f-bMA" secondAttribute="height" id="SSc-8M-h37"/>
-                                    <constraint firstItem="zNm-Pj-HFn" firstAttribute="top" secondItem="Wgb-rS-7Cf" secondAttribute="top" id="dxD-nr-Pc9"/>
+                                    <constraint firstItem="zNm-Pj-HFn" firstAttribute="top" secondItem="Wgb-rS-7Cf" secondAttribute="top" id="dxD-nr-Pc9">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
                                     <constraint firstItem="y5h-1T-6Mk" firstAttribute="top" secondItem="Mqu-xT-zIu" secondAttribute="bottom" constant="8" id="i6I-nd-7p0"/>
                                     <constraint firstItem="zNm-Pj-HFn" firstAttribute="leading" secondItem="Wgb-rS-7Cf" secondAttribute="leading" constant="25" id="jha-U3-W1h"/>
                                     <constraint firstItem="01d-4Q-hzu" firstAttribute="leading" secondItem="Wgb-rS-7Cf" secondAttribute="leading" constant="31" id="ndf-Zf-1XL">
@@ -659,6 +661,13 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mk-iK-Upo">
+                                <rect key="frame" x="14" y="203" width="572" height="1.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1.5" id="waQ-Fh-Vvt"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -668,7 +677,9 @@
                             <constraint firstItem="X6B-iB-fdk" firstAttribute="top" secondItem="8JR-in-2PH" secondAttribute="bottom" constant="22" id="7dL-7F-IcJ"/>
                             <constraint firstItem="aUm-xC-dhb" firstAttribute="top" secondItem="NNU-5I-hTM" secondAttribute="bottom" id="8th-3m-vtE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wgb-rS-7Cf" secondAttribute="trailing" constant="-20" id="Cop-Kb-02x"/>
+                            <constraint firstItem="2Mk-iK-Upo" firstAttribute="top" secondItem="uVl-5Z-r4e" secondAttribute="bottom" constant="5" id="Ech-eE-Vwd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lbm-vi-zNc" secondAttribute="trailing" constant="-20" id="HjL-xz-7E4"/>
+                            <constraint firstItem="2Mk-iK-Upo" firstAttribute="leading" secondItem="bob-g5-RG2" secondAttribute="leadingMargin" constant="-20" id="Jb2-nV-OF6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aUm-xC-dhb" secondAttribute="trailing" constant="-20" id="LDD-Zn-kgG"/>
                             <constraint firstItem="JmV-Gf-UlW" firstAttribute="top" secondItem="aUm-xC-dhb" secondAttribute="bottom" constant="11" id="Qnr-bf-ALH"/>
                             <constraint firstItem="JmV-Gf-UlW" firstAttribute="centerX" secondItem="bob-g5-RG2" secondAttribute="centerX" id="Rjw-Se-K9t"/>
@@ -693,14 +704,35 @@
                             <constraint firstItem="Xkt-7e-MGX" firstAttribute="top" secondItem="JmV-Gf-UlW" secondAttribute="bottom" constant="13" id="wB0-bE-41c"/>
                             <constraint firstItem="8JR-in-2PH" firstAttribute="leading" secondItem="bob-g5-RG2" secondAttribute="leadingMargin" constant="18" id="wpc-bb-Sip"/>
                             <constraint firstItem="Wgb-rS-7Cf" firstAttribute="top" secondItem="uVl-5Z-r4e" secondAttribute="bottom" constant="8" id="xEq-Ki-Tk7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Mk-iK-Upo" secondAttribute="trailing" constant="-20" id="xcQ-U9-iou"/>
                             <constraint firstItem="lbm-vi-zNc" firstAttribute="leading" secondItem="bob-g5-RG2" secondAttribute="leadingMargin" constant="-20" id="yBv-Uq-f5t"/>
                             <constraint firstItem="Pdv-iy-Iqx" firstAttribute="leading" secondItem="bob-g5-RG2" secondAttribute="leadingMargin" constant="18" id="zer-Nx-sYa"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2Mk-iK-Upo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Ech-eE-Vwd"/>
+                                <exclude reference="Jb2-nV-OF6"/>
+                                <exclude reference="xcQ-U9-iou"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2Mk-iK-Upo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Ech-eE-Vwd"/>
+                                <include reference="Jb2-nV-OF6"/>
+                                <include reference="xcQ-U9-iou"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpz-OD-bF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1404" y="2047.5"/>
+            <point key="canvasLocation" x="1450.5" y="2050.5"/>
         </scene>
         <!--Board View Controller-->
         <scene sceneID="fju-pw-ifz">
