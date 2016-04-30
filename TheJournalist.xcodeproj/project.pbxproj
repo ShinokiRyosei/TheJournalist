@@ -66,6 +66,7 @@
 		395010F61CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */; };
 		395010F81CD4E8A900E63DC4 /* profile-edit-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F71CD4E8A900E63DC4 /* profile-edit-04.png */; };
 		395010FA1CD4F16200E63DC4 /* profile-edit-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 395010F91CD4F16200E63DC4 /* profile-edit-03.png */; };
+		395010FC1CD4F31400E63DC4 /* OtherAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010FB1CD4F31400E63DC4 /* OtherAccountViewController.swift */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -250,6 +251,7 @@
 		395010F51CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditSaveButton.swift; sourceTree = "<group>"; };
 		395010F71CD4E8A900E63DC4 /* profile-edit-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-04.png"; sourceTree = "<group>"; };
 		395010F91CD4F16200E63DC4 /* profile-edit-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-edit-03.png"; sourceTree = "<group>"; };
+		395010FB1CD4F31400E63DC4 /* OtherAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAccountViewController.swift; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -867,6 +869,7 @@
 				395010B01CD3504C00E63DC4 /* HistoryViewController.swift */,
 				395010B21CD3518200E63DC4 /* SettingViewController.swift */,
 				395010E31CD4C5BD00E63DC4 /* ProfileEditViewController.swift */,
+				395010FB1CD4F31400E63DC4 /* OtherAccountViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1270,6 +1273,7 @@
 				395F17781CCE1A79007DAC66 /* CommentFormAgreeView.swift in Sources */,
 				395F17841CCE7DF6007DAC66 /* MakeBoardTitleView.swift in Sources */,
 				395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */,
+				395010FC1CD4F31400E63DC4 /* OtherAccountViewController.swift in Sources */,
 				395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */,
@@ -1444,6 +1448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheJournalist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.shinokin.TheJournalist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1456,6 +1461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheJournalist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.shinokin.TheJournalist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
