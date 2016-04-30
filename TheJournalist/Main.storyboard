@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wsd-s8-mCa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I33-YU-6gG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -956,6 +956,17 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bns-Wg-UXf">
+                                <rect key="frame" x="127" y="366" width="346" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="346" id="1Mg-Z0-4Ea"/>
+                                    <constraint firstAttribute="height" constant="55" id="226-g0-awe"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="buttons-07.png"/>
+                                <connections>
+                                    <action selector="selectLater" destination="lod-da-Rjg" eventType="touchUpInside" id="ira-oe-SiB"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5w-sH-tdL">
                                 <rect key="frame" x="127" y="181" width="346" height="154"/>
                                 <subviews>
@@ -991,21 +1002,7 @@
                                     <constraint firstItem="ktk-PP-pxi" firstAttribute="top" secondItem="r5w-sH-tdL" secondAttribute="top" constant="8" id="ub3-WQ-jMf"/>
                                     <constraint firstAttribute="trailing" secondItem="ktk-PP-pxi" secondAttribute="trailing" constant="8" id="vhh-6m-bAb"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="245" y="254" width="20" height="20"/>
-                                </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bns-Wg-UXf">
-                                <rect key="frame" x="127" y="366" width="346" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="346" id="1Mg-Z0-4Ea"/>
-                                    <constraint firstAttribute="height" constant="55" id="226-g0-awe"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="buttons-07.png"/>
-                                <connections>
-                                    <action selector="selectLater" destination="lod-da-Rjg" eventType="touchUpInside" id="ira-oe-SiB"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

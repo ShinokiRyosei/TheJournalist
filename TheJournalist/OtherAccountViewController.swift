@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OtherAccountViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class OtherAccountViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var profileImageView: UIImageView!
     
