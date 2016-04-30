@@ -21,7 +21,6 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
         self.navigationController?.delegate = self
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         
-        print("viewWillAppear")
         self.setIconOnNavigatinBar()
         self.disableRevealViewInteraction()
         self.navigationController?.interactivePopGestureRecognizer?.enabled = true

@@ -46,7 +46,6 @@
 		39295E241CCC98DF0002DD67 /* buttons-33.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E001CCC98DF0002DD67 /* buttons-33.png */; };
 		39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E011CCC98DF0002DD67 /* buttons-34.png */; };
 		39295E261CCC98DF0002DD67 /* buttons-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 39295E021CCC98DF0002DD67 /* buttons-35.png */; };
-		395010AF1CD2DBF500E63DC4 /* EntryCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */; };
 		395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B01CD3504C00E63DC4 /* HistoryViewController.swift */; };
 		395010B31CD3518200E63DC4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B21CD3518200E63DC4 /* SettingViewController.swift */; };
 		395010B91CD373C400E63DC4 /* NotificationCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B71CD373C400E63DC4 /* NotificationCommentCell.swift */; };
@@ -55,6 +54,14 @@
 		395010C01CD373F300E63DC4 /* NotificationVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010BE1CD373F300E63DC4 /* NotificationVoteCell.xib */; };
 		395010C31CD3756F00E63DC4 /* NotificationNoVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010C11CD3756F00E63DC4 /* NotificationNoVoteCell.swift */; };
 		395010C41CD3756F00E63DC4 /* NotificationNoVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */; };
+		395010CF1CD4455100E63DC4 /* HistoryVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */; };
+		395010D01CD4455100E63DC4 /* HistoryVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010CE1CD4455100E63DC4 /* HistoryVoteCell.xib */; };
+		395010D31CD4456600E63DC4 /* HistoryNoVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010D11CD4456600E63DC4 /* HistoryNoVoteCell.swift */; };
+		395010D41CD4456600E63DC4 /* HistoryNoVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010D21CD4456600E63DC4 /* HistoryNoVoteCell.xib */; };
+		395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010D51CD4460300E63DC4 /* HistoryCommentCell.swift */; };
+		395010D81CD4460300E63DC4 /* HistoryCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010D61CD4460300E63DC4 /* HistoryCommentCell.xib */; };
+		395010DF1CD4B8C700E63DC4 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */; };
+		395010E01CD4B8C700E63DC4 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */; };
 		395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395271081CD0926F00B6676A /* NotificationViewController.swift */; };
 		3952710B1CD132B700B6676A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952710A1CD132B700B6676A /* CommentViewController.swift */; };
 		3955E6201CC8CB3B00E88BDC /* CommentClipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */; };
@@ -220,7 +227,6 @@
 		39295E001CCC98DF0002DD67 /* buttons-33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-33.png"; sourceTree = "<group>"; };
 		39295E011CCC98DF0002DD67 /* buttons-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-34.png"; sourceTree = "<group>"; };
 		39295E021CCC98DF0002DD67 /* buttons-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-35.png"; sourceTree = "<group>"; };
-		395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCellRepresentable.swift; sourceTree = "<group>"; };
 		395010B01CD3504C00E63DC4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		395010B21CD3518200E63DC4 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		395010B71CD373C400E63DC4 /* NotificationCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCommentCell.swift; sourceTree = "<group>"; };
@@ -229,6 +235,14 @@
 		395010BE1CD373F300E63DC4 /* NotificationVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationVoteCell.xib; sourceTree = "<group>"; };
 		395010C11CD3756F00E63DC4 /* NotificationNoVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNoVoteCell.swift; sourceTree = "<group>"; };
 		395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationNoVoteCell.xib; sourceTree = "<group>"; };
+		395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVoteCell.swift; sourceTree = "<group>"; };
+		395010CE1CD4455100E63DC4 /* HistoryVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVoteCell.xib; sourceTree = "<group>"; };
+		395010D11CD4456600E63DC4 /* HistoryNoVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryNoVoteCell.swift; sourceTree = "<group>"; };
+		395010D21CD4456600E63DC4 /* HistoryNoVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryNoVoteCell.xib; sourceTree = "<group>"; };
+		395010D51CD4460300E63DC4 /* HistoryCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCommentCell.swift; sourceTree = "<group>"; };
+		395010D61CD4460300E63DC4 /* HistoryCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCommentCell.xib; sourceTree = "<group>"; };
+		395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 		395271081CD0926F00B6676A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		3952710A1CD132B700B6676A /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		3955E61F1CC8CB3B00E88BDC /* CommentClipButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentClipButton.swift; sourceTree = "<group>"; };
@@ -435,6 +449,8 @@
 				395010C61CD3766300E63DC4 /* Comment */,
 				395010C71CD3766D00E63DC4 /* Vote */,
 				395010C81CD3767700E63DC4 /* NoVote */,
+				395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */,
+				395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */,
 			);
 			name = NotificationCell;
 			sourceTree = "<group>";
@@ -464,6 +480,43 @@
 				395010C21CD3756F00E63DC4 /* NotificationNoVoteCell.xib */,
 			);
 			name = NoVote;
+			sourceTree = "<group>";
+		};
+		395010D91CD4460D00E63DC4 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				395010DA1CD4461700E63DC4 /* Vote */,
+				395010DB1CD4461F00E63DC4 /* NoVote */,
+				395010DC1CD4462700E63DC4 /* Comment */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		395010DA1CD4461700E63DC4 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */,
+				395010CE1CD4455100E63DC4 /* HistoryVoteCell.xib */,
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
+		395010DB1CD4461F00E63DC4 /* NoVote */ = {
+			isa = PBXGroup;
+			children = (
+				395010D11CD4456600E63DC4 /* HistoryNoVoteCell.swift */,
+				395010D21CD4456600E63DC4 /* HistoryNoVoteCell.xib */,
+			);
+			name = NoVote;
+			sourceTree = "<group>";
+		};
+		395010DC1CD4462700E63DC4 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				395010D51CD4460300E63DC4 /* HistoryCommentCell.swift */,
+				395010D61CD4460300E63DC4 /* HistoryCommentCell.xib */,
+			);
+			name = Comment;
 			sourceTree = "<group>";
 		};
 		3955E6251CC8D4E300E88BDC /* Resources */ = {
@@ -834,7 +887,6 @@
 				395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */,
 				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
 				395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */,
-				395010AE1CD2DBF500E63DC4 /* EntryCellRepresentable.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -849,6 +901,7 @@
 				395F17821CCE7DD4007DAC66 /* NavbarCell */,
 				39721E521CD140C8008C963C /* CommentCell */,
 				395010C51CD3757500E63DC4 /* NotificationCell */,
+				395010D91CD4460D00E63DC4 /* History */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1032,8 +1085,10 @@
 				39295E0B1CCC98DF0002DD67 /* buttons-08.png in Resources */,
 				39295E211CCC98DF0002DD67 /* buttons-30.png in Resources */,
 				39295E0C1CCC98DF0002DD67 /* buttons-09.png in Resources */,
+				395010D41CD4456600E63DC4 /* HistoryNoVoteCell.xib in Resources */,
 				39295E221CCC98DF0002DD67 /* buttons-31.png in Resources */,
 				39295E1D1CCC98DF0002DD67 /* buttons-26.png in Resources */,
+				395010E01CD4B8C700E63DC4 /* NotificationCell.xib in Resources */,
 				39295E071CCC98DF0002DD67 /* buttons-04.png in Resources */,
 				39295E151CCC98DF0002DD67 /* buttons-18.png in Resources */,
 				39295E0F1CCC98DF0002DD67 /* buttons-12.png in Resources */,
@@ -1058,6 +1113,7 @@
 				39C644601CCCD28000B43C13 /* mobile-navbar-for-may1st-10.png in Resources */,
 				39295E0D1CCC98DF0002DD67 /* buttons-10.png in Resources */,
 				3955E63B1CC91CCF00E88BDC /* icon-40.png in Resources */,
+				395010D01CD4455100E63DC4 /* HistoryVoteCell.xib in Resources */,
 				39721E511CD140BE008C963C /* CommentCell.xib in Resources */,
 				395F17741CCE1A44007DAC66 /* CommentFormAgreeView.xib in Resources */,
 				39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */,
@@ -1088,6 +1144,7 @@
 				39ADF1CE1CCC085100277847 /* BoardCell.xib in Resources */,
 				39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */,
 				3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */,
+				395010D81CD4460300E63DC4 /* HistoryCommentCell.xib in Resources */,
 				39C644591CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png in Resources */,
 				39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */,
 				3955E6AD1CCA22FA00E88BDC /* LoginFormView.xib in Resources */,
@@ -1187,6 +1244,7 @@
 				390FC4E61CCCF4BC006EFEF1 /* NavbarCell.swift in Sources */,
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
+				395010CF1CD4455100E63DC4 /* HistoryVoteCell.swift in Sources */,
 				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
 				395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */,
 				39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */,
@@ -1198,7 +1256,6 @@
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
-				395010AF1CD2DBF500E63DC4 /* EntryCellRepresentable.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
 				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
@@ -1222,6 +1279,7 @@
 				39721E501CD140BE008C963C /* CommentCell.swift in Sources */,
 				395010C31CD3756F00E63DC4 /* NotificationNoVoteCell.swift in Sources */,
 				3955E6291CC9151500E88BDC /* ProfileTitleLabel.swift in Sources */,
+				395010DF1CD4B8C700E63DC4 /* NotificationCell.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
 				39ADF1D01CCC086900277847 /* BoardViewController.swift in Sources */,
@@ -1235,12 +1293,14 @@
 				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
 				395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
+				395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */,
 				395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
 				3955E6AB1CCA22BF00E88BDC /* SignupFormView.swift in Sources */,
 				3955E6A91CCA22AE00E88BDC /* LoginFormView.swift in Sources */,
 				395010B91CD373C400E63DC4 /* NotificationCommentCell.swift in Sources */,
 				39ADF1D21CCC0C4D00277847 /* BoardPostButton.swift in Sources */,
+				395010D31CD4456600E63DC4 /* HistoryNoVoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

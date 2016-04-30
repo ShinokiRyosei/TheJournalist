@@ -9,10 +9,16 @@
 import UIKit
 
 class NotificationCommentCell: UITableViewCell {
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var boardCommentLabel: UILabel!
+    
+    @IBOutlet var notificationCategoryLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.setNeedsDisplay()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

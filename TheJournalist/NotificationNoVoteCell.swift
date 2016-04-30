@@ -9,6 +9,10 @@
 import UIKit
 
 class NotificationNoVoteCell: UITableViewCell {
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var notificationCategoryLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

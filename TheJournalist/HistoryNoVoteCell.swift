@@ -1,18 +1,18 @@
 //
-//  NotificationVoteCell.swift
+//  HistoryNoVoteCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/29.
+//  Created by ShinokiRyosei on 2016/04/30.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class NotificationVoteCell: UITableViewCell {
+class HistoryNoVoteCell: UITableViewCell {
     
     @IBOutlet var boardTitleLabel: UILabel!
     
-    @IBOutlet var notificationCategoryLabel: UILabel!
+    @IBOutlet var historyCategoryLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
