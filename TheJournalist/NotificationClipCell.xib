@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationClipCell" id="KGk-i7-Jjw" customClass="NotificationClipCell" customModule="TheJournalist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TsC-SR-W7H" customClass="NotificationProfileImageView" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="L8W-QV-LRj"/>
+                            <constraint firstAttribute="width" constant="40" id="c4K-gU-9gu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTr-Ii-dFF">
+                        <rect key="frame" x="56" y="56" width="256" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUl-op-Nf5">
+                        <rect key="frame" x="56" y="8" width="256" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="9UZ-Or-gDy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyq-5F-nuX">
+                        <rect key="frame" x="8" y="84" width="42" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="1hc-x3-WL1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="syncro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4s-dm-dhR">
+                        <rect key="frame" x="8" y="56" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="j3l-7f-ipp"/>
+                            <constraint firstAttribute="width" constant="42" id="svp-VD-BYT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="yyq-5F-nuX" secondAttribute="leading" id="DJ7-C2-wkr"/>
+                    <constraint firstAttribute="topMargin" secondItem="TsC-SR-W7H" secondAttribute="top" id="DwQ-4z-2Vu"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="TsC-SR-W7H" secondAttribute="leading" id="EkM-gp-Vll"/>
+                    <constraint firstItem="uTr-Ii-dFF" firstAttribute="leading" secondItem="P4s-dm-dhR" secondAttribute="trailing" constant="6" id="LLx-Z9-Ako"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uTr-Ii-dFF" secondAttribute="trailing" id="MrZ-1a-9HS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yyq-5F-nuX" secondAttribute="bottom" constant="1.5" id="UdZ-7W-I3s"/>
+                    <constraint firstItem="P4s-dm-dhR" firstAttribute="top" secondItem="TsC-SR-W7H" secondAttribute="bottom" constant="8" id="WpH-lO-HR5"/>
+                    <constraint firstItem="yyq-5F-nuX" firstAttribute="top" secondItem="P4s-dm-dhR" secondAttribute="bottom" constant="7" id="YeC-kE-oHQ"/>
+                    <constraint firstItem="uTr-Ii-dFF" firstAttribute="top" secondItem="TsC-SR-W7H" secondAttribute="bottom" constant="8" id="a6A-je-UPr"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="uTr-Ii-dFF" secondAttribute="bottom" constant="8" id="cQa-iu-CyY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bUl-op-Nf5" secondAttribute="trailing" id="gZC-gO-0K1"/>
+                    <constraint firstItem="bUl-op-Nf5" firstAttribute="leading" secondItem="TsC-SR-W7H" secondAttribute="trailing" constant="8" id="oUp-Pg-32x"/>
+                    <constraint firstAttribute="topMargin" secondItem="bUl-op-Nf5" secondAttribute="top" id="uHy-Sq-7Lo"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="P4s-dm-dhR" secondAttribute="leading" id="xgW-WG-u3j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="boardTitleLabel" destination="bUl-op-Nf5" id="Wun-lw-9bb"/>
+                <outlet property="descriptionLabel" destination="uTr-Ii-dFF" id="6hZ-uh-qNi"/>
+                <outlet property="profileImageView" destination="TsC-SR-W7H" id="qFT-rf-mvg"/>
+                <outlet property="syncroLabel" destination="yyq-5F-nuX" id="OeR-bO-VnZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_image.jpg" width="960" height="960"/>
+    </resources>
+</document>

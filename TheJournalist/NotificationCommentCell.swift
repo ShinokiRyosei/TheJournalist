@@ -1,22 +1,22 @@
 //
-//  NotificationCell.swift
+//  NotificationCommentCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/30.
+//  Created by ShinokiRyosei on 2016/05/01.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class NotificationCell: UITableViewCell {
+class NotificationCommentCell: UITableViewCell {
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var descriptionLabel: UILabel!
     
     @IBOutlet var profileImageView: UIImageView!
     
-    @IBOutlet var syncroLabel: UILabel!
-    
-    @IBOutlet var notificationTitleLabel: UILabel!
-    
-    @IBOutlet var boardDescriptionLabel: UILabel!
+    @IBOutlet var numberOfUserLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

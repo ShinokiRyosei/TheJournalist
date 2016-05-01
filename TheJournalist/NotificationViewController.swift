@@ -11,6 +11,8 @@ import UIKit
 class NotificationViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var notificationTable: UITableView!
+    
+    let dammy: [[String: Int]] = [["action_type": 1], ["action_type": 2], ["action_type": 3], ["action_type": 1]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,9 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
         notificationTable.delegate = self
         notificationTable.dataSource = self
         
-        notificationTable.registerNib(UINib(nibName: "NotificationCell", bundle: nil), forCellReuseIdentifier: "NotificationCell")
+        notificationTable.registerNib(UINib(nibName: "NotificationVoteCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationVoteCell")
+        notificationTable.registerNib(UINib(nibName: "NotificationCommentCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationCommentCell")
+        notificationTable.registerNib(UINib(nibName: "NotificationClipCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "NotificationClipCell")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -40,12 +44,30 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = notificationTable.dequeueReusableCellWithIdentifier("NotificationCell", forIndexPath: indexPath) as! NotificationCell
-        
-        cell.notificationTitleLabel.text = "あなたのコメントを甲斐駿介さんがクリップしました。1ポイント獲得です。"
-        cell.boardDescriptionLabel.text = "SNSという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
-        cell.syncroLabel.text = "syncro\n6%"
-        
-        return cell
+        if dammy[indexPath.row]["action_type"] == 1 {
+            let cell = notificationTable.dequeueReusableCellWithIdentifier("NotificationVoteCell", forIndexPath: indexPath) as! NotificationVoteCell
+            
+            cell.boardTitleLabel.text = "あなたのボードに甲斐駿介さんが賛成に投票しました。"
+            cell.descriptionLabel.text = "SNSのという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
+            cell.syncroLabel.text = "96%"
+            
+            return cell
+        }else if dammy[indexPath.row]["action_type"] == 2 {
+            let cell = notificationTable.dequeueReusableCellWithIdentifier("NotificationCommentCell", forIndexPath: indexPath) as! NotificationCommentCell
+            
+            cell.boardTitleLabel.text = "あなたのボードに甲斐駿介さんなど5ユーザーがコメントしました。1ポイント獲得です。"
+            cell.descriptionLabel.text = "SNSのという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
+            cell.numberOfUserLabel.text = "他\n4ユーザー"
+            
+            return cell
+        }else {
+            let cell = notificationTable.dequeueReusableCellWithIdentifier("NotificationClipCell", forIndexPath: indexPath) as! NotificationClipCell
+            
+            cell.boardTitleLabel.text = "あなたのコメントを甲斐駿介さんがクリップしました。1ポイント獲得です。"
+            cell.descriptionLabel.text = "SNSのという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
+            cell.syncroLabel.text = "78%"
+            
+            return cell
+        }
     }
 }
