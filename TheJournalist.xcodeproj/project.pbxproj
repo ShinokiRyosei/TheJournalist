@@ -65,8 +65,6 @@
 		395010D41CD4456600E63DC4 /* HistoryNoVoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010D21CD4456600E63DC4 /* HistoryNoVoteCell.xib */; };
 		395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010D51CD4460300E63DC4 /* HistoryCommentCell.swift */; };
 		395010D81CD4460300E63DC4 /* HistoryCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010D61CD4460300E63DC4 /* HistoryCommentCell.xib */; };
-		395010DF1CD4B8C700E63DC4 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */; };
-		395010E01CD4B8C700E63DC4 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */; };
 		395010E21CD4BFE900E63DC4 /* NotificationProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */; };
 		395010E41CD4C5BD00E63DC4 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010E31CD4C5BD00E63DC4 /* ProfileEditViewController.swift */; };
 		395010EB1CD4CAAE00E63DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395010EA1CD4CAAE00E63DC4 /* Main.storyboard */; };
@@ -266,8 +264,6 @@
 		395010D21CD4456600E63DC4 /* HistoryNoVoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryNoVoteCell.xib; sourceTree = "<group>"; };
 		395010D51CD4460300E63DC4 /* HistoryCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCommentCell.swift; sourceTree = "<group>"; };
 		395010D61CD4460300E63DC4 /* HistoryCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCommentCell.xib; sourceTree = "<group>"; };
-		395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
-		395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 		395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationProfileImageView.swift; sourceTree = "<group>"; };
 		395010E31CD4C5BD00E63DC4 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		395010EA1CD4CAAE00E63DC4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -503,8 +499,6 @@
 		395010C51CD3757500E63DC4 /* NotificationCell */ = {
 			isa = PBXGroup;
 			children = (
-				395010DD1CD4B8C700E63DC4 /* NotificationCell.swift */,
-				395010DE1CD4B8C700E63DC4 /* NotificationCell.xib */,
 				392B1C9B1CD5EABA0038ECFC /* NotificationVoteCell.swift */,
 				392B1C9C1CD5EABA0038ECFC /* NotificationVoteCell.xib */,
 				392B1C9F1CD5EAD60038ECFC /* NotificationCommentCell.swift */,
@@ -1157,7 +1151,6 @@
 				395010D41CD4456600E63DC4 /* HistoryNoVoteCell.xib in Resources */,
 				39295E221CCC98DF0002DD67 /* buttons-31.png in Resources */,
 				39295E1D1CCC98DF0002DD67 /* buttons-26.png in Resources */,
-				395010E01CD4B8C700E63DC4 /* NotificationCell.xib in Resources */,
 				39295E071CCC98DF0002DD67 /* buttons-04.png in Resources */,
 				39295E151CCC98DF0002DD67 /* buttons-18.png in Resources */,
 				39295E0F1CCC98DF0002DD67 /* buttons-12.png in Resources */,
@@ -1365,7 +1358,6 @@
 				3955E6B31CCA730B00E88BDC /* EmailTextField.swift in Sources */,
 				39721E501CD140BE008C963C /* CommentCell.swift in Sources */,
 				3955E6291CC9151500E88BDC /* ProfileTitleLabel.swift in Sources */,
-				395010DF1CD4B8C700E63DC4 /* NotificationCell.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
 				392B1C911CD573F20038ECFC /* RevoteView.swift in Sources */,
