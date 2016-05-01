@@ -25,6 +25,15 @@ class HistoryViewController: NavigationViewController, UITableViewDelegate, UITa
         historyTable.registerNib(UINib(nibName: "HistoryCommentCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "HistoryCommentCell")
         historyTable.registerNib(UINib(nibName: "HistoryNoVoteCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "HistoryNoVoteCell")
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        historyTable.estimatedRowHeight = 67
+        historyTable.rowHeight = UITableViewAutomaticDimension
+        
+        historyTable.tableFooterView = UIView()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
