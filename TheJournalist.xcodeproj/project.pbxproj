@@ -57,6 +57,12 @@
 		392B1CA21CD5EAD60038ECFC /* NotificationCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CA01CD5EAD60038ECFC /* NotificationCommentCell.xib */; };
 		392B1CA51CD5EB620038ECFC /* NotificationClipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B1CA31CD5EB620038ECFC /* NotificationClipCell.swift */; };
 		392B1CA61CD5EB620038ECFC /* NotificationClipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CA41CD5EB620038ECFC /* NotificationClipCell.xib */; };
+		392B1CAD1CD606960038ECFC /* ProfileBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B1CAB1CD606960038ECFC /* ProfileBoardCell.swift */; };
+		392B1CAE1CD606960038ECFC /* ProfileBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CAC1CD606960038ECFC /* ProfileBoardCell.xib */; };
+		392B1CB11CD606CE0038ECFC /* ProfilePointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B1CAF1CD606CE0038ECFC /* ProfilePointCell.swift */; };
+		392B1CB21CD606CE0038ECFC /* ProfilePointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CB01CD606CE0038ECFC /* ProfilePointCell.xib */; };
+		392B1CB51CD606E60038ECFC /* ProfileClipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B1CB31CD606E60038ECFC /* ProfileClipCell.swift */; };
+		392B1CB61CD606E60038ECFC /* ProfileClipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CB41CD606E60038ECFC /* ProfileClipCell.xib */; };
 		395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B01CD3504C00E63DC4 /* HistoryViewController.swift */; };
 		395010B31CD3518200E63DC4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B21CD3518200E63DC4 /* SettingViewController.swift */; };
 		395010CF1CD4455100E63DC4 /* HistoryVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */; };
@@ -256,6 +262,12 @@
 		392B1CA01CD5EAD60038ECFC /* NotificationCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationCommentCell.xib; sourceTree = "<group>"; };
 		392B1CA31CD5EB620038ECFC /* NotificationClipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationClipCell.swift; sourceTree = "<group>"; };
 		392B1CA41CD5EB620038ECFC /* NotificationClipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationClipCell.xib; sourceTree = "<group>"; };
+		392B1CAB1CD606960038ECFC /* ProfileBoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBoardCell.swift; sourceTree = "<group>"; };
+		392B1CAC1CD606960038ECFC /* ProfileBoardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileBoardCell.xib; sourceTree = "<group>"; };
+		392B1CAF1CD606CE0038ECFC /* ProfilePointCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePointCell.swift; sourceTree = "<group>"; };
+		392B1CB01CD606CE0038ECFC /* ProfilePointCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilePointCell.xib; sourceTree = "<group>"; };
+		392B1CB31CD606E60038ECFC /* ProfileClipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileClipCell.swift; sourceTree = "<group>"; };
+		392B1CB41CD606E60038ECFC /* ProfileClipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileClipCell.xib; sourceTree = "<group>"; };
 		395010B01CD3504C00E63DC4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		395010B21CD3518200E63DC4 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVoteCell.swift; sourceTree = "<group>"; };
@@ -521,6 +533,33 @@
 				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
 			);
 			name = TextView;
+			sourceTree = "<group>";
+		};
+		392B1CB71CD606EC0038ECFC /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				392B1CAB1CD606960038ECFC /* ProfileBoardCell.swift */,
+				392B1CAC1CD606960038ECFC /* ProfileBoardCell.xib */,
+			);
+			name = Board;
+			sourceTree = "<group>";
+		};
+		392B1CB81CD606F70038ECFC /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				392B1CAF1CD606CE0038ECFC /* ProfilePointCell.swift */,
+				392B1CB01CD606CE0038ECFC /* ProfilePointCell.xib */,
+			);
+			name = Point;
+			sourceTree = "<group>";
+		};
+		392B1CB91CD606FD0038ECFC /* Clip */ = {
+			isa = PBXGroup;
+			children = (
+				392B1CB31CD606E60038ECFC /* ProfileClipCell.swift */,
+				392B1CB41CD606E60038ECFC /* ProfileClipCell.xib */,
+			);
+			name = Clip;
 			sourceTree = "<group>";
 		};
 		395010AD1CD2D28F00E63DC4 /* Authentication */ = {
@@ -1042,6 +1081,9 @@
 			children = (
 				39EF648F1CC891E90012B8EC /* ProfileCell.swift */,
 				39EF64901CC891E90012B8EC /* ProfileCell.xib */,
+				392B1CB71CD606EC0038ECFC /* Board */,
+				392B1CB81CD606F70038ECFC /* Point */,
+				392B1CB91CD606FD0038ECFC /* Clip */,
 			);
 			name = ProfileCell;
 			sourceTree = "<group>";
@@ -1185,6 +1227,7 @@
 				39295E1D1CCC98DF0002DD67 /* buttons-26.png in Resources */,
 				39295E071CCC98DF0002DD67 /* buttons-04.png in Resources */,
 				39295E151CCC98DF0002DD67 /* buttons-18.png in Resources */,
+				392B1CB61CD606E60038ECFC /* ProfileClipCell.xib in Resources */,
 				39295E0F1CCC98DF0002DD67 /* buttons-12.png in Resources */,
 				39295E121CCC98DF0002DD67 /* buttons-15.png in Resources */,
 				39C6445D1CCCD28000B43C13 /* mobile-navbar-for-may1st-07.png in Resources */,
@@ -1218,6 +1261,7 @@
 				392B1C981CD577930038ECFC /* revote-03.png in Resources */,
 				392B1C971CD577930038ECFC /* revote-02.png in Resources */,
 				39295E181CCC98DF0002DD67 /* buttons-21.png in Resources */,
+				392B1CB21CD606CE0038ECFC /* ProfilePointCell.xib in Resources */,
 				39295E081CCC98DF0002DD67 /* buttons-05.png in Resources */,
 				3955E6371CC91CCF00E88BDC /* Contents.json in Resources */,
 				39C644451CCCC01300B43C13 /* LogoTitle.png in Resources */,
@@ -1232,6 +1276,7 @@
 				39295E091CCC98DF0002DD67 /* buttons-06.png in Resources */,
 				3955E6381CC91CCF00E88BDC /* icon-29.png in Resources */,
 				390FC4E71CCCF4BC006EFEF1 /* NavbarCell.xib in Resources */,
+				392B1CAE1CD606960038ECFC /* ProfileBoardCell.xib in Resources */,
 				39C6445C1CCCD28000B43C13 /* mobile-navbar-for-may1st-06.png in Resources */,
 				39295E1A1CCC98DF0002DD67 /* buttons-23.png in Resources */,
 				392B1C9E1CD5EABA0038ECFC /* NotificationVoteCell.xib in Resources */,
@@ -1355,6 +1400,7 @@
 				39C644651CCCDB3300B43C13 /* CommentFormNavigationbar.swift in Sources */,
 				395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */,
 				39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */,
+				392B1CB11CD606CE0038ECFC /* ProfilePointCell.swift in Sources */,
 				395F17651CCE0FDA007DAC66 /* CommentFormDismissButton.swift in Sources */,
 				39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */,
 				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
@@ -1402,9 +1448,11 @@
 				39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */,
 				395F177A1CCE1A8E007DAC66 /* CommentFormDisagreeView.swift in Sources */,
 				395271091CD0926F00B6676A /* NotificationViewController.swift in Sources */,
+				392B1CAD1CD606960038ECFC /* ProfileBoardCell.swift in Sources */,
 				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
 				395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */,
 				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
+				392B1CB51CD606E60038ECFC /* ProfileClipCell.swift in Sources */,
 				395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */,
 				395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
