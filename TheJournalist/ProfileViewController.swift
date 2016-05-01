@@ -17,6 +17,9 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
     @IBOutlet var usernameLabel: UILabel!
     
     @IBOutlet var descriptionLabel: UILabel!
+    
+    //どのTableViewを表示するか　0=ポイント、1=クリップ、2=投票ボード
+    var selectedBoard = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +27,9 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
         profileTable.delegate = self
         profileTable.dataSource = self
         
-        profileTable.registerNib(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
+        profileTable.registerNib(UINib(nibName: "ProfileBoardCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "ProfileBoardCell")
+        profileTable.registerNib(UINib(nibName: "ProfileClipCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "ProfileClipCell")
+        profileTable.registerNib(UINib(nibName: "ProfilePointCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "ProfilePointCell")
         
     }
     
@@ -44,6 +49,18 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didSelectPoint() {
+        
+    }
+    
+    @IBAction func didSelectClip() {
+        
+    }
+    
+    @IBAction func didSelectBoard() {
+        
+    }
+    
     //後で消す
     func dammy() {
         profileImageView.image = UIImage(named: "profile_image.jpg")
@@ -51,25 +68,27 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
         descriptionLabel.text = "清掃員 at The Journalist\nStudies Computer Science at ブラウン大学"
     }
     
-    func transition() {
-        self.performSegueWithIdentifier("toHomeView", sender: self)
-    }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
-        
-        cell.titleLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変素晴らしいものであった"
-        cell.contentLabel.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント"
-        cell.categoryLabel.text = "甲斐さんがコメント"
-        
-        return cell
+        if selectedBoard == 0 {
+            let cell = profileTable.dequeueReusableCellWithIdentifier("ProfilePointCell", forIndexPath: indexPath) as! ProfilePointCell
+            
+            return cell
+        }else if selectedBoard == 1 {
+            let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileClipCell", forIndexPath: indexPath) as! ProfileClipCell
+            
+            return cell
+        }else {
+            let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileBoardCell", forIndexPath: indexPath) as! ProfileBoardCell
+            
+            return cell
+        }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.transition()
+    private func selectTableContent() {
+        
     }
 }
