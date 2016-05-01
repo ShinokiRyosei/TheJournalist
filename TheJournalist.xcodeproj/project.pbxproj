@@ -487,6 +487,33 @@
 			name = RevoteView;
 			sourceTree = "<group>";
 		};
+		392B1CA71CD5F9C40038ECFC /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				392B1C9B1CD5EABA0038ECFC /* NotificationVoteCell.swift */,
+				392B1C9C1CD5EABA0038ECFC /* NotificationVoteCell.xib */,
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
+		392B1CA81CD5F9CC0038ECFC /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				392B1C9F1CD5EAD60038ECFC /* NotificationCommentCell.swift */,
+				392B1CA01CD5EAD60038ECFC /* NotificationCommentCell.xib */,
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		392B1CA91CD5F9D30038ECFC /* Clip */ = {
+			isa = PBXGroup;
+			children = (
+				392B1CA31CD5EB620038ECFC /* NotificationClipCell.swift */,
+				392B1CA41CD5EB620038ECFC /* NotificationClipCell.xib */,
+			);
+			name = Clip;
+			sourceTree = "<group>";
+		};
 		395010AD1CD2D28F00E63DC4 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,12 +526,9 @@
 		395010C51CD3757500E63DC4 /* NotificationCell */ = {
 			isa = PBXGroup;
 			children = (
-				392B1C9B1CD5EABA0038ECFC /* NotificationVoteCell.swift */,
-				392B1C9C1CD5EABA0038ECFC /* NotificationVoteCell.xib */,
-				392B1C9F1CD5EAD60038ECFC /* NotificationCommentCell.swift */,
-				392B1CA01CD5EAD60038ECFC /* NotificationCommentCell.xib */,
-				392B1CA31CD5EB620038ECFC /* NotificationClipCell.swift */,
-				392B1CA41CD5EB620038ECFC /* NotificationClipCell.xib */,
+				392B1CA71CD5F9C40038ECFC /* Vote */,
+				392B1CA81CD5F9CC0038ECFC /* Comment */,
+				392B1CA91CD5F9D30038ECFC /* Clip */,
 			);
 			name = NotificationCell;
 			sourceTree = "<group>";

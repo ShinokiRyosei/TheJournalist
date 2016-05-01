@@ -83,8 +83,8 @@
             <connections>
                 <outlet property="boardTitleLabel" destination="VFZ-Oa-Fu5" id="zQy-V2-AH1"/>
                 <outlet property="descriptionLabel" destination="cUk-BZ-AU8" id="oZf-IM-pM7"/>
-                <outlet property="numberOfUserLabel" destination="38v-YV-2Qh" id="7W9-H5-CkX"/>
                 <outlet property="profileImageView" destination="j0z-3T-SUC" id="1YG-Xx-pUc"/>
+                <outlet property="syncroLabel" destination="38v-YV-2Qh" id="kIz-zb-JdE"/>
             </connections>
         </tableViewCell>
     </objects>

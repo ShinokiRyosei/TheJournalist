@@ -16,7 +16,7 @@ class NotificationVoteCell: UITableViewCell {
     
     @IBOutlet var profileImageView: UIImageView!
     
-    @IBOutlet var numberOfUserLabel: UILabel!
+    @IBOutlet var syncroLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
