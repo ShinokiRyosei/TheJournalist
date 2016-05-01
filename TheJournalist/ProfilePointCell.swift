@@ -9,6 +9,12 @@
 import UIKit
 
 class ProfilePointCell: UITableViewCell {
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    @IBOutlet var pointLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

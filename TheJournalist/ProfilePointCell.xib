@@ -1,18 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProfilePointCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfilePointCell" id="KGk-i7-Jjw" customClass="ProfilePointCell" customModule="TheJournalist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCf-Cb-Zaw" customClass="ProfileTitleLabel" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="15" y="8" width="290" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5v-TB-mej">
+                        <rect key="frame" x="8" y="37" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0L-sQ-WQE">
+                        <rect key="frame" x="237" y="66" width="75" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="NGG-Kn-fHd"/>
+                            <constraint firstAttribute="width" constant="75" id="rmn-sp-7Oj"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="buttons-08.png"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cj-Ed-wwc">
+                        <rect key="frame" x="0.0" y="0.0" width="3" height="97.5"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="uhi-gE-ZvG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpz-Sm-4WX" customClass="ProfileCategoryLabel" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="8" y="66" width="221" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="n7f-bs-v3N"/>
+                            <constraint firstAttribute="width" constant="221" id="suF-DV-OyE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J5v-TB-mej" firstAttribute="leading" secondItem="6Cj-Ed-wwc" secondAttribute="trailing" constant="5" id="6Xv-rl-09a"/>
+                    <constraint firstItem="J5v-TB-mej" firstAttribute="top" secondItem="iCf-Cb-Zaw" secondAttribute="bottom" constant="8" id="75E-x9-3wf"/>
+                    <constraint firstItem="k0L-sQ-WQE" firstAttribute="top" secondItem="J5v-TB-mej" secondAttribute="bottom" constant="8" id="7eU-39-32m"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="k0L-sQ-WQE" secondAttribute="bottom" constant="0.5" id="8Xj-ed-oOE"/>
+                    <constraint firstItem="rpz-Sm-4WX" firstAttribute="leading" secondItem="6Cj-Ed-wwc" secondAttribute="trailing" constant="5" id="ChF-Sg-Vju"/>
+                    <constraint firstItem="6Cj-Ed-wwc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="JDF-LZ-eyk"/>
+                    <constraint firstAttribute="topMargin" secondItem="iCf-Cb-Zaw" secondAttribute="top" id="NNt-ay-RUA"/>
+                    <constraint firstItem="6Cj-Ed-wwc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="VBF-W2-DUI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="k0L-sQ-WQE" secondAttribute="trailing" id="Xob-C8-oki"/>
+                    <constraint firstItem="iCf-Cb-Zaw" firstAttribute="leading" secondItem="6Cj-Ed-wwc" secondAttribute="trailing" constant="12" id="eux-Ge-9Dk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6Cj-Ed-wwc" secondAttribute="bottom" constant="-10" id="fEY-P7-cLK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iCf-Cb-Zaw" secondAttribute="trailing" constant="7" id="gYV-qx-i2A"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="J5v-TB-mej" secondAttribute="trailing" id="hfc-nB-Zsp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rpz-Sm-4WX" secondAttribute="bottom" constant="0.5" id="o8d-YS-xcZ"/>
+                    <constraint firstItem="rpz-Sm-4WX" firstAttribute="top" secondItem="J5v-TB-mej" secondAttribute="bottom" constant="8" id="uSs-40-Rhb"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="boardTitleLabel" destination="iCf-Cb-Zaw" id="vdr-dl-YzQ"/>
+                <outlet property="descriptionLabel" destination="J5v-TB-mej" id="nun-Mu-FC2"/>
+                <outlet property="pointLabel" destination="rpz-Sm-4WX" id="pOm-Qn-vvI"/>
+            </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="buttons-08.png" width="235" height="65"/>
+    </resources>
 </document>

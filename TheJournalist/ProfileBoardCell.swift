@@ -9,6 +9,10 @@
 import UIKit
 
 class ProfileBoardCell: UITableViewCell {
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var positionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
