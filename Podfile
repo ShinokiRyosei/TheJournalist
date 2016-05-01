@@ -6,6 +6,7 @@ use_frameworks!
 target 'TheJournalist' do
 pod 'FontAwesome.swift' 
 pod 'SWRevealViewController'
+pod 'Alamofire'
 end
 
 target 'TheJournalistTests' do
