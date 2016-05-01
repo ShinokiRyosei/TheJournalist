@@ -514,6 +514,15 @@
 			name = Clip;
 			sourceTree = "<group>";
 		};
+		392B1CAA1CD5FDF50038ECFC /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */,
+				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
+			);
+			name = TextView;
+			sourceTree = "<group>";
+		};
 		395010AD1CD2D28F00E63DC4 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,8 +975,7 @@
 				39C644641CCCDB3300B43C13 /* CommentFormNavigationbar.swift */,
 				395F176E1CCE1904007DAC66 /* BarButtonItem */,
 				395F177D1CCE1AB6007DAC66 /* CommentFormPosition */,
-				395F17831CCE7DF6007DAC66 /* MakeBoardTitleView.swift */,
-				395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */,
+				392B1CAA1CD5FDF50038ECFC /* TextView */,
 				395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */,
 				392B1C941CD574220038ECFC /* RevoteView */,
 			);
