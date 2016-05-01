@@ -33,9 +33,9 @@ class CommentFormNavigationbar: UINavigationBar {
     }
     
     private func setLogo() {
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 60, height: 20))
-        imageView.image = UIImage(named: "close")
-        self.topItem?.titleView = imageView
+        let imageView = UIImageView(frame: CGRect(x: self.layer.frame.size.width/2, y: 0, width: 60, height: 20))
+        imageView.image = UIImage(named: "navbar-09.png")
+        self.addSubview(imageView)
     }
     
     

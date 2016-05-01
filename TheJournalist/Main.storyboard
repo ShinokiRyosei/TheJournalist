@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -471,7 +472,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUm-xC-dhb">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUm-xC-dhb">
                                 <rect key="frame" x="0.0" y="64" width="600" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プロフィール" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ8-yE-30i">
@@ -495,7 +496,7 @@
                                     <rect key="frame" x="0.0" y="64" width="400" height="40"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbm-vi-zNc">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbm-vi-zNc">
                                 <rect key="frame" x="0.0" y="104" width="600" height="1.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -505,7 +506,7 @@
                                     <rect key="frame" x="0.0" y="104" width="400" height="1.5"/>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xkt-7e-MGX">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xkt-7e-MGX">
                                 <rect key="frame" x="14" y="203" width="572" height="1.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -521,11 +522,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1.5" id="waQ-Fh-Vvt"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="378" width="400" height="1.5"/>
-                                </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-1X-dL3">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-1X-dL3">
                                 <rect key="frame" x="321" y="173" width="17" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="Yhd-Sh-cSL"/>
@@ -536,7 +534,7 @@
                                     <rect key="frame" x="228" y="173" width="17" height="17"/>
                                 </variation>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JR-in-2PH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JR-in-2PH">
                                 <rect key="frame" x="38" y="225" width="34" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="34" id="LRd-iI-zga"/>
@@ -546,7 +544,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="組織" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6B-iB-fdk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="組織" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6B-iB-fdk">
                                 <rect key="frame" x="38" y="268" width="34" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="34" id="Fxl-sC-fXT"/>
@@ -556,7 +554,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="役職" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdv-iy-Iqx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="役職" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdv-iy-Iqx">
                                 <rect key="frame" x="38" y="305" width="34" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="G2c-hS-unO"/>
@@ -566,7 +564,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小谷　篤信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOG-fg-J8V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="小谷　篤信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOG-fg-J8V">
                                 <rect key="frame" x="102" y="225" width="85" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="d3d-Mc-gqd"/>
@@ -576,7 +574,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 会社・学校名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-hP-FcM" customClass="ProfileEditTextField" customModule="TheJournalist" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 会社・学校名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-hP-FcM" customClass="ProfileEditTextField" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="102" y="267" width="478" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="rOD-MU-8Wv"/>
@@ -587,7 +585,7 @@
                                     <rect key="frame" x="102" y="267" width="278" height="23"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 組織・学部名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-xz-kOq" customClass="ProfileEditTextField" customModule="TheJournalist" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 組織・学部名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2L-xz-kOq" customClass="ProfileEditTextField" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="102" y="304" width="478" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="gme-rE-xxw"/>
@@ -598,7 +596,7 @@
                                     <rect key="frame" x="102" y="304" width="278" height="23"/>
                                 </variation>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgb-rS-7Cf">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wgb-rS-7Cf">
                                 <rect key="frame" x="0.0" y="381" width="600" height="219"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ソーシャル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNm-Pj-HFn">
@@ -638,7 +636,7 @@
                                             <action selector="didSelectSave" destination="ZD1-ns-zcL" eventType="touchUpInside" id="kDk-34-ubv"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faccebookと連携することによって詳細なシンクロ率を導き出すことができます。また、the Journalist での発言をFacebook上で投稿することも可能となります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01d-4Q-hzu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Faccebookと連携することによって詳細なシンクロ率を導き出すことができます。また、the Journalist での発言をFacebook上で投稿することも可能となります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01d-4Q-hzu">
                                         <rect key="frame" x="31" y="67" width="375" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="380" id="9IK-Y2-TjB"/>
@@ -683,7 +681,7 @@
                                     <rect key="frame" x="0.0" y="381" width="400" height="419"/>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVl-5Z-r4e" customClass="ProfileEditSaveButton" customModule="TheJournalist" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVl-5Z-r4e" customClass="ProfileEditSaveButton" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="260" y="343" width="81" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Dp6-Z6-GxZ"/>
@@ -694,7 +692,7 @@
                                     <rect key="frame" x="160" y="343" width="81" height="30"/>
                                 </variation>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JmV-Gf-UlW" customClass="ProfileEditImageView" customModule="TheJournalist" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JmV-Gf-UlW" customClass="ProfileEditImageView" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="263" y="115" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="NDe-rD-u6f"/>
@@ -839,6 +837,7 @@
                     <connections>
                         <outlet property="boardTitleLabel" destination="7wA-qR-4V4" id="eys-Oy-Tvz"/>
                         <outlet property="commentTable" destination="Zg1-tt-UHW" id="CpQ-QM-nLQ"/>
+                        <outlet property="tableBottomLayout" destination="eE9-AT-1L0" id="KgA-pS-eGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtw-bB-4bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1055,7 +1054,7 @@
                                             <rect key="frame" x="0.0" y="341" width="400" height="3"/>
                                         </variation>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THP-sn-5iL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THP-sn-5iL">
                                         <rect key="frame" x="76" y="8" width="397" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="eDN-2d-9gO"/>
@@ -1221,12 +1220,12 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="df8-4w-RtI"/>
-                                        <exclude reference="6Qc-IU-gmz"/>
-                                        <exclude reference="Zrb-ja-TkA"/>
-                                        <exclude reference="oCt-Hb-aWW"/>
                                         <exclude reference="5nG-j0-vuW"/>
                                         <exclude reference="Om1-a0-aYh"/>
                                         <exclude reference="hzE-t6-dWm"/>
+                                        <exclude reference="6Qc-IU-gmz"/>
+                                        <exclude reference="Zrb-ja-TkA"/>
+                                        <exclude reference="oCt-Hb-aWW"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -1235,11 +1234,11 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="jUE-hO-kL1"/>
+                                        <include reference="Om1-a0-aYh"/>
+                                        <include reference="hzE-t6-dWm"/>
                                         <include reference="6Qc-IU-gmz"/>
                                         <include reference="Zrb-ja-TkA"/>
                                         <include reference="oCt-Hb-aWW"/>
-                                        <include reference="Om1-a0-aYh"/>
-                                        <include reference="hzE-t6-dWm"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1834,7 +1833,7 @@
                                             </constraint>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1H-4h-dah">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1H-4h-dah">
                                         <rect key="frame" x="76" y="8" width="397" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="HaT-fe-zvm"/>
@@ -1983,8 +1982,8 @@
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="hUG-JW-StF"/>
                                         <exclude reference="Vjo-tg-grL"/>
+                                        <include reference="hUG-JW-StF"/>
                                         <include reference="mgf-RD-89f"/>
                                         <include reference="y9k-Hk-Uev"/>
                                     </mask>

@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新しいボードを作るには10ポイント必要です" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjI-dJ-JxY">
-                                <rect key="frame" x="0.0" y="45" width="207" height="21"/>
+                                <rect key="frame" x="2" y="45" width="207" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="9Hs-IT-Sf3"/>
                                     <constraint firstAttribute="width" constant="207" id="wpA-S8-hDL"/>
@@ -56,7 +56,7 @@
                             <constraint firstAttribute="bottom" secondItem="LjI-dJ-JxY" secondAttribute="bottom" constant="0.5" id="I1z-Ea-VaN"/>
                             <constraint firstAttribute="bottom" secondItem="vB2-CU-BhC" secondAttribute="bottom" constant="0.5" id="RTY-kE-S20"/>
                             <constraint firstAttribute="trailing" secondItem="vB2-CU-BhC" secondAttribute="trailing" constant="8" id="ZK1-LY-pMI"/>
-                            <constraint firstItem="LjI-dJ-JxY" firstAttribute="leading" secondItem="PE7-WR-nlp" secondAttribute="leading" id="cmn-oa-7c1"/>
+                            <constraint firstItem="LjI-dJ-JxY" firstAttribute="leading" secondItem="PE7-WR-nlp" secondAttribute="leading" constant="2" id="cmn-oa-7c1"/>
                             <constraint firstItem="6RB-Rg-2zr" firstAttribute="top" secondItem="PE7-WR-nlp" secondAttribute="top" constant="2" id="gkS-Ec-eu6"/>
                             <constraint firstItem="LjI-dJ-JxY" firstAttribute="top" secondItem="6RB-Rg-2zr" secondAttribute="bottom" constant="22" id="p60-dF-ZUo"/>
                             <constraint firstAttribute="trailing" secondItem="vB2-CU-BhC" secondAttribute="trailing" constant="5" id="xmp-aR-xcR"/>
