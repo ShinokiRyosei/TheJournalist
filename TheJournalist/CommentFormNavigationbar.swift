@@ -19,10 +19,12 @@ class CommentFormNavigationbar: UINavigationBar {
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        self.setLogo()
     }
     
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
+        self.setLogo()
     }
     
     private func changeColor()  {
@@ -33,9 +35,8 @@ class CommentFormNavigationbar: UINavigationBar {
     }
     
     private func setLogo() {
-        let imageView = UIImageView(frame: CGRect(x: self.layer.frame.size.width/2, y: 0, width: 60, height: 20))
-        imageView.image = UIImage(named: "navbar-09.png")
-        self.addSubview(imageView)
+        
+
     }
     
     

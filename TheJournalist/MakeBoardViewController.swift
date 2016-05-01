@@ -28,7 +28,6 @@ class MakeBoardViewController: UIViewController {
         super.viewWillAppear(animated)
         agreeButton.selectAgree()
         navBar.updateLayout()
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -27,6 +27,7 @@ class CommentFormViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         commentTextView.becomeFirstResponder()
+        navBar.updateLayout()
     }
 
     override func didReceiveMemoryWarning() {

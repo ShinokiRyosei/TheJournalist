@@ -317,18 +317,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" backIndicatorImage="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-K6-1mu">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="U42-QK-K98"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem id="LH9-W8-JnD">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="k13-yg-ZWj" customClass="MakeBoardDismissButton" customModule="TheJournalist" customModuleProvider="target"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Dxf-Re-eLr" customClass="MakeBoardBarButton" customModule="TheJournalist" customModuleProvider="target"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8OY-1U-DkB" customClass="MakeBoardTitleView" customModule="TheJournalist" customModuleProvider="target">
                                 <rect key="frame" x="20" y="64" width="560" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -413,6 +401,18 @@
                                     <constraint firstAttribute="height" constant="2" id="oKg-tP-HNt"/>
                                 </constraints>
                             </view>
+                            <navigationBar contentMode="scaleToFill" backIndicatorImage="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-K6-1mu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="U42-QK-K98"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="LH9-W8-JnD">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="k13-yg-ZWj" customClass="MakeBoardDismissButton" customModule="TheJournalist" customModuleProvider="target"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="Dxf-Re-eLr" customClass="MakeBoardBarButton" customModule="TheJournalist" customModuleProvider="target"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
