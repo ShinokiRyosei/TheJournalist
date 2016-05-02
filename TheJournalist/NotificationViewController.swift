@@ -39,6 +39,14 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
         // Dispose of any resources that can be recreated.
     }
     
+    func transitionToOtherAccount() {
+        self.performSegueWithIdentifier("toOtherAccountView", sender: self)
+    }
+    
+    func transitionToBoardView() {
+        self.performSegueWithIdentifier("toBoardView", sender: self)
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
@@ -50,6 +58,8 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
             cell.boardTitleLabel.text = "あなたのボードに甲斐駿介さんが賛成に投票しました。"
             cell.descriptionLabel.text = "SNSのという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
             cell.syncroLabel.text = "96%"
+            cell.otherAccountButton.addTarget(self, action: #selector(self.transitionToOtherAccount), forControlEvents: .TouchUpInside)
+            cell.boardButton.addTarget(self, action: #selector(self.transitionToBoardView), forControlEvents: .TouchUpInside)
             
             return cell
         }else if dammy[indexPath.row]["action_type"] == 2 {
@@ -58,6 +68,8 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
             cell.boardTitleLabel.text = "あなたのボードに甲斐駿介さんなど5ユーザーがコメントしました。1ポイント獲得です。"
             cell.descriptionLabel.text = "SNSのという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
             cell.numberOfUserLabel.text = "他\n4ユーザー"
+            cell.otherAccountButton.addTarget(self, action: #selector(self.transitionToOtherAccount), forControlEvents: .TouchUpInside)
+            cell.boardButton.addTarget(self, action: #selector(self.transitionToBoardView), forControlEvents: .TouchUpInside)
             
             return cell
         }else {
@@ -66,6 +78,8 @@ class NotificationViewController: NavigationViewController, UITableViewDelegate,
             cell.boardTitleLabel.text = "あなたのコメントを甲斐駿介さんがクリップしました。1ポイント獲得です。"
             cell.descriptionLabel.text = "SNSのという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックが既に獲得した何億人というユーザーの関係性…"
             cell.syncroLabel.text = "78%"
+            cell.otherAccountButton.addTarget(self, action: #selector(self.transitionToOtherAccount), forControlEvents: .TouchUpInside)
+            cell.boardButton.addTarget(self, action: #selector(self.transitionToBoardView), forControlEvents: .TouchUpInside)
             
             return cell
         }

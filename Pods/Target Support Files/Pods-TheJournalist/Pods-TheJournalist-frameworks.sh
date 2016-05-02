@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TheJournalist/Alamofire.framework"
   install_framework "Pods-TheJournalist/FontAwesome_swift.framework"
   install_framework "Pods-TheJournalist/SWRevealViewController.framework"
+  install_framework "Pods-TheJournalist/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TheJournalist/Alamofire.framework"
   install_framework "Pods-TheJournalist/FontAwesome_swift.framework"
   install_framework "Pods-TheJournalist/SWRevealViewController.framework"
+  install_framework "Pods-TheJournalist/SwiftyJSON.framework"
 fi

@@ -9,6 +9,7 @@
 import UIKit
 import SWRevealViewController
 
+//class NavigationViewController: UIViewController, UINavigationControllerDelegate, UIGestureRecognizerDelegate, SWRevealViewControllerDelegate{
 class NavigationViewController: UIViewController, UINavigationControllerDelegate, UIGestureRecognizerDelegate{
     
     override func viewDidLoad() {
@@ -63,6 +64,19 @@ class NavigationViewController: UIViewController, UINavigationControllerDelegate
             revealViewController().revealToggle(self)
         }
     }
+    
+//    func revealController(revealController: SWRevealViewController!, willMoveToPosition position: FrontViewPosition) {
+//        let tapGestureRecognizer = UITapGestureRecognizer(target: self.revealViewController(), action: #selector(revealViewController().revealToggle(_:)))
+//        if position == .Right {
+//            tapGestureRecognizer.enabled = true
+//            self.navigationController?.interactivePopGestureRecognizer?.enabled = false
+//            self.navigationController?.topViewController?.view.userInteractionEnabled = false
+//        }else if position == .Left {
+//            tapGestureRecognizer.enabled = false
+//            self.navigationController?.interactivePopGestureRecognizer?.enabled = true
+//            self.navigationController?.topViewController?.view.userInteractionEnabled = true
+//        }
+//    }
     
     func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
         self.navigationItem.setHidesBackButton(true, animated: true)

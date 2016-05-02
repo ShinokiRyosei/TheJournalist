@@ -187,8 +187,6 @@
 		39D85EF31CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
 		39D85EF41CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
 		39D85EF51CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
-		39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF648F1CC891E90012B8EC /* ProfileCell.swift */; };
-		39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EF64901CC891E90012B8EC /* ProfileCell.xib */; };
 		39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */; };
 		53EE5D810E471B7E5F7C6D91 /* Pods_TheJournalist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B66DA7C9CDF7101BFAF7CA /* Pods_TheJournalist.framework */; };
 /* End PBXBuildFile section */
@@ -392,8 +390,6 @@
 		39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AxisStd-Regular.otf"; sourceTree = "<group>"; };
 		39D85EE41CC67E86002F017D /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		39D85EF21CC69AA0002F017D /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
-		39EF648F1CC891E90012B8EC /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
-		39EF64901CC891E90012B8EC /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCategoryLabel.swift; sourceTree = "<group>"; };
 		C4C59A928568E5D7C4EE2B53 /* Pods-TheJournalist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheJournalist.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheJournalist/Pods-TheJournalist.release.xcconfig"; sourceTree = "<group>"; };
 		E7151ADFF68766CDC5185B9D /* Pods-TheJournalist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheJournalist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheJournalist/Pods-TheJournalist.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1079,8 +1075,6 @@
 		39EF64931CC891F00012B8EC /* ProfileCell */ = {
 			isa = PBXGroup;
 			children = (
-				39EF648F1CC891E90012B8EC /* ProfileCell.swift */,
-				39EF64901CC891E90012B8EC /* ProfileCell.xib */,
 				392B1CB71CD606EC0038ECFC /* Board */,
 				392B1CB81CD606F70038ECFC /* Point */,
 				392B1CB91CD606FD0038ECFC /* Clip */,
@@ -1242,7 +1236,6 @@
 				39295E191CCC98DF0002DD67 /* buttons-22.png in Resources */,
 				39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */,
 				39295E241CCC98DF0002DD67 /* buttons-33.png in Resources */,
-				39EF64921CC891E90012B8EC /* ProfileCell.xib in Resources */,
 				3955E63D1CC91CCF00E88BDC /* icon-40@3x.png in Resources */,
 				39C6445A1CCCD28000B43C13 /* mobile-navbar-for-may1st-04.png in Resources */,
 				395011001CD4F76600E63DC4 /* OtherAccountSyncroCell.xib in Resources */,
@@ -1451,7 +1444,6 @@
 				392B1CAD1CD606960038ECFC /* ProfileBoardCell.swift in Sources */,
 				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
 				395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */,
-				39EF64911CC891E90012B8EC /* ProfileCell.swift in Sources */,
 				392B1CB51CD606E60038ECFC /* ProfileClipCell.swift in Sources */,
 				395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */,
 				395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */,

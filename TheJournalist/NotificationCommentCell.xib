@@ -47,25 +47,43 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpY-G6-7un">
+                        <rect key="frame" x="8" y="8" width="40" height="95.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="CcN-Py-oH9"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrm-Fw-aae">
+                        <rect key="frame" x="56" y="8" width="256" height="95.5"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Mb1-4p-NK2" firstAttribute="leading" secondItem="DcQ-3b-ENn" secondAttribute="trailing" constant="8" id="1gt-2q-PQg"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="OpY-G6-7un" secondAttribute="leading" id="2QV-b0-z15"/>
                     <constraint firstAttribute="leadingMargin" secondItem="DcQ-3b-ENn" secondAttribute="leading" id="42e-xz-Ptf"/>
+                    <constraint firstItem="jrm-Fw-aae" firstAttribute="leading" secondItem="OpY-G6-7un" secondAttribute="trailing" constant="8" id="5Dl-be-fni"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jrm-Fw-aae" secondAttribute="trailing" id="HOa-0u-klm"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Mb1-4p-NK2" secondAttribute="trailing" id="NbP-Uf-AJJ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="vbL-ZU-dZR" secondAttribute="trailing" id="TJE-Dw-LXn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jrm-Fw-aae" secondAttribute="bottom" id="TMB-81-0Je"/>
                     <constraint firstItem="6U9-mn-u4p" firstAttribute="top" secondItem="DcQ-3b-ENn" secondAttribute="bottom" constant="8" id="UUH-3c-qrH"/>
+                    <constraint firstAttribute="topMargin" secondItem="OpY-G6-7un" secondAttribute="top" id="XZ3-6i-jfF"/>
                     <constraint firstAttribute="leadingMargin" secondItem="6U9-mn-u4p" secondAttribute="leading" id="YjF-gL-LDK"/>
                     <constraint firstAttribute="topMargin" secondItem="DcQ-3b-ENn" secondAttribute="top" id="Zcp-1y-rLl"/>
                     <constraint firstItem="vbL-ZU-dZR" firstAttribute="top" secondItem="DcQ-3b-ENn" secondAttribute="bottom" constant="8" id="d5D-0I-UT6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OpY-G6-7un" secondAttribute="bottom" id="mSA-Vn-4yu"/>
                     <constraint firstItem="vbL-ZU-dZR" firstAttribute="leading" secondItem="6U9-mn-u4p" secondAttribute="trailing" constant="6" id="rHU-KT-nF1"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="vbL-ZU-dZR" secondAttribute="bottom" constant="8" id="vQ5-20-38x"/>
                     <constraint firstAttribute="topMargin" secondItem="Mb1-4p-NK2" secondAttribute="top" id="wrY-4i-CzF"/>
+                    <constraint firstAttribute="topMargin" secondItem="jrm-Fw-aae" secondAttribute="top" id="yhj-a3-yW6"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="boardButton" destination="jrm-Fw-aae" id="QHe-yD-CIz"/>
                 <outlet property="boardTitleLabel" destination="Mb1-4p-NK2" id="wJ3-pY-N8h"/>
                 <outlet property="descriptionLabel" destination="vbL-ZU-dZR" id="JL1-bK-58Q"/>
                 <outlet property="numberOfUserLabel" destination="6U9-mn-u4p" id="43x-un-j3C"/>
+                <outlet property="otherAccountButton" destination="OpY-G6-7un" id="zFX-Wl-CL0"/>
                 <outlet property="profileImageView" destination="DcQ-3b-ENn" id="Ttu-2I-23a"/>
             </connections>
         </tableViewCell>

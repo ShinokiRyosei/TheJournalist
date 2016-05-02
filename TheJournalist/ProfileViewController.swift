@@ -18,6 +18,8 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
     
     @IBOutlet var descriptionLabel: UILabel!
     
+    @IBOutlet var profileButtons: [UIButton]!
+    
     //どのTableViewを表示するか　0=ポイント、1=クリップ、2=投票ボード
     var selectedBoard = 0
 
@@ -50,15 +52,15 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
     }
     
     @IBAction func didSelectPoint() {
-        
+        self.selectTableContent(selectedTable: 0)
     }
     
     @IBAction func didSelectClip() {
-        
+        self.selectTableContent(selectedTable: 1)
     }
     
     @IBAction func didSelectBoard() {
-        
+        self.selectTableContent(selectedTable: 2)
     }
     
     //後で消す
@@ -76,19 +78,35 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
         if selectedBoard == 0 {
             let cell = profileTable.dequeueReusableCellWithIdentifier("ProfilePointCell", forIndexPath: indexPath) as! ProfilePointCell
             
+            cell.boardTitleLabel.text = "ボードタイトルです"
+            cell.descriptionLabel.text = "椎木くんはthe Journalistにおいていじめられています。だれか助けてあげてください"
+            cell.pointLabel.text = "56ポイント獲得"
+            
             return cell
         }else if selectedBoard == 1 {
             let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileClipCell", forIndexPath: indexPath) as! ProfileClipCell
+            
+            cell.boardTitleLabel.text = "ボードタイトルです"
+            cell.descriptionLabel.text = "堤さんはGW中に彼女との1年半の記念に旅行に行きます"
+            cell.whoseLabel.text = "甲斐さんがコメントしました"
             
             return cell
         }else {
             let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileBoardCell", forIndexPath: indexPath) as! ProfileBoardCell
             
+            cell.boardTitleLabel.text = "椎木くんのthe Journalistでの人権について"
+            cell.positionLabel.text = "賛成に投票しました"
+            
             return cell
         }
     }
     
-    private func selectTableContent() {
-        
+    private func selectTableContent(selectedTable table: Int) {
+        for button in profileButtons {
+            button.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+        }
+        profileButtons[table].setTitleColor(UIColor.blackColor(), forState: .Normal)
+        selectedBoard = table
+        profileTable.reloadData()
     }
 }
