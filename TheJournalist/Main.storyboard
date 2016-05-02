@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zyu-VT-dxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="2055"/>
+            <point key="canvasLocation" x="748.5" y="2176.5"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="9CD-Ee-20D">
@@ -641,7 +641,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yiq-Yp-a4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175.5" y="822.75"/>
+            <point key="canvasLocation" x="469.5" y="851.25"/>
         </scene>
         <!--Topic View Controller-->
         <scene sceneID="mgb-DC-6u6">
@@ -1169,7 +1169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpz-OD-bF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1446" y="2047.5"/>
+            <point key="canvasLocation" x="1464" y="2191.5"/>
         </scene>
         <!--Board View Controller-->
         <scene sceneID="fju-pw-ifz">
@@ -1464,10 +1464,16 @@
                                                     <constraint firstAttribute="height" constant="30" id="mcf-zb-mAr"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="didSelectClip" destination="CAP-Dh-3Ra" eventType="touchUpInside" id="PTk-jW-GSy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5m-oL-fL5">
                                                 <rect key="frame" x="504" y="33" width="80" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="didSelectBoard" destination="CAP-Dh-3Ra" eventType="touchUpInside" id="FGq-f3-eSx"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クリップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0Y-vu-FEB">
                                                 <rect key="frame" x="258" y="7" width="68" height="21"/>
@@ -1492,6 +1498,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0w-zn-myH">
                                                 <rect key="frame" x="0.0" y="33" width="80" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="didSelectPoint" destination="CAP-Dh-3Ra" eventType="touchUpInside" id="Qz6-C6-kDe"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dn-md-hQu">
                                                 <rect key="frame" x="6" y="7" width="68" height="21"/>
@@ -1660,11 +1669,14 @@
                         <outlet property="profileImageView" destination="nmB-JC-sz0" id="bXX-Hh-jgs"/>
                         <outlet property="profileTable" destination="6ru-8z-1WO" id="HKU-Tv-pff"/>
                         <outlet property="usernameLabel" destination="THP-sn-5iL" id="d5j-8O-7qr"/>
+                        <outletCollection property="profileButtons" destination="L0w-zn-myH" collectionClass="NSMutableArray" id="XsJ-B6-08P"/>
+                        <outletCollection property="profileButtons" destination="KB9-5O-gno" collectionClass="NSMutableArray" id="W9s-Gp-A0R"/>
+                        <outletCollection property="profileButtons" destination="t5m-oL-fL5" collectionClass="NSMutableArray" id="a2m-8x-af4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDw-5z-y1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248" y="1194.75"/>
+            <point key="canvasLocation" x="1263" y="1466.25"/>
         </scene>
         <!--Notification View Controller-->
         <scene sceneID="Qm7-xj-xaW">
@@ -1694,11 +1706,13 @@
                     <navigationItem key="navigationItem" id="Dmh-Hj-Bq4"/>
                     <connections>
                         <outlet property="notificationTable" destination="ctw-aT-NJZ" id="3BP-lg-MMa"/>
+                        <segue destination="n2v-CT-Auc" kind="show" identifier="toOtherAccountView" id="q0W-7P-zzK"/>
+                        <segue destination="ANA-H5-G3P" kind="show" identifier="toBoardView" id="Zo2-wH-wXn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPz-xg-UkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="-304"/>
+            <point key="canvasLocation" x="2424" y="-335.25"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="mzZ-w8-z9D">
@@ -2104,7 +2118,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KE5-IG-Hjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553" y="1195"/>
+            <point key="canvasLocation" x="567" y="1466.25"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="Uc1-Y0-64y">
@@ -2156,7 +2170,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuo-ng-JcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="-304"/>
+            <point key="canvasLocation" x="1299" y="-318"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IEg-8w-xc3">
@@ -2192,7 +2206,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zc-Wj-vy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="2055"/>
+            <point key="canvasLocation" x="61.5" y="2170.5"/>
         </scene>
         <!--Other Account View Controller-->
         <scene sceneID="QVK-Ye-IKT">
@@ -2250,10 +2264,16 @@
                                                     <constraint firstAttribute="width" constant="80" id="S5N-EZ-NBF"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="didSelectClip" destination="n2v-CT-Auc" eventType="touchUpInside" id="hQd-LY-6ng"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgf-ya-8Ce">
                                                 <rect key="frame" x="504" y="33" width="80" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="didSelectSyncro" destination="n2v-CT-Auc" eventType="touchUpInside" id="dB3-hg-m3Z"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="クリップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFv-w7-t4D">
                                                 <rect key="frame" x="258" y="7" width="68" height="21"/>
@@ -2278,6 +2298,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTs-UZ-WaH">
                                                 <rect key="frame" x="0.0" y="33" width="80" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="didSelectPoint" destination="n2v-CT-Auc" eventType="touchUpInside" id="V3X-Bw-gIg"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保有ポイント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-Yj-aMH">
                                                 <rect key="frame" x="6" y="7" width="68" height="21"/>
@@ -2407,29 +2430,14 @@
                         <outlet property="descriptionLabel" destination="AXW-yb-cAd" id="M59-d6-qHG"/>
                         <outlet property="profileImageView" destination="M7W-sJ-sVx" id="BZz-0a-PTW"/>
                         <outlet property="usernameLabel" destination="U1H-4h-dah" id="iWI-Iq-xvj"/>
+                        <outletCollection property="tableButtons" destination="C5e-d7-3SV" collectionClass="NSMutableArray" id="s8b-ew-Jt6"/>
+                        <outletCollection property="tableButtons" destination="cgf-ya-8Ce" collectionClass="NSMutableArray" id="YaS-1j-2qg"/>
+                        <outletCollection property="tableButtons" destination="pTs-UZ-WaH" collectionClass="NSMutableArray" id="ZcS-HR-h0Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gt-8a-fa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3019.5" y="2055"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="GPo-8L-1Nn">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wsd-s8-mCa" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AV6-Ct-jRJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="n2v-CT-Auc" kind="relationship" relationship="rootViewController" id="eJ8-ED-wBE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ILy-DZ-Yrg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2101.5" y="2055"/>
+            <point key="canvasLocation" x="3337.5" y="-335.25"/>
         </scene>
     </scenes>
     <resources>
@@ -2453,5 +2461,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="RNc-jS-p80"/>
+        <segue reference="Zo2-wH-wXn"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,6 +17,11 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
     @IBOutlet var usernameLabel: UILabel!
     
     @IBOutlet var descriptionLabel: UILabel!
+    
+    @IBOutlet var profileButtons: [UIButton]!
+    
+    //どのTableViewを表示するか　0=ポイント、1=クリップ、2=投票ボード
+    var selectedBoard = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +29,9 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
         profileTable.delegate = self
         profileTable.dataSource = self
         
-        profileTable.registerNib(UINib(nibName: "ProfileCell", bundle: nil), forCellReuseIdentifier: "ProfileCell")
+        profileTable.registerNib(UINib(nibName: "ProfileBoardCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "ProfileBoardCell")
+        profileTable.registerNib(UINib(nibName: "ProfileClipCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "ProfileClipCell")
+        profileTable.registerNib(UINib(nibName: "ProfilePointCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "ProfilePointCell")
         
     }
     
@@ -44,6 +51,18 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didSelectPoint() {
+        self.selectTableContent(selectedTable: 0)
+    }
+    
+    @IBAction func didSelectClip() {
+        self.selectTableContent(selectedTable: 1)
+    }
+    
+    @IBAction func didSelectBoard() {
+        self.selectTableContent(selectedTable: 2)
+    }
+    
     //後で消す
     func dammy() {
         profileImageView.image = UIImage(named: "profile_image.jpg")
@@ -51,25 +70,43 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
         descriptionLabel.text = "清掃員 at The Journalist\nStudies Computer Science at ブラウン大学"
     }
     
-    func transition() {
-        self.performSegueWithIdentifier("toHomeView", sender: self)
-    }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
-        
-        cell.titleLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変素晴らしいものであった"
-        cell.contentLabel.text = "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント"
-        cell.categoryLabel.text = "甲斐さんがコメント"
-        
-        return cell
+        if selectedBoard == 0 {
+            let cell = profileTable.dequeueReusableCellWithIdentifier("ProfilePointCell", forIndexPath: indexPath) as! ProfilePointCell
+            
+            cell.boardTitleLabel.text = "ボードタイトルです"
+            cell.descriptionLabel.text = "椎木くんはthe Journalistにおいていじめられています。だれか助けてあげてください"
+            cell.pointLabel.text = "56ポイント獲得"
+            
+            return cell
+        }else if selectedBoard == 1 {
+            let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileClipCell", forIndexPath: indexPath) as! ProfileClipCell
+            
+            cell.boardTitleLabel.text = "ボードタイトルです"
+            cell.descriptionLabel.text = "堤さんはGW中に彼女との1年半の記念に旅行に行きます"
+            cell.whoseLabel.text = "甲斐さんがコメントしました"
+            
+            return cell
+        }else {
+            let cell = profileTable.dequeueReusableCellWithIdentifier("ProfileBoardCell", forIndexPath: indexPath) as! ProfileBoardCell
+            
+            cell.boardTitleLabel.text = "椎木くんのthe Journalistでの人権について"
+            cell.positionLabel.text = "賛成に投票しました"
+            
+            return cell
+        }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.transition()
+    private func selectTableContent(selectedTable table: Int) {
+        for button in profileButtons {
+            button.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+        }
+        profileButtons[table].setTitleColor(UIColor.blackColor(), forState: .Normal)
+        selectedBoard = table
+        profileTable.reloadData()
     }
 }

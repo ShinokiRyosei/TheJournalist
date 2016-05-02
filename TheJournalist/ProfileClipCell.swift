@@ -9,6 +9,12 @@
 import UIKit
 
 class ProfileClipCell: UITableViewCell {
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    @IBOutlet var whoseLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

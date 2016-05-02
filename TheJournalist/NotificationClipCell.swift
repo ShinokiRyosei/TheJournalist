@@ -17,6 +17,10 @@ class NotificationClipCell: UITableViewCell {
     @IBOutlet var profileImageView: UIImageView!
     
     @IBOutlet var syncroLabel: UILabel!
+    
+    @IBOutlet var otherAccountButton: UIButton!
+    
+    @IBOutlet var boardButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

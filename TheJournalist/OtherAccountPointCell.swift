@@ -1,22 +1,22 @@
 //
-//  ProfileCell.swift
+//  OtherAccountPointCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/21.
+//  Created by ShinokiRyosei on 2016/05/02.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class ProfileCell: UITableViewCell {
+class OtherAccountPointCell: UITableViewCell {
     
-    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var boardTitleLabel: UILabel!
     
-    @IBOutlet var contentLabel: UILabel!
+    @IBOutlet var pointLabel: UILabel!
     
-    @IBOutlet var categoryLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
     
-    @IBOutlet var agreeBar: UIView!
+    @IBOutlet var clipButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

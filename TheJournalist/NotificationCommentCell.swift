@@ -17,6 +17,10 @@ class NotificationCommentCell: UITableViewCell {
     @IBOutlet var profileImageView: UIImageView!
     
     @IBOutlet var numberOfUserLabel: UILabel!
+    
+    @IBOutlet var otherAccountButton: UIButton!
+    
+    @IBOutlet var boardButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

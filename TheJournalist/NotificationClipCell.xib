@@ -56,11 +56,23 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYc-b9-s37">
+                        <rect key="frame" x="8" y="8" width="40" height="95.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Y2e-fb-GWF"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaD-bB-vTr">
+                        <rect key="frame" x="56" y="8" width="256" height="95.5"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="leadingMargin" secondItem="yyq-5F-nuX" secondAttribute="leading" id="DJ7-C2-wkr"/>
                     <constraint firstAttribute="topMargin" secondItem="TsC-SR-W7H" secondAttribute="top" id="DwQ-4z-2Vu"/>
                     <constraint firstAttribute="leadingMargin" secondItem="TsC-SR-W7H" secondAttribute="leading" id="EkM-gp-Vll"/>
+                    <constraint firstItem="eaD-bB-vTr" firstAttribute="leading" secondItem="XYc-b9-s37" secondAttribute="trailing" constant="8" id="Exh-sP-Lql"/>
+                    <constraint firstAttribute="topMargin" secondItem="XYc-b9-s37" secondAttribute="top" id="FAf-xx-irt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XYc-b9-s37" secondAttribute="bottom" id="Jm0-qM-25e"/>
                     <constraint firstItem="uTr-Ii-dFF" firstAttribute="leading" secondItem="P4s-dm-dhR" secondAttribute="trailing" constant="6" id="LLx-Z9-Ako"/>
                     <constraint firstAttribute="trailingMargin" secondItem="uTr-Ii-dFF" secondAttribute="trailing" id="MrZ-1a-9HS"/>
                     <constraint firstAttribute="bottomMargin" secondItem="yyq-5F-nuX" secondAttribute="bottom" constant="1.5" id="UdZ-7W-I3s"/>
@@ -68,15 +80,21 @@
                     <constraint firstItem="yyq-5F-nuX" firstAttribute="top" secondItem="P4s-dm-dhR" secondAttribute="bottom" constant="7" id="YeC-kE-oHQ"/>
                     <constraint firstItem="uTr-Ii-dFF" firstAttribute="top" secondItem="TsC-SR-W7H" secondAttribute="bottom" constant="8" id="a6A-je-UPr"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="uTr-Ii-dFF" secondAttribute="bottom" constant="8" id="cQa-iu-CyY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eaD-bB-vTr" secondAttribute="bottom" id="gDD-sk-3pS"/>
                     <constraint firstAttribute="trailingMargin" secondItem="bUl-op-Nf5" secondAttribute="trailing" id="gZC-gO-0K1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eaD-bB-vTr" secondAttribute="trailing" id="mAw-YN-qI8"/>
                     <constraint firstItem="bUl-op-Nf5" firstAttribute="leading" secondItem="TsC-SR-W7H" secondAttribute="trailing" constant="8" id="oUp-Pg-32x"/>
                     <constraint firstAttribute="topMargin" secondItem="bUl-op-Nf5" secondAttribute="top" id="uHy-Sq-7Lo"/>
+                    <constraint firstAttribute="topMargin" secondItem="eaD-bB-vTr" secondAttribute="top" id="wsO-0h-qMF"/>
                     <constraint firstAttribute="leadingMargin" secondItem="P4s-dm-dhR" secondAttribute="leading" id="xgW-WG-u3j"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="XYc-b9-s37" secondAttribute="leading" id="zkc-eL-McQ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="boardButton" destination="eaD-bB-vTr" id="dkb-Ox-TJA"/>
                 <outlet property="boardTitleLabel" destination="bUl-op-Nf5" id="Wun-lw-9bb"/>
                 <outlet property="descriptionLabel" destination="uTr-Ii-dFF" id="6hZ-uh-qNi"/>
+                <outlet property="otherAccountButton" destination="XYc-b9-s37" id="lFa-G7-ekS"/>
                 <outlet property="profileImageView" destination="TsC-SR-W7H" id="qFT-rf-mvg"/>
                 <outlet property="syncroLabel" destination="yyq-5F-nuX" id="OeR-bO-VnZ"/>
             </connections>
