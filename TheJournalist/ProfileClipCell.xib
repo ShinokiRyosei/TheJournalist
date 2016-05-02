@@ -15,12 +15,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIy-Tb-Wbf" customClass="ProfileTitleLabel" customModule="TheJournalist" customModuleProvider="target">
-                        <rect key="frame" x="15" y="8" width="290" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGI-Gk-YjO">
                         <rect key="frame" x="240" y="66" width="75" height="21"/>
                         <constraints>
@@ -52,6 +46,12 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIy-Tb-Wbf" customClass="ProfileTitleLabel" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="15" y="8" width="290" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="fIe-KD-IHE" firstAttribute="leading" secondItem="Hvb-71-nvM" secondAttribute="trailing" constant="8" id="48y-qF-GSq"/>
@@ -75,6 +75,7 @@
                 <outlet property="descriptionLabel" destination="fIe-KD-IHE" id="34U-pA-phV"/>
                 <outlet property="whoseLabel" destination="tuA-Ch-nQa" id="gZE-fd-VWc"/>
             </connections>
+            <point key="canvasLocation" x="160" y="443"/>
         </tableViewCell>
     </objects>
     <resources>

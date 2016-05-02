@@ -63,6 +63,8 @@
 		392B1CB21CD606CE0038ECFC /* ProfilePointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CB01CD606CE0038ECFC /* ProfilePointCell.xib */; };
 		392B1CB51CD606E60038ECFC /* ProfileClipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B1CB31CD606E60038ECFC /* ProfileClipCell.swift */; };
 		392B1CB61CD606E60038ECFC /* ProfileClipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CB41CD606E60038ECFC /* ProfileClipCell.xib */; };
+		392B1CBD1CD6DB7D0038ECFC /* OtherAccountPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B1CBB1CD6DB7D0038ECFC /* OtherAccountPointCell.swift */; };
+		392B1CBE1CD6DB7D0038ECFC /* OtherAccountPointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CBC1CD6DB7D0038ECFC /* OtherAccountPointCell.xib */; };
 		395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B01CD3504C00E63DC4 /* HistoryViewController.swift */; };
 		395010B31CD3518200E63DC4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B21CD3518200E63DC4 /* SettingViewController.swift */; };
 		395010CF1CD4455100E63DC4 /* HistoryVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */; };
@@ -266,6 +268,8 @@
 		392B1CB01CD606CE0038ECFC /* ProfilePointCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilePointCell.xib; sourceTree = "<group>"; };
 		392B1CB31CD606E60038ECFC /* ProfileClipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileClipCell.swift; sourceTree = "<group>"; };
 		392B1CB41CD606E60038ECFC /* ProfileClipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileClipCell.xib; sourceTree = "<group>"; };
+		392B1CBB1CD6DB7D0038ECFC /* OtherAccountPointCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAccountPointCell.swift; sourceTree = "<group>"; };
+		392B1CBC1CD6DB7D0038ECFC /* OtherAccountPointCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherAccountPointCell.xib; sourceTree = "<group>"; };
 		395010B01CD3504C00E63DC4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		395010B21CD3518200E63DC4 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVoteCell.swift; sourceTree = "<group>"; };
@@ -558,6 +562,24 @@
 			name = Clip;
 			sourceTree = "<group>";
 		};
+		392B1CBA1CD6DB530038ECFC /* Syncro */ = {
+			isa = PBXGroup;
+			children = (
+				395010FD1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift */,
+				395010FE1CD4F76600E63DC4 /* OtherAccountSyncroCell.xib */,
+			);
+			name = Syncro;
+			sourceTree = "<group>";
+		};
+		392B1CBF1CD6DB850038ECFC /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				392B1CBB1CD6DB7D0038ECFC /* OtherAccountPointCell.swift */,
+				392B1CBC1CD6DB7D0038ECFC /* OtherAccountPointCell.xib */,
+			);
+			name = Point;
+			sourceTree = "<group>";
+		};
 		395010AD1CD2D28F00E63DC4 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -635,8 +657,8 @@
 		395011011CD4F77100E63DC4 /* OtherAccount */ = {
 			isa = PBXGroup;
 			children = (
-				395010FD1CD4F76600E63DC4 /* OtherAccountSyncroCell.swift */,
-				395010FE1CD4F76600E63DC4 /* OtherAccountSyncroCell.xib */,
+				392B1CBA1CD6DB530038ECFC /* Syncro */,
+				392B1CBF1CD6DB850038ECFC /* Point */,
 			);
 			name = OtherAccount;
 			sourceTree = "<group>";
@@ -1233,6 +1255,7 @@
 				39295E141CCC98DF0002DD67 /* buttons-17.png in Resources */,
 				3955E6421CC91CCF00E88BDC /* icon-83.5@2x.png in Resources */,
 				39295E1B1CCC98DF0002DD67 /* buttons-24.png in Resources */,
+				392B1CBE1CD6DB7D0038ECFC /* OtherAccountPointCell.xib in Resources */,
 				39295E191CCC98DF0002DD67 /* buttons-22.png in Resources */,
 				39D85E9A1CC65891002F017D /* Assets.xcassets in Resources */,
 				39295E241CCC98DF0002DD67 /* buttons-33.png in Resources */,
@@ -1413,6 +1436,7 @@
 				3955E6B81CCA739D00E88BDC /* PasswordTextField.swift in Sources */,
 				39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */,
 				395F176D1CCE15FF007DAC66 /* CommentFormCommentButton.swift in Sources */,
+				392B1CBD1CD6DB7D0038ECFC /* OtherAccountPointCell.swift in Sources */,
 				395F17781CCE1A79007DAC66 /* CommentFormAgreeView.swift in Sources */,
 				395F17841CCE7DF6007DAC66 /* MakeBoardTitleView.swift in Sources */,
 				395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */,
