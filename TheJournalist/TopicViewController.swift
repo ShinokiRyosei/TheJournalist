@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 //ホームから遷移してTopicに応じたBoardを表示します
 class TopicViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
@@ -20,7 +22,12 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     @IBOutlet var topicTable: UITableView!
     
     var comment: String = ""
-
+    var boards =  JSON([])
+    var id: Int!
+    var topic_title: String!
+    var detail: String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,12 +41,14 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        titleLabel.text = self.topic_title
+//        contentLabel.text = self.detail
         topicTable.estimatedRowHeight = 120
         topicTable.rowHeight = UITableViewAutomaticDimension
         
         topicTable.tableFooterView = UIView()
         
-        self.dammy()
+        getBoards()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,10 +56,29 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
         // Dispose of any resources that can be recreated.
     }
     
-    //後で消す
-    func dammy() {
-        titleLabel.text = "東京五輪2020エンブレム問題"
-        contentLabel.text = "4年後、東京でオリンピック・パラリンピックが開催される。佐藤研二郎氏のエンブレム盗作疑惑が取り沙汰された。論点は、これこれこういうもので"
+    func getBoards(){
+        print(id)
+        let url = "http://demo.thejournalist.jp/api/boards/?format=json&topic=\(id)"
+        Alamofire.request(.GET, url)
+            .responseJSON { response in
+                guard let object = response.result.value else {
+                    return
+                }
+                self.boards  = JSON(object)
+                print(self.boards)
+                self.topicTable.reloadData()
+        }
+        
+    }
+    
+    func image(url: String) -> UIImage{
+        do{
+            let imageData :NSData = try NSData(contentsOfURL: NSURL(string: url)!,options: NSDataReadingOptions.DataReadingMappedIfSafe);
+            return UIImage(data:imageData)!;
+        }catch{
+            return UIImage(named: "")!
+        }
+        
     }
     
     func transition() {
@@ -62,23 +90,20 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return boards.count
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.row < 3 {
-            self.transition()
-        }else {
-            self.transitionToMakeBoard()
-        }
+        self.transition()
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.row < 3 {
             let cell = topicTable.dequeueReusableCellWithIdentifier("TopicCell", forIndexPath: indexPath) as! TopicCell
             
-            cell.voteNumberLabel.text = "124"
-            cell.commentLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
+            cell.voteNumberLabel.text = "23"
+            cell.commentLabel.text = boards[indexPath.row]["title"].string
             
             return cell
         }else {
@@ -87,7 +112,6 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
             return cell
         }
     }
-    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toVoteView" {

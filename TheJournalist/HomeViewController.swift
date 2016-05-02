@@ -13,6 +13,9 @@ import SwiftyJSON
 class HomeViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     var topics: [[String: String?]] = []
     var data = JSON([])
+    var id: Int!
+    var detail: String!
+    var topic_title: String!
     
     @IBOutlet var topicTable: UITableView!
     
@@ -73,14 +76,27 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
         
         cell.topicTitleLabel.text = data[indexPath.row]["title"].string
         cell.descriptionLabel.text = data[indexPath.row]["detail"].string
-        cell.topicImageView.image = image(data[indexPath.row]["image"].string!)
+//        cell.topicImageView.image = image(data[indexPath.row]["image"].string!)
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        id = data[indexPath.row]["id"].int
+        topic_title = data[indexPath.row]["title"].string
+        detail = data[indexPath.row]["detail"].string
         self.transitionToTopicView()
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        let topicViewController: TopicViewController = segue.destinationViewController as! TopicViewController
+        
+        topicViewController.id = self.id
+        topicViewController.detail = self.detail
+        topicViewController.topic_title = self.topic_title
+        
+    }
+    
     
     func transitionToTopicView() {
         self.performSegueWithIdentifier("toTopicView", sender: self)
