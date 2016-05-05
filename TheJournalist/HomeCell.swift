@@ -9,6 +9,8 @@
 import UIKit
 
 class HomeCell: UITableViewCell {
+    
+    @IBOutlet var containerView: UIView!
 
     @IBOutlet var topicImageView: UIImageView!
     
