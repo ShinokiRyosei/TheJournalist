@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,16 +17,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PE7-WR-nlp">
-                        <rect key="frame" x="5" y="3" width="310" height="66.5"/>
+                        <rect key="frame" x="8" y="3" width="304" height="66.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新しいボードを作る" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RB-Rg-2zr">
-                                <rect key="frame" x="81" y="2" width="153" height="21"/>
+                                <rect key="frame" x="78" y="2" width="153" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1io-BY-69J"/>
                                     <constraint firstAttribute="width" constant="153" id="hjI-FB-W7A"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新しいボードを作るには10ポイント必要です" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjI-dJ-JxY">
@@ -35,17 +36,17 @@
                                     <constraint firstAttribute="width" constant="207" id="wpA-S8-hDL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10ポイント不足" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vB2-CU-BhC">
-                                <rect key="frame" x="225" y="45" width="80" height="21"/>
+                                <rect key="frame" x="219" y="45" width="80" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="chE-YV-hSE"/>
                                     <constraint firstAttribute="width" constant="80" id="iPw-Tb-LqK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -72,15 +73,19 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="LjI-dJ-JxY" secondAttribute="bottom" constant="-4.5" id="4q3-9g-5Uc"/>
+                    <constraint firstItem="PE7-WR-nlp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CHO-Jv-ckx"/>
                     <constraint firstItem="PE7-WR-nlp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="Owc-Z0-CuZ"/>
                     <constraint firstAttribute="bottomMargin" secondItem="PE7-WR-nlp" secondAttribute="bottom" constant="-5" id="eL9-zh-4sf"/>
                     <constraint firstAttribute="trailingMargin" secondItem="PE7-WR-nlp" secondAttribute="trailing" constant="-3" id="gzg-gX-GEQ"/>
                     <constraint firstItem="6RB-Rg-2zr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="jer-7t-MOy"/>
                     <constraint firstItem="LjI-dJ-JxY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-5" id="vuJ-s3-SON"/>
+                    <constraint firstItem="PE7-WR-nlp" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.95" id="z8m-My-BkV"/>
                     <constraint firstItem="PE7-WR-nlp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="zS7-S0-XN8"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
+                        <exclude reference="gzg-gX-GEQ"/>
+                        <exclude reference="zS7-S0-XN8"/>
                         <exclude reference="4q3-9g-5Uc"/>
                         <exclude reference="vuJ-s3-SON"/>
                         <exclude reference="jer-7t-MOy"/>
