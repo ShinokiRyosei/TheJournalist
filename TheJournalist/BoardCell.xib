@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -23,13 +24,6 @@
                         </constraints>
                         <state key="normal" title="Button" image="buttons-14.png"/>
                     </button>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktj-4a-meX">
-                        <rect key="frame" x="0.0" y="0.0" width="3" height="202.5"/>
-                        <color key="backgroundColor" red="1" green="0.35755061469999999" blue="0.24445075560000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="3" id="4QH-pZ-xr5"/>
-                        </constraints>
-                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyI-0J-Qvr">
                         <rect key="frame" x="79" y="8" width="233" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -63,10 +57,23 @@
                             <constraint firstAttribute="height" constant="60" id="P46-Gb-sBh"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktj-4a-meX">
+                        <rect key="frame" x="0.0" y="0.0" width="6.5" height="202.5"/>
+                        <color key="backgroundColor" red="1" green="0.35755061469999999" blue="0.24445075560000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="4QH-pZ-xr5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4QH-pZ-xr5"/>
+                            </mask>
+                        </variation>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="xe9-on-Dbz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="4TE-Ld-CA6"/>
                     <constraint firstItem="ktj-4a-meX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="789-gG-6wm"/>
+                    <constraint firstItem="ktj-4a-meX" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.02" id="7us-iG-eKP"/>
                     <constraint firstItem="5g8-G0-UDB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="AI1-P4-evJ"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="RyI-0J-Qvr" secondAttribute="bottom" constant="8" id="Hdi-XX-tgX"/>
                     <constraint firstItem="wwP-xR-WW0" firstAttribute="top" secondItem="5g8-G0-UDB" secondAttribute="bottom" constant="-7" id="KL7-O4-has"/>
