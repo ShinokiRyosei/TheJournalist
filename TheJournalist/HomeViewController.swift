@@ -27,7 +27,7 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        topicTable.estimatedRowHeight = 240
+        topicTable.estimatedRowHeight = 296
         topicTable.rowHeight = UITableViewAutomaticDimension
     }
 
@@ -44,9 +44,21 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
         if dammy[indexPath.row]["position"] == 1 {
             let cell = topicTable.dequeueReusableCellWithIdentifier("HomeAgreeCell", forIndexPath: indexPath) as! HomeAgreeCell
             
+            cell.topicTitleLabel.text = "ヘイトスピーチ対策法案、成立の可能性"
+            cell.boardTitleLabel.text = "ヘイトスピーチを根絶することは不可能か？"
+            cell.boardCommentLabel.text = "the JournalistはEmpowerにより承認欲求が満たされると思う。またさまざまな意見を見れる知見が広がるというのが面白い。これは使ってみないとわからない楽しさではないか。ここに自分の意見を投じるというのは、周りに自分の意見を晒すということで、自分の勉強不足を晒してしまうのではないかと緊張感があり、恥ずかしさもある。そこで思うのは、Homeで出すトピックやボードはプルでリフレッシュし、もっと多くのものを見れるようにすべきではないか。"
+            cell.boardProfileImageView.image = UIImage(named: "profile_image.jpg")
+            cell.syncroLabel.text = "96%"
+            
             return cell
         }else {
             let cell = topicTable.dequeueReusableCellWithIdentifier("HomeDisagreeCell", forIndexPath: indexPath) as! HomeDisagreeCell
+            
+            cell.topicTitleLabel.text = "ヘイトスピーチ対策法案、成立の可能性"
+            cell.boardTitleLabel.text = "ヘイトスピーチを根絶することは不可能か？"
+            cell.boardCommentLabel.text = "the JournalistはEmpowerにより承認欲求が満たされると思う。またさまざまな意見を見れる知見が広がるというのが面白い。これは使ってみないとわからない楽しさではないか。ここに自分の意見を投じるというのは、周りに自分の意見を晒すということで、自分の勉強不足を晒してしまうのではないかと緊張感があり、恥ずかしさもある。そこで思うのは、Homeで出すトピックやボードはプルでリフレッシュし、もっと多くのものを見れるようにすべきではないか。"
+            cell.boardProfileImageView.image = UIImage(named: "profile_image.jpg")
+            cell.syncroLabel.text = "45%"
             
             return cell
         }

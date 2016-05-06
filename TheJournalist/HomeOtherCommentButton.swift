@@ -12,6 +12,7 @@ class HomeOtherCommentButton: UIButton {
 
     override func drawRect(rect: CGRect) {
         self.addBorder()
+        self.setTxtColor()
     }
     
     func addBorder() {
@@ -20,6 +21,11 @@ class HomeOtherCommentButton: UIButton {
         
         self.layer.borderWidth = 1.0
         self.layer.borderColor = UIColor.blackColor().CGColor
+    }
+    
+    func setTxtColor() {
+        self.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        self.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
     }
 
 }

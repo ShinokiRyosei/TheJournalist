@@ -9,6 +9,18 @@
 import UIKit
 
 class HomeDisagreeImageView: UIImageView {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.updateCorner()
+        self.addBorder()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.updateCorner()
+        self.addBorder()
+    }
 
     override func drawRect(rect: CGRect) {
         self.updateCorner()
