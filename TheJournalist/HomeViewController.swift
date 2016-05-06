@@ -11,6 +11,8 @@ import UIKit
 class HomeViewController: NavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var topicTable: UITableView!
+    
+    let dammy: [[String: Int]] = [["position": 1], ["position": 2,], ["position": 1], ["position": 2]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,8 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
         topicTable.delegate = self
         topicTable.dataSource = self
         
-        topicTable.registerNib(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
+        topicTable.registerNib(UINib(nibName: "HomeAgreeCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "HomeAgreeCell")
+        topicTable.registerNib(UINib(nibName: "HomeDisagreeCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "HomeDisagreeCell")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -34,16 +37,19 @@ class HomeViewController: NavigationViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return dammy.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = topicTable.dequeueReusableCellWithIdentifier("HomeCell", forIndexPath: indexPath) as! HomeCell
-        
-        cell.topicTitleLabel.text = "東京五輪2020エンブレム問題"
-        cell.descriptionLabel.text = "4年後、東京でオリンピック・パラリンピックが開催される。佐藤研二郎氏のエンブレム盗作疑惑が取り沙汰された。論点は、これこれこういうもので"
-        
-        return cell
+        if dammy[indexPath.row]["position"] == 1 {
+            let cell = topicTable.dequeueReusableCellWithIdentifier("HomeAgreeCell", forIndexPath: indexPath) as! HomeAgreeCell
+            
+            return cell
+        }else {
+            let cell = topicTable.dequeueReusableCellWithIdentifier("HomeDisagreeCell", forIndexPath: indexPath) as! HomeDisagreeCell
+            
+            return cell
+        }
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

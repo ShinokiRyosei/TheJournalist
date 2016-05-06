@@ -9,6 +9,18 @@
 import UIKit
 
 class HomeAgreeCell: UITableViewCell {
+    
+    @IBOutlet var topicImageView: UIImageView!
+    
+    @IBOutlet var topicTitleLabel: UILabel!
+    
+    @IBOutlet var boardTitleLabel: UILabel!
+    
+    @IBOutlet var boardProfileImageView: UIImageView!
+    
+    @IBOutlet var syncroLabel: UILabel!
+    
+    @IBOutlet var boardCommentLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
