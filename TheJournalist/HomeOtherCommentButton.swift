@@ -11,10 +11,13 @@ import UIKit
 class HomeOtherCommentButton: UIButton {
 
     override func drawRect(rect: CGRect) {
-        // Drawing code
+        self.addBorder()
     }
     
     func addBorder() {
+        self.titleLabel?.textColor = UIColor.blackColor()
+        self.backgroundColor = UIColor.whiteColor()
+        
         self.layer.borderWidth = 1.0
         self.layer.borderColor = UIColor.blackColor().CGColor
     }

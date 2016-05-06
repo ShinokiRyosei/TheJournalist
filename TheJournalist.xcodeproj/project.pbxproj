@@ -139,6 +139,10 @@
 		395F2BAF1CDCA04A0082132B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F2BAD1CDCA04A0082132B /* HomeCell.xib */; };
 		395F2BB11CDCA23D0082132B /* HomeBoardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F2BB01CDCA23D0082132B /* HomeBoardButton.swift */; };
 		395F2BB31CDCA54C0082132B /* HomeOtherCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F2BB21CDCA54C0082132B /* HomeOtherCommentButton.swift */; };
+		395F2BB61CDCA67D0082132B /* HomeAgreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F2BB41CDCA67D0082132B /* HomeAgreeCell.swift */; };
+		395F2BB71CDCA67D0082132B /* HomeAgreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F2BB51CDCA67D0082132B /* HomeAgreeCell.xib */; };
+		395F2BBA1CDCA6960082132B /* HomeDisagreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F2BB81CDCA6960082132B /* HomeDisagreeCell.swift */; };
+		395F2BBB1CDCA6960082132B /* HomeDisagreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F2BB91CDCA6960082132B /* HomeDisagreeCell.xib */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39721E501CD140BE008C963C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39721E4E1CD140BE008C963C /* CommentCell.swift */; };
@@ -345,6 +349,10 @@
 		395F2BAD1CDCA04A0082132B /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		395F2BB01CDCA23D0082132B /* HomeBoardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBoardButton.swift; sourceTree = "<group>"; };
 		395F2BB21CDCA54C0082132B /* HomeOtherCommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeOtherCommentButton.swift; sourceTree = "<group>"; };
+		395F2BB41CDCA67D0082132B /* HomeAgreeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAgreeCell.swift; sourceTree = "<group>"; };
+		395F2BB51CDCA67D0082132B /* HomeAgreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeAgreeCell.xib; sourceTree = "<group>"; };
+		395F2BB81CDCA6960082132B /* HomeDisagreeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDisagreeCell.swift; sourceTree = "<group>"; };
+		395F2BB91CDCA6960082132B /* HomeDisagreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDisagreeCell.xib; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39721E4E1CD140BE008C963C /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -1058,6 +1066,10 @@
 			children = (
 				395F2BAC1CDCA04A0082132B /* HomeCell.swift */,
 				395F2BAD1CDCA04A0082132B /* HomeCell.xib */,
+				395F2BB41CDCA67D0082132B /* HomeAgreeCell.swift */,
+				395F2BB51CDCA67D0082132B /* HomeAgreeCell.xib */,
+				395F2BB81CDCA6960082132B /* HomeDisagreeCell.swift */,
+				395F2BB91CDCA6960082132B /* HomeDisagreeCell.xib */,
 			);
 			name = HomeCell;
 			sourceTree = "<group>";
@@ -1224,6 +1236,7 @@
 				39295E0B1CCC98DF0002DD67 /* buttons-08.png in Resources */,
 				395011071CD4FA1000E63DC4 /* other-account-syncro-04.png in Resources */,
 				39295E211CCC98DF0002DD67 /* buttons-30.png in Resources */,
+				395F2BB71CDCA67D0082132B /* HomeAgreeCell.xib in Resources */,
 				39295E0C1CCC98DF0002DD67 /* buttons-09.png in Resources */,
 				395010D41CD4456600E63DC4 /* HistoryNoVoteCell.xib in Resources */,
 				39295E221CCC98DF0002DD67 /* buttons-31.png in Resources */,
@@ -1268,6 +1281,7 @@
 				39295E081CCC98DF0002DD67 /* buttons-05.png in Resources */,
 				3955E6371CC91CCF00E88BDC /* Contents.json in Resources */,
 				39C644451CCCC01300B43C13 /* LogoTitle.png in Resources */,
+				395F2BBB1CDCA6960082132B /* HomeDisagreeCell.xib in Resources */,
 				39C6444D1CCCCE5100B43C13 /* mobile-login-for-may1st-05.png in Resources */,
 				392B1CA21CD5EAD60038ECFC /* NotificationCommentCell.xib in Resources */,
 				3955E63A1CC91CCF00E88BDC /* icon-29@3x.png in Resources */,
@@ -1409,6 +1423,7 @@
 				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				395010E41CD4C5BD00E63DC4 /* ProfileEditViewController.swift in Sources */,
+				395F2BB61CDCA67D0082132B /* HomeAgreeCell.swift in Sources */,
 				390FC4E91CCCFA3C006EFEF1 /* NavbarSearchTextField.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
 				395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */,
@@ -1460,6 +1475,7 @@
 				392B1CB51CD606E60038ECFC /* ProfileClipCell.swift in Sources */,
 				39EFF6A11CDB51E8000196D3 /* UIColorExtension.swift in Sources */,
 				395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */,
+				395F2BBA1CDCA6960082132B /* HomeDisagreeCell.swift in Sources */,
 				395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,
 				395010E21CD4BFE900E63DC4 /* NotificationProfileImageView.swift in Sources */,
