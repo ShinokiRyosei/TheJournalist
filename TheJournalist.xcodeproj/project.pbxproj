@@ -876,9 +876,28 @@
 			name = Disagree;
 			sourceTree = "<group>";
 		};
+		395F2BC21CDCB4950082132B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				395F2BB01CDCA23D0082132B /* HomeBoardButton.swift */,
+				395F2BB21CDCA54C0082132B /* HomeOtherCommentButton.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		395F2BC31CDCB4A60082132B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				395F2BBC1CDCABA30082132B /* HomeAgreeImageView.swift */,
+				395F2BBE1CDCABB10082132B /* HomeDisagreeImageView.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		396931E21CC6A3A00061808D /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				395F2BC21CDCB4950082132B /* Home */,
 				3955E6591CC94DD500E88BDC /* Comment */,
 				3955E65A1CC94DDB00E88BDC /* Profile */,
 				3955E65B1CC94DE200E88BDC /* Vote */,
@@ -1046,8 +1065,6 @@
 				392B1C941CD574220038ECFC /* RevoteView */,
 				39EFF69E1CDB43FF000196D3 /* GlobalVariable.swift */,
 				39EFF6A01CDB51E8000196D3 /* UIColorExtension.swift */,
-				395F2BB01CDCA23D0082132B /* HomeBoardButton.swift */,
-				395F2BB21CDCA54C0082132B /* HomeOtherCommentButton.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -1103,8 +1120,7 @@
 				3955E65C1CC94DEC00E88BDC /* Comment */,
 				395010E11CD4BFE900E63DC4 /* NotificationProfileImageView.swift */,
 				395010F21CD4E13000E63DC4 /* ProfileEditImageView.swift */,
-				395F2BBC1CDCABA30082132B /* HomeAgreeImageView.swift */,
-				395F2BBE1CDCABB10082132B /* HomeDisagreeImageView.swift */,
+				395F2BC31CDCB4A60082132B /* Home */,
 			);
 			name = ImageVIew;
 			sourceTree = "<group>";

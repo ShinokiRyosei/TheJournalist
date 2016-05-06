@@ -10,12 +10,18 @@ import UIKit
 
 class HomeAgreeImageView: UIImageView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
-        // Drawing code
+        self.updateCorner()
+        self.addBorder()
     }
-    */
-
+    
+    func updateCorner() {
+        self.layer.cornerRadius = self.layer.bounds.width/2
+        self.layer.masksToBounds = true
+    }
+    
+    func addBorder() {
+        self.layer.borderColor = Color.redColor.CGColor
+        self.layer.borderWidth = 2.0
+    }
 }
