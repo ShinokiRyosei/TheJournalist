@@ -135,6 +135,9 @@
 		395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */; };
 		395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */; };
 		395F178E1CCEA005007DAC66 /* NavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */; };
+		395F2BAE1CDCA04A0082132B /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F2BAC1CDCA04A0082132B /* HomeCell.swift */; };
+		395F2BAF1CDCA04A0082132B /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F2BAD1CDCA04A0082132B /* HomeCell.xib */; };
+		395F2BB11CDCA23D0082132B /* HomeBoardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F2BB01CDCA23D0082132B /* HomeBoardButton.swift */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39721E501CD140BE008C963C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39721E4E1CD140BE008C963C /* CommentCell.swift */; };
@@ -174,8 +177,6 @@
 		39D85EB31CC65891002F017D /* TheJournalistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EB21CC65891002F017D /* TheJournalistUITests.swift */; };
 		39D85EC31CC660F1002F017D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC21CC660F1002F017D /* HomeViewController.swift */; };
 		39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC41CC660FB002F017D /* ProfileViewController.swift */; };
-		39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EC91CC6618B002F017D /* HomeCell.swift */; };
-		39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D85ECA1CC6618B002F017D /* HomeCell.xib */; };
 		39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */; };
 		39D85EE11CC676D9002F017D /* AxisStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */; };
 		39D85EE21CC676D9002F017D /* AxisStd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */; };
@@ -187,6 +188,8 @@
 		39D85EF41CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
 		39D85EF51CC69AA0002F017D /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D85EF21CC69AA0002F017D /* ProfileImageView.swift */; };
 		39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */; };
+		39EFF69F1CDB43FF000196D3 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EFF69E1CDB43FF000196D3 /* GlobalVariable.swift */; };
+		39EFF6A11CDB51E8000196D3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EFF6A01CDB51E8000196D3 /* UIColorExtension.swift */; };
 		53EE5D810E471B7E5F7C6D91 /* Pods_TheJournalist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B66DA7C9CDF7101BFAF7CA /* Pods_TheJournalist.framework */; };
 /* End PBXBuildFile section */
 
@@ -337,6 +340,9 @@
 		395F17871CCE8677007DAC66 /* MakeBoardDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardDescriptionView.swift; sourceTree = "<group>"; };
 		395F178B1CCE9071007DAC66 /* MakeBoardPositionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPositionExtension.swift; sourceTree = "<group>"; };
 		395F178D1CCEA005007DAC66 /* NavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarExtension.swift; sourceTree = "<group>"; };
+		395F2BAC1CDCA04A0082132B /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		395F2BAD1CDCA04A0082132B /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		395F2BB01CDCA23D0082132B /* HomeBoardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBoardButton.swift; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39721E4E1CD140BE008C963C /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -382,13 +388,13 @@
 		39D85EB41CC65891002F017D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39D85EC21CC660F1002F017D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		39D85EC41CC660FB002F017D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		39D85EC91CC6618B002F017D /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
-		39D85ECA1CC6618B002F017D /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		39D85ECD1CC661B7002F017D /* HomeTopicTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTopicTitleLabel.swift; sourceTree = "<group>"; };
 		39D85EE01CC676D9002F017D /* AxisStd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AxisStd-Regular.otf"; sourceTree = "<group>"; };
 		39D85EE41CC67E86002F017D /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		39D85EF21CC69AA0002F017D /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		39EF64941CC893460012B8EC /* ProfileCategoryLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCategoryLabel.swift; sourceTree = "<group>"; };
+		39EFF69E1CDB43FF000196D3 /* GlobalVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
+		39EFF6A01CDB51E8000196D3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		C4C59A928568E5D7C4EE2B53 /* Pods-TheJournalist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheJournalist.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheJournalist/Pods-TheJournalist.release.xcconfig"; sourceTree = "<group>"; };
 		E7151ADFF68766CDC5185B9D /* Pods-TheJournalist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheJournalist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheJournalist/Pods-TheJournalist.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1010,6 +1016,9 @@
 				392B1CAA1CD5FDF50038ECFC /* TextView */,
 				392B1CC21CD6F9220038ECFC /* Extension */,
 				392B1C941CD574220038ECFC /* RevoteView */,
+				39EFF69E1CDB43FF000196D3 /* GlobalVariable.swift */,
+				39EFF6A01CDB51E8000196D3 /* UIColorExtension.swift */,
+				395F2BB01CDCA23D0082132B /* HomeBoardButton.swift */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -1044,8 +1053,8 @@
 		39D85EF01CC68F5B002F017D /* HomeCell */ = {
 			isa = PBXGroup;
 			children = (
-				39D85EC91CC6618B002F017D /* HomeCell.swift */,
-				39D85ECA1CC6618B002F017D /* HomeCell.xib */,
+				395F2BAC1CDCA04A0082132B /* HomeCell.swift */,
+				395F2BAD1CDCA04A0082132B /* HomeCell.xib */,
 			);
 			name = HomeCell;
 			sourceTree = "<group>";
@@ -1273,6 +1282,7 @@
 				392B1C9E1CD5EABA0038ECFC /* NotificationVoteCell.xib in Resources */,
 				39295E1C1CCC98DF0002DD67 /* buttons-25.png in Resources */,
 				39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */,
+				395F2BAF1CDCA04A0082132B /* HomeCell.xib in Resources */,
 				39295E061CCC98DF0002DD67 /* logo.png in Resources */,
 				39295E131CCC98DF0002DD67 /* buttons-16.png in Resources */,
 				39295E161CCC98DF0002DD67 /* buttons-19.png in Resources */,
@@ -1287,7 +1297,6 @@
 				395010EB1CD4CAAE00E63DC4 /* Main.storyboard in Resources */,
 				395F17761CCE1A56007DAC66 /* CommentFormDisagreeView.xib in Resources */,
 				39C6444A1CCCCE5100B43C13 /* mobile-login-for-may1st-02.png in Resources */,
-				39D85ECC1CC6618B002F017D /* HomeCell.xib in Resources */,
 				395011061CD4FA1000E63DC4 /* other-account-syncro-03.png in Resources */,
 				39295E1F1CCC98DF0002DD67 /* buttons-28.png in Resources */,
 				3955E63F1CC91CCF00E88BDC /* icon-60@3x.png in Resources */,
@@ -1381,6 +1390,7 @@
 				3955E6581CC94D7900E88BDC /* VoteDisagreeButton.swift in Sources */,
 				390FC4E61CCCF4BC006EFEF1 /* NavbarCell.swift in Sources */,
 				3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */,
+				395F2BB11CDCA23D0082132B /* HomeBoardButton.swift in Sources */,
 				392B1C9D1CD5EABA0038ECFC /* NotificationVoteCell.swift in Sources */,
 				39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */,
 				395010EF1CD4D2AC00E63DC4 /* ProfileEditChangePasswordButton.swift in Sources */,
@@ -1415,6 +1425,7 @@
 				395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */,
 				395010FC1CD4F31400E63DC4 /* OtherAccountViewController.swift in Sources */,
 				395F17861CCE83F3007DAC66 /* MakeBoardDismissButton.swift in Sources */,
+				39EFF69F1CDB43FF000196D3 /* GlobalVariable.swift in Sources */,
 				39D85EC51CC660FB002F017D /* ProfileViewController.swift in Sources */,
 				395F178C1CCE9071007DAC66 /* MakeBoardPositionExtension.swift in Sources */,
 				395010ED1CD4D26E00E63DC4 /* ProfileEditFacebookButton.swift in Sources */,
@@ -1430,9 +1441,9 @@
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
 				392B1C911CD573F20038ECFC /* RevoteView.swift in Sources */,
+				395F2BAE1CDCA04A0082132B /* HomeCell.swift in Sources */,
 				39ADF1D01CCC086900277847 /* BoardViewController.swift in Sources */,
 				395010F31CD4E13000E63DC4 /* ProfileEditImageView.swift in Sources */,
-				39D85ECB1CC6618B002F017D /* HomeCell.swift in Sources */,
 				39D85ECE1CC661B7002F017D /* HomeTopicTitleLabel.swift in Sources */,
 				395010F61CD4E1BA00E63DC4 /* ProfileEditSaveButton.swift in Sources */,
 				39721E551CD140EE008C963C /* MakeBoardCell.swift in Sources */,
@@ -1443,6 +1454,7 @@
 				390FC4E11CCCF3FE006EFEF1 /* NavBarViewController.swift in Sources */,
 				395F17811CCE7484007DAC66 /* MakeBoardBarButton.swift in Sources */,
 				392B1CB51CD606E60038ECFC /* ProfileClipCell.swift in Sources */,
+				39EFF6A11CDB51E8000196D3 /* UIColorExtension.swift in Sources */,
 				395010D71CD4460300E63DC4 /* HistoryCommentCell.swift in Sources */,
 				395F177F1CCE3B66007DAC66 /* SignupViewController.swift in Sources */,
 				3955E6A71CCA1F3200E88BDC /* LoginViewController.swift in Sources */,

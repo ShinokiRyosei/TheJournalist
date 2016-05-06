@@ -18,9 +18,7 @@ class ProfileClipButton: UIButton {
     
     private func updateLayout() {
         self.setTitle(String.fontAwesomeIconWithName(.Clipboard)+"  クリップ", forState: .Normal)
-        
-        self.setTitleColor(UIColor.grayColor(), forState: .Normal)
-        
+        self.setTitleColor(Color.grayColor, forState: .Normal)
         self.backgroundColor = UIColor.whiteColor()
     }
 

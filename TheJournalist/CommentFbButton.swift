@@ -19,11 +19,7 @@ class CommentFbButton: UIButton {
     private func updateLayout()  {
         self.setTitle(String.fontAwesomeIconWithName(.FacebookSquare), forState: .Normal)
         self.titleLabel?.font = UIFont.fontAwesomeOfSize(24)
-//        self.backgroundColor = UIColor.grayColor()
-        self.setTitleColor(UIColor.grayColor(), forState: .Normal)
-//        self.layer.cornerRadius = 5.0
-        
-        
+        self.setTitleColor(Color.grayColor, forState: .Normal)
     }
  
 

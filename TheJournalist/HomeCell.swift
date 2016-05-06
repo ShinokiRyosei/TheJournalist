@@ -2,7 +2,7 @@
 //  HomeCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/19.
+//  Created by ShinokiRyosei on 2016/05/06.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
@@ -10,18 +10,11 @@ import UIKit
 
 class HomeCell: UITableViewCell {
     
-    @IBOutlet var containerView: UIView!
-
     @IBOutlet var topicImageView: UIImageView!
-    
-    @IBOutlet var descriptionLabel: UILabel!
-    
-    @IBOutlet weak var topicTitleLabel: UILabel!
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor.lightGrayColor()
+        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

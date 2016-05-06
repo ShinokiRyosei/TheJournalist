@@ -23,13 +23,13 @@ class MakeBoardTitleView: UITextView, UITextViewDelegate {
     
     func setPlaceholder() {
         self.text = "主張を書く"
-        self.textColor = UIColor.lightGrayColor()
+        self.textColor = Color.lightGrayColor
     }
     
     func textViewDidBeginEditing(textView: UITextView) {
-        if textView.textColor == UIColor.lightGrayColor() {
+        if textView.textColor == Color.lightGrayColor {
             self.text = ""
-            self.textColor = UIColor.blackColor()
+            self.textColor = Color.blueColor
             self.becomeFirstResponder()
         }
     }
@@ -37,7 +37,7 @@ class MakeBoardTitleView: UITextView, UITextViewDelegate {
     func textViewDidEndEditing(textView: UITextView) {
         if self.text.isEmpty {
             self.text = "主張を書く"
-            self.textColor = UIColor.lightGrayColor()
+            self.textColor = Color.lightGrayColor
         }
     }
 }

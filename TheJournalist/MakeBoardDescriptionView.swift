@@ -23,11 +23,11 @@ class MakeBoardDescriptionView: UITextView, UITextViewDelegate {
     
     func setPlaceholder() {
         self.text = "理由 / 背景"
-        self.textColor = UIColor.lightGrayColor()
+        self.textColor = Color.lightGrayColor
     }
     
     func textViewDidBeginEditing(textView: UITextView) {
-        if self.textColor == UIColor.lightGrayColor() {
+        if self.textColor == Color.lightGrayColor {
             self.text = ""
             self.textColor = UIColor.blackColor()
             self.becomeFirstResponder()
@@ -37,7 +37,7 @@ class MakeBoardDescriptionView: UITextView, UITextViewDelegate {
     func textViewDidEndEditing(textView: UITextView) {
         if self.text.isEmpty {
             self.text = "理由 / 背景"
-            self.textColor = UIColor.lightGrayColor()
+            self.textColor = Color.lightGrayColor
         }
     }
     

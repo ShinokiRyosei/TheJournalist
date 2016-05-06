@@ -19,7 +19,7 @@ class CommentClipButton: UIButton {
     
     private func  updateLayout() {
         self.setTitle(String.fontAwesomeIconWithName(.Paperclip) + "\nクリップ", forState: .Normal)
-        self.setTitleColor(UIColor.grayColor(), forState: .Normal)
+        self.setTitleColor(Color.grayColor, forState: .Normal)
         self.titleLabel?.font = UIFont.fontAwesomeOfSize(24)
         self.layer.cornerRadius = 5.0
         self.backgroundColor = UIColor.whiteColor()

@@ -16,7 +16,7 @@ class MakeBoardNumberLabel: UILabel {
     }
     
     func updatelayout() {
-        self.textColor = UIColor.grayColor()
+        self.textColor = Color.grayColor
         self.font = UIFont(name: "AxisStd-Regular", size: 12)
         
     }

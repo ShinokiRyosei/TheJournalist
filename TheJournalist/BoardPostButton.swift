@@ -16,7 +16,7 @@ class BoardPostButton: UIButton {
     
     func addBorder() {
         self.setTitle("あなたの意見を投稿する", forState: .Normal)
-        self.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+        self.setTitleColor(Color.lightGrayColor, forState: .Normal)
         self.titleLabel?.font = UIFont(name: "AxisStd-Regular", size: 15)
         self.layer.borderColor = UIColor.lightGrayColor().CGColor
         self.layer.borderWidth = 2.0
