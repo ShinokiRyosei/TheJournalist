@@ -143,6 +143,8 @@
 		395F2BBB1CDCA6960082132B /* HomeDisagreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F2BB91CDCA6960082132B /* HomeDisagreeCell.xib */; };
 		395F2BBD1CDCABA30082132B /* HomeAgreeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F2BBC1CDCABA30082132B /* HomeAgreeImageView.swift */; };
 		395F2BBF1CDCABB10082132B /* HomeDisagreeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F2BBE1CDCABB10082132B /* HomeDisagreeImageView.swift */; };
+		395F2BC61CDDF9180082132B /* empower-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 395F2BC41CDDF9180082132B /* empower-01.png */; };
+		395F2BC71CDDF9180082132B /* empower-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 395F2BC51CDDF9180082132B /* empower-03.png */; };
 		396931DF1CC6A3880061808D /* CommentFbButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931DE1CC6A3880061808D /* CommentFbButton.swift */; };
 		396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396931E01CC6A3990061808D /* CommentTweetButton.swift */; };
 		39721E501CD140BE008C963C /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39721E4E1CD140BE008C963C /* CommentCell.swift */; };
@@ -353,6 +355,8 @@
 		395F2BB91CDCA6960082132B /* HomeDisagreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDisagreeCell.xib; sourceTree = "<group>"; };
 		395F2BBC1CDCABA30082132B /* HomeAgreeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAgreeImageView.swift; sourceTree = "<group>"; };
 		395F2BBE1CDCABB10082132B /* HomeDisagreeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDisagreeImageView.swift; sourceTree = "<group>"; };
+		395F2BC41CDDF9180082132B /* empower-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empower-01.png"; sourceTree = "<group>"; };
+		395F2BC51CDDF9180082132B /* empower-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empower-03.png"; sourceTree = "<group>"; };
 		396931DE1CC6A3880061808D /* CommentFbButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFbButton.swift; sourceTree = "<group>"; };
 		396931E01CC6A3990061808D /* CommentTweetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTweetButton.swift; sourceTree = "<group>"; };
 		39721E4E1CD140BE008C963C /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -438,6 +442,8 @@
 		39295DDF1CCC98DF0002DD67 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				395F2BC41CDDF9180082132B /* empower-01.png */,
+				395F2BC51CDDF9180082132B /* empower-03.png */,
 				392B1C951CD577930038ECFC /* revote-02.png */,
 				392B1C961CD577930038ECFC /* revote-03.png */,
 				392B1C991CD580C70038ECFC /* navbar-09.png */,
@@ -1306,6 +1312,7 @@
 				395010F81CD4E8A900E63DC4 /* profile-edit-04.png in Resources */,
 				39C644581CCCD28000B43C13 /* mobile-navbar-for-may1st-02.png in Resources */,
 				39C6445B1CCCD28000B43C13 /* mobile-navbar-for-may1st-05.png in Resources */,
+				395F2BC71CDDF9180082132B /* empower-03.png in Resources */,
 				392B1C981CD577930038ECFC /* revote-03.png in Resources */,
 				392B1C971CD577930038ECFC /* revote-02.png in Resources */,
 				39295E181CCC98DF0002DD67 /* buttons-21.png in Resources */,
@@ -1319,6 +1326,7 @@
 				3955E63A1CC91CCF00E88BDC /* icon-29@3x.png in Resources */,
 				395011051CD4FA1000E63DC4 /* other-account-syncro-02.png in Resources */,
 				3955E6241CC8D4DD00E88BDC /* olympic.jpeg in Resources */,
+				395F2BC61CDDF9180082132B /* empower-01.png in Resources */,
 				39C6445E1CCCD28000B43C13 /* mobile-navbar-for-may1st-08.png in Resources */,
 				39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */,
 				3955E6401CC91CCF00E88BDC /* icon-76.png in Resources */,
