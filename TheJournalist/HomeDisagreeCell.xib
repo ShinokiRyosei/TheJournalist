@@ -72,6 +72,16 @@
                         <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wv9-MJ-Oey">
+                        <rect key="frame" x="205" y="211" width="45" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Uk3-iw-m3e"/>
+                            <constraint firstAttribute="width" constant="45" id="yUc-72-zva"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-wa-xDo" customClass="HomeBoardButton" customModule="TheJournalist" customModuleProvider="target">
                         <rect key="frame" x="97" y="128" width="127" height="30"/>
                         <constraints>
@@ -101,11 +111,11 @@
                         </constraints>
                         <state key="normal" title="Button" image="empower-01.png"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wv9-MJ-Oey">
-                        <rect key="frame" x="211" y="211" width="45" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6I0-TH-gCb">
+                        <rect key="frame" x="249" y="211" width="18" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="Uk3-iw-m3e"/>
-                            <constraint firstAttribute="width" constant="45" id="yUc-72-zva"/>
+                            <constraint firstAttribute="width" constant="18" id="S44-NM-gDa"/>
+                            <constraint firstAttribute="height" constant="21" id="vss-s6-mqn"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -117,6 +127,7 @@
                     <constraint firstAttribute="leadingMargin" secondItem="xSk-qB-a3b" secondAttribute="leading" constant="-8" id="08H-CR-sig"/>
                     <constraint firstItem="yi7-wa-xDo" firstAttribute="top" secondItem="kL0-CZ-nMf" secondAttribute="bottom" constant="4" id="2Bs-18-g2K"/>
                     <constraint firstItem="DsG-LQ-sIw" firstAttribute="top" secondItem="uU2-w3-9jY" secondAttribute="bottom" constant="6" id="4rw-qY-EbY"/>
+                    <constraint firstItem="6I0-TH-gCb" firstAttribute="centerY" secondItem="uU2-w3-9jY" secondAttribute="centerY" id="5JA-O6-y8L"/>
                     <constraint firstAttribute="leadingMargin" secondItem="kL0-CZ-nMf" secondAttribute="leading" id="6HF-Mu-8Th"/>
                     <constraint firstAttribute="leadingMargin" secondItem="uU2-w3-9jY" secondAttribute="leading" id="6Ob-Uc-3sp"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Wv9-MJ-Oey" secondAttribute="trailing" id="9QT-KA-tAN"/>
@@ -141,6 +152,7 @@
                     <constraint firstItem="Ycl-er-RsH" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.02" id="Ypw-Nv-IdV"/>
                     <constraint firstItem="Ycl-er-RsH" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.025" id="aBk-4b-pBm"/>
                     <constraint firstItem="HXU-1c-nYu" firstAttribute="leading" secondItem="uU2-w3-9jY" secondAttribute="trailing" constant="8" id="aug-Z3-ROK"/>
+                    <constraint firstItem="6I0-TH-gCb" firstAttribute="leading" secondItem="Wv9-MJ-Oey" secondAttribute="trailing" constant="-1" id="btP-5A-IFB"/>
                     <constraint firstItem="yi7-wa-xDo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cP7-5k-9dC"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Ycl-er-RsH" secondAttribute="bottom" constant="-9" id="ceD-dh-BCT"/>
                     <constraint firstItem="xSk-qB-a3b" firstAttribute="top" secondItem="ZA5-oz-kDU" secondAttribute="bottom" constant="6" id="i4G-77-8nC"/>
@@ -152,7 +164,7 @@
                     <constraint firstItem="5LX-Th-uMA" firstAttribute="top" secondItem="xSk-qB-a3b" secondAttribute="bottom" constant="8" id="phe-1k-a9c"/>
                     <constraint firstAttribute="trailingMargin" secondItem="DsG-LQ-sIw" secondAttribute="trailing" id="qdN-NU-yK6"/>
                     <constraint firstItem="zdb-1u-EIG" firstAttribute="centerY" secondItem="uU2-w3-9jY" secondAttribute="centerY" id="tT2-1f-rUc"/>
-                    <constraint firstItem="zdb-1u-EIG" firstAttribute="trailing" secondItem="Wv9-MJ-Oey" secondAttribute="leading" constant="-14" id="vCb-O0-j79"/>
+                    <constraint firstItem="zdb-1u-EIG" firstAttribute="trailing" secondItem="Wv9-MJ-Oey" secondAttribute="leading" constant="-8" id="vCb-O0-j79"/>
                     <constraint firstAttribute="trailingMargin" secondItem="jOB-mB-epq" secondAttribute="trailing" constant="-9" id="zUh-qx-P2P"/>
                 </constraints>
                 <variation key="default">
