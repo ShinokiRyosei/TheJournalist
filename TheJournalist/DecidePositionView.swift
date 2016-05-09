@@ -9,13 +9,12 @@
 import UIKit
 
 class DecidePositionView: UIView {
+    
+    @IBOutlet var agreeButton: UIButton!
+    
+    @IBOutlet var disagreeButton: UIButton!
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
         // Drawing code
     }
-    */
-
 }
