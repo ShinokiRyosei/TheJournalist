@@ -120,8 +120,6 @@
 		3955E6BA1CCA73B200E88BDC /* FirstnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */; };
 		3955E6BC1CCA73C100E88BDC /* LastnameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */; };
 		3955E7551CCA9D3500E88BDC /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7541CCA9D3500E88BDC /* TopicViewController.swift */; };
-		3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955E7561CCAA24F00E88BDC /* TopicCell.swift */; };
-		3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3955E7571CCAA24F00E88BDC /* TopicCell.xib */; };
 		395F17651CCE0FDA007DAC66 /* CommentFormDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */; };
 		395F176D1CCE15FF007DAC66 /* CommentFormCommentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395F176C1CCE15FF007DAC66 /* CommentFormCommentButton.swift */; };
 		395F17741CCE1A44007DAC66 /* CommentFormAgreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395F17731CCE1A44007DAC66 /* CommentFormAgreeView.xib */; };
@@ -342,8 +340,6 @@
 		3955E6B91CCA73B200E88BDC /* FirstnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstnameTextField.swift; sourceTree = "<group>"; };
 		3955E6BB1CCA73C100E88BDC /* LastnameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastnameTextField.swift; sourceTree = "<group>"; };
 		3955E7541CCA9D3500E88BDC /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
-		3955E7561CCAA24F00E88BDC /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
-		3955E7571CCAA24F00E88BDC /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		395F17641CCE0FDA007DAC66 /* CommentFormDismissButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormDismissButton.swift; sourceTree = "<group>"; };
 		395F176C1CCE15FF007DAC66 /* CommentFormCommentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormCommentButton.swift; sourceTree = "<group>"; };
 		395F17731CCE1A44007DAC66 /* CommentFormAgreeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentFormAgreeView.xib; sourceTree = "<group>"; };
@@ -983,8 +979,6 @@
 		39721E591CD1417C008C963C /* Topic */ = {
 			isa = PBXGroup;
 			children = (
-				3955E7561CCAA24F00E88BDC /* TopicCell.swift */,
-				3955E7571CCAA24F00E88BDC /* TopicCell.xib */,
 				39A47F281CE0844A00F4AD90 /* Agree */,
 				39A47F2D1CE0846500F4AD90 /* Disagree */,
 				39A47F321CE0848000F4AD90 /* Yet */,
@@ -1420,7 +1414,6 @@
 				395F2BD01CDE4A930082132B /* BoardDisagreeCell.xib in Resources */,
 				395010FA1CD4F16200E63DC4 /* profile-edit-03.png in Resources */,
 				39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */,
-				3955E7591CCAA24F00E88BDC /* TopicCell.xib in Resources */,
 				395010D81CD4460300E63DC4 /* HistoryCommentCell.xib in Resources */,
 				39C644591CCCD28000B43C13 /* mobile-navbar-for-may1st-03.png in Resources */,
 				39C6445F1CCCD28000B43C13 /* mobile-navbar-for-may1st-09.png in Resources */,
@@ -1545,7 +1538,6 @@
 				395F17881CCE8677007DAC66 /* MakeBoardDescriptionView.swift in Sources */,
 				3955E6541CC94C6600E88BDC /* VoteTitleLabel.swift in Sources */,
 				396931E11CC6A3990061808D /* CommentTweetButton.swift in Sources */,
-				3955E7581CCAA24F00E88BDC /* TopicCell.swift in Sources */,
 				39D85EE51CC67E86002F017D /* NavigationViewController.swift in Sources */,
 				39C644631CCCDA2F00B43C13 /* CommentFormViewController.swift in Sources */,
 				395010F11CD4E0BC00E63DC4 /* ProfileEditTextField.swift in Sources */,
