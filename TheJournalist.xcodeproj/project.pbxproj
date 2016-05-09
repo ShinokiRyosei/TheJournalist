@@ -159,6 +159,10 @@
 		39A47F2C1CE0845F00F4AD90 /* TopicDisagreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A47F2A1CE0845F00F4AD90 /* TopicDisagreeCell.xib */; };
 		39A47F301CE0847B00F4AD90 /* TopicYetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A47F2E1CE0847B00F4AD90 /* TopicYetCell.swift */; };
 		39A47F311CE0847B00F4AD90 /* TopicYetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A47F2F1CE0847B00F4AD90 /* TopicYetCell.xib */; };
+		39A47F341CE0C49400F4AD90 /* CommentFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A47F331CE0C49400F4AD90 /* CommentFormView.swift */; };
+		39A47F361CE0C4BE00F4AD90 /* CommentFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A47F351CE0C4BE00F4AD90 /* CommentFormView.xib */; };
+		39A47F391CE0C4DD00F4AD90 /* DecidePositionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A47F381CE0C4DD00F4AD90 /* DecidePositionView.xib */; };
+		39A47F3B1CE0C4FC00F4AD90 /* DecidePositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A47F3A1CE0C4FC00F4AD90 /* DecidePositionView.swift */; };
 		39ADF1AE1CCB6D8400277847 /* MakeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */; };
 		39ADF1B01CCB6FFB00277847 /* MakeBoardTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1AF1CCB6FFB00277847 /* MakeBoardTitleLabel.swift */; };
 		39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */; };
@@ -377,6 +381,10 @@
 		39A47F2A1CE0845F00F4AD90 /* TopicDisagreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicDisagreeCell.xib; sourceTree = "<group>"; };
 		39A47F2E1CE0847B00F4AD90 /* TopicYetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicYetCell.swift; sourceTree = "<group>"; };
 		39A47F2F1CE0847B00F4AD90 /* TopicYetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicYetCell.xib; sourceTree = "<group>"; };
+		39A47F331CE0C49400F4AD90 /* CommentFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentFormView.swift; sourceTree = "<group>"; };
+		39A47F351CE0C4BE00F4AD90 /* CommentFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentFormView.xib; sourceTree = "<group>"; };
+		39A47F381CE0C4DD00F4AD90 /* DecidePositionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecidePositionView.xib; sourceTree = "<group>"; };
+		39A47F3A1CE0C4FC00F4AD90 /* DecidePositionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecidePositionView.swift; sourceTree = "<group>"; };
 		39ADF1AD1CCB6D8400277847 /* MakeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardViewController.swift; sourceTree = "<group>"; };
 		39ADF1AF1CCB6FFB00277847 /* MakeBoardTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardTitleLabel.swift; sourceTree = "<group>"; };
 		39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardNumberLabel.swift; sourceTree = "<group>"; };
@@ -1000,6 +1008,33 @@
 			name = Yet;
 			sourceTree = "<group>";
 		};
+		39A47F371CE0C4C600F4AD90 /* CommentForm */ = {
+			isa = PBXGroup;
+			children = (
+				39A47F331CE0C49400F4AD90 /* CommentFormView.swift */,
+				39A47F351CE0C4BE00F4AD90 /* CommentFormView.xib */,
+			);
+			name = CommentForm;
+			sourceTree = "<group>";
+		};
+		39A47F3C1CE0C50000F4AD90 /* DecidePosition */ = {
+			isa = PBXGroup;
+			children = (
+				39A47F381CE0C4DD00F4AD90 /* DecidePositionView.xib */,
+				39A47F3A1CE0C4FC00F4AD90 /* DecidePositionView.swift */,
+			);
+			name = DecidePosition;
+			sourceTree = "<group>";
+		};
+		39A47F3D1CE0C51E00F4AD90 /* CommentXIB */ = {
+			isa = PBXGroup;
+			children = (
+				39A47F3C1CE0C50000F4AD90 /* DecidePosition */,
+				39A47F371CE0C4C600F4AD90 /* CommentForm */,
+			);
+			name = CommentXIB;
+			sourceTree = "<group>";
+		};
 		39ADF1B11CCB700200277847 /* MakeBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -1120,6 +1155,7 @@
 				392B1C941CD574220038ECFC /* RevoteView */,
 				39EFF69E1CDB43FF000196D3 /* GlobalVariable.swift */,
 				39EFF6A01CDB51E8000196D3 /* UIColorExtension.swift */,
+				39A47F3D1CE0C51E00F4AD90 /* CommentXIB */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -1383,6 +1419,8 @@
 				39C6445E1CCCD28000B43C13 /* mobile-navbar-for-may1st-08.png in Resources */,
 				39295E251CCC98DF0002DD67 /* buttons-34.png in Resources */,
 				3955E6401CC91CCF00E88BDC /* icon-76.png in Resources */,
+				39A47F361CE0C4BE00F4AD90 /* CommentFormView.xib in Resources */,
+				39A47F391CE0C4DD00F4AD90 /* DecidePositionView.xib in Resources */,
 				39295E091CCC98DF0002DD67 /* buttons-06.png in Resources */,
 				3955E6381CC91CCF00E88BDC /* icon-29.png in Resources */,
 				390FC4E71CCCF4BC006EFEF1 /* NavbarCell.xib in Resources */,
@@ -1516,6 +1554,8 @@
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				395010E41CD4C5BD00E63DC4 /* ProfileEditViewController.swift in Sources */,
 				395F2BB61CDCA67D0082132B /* HomeAgreeCell.swift in Sources */,
+				39A47F3B1CE0C4FC00F4AD90 /* DecidePositionView.swift in Sources */,
+				39A47F341CE0C49400F4AD90 /* CommentFormView.swift in Sources */,
 				395F2BBF1CDCABB10082132B /* HomeDisagreeImageView.swift in Sources */,
 				390FC4E91CCCFA3C006EFEF1 /* NavbarSearchTextField.swift in Sources */,
 				39EF64951CC893460012B8EC /* ProfileCategoryLabel.swift in Sources */,
