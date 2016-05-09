@@ -19,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0U-X9-cXe">
                         <rect key="frame" x="8" y="2" width="304" height="83.5"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFn-Qw-mFV">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFn-Qw-mFV">
                                 <rect key="frame" x="243" y="2" width="2" height="79"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -69,6 +69,7 @@
                             <constraint firstItem="e7v-zs-Fiv" firstAttribute="centerX" secondItem="qph-D4-OBb" secondAttribute="centerX" id="L2h-7h-iBG"/>
                             <constraint firstItem="Dzc-Wq-7Ci" firstAttribute="top" secondItem="Mvg-1b-X5Q" secondAttribute="bottom" constant="-4" id="LIY-gx-RBJ"/>
                             <constraint firstAttribute="bottom" secondItem="vFn-Qw-mFV" secondAttribute="bottom" constant="2" id="LQJ-8u-Go9"/>
+                            <constraint firstItem="vFn-Qw-mFV" firstAttribute="top" secondItem="Y0U-X9-cXe" secondAttribute="top" constant="2" id="Qp2-be-n0o"/>
                             <constraint firstItem="Mvg-1b-X5Q" firstAttribute="leading" secondItem="Y0U-X9-cXe" secondAttribute="leading" constant="8" id="T0C-Fl-LWA"/>
                             <constraint firstItem="e7v-zs-Fiv" firstAttribute="top" secondItem="qph-D4-OBb" secondAttribute="bottom" constant="0.5" id="VMd-fO-CGf"/>
                             <constraint firstItem="Mvg-1b-X5Q" firstAttribute="top" secondItem="Y0U-X9-cXe" secondAttribute="top" constant="2" id="fuq-2c-JBV"/>
