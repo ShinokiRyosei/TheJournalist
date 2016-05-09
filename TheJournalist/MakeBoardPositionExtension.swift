@@ -35,6 +35,6 @@ extension UIButton {
     
     private func updateUnselect() {
         self.layer.borderWidth = 0
-        self.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+        self.setTitleColor(UIColor.lightGrayColor(), forState: .Normal) 
     }
 }

@@ -1,34 +1,28 @@
 //
-//  TopicCell.swift
+//  TopicYetCell.swift
 //  TheJournalist
 //
-//  Created by ShinokiRyosei on 2016/04/23.
+//  Created by ShinokiRyosei on 2016/05/09.
 //  Copyright © 2016年 ShinokiRyosei. All rights reserved.
 //
 
 import UIKit
 
-class TopicCell: UITableViewCell {
+class TopicYetCell: UITableViewCell {
     
-    @IBOutlet var commentLabel: UILabel!
+    @IBOutlet var boardCommentLabel: UILabel!
     
-    @IBOutlet var voteNumberLabel: UILabel!
+    @IBOutlet var numberOfVotesLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.changeBackground()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    
-    func changeBackground() {
-        self.backgroundColor = UIColor.lightGrayColor()
-        
     }
     
 }

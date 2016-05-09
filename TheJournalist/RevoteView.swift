@@ -19,6 +19,6 @@ class RevoteView: UIView {
     
     func setBackground() {
         self.backgroundColor = UIColor.lightGrayColor() 
-        self.containerView.backgroundColor = UIColor.lightGrayColor()
+        self.containerView.backgroundColor = Color.lightGrayColor
     }
 }

@@ -103,9 +103,9 @@ class ProfileViewController: NavigationViewController, UITableViewDelegate, UITa
     
     private func selectTableContent(selectedTable table: Int) {
         for button in profileButtons {
-            button.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+            button.setTitleColor(Color.lightGrayColor, forState: .Normal)
         }
-        profileButtons[table].setTitleColor(UIColor.blackColor(), forState: .Normal)
+        profileButtons[table].setTitleColor(Color.lightGrayColor, forState: .Normal)
         selectedBoard = table
         profileTable.reloadData()
     }

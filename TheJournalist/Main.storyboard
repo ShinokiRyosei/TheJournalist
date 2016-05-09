@@ -43,6 +43,7 @@
                     <connections>
                         <outlet property="topicTable" destination="zg7-vp-vlu" id="J9H-XV-138"/>
                         <segue destination="lDa-VO-9wL" kind="show" identifier="toTopicView" id="qFg-uA-UyZ"/>
+                        <segue destination="lod-da-Rjg" kind="show" id="oy4-FZ-SzL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -2462,5 +2463,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="RNc-jS-p80"/>
         <segue reference="Zo2-wH-wXn"/>
+        <segue reference="oy4-FZ-SzL"/>
     </inferredMetricsTieBreakers>
 </document>

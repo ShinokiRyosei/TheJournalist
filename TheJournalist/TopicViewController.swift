@@ -20,11 +20,15 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     @IBOutlet var topicTable: UITableView!
     
     var comment: String = ""
+    
+    let dammyData: [[String: Int]] = [["topic_position": 1], ["topic_position": 2], ["topic_position": 3], ["topic_position": 1], ["topic_position": 2]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        topicTable.registerNib(UINib(nibName: "TopicCell",bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "TopicCell")
+        topicTable.registerNib(UINib(nibName: "TopicAgreeCell",bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "TopicAgreeCell")
+        topicTable.registerNib(UINib(nibName: "TopicDisagreeCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "TopicDisagreeCell")
+        topicTable.registerNib(UINib(nibName: "TopicYetCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "TopicYetCell")
         topicTable.registerNib(UINib(nibName: "MakeBoardCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "MakeBoardCell")
         
         topicTable.delegate = self
@@ -62,7 +66,7 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return dammyData.count
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -74,15 +78,16 @@ class TopicViewController: NavigationViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.row < 3 {
-            let cell = topicTable.dequeueReusableCellWithIdentifier("TopicCell", forIndexPath: indexPath) as! TopicCell
+        if dammyData[indexPath.row]["topic_position"] == 1 {
+            let cell = topicTable.dequeueReusableCellWithIdentifier("TopicAgreeCell", forIndexPath: indexPath) as! TopicAgreeCell
             
-            cell.voteNumberLabel.text = "124"
-            cell.commentLabel.text = "佐野研二郎氏のデザイン事務所、MR_DESIGNの危機管理能力は実際大変すばらしいものであった"
+            return cell
+        }else if dammyData[indexPath.row]["topic_position"] == 2 {
+            let cell = topicTable.dequeueReusableCellWithIdentifier("TopicDisagreeCell", forIndexPath: indexPath) as! TopicDisagreeCell
             
             return cell
         }else {
-            let cell = topicTable.dequeueReusableCellWithIdentifier("MakeBoardCell", forIndexPath: indexPath) as! MakeBoardCell
+            let cell = topicTable.dequeueReusableCellWithIdentifier("TopicYetCell", forIndexPath: indexPath) as! TopicYetCell
             
             return cell
         }

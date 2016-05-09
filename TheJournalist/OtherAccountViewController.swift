@@ -89,9 +89,9 @@ class OtherAccountViewController: NavigationViewController, UITableViewDelegate,
     
     private func selectTableContent(selectedTable table: Int) {
         for button in tableButtons {
-            button.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+            button.setTitleColor(Color.lightGrayColor, forState: .Normal)
         }
-        tableButtons[table].setTitleColor(UIColor.blackColor(), forState: .Normal)
+        tableButtons[table].setTitleColor(Color.blueColor, forState: .Normal)
         selectedTable = table
         accountTable.reloadData()
     }

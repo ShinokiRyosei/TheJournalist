@@ -19,7 +19,7 @@ class MakeBoardPostButton: UIButton {
         self.layer.borderWidth = 1.0
         self.layer.cornerRadius = 5.0
         self.setTitle("投稿", forState: .Normal)
-        self.setTitleColor(UIColor.lightGrayColor(), forState: .Normal)
+        self.setTitleColor(Color.lightGrayColor, forState: .Normal)
     }
 
 }

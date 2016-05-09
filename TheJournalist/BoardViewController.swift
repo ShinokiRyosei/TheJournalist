@@ -61,7 +61,7 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
         let cell = commentTable.dequeueReusableCellWithIdentifier("BoardCell", forIndexPath: indexPath) as! BoardCell
         
         cell.contentLabel.text = "SNSという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックがすでに獲得した何億人というユーザーの関係性を示すグラフはとてつもない価値を持っており、追随は難しい。"
-        cell.agreeBar.backgroundColor = UIColor.blueColor()
+        cell.agreeBar.backgroundColor = Color.blueColor
         cell.profileImageView.image = UIImage(named: "profile_image.jpg")
         
         return cell
