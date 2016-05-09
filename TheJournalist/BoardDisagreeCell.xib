@@ -106,6 +106,11 @@
                     <constraint firstAttribute="trailingMargin" secondItem="fqH-6e-Zna" secondAttribute="trailing" id="ziV-r5-iYa"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="boardProfileImageView" destination="wzh-tC-BYV" id="eAh-fg-NHE"/>
+                <outlet property="commentDetailLabel" destination="fqH-6e-Zna" id="4UK-GK-BCe"/>
+                <outlet property="syncroLabel" destination="sF2-L9-roR" id="aLb-DT-PSV"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

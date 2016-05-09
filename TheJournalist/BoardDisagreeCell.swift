@@ -9,6 +9,12 @@
 import UIKit
 
 class BoardDisagreeCell: UITableViewCell {
+    
+    @IBOutlet var boardProfileImageView: UIImageView!
+    
+    @IBOutlet var syncroLabel: UILabel!
+    
+    @IBOutlet var commentDetailLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

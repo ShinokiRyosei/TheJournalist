@@ -16,13 +16,16 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
     
     @IBOutlet var tableBottomLayout: NSLayoutConstraint!
     
+    let dammy: [[String: Int]] = [["board_position": 1], ["board_position": 2], ["board_position": 2], ["board_position": 1]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         commentTable.delegate = self
         commentTable.dataSource = self
         
-        commentTable.registerNib(UINib(nibName: "BoardCell", bundle: nil), forCellReuseIdentifier: "BoardCell")
+        commentTable.registerNib(UINib(nibName: "BoardAgreeCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "BoardAgreeCell")
+        commentTable.registerNib(UINib(nibName: "BoardDisagreeCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "BoardDisagreeCell")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -53,18 +56,19 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return dammy.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell = commentTable.dequeueReusableCellWithIdentifier("BoardCell", forIndexPath: indexPath) as! BoardCell
-        
-        cell.contentLabel.text = "SNSという業界に沿って言えば答えは自ずと賛成になる。圧倒的な資本と世界トップクラスの人材を抱えているフェイスブックに対抗する術はない。フェイスブックがすでに獲得した何億人というユーザーの関係性を示すグラフはとてつもない価値を持っており、追随は難しい。"
-        cell.agreeBar.backgroundColor = Color.blueColor
-        cell.profileImageView.image = UIImage(named: "profile_image.jpg")
-        
-        return cell
+        if dammy[indexPath.row]["board_position"] == 1{
+            let cell = commentTable.dequeueReusableCellWithIdentifier("BoardAgreeCell", forIndexPath: indexPath) as! BoardAgreeCell
+            
+            return cell
+        }else {
+            let cell = commentTable.dequeueReusableCellWithIdentifier("BoardDisagreeCell", forIndexPath: indexPath) as! BoardDisagreeCell
+            
+            return cell
+        }
     }
     
     private func addRevoteView() {

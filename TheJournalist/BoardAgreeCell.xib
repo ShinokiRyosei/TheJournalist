@@ -114,6 +114,11 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="boardProfileImageView" destination="L04-Fc-0HJ" id="Iuw-kA-EwX"/>
+                <outlet property="commentDetailLabel" destination="15J-61-6f1" id="HdB-lD-sCf"/>
+                <outlet property="syncroLabel" destination="v0X-m9-2nf" id="n2s-HP-n0X"/>
+            </connections>
             <point key="canvasLocation" x="478" y="512.5"/>
         </tableViewCell>
     </objects>
