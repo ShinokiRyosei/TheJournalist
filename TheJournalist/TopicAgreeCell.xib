@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tf9-mf-Iw7">
@@ -56,7 +56,7 @@
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語ヒップホップはJ-POPに並ぶ地位を築き得るか？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnW-65-44k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語ヒップホップはJ-POPに並ぶ地位を築き得るか？bbbbbbbbbbbbbbbbbbccccccccccc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnW-65-44k">
                                 <rect key="frame" x="8" y="19" width="227" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="xNJ-VN-7AU"/>
@@ -93,6 +93,10 @@
                     <constraint firstItem="Tf9-mf-Iw7" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.95" id="Ndm-nU-NRE"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="boardCommentLabel" destination="JnW-65-44k" id="1Hp-L0-xXa"/>
+                <outlet property="numberOfVotesLabel" destination="hb6-d2-Fp9" id="1u3-5v-pEG"/>
+            </connections>
             <point key="canvasLocation" x="171" y="470"/>
         </tableViewCell>
     </objects>

@@ -36,7 +36,7 @@
                                 <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語ヒップホップはJ-POPに並ぶ地位を築き得るか？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzc-Wq-7Ci">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語ヒップホップはJ-POPに並ぶ地位を築き得るか？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzc-Wq-7Ci">
                                 <rect key="frame" x="8" y="19" width="227" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="u58-dB-hIk"/>
@@ -98,6 +98,11 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="boardCommentLabel" destination="Dzc-Wq-7Ci" id="bdt-Ya-a5f"/>
+                <outlet property="numberOfVotesLabel" destination="qph-D4-OBb" id="uYj-Or-imo"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="475"/>
         </tableViewCell>
     </objects>
 </document>

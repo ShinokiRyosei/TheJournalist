@@ -9,6 +9,10 @@
 import UIKit
 
 class TopicDisagreeCell: UITableViewCell {
+    
+    @IBOutlet var boardCommentLabel: UILabel!
+    
+    @IBOutlet var numberOfVotesLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
