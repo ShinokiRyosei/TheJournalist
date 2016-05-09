@@ -23,16 +23,13 @@
                             <constraint firstAttribute="width" secondItem="3uI-B8-WIi" secondAttribute="height" multiplier="2:1" id="8Oy-Ux-2up"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="シンクロ率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44j-Rc-o10">
-                        <rect key="frame" x="112" y="211" width="85" height="21"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VNU-sR-f7Q" customClass="HomeAgreeImageView" customModule="TheJournalist" customModuleProvider="target">
+                        <rect key="frame" x="8" y="202" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="85" id="Z2v-ET-KLO"/>
-                            <constraint firstAttribute="height" constant="21" id="te0-ZD-QJZ"/>
+                            <constraint firstAttribute="width" constant="40" id="MDR-h1-712"/>
+                            <constraint firstAttribute="height" constant="40" id="Y0r-Ir-EDC"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6s-hI-ZIf">
                         <rect key="frame" x="8" y="166" width="304" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -92,17 +89,27 @@
                         </variation>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwc-JA-Ole">
-                        <rect key="frame" x="0.0" y="194" width="6.5" height="70"/>
+                        <rect key="frame" x="0.0" y="194" width="7" height="70"/>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUh-Tt-eRb">
-                        <rect key="frame" x="272" y="201.5" width="40" height="40"/>
+                        <rect key="frame" x="272" y="202" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="17F-wG-vvY"/>
                             <constraint firstAttribute="width" constant="40" id="MBE-fa-kGk"/>
                         </constraints>
                         <state key="normal" title="Button" image="empower-01.png"/>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="シンクロ率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44j-Rc-o10">
+                        <rect key="frame" x="112" y="211" width="85" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="Z2v-ET-KLO"/>
+                            <constraint firstAttribute="height" constant="21" id="te0-ZD-QJZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="賛成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCj-dH-r3V">
                         <rect key="frame" x="56" y="211" width="42" height="21"/>
                         <constraints>
@@ -113,13 +120,6 @@
                         <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VNU-sR-f7Q" customClass="HomeAgreeImageView" customModule="TheJournalist" customModuleProvider="target">
-                        <rect key="frame" x="8" y="202" width="40" height="40"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="40" id="MDR-h1-712"/>
-                            <constraint firstAttribute="height" constant="40" id="Y0r-Ir-EDC"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="44j-Rc-o10" firstAttribute="centerY" secondItem="VNU-sR-f7Q" secondAttribute="centerY" id="0Vi-8b-K7s"/>
