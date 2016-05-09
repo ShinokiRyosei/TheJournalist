@@ -164,8 +164,6 @@
 		39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */; };
 		39ADF1B51CCB8C6000277847 /* MakeBoardPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */; };
 		39ADF1C11CCBE55E00277847 /* profile_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1C01CCBE55E00277847 /* profile_image.jpg */; };
-		39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1CB1CCC085100277847 /* BoardCell.swift */; };
-		39ADF1CE1CCC085100277847 /* BoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39ADF1CC1CCC085100277847 /* BoardCell.xib */; };
 		39ADF1D01CCC086900277847 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1CF1CCC086900277847 /* BoardViewController.swift */; };
 		39ADF1D21CCC0C4D00277847 /* BoardPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ADF1D11CCC0C4D00277847 /* BoardPostButton.swift */; };
 		39C644451CCCC01300B43C13 /* LogoTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C644441CCCC01300B43C13 /* LogoTitle.png */; };
@@ -384,8 +382,6 @@
 		39ADF1B21CCB8B1200277847 /* MakeBoardNumberLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardNumberLabel.swift; sourceTree = "<group>"; };
 		39ADF1B41CCB8C6000277847 /* MakeBoardPostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeBoardPostButton.swift; sourceTree = "<group>"; };
 		39ADF1C01CCBE55E00277847 /* profile_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile_image.jpg; sourceTree = "<group>"; };
-		39ADF1CB1CCC085100277847 /* BoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
-		39ADF1CC1CCC085100277847 /* BoardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardCell.xib; sourceTree = "<group>"; };
 		39ADF1CF1CCC086900277847 /* BoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		39ADF1D11CCC0C4D00277847 /* BoardPostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardPostButton.swift; sourceTree = "<group>"; };
 		39C644441CCCC01300B43C13 /* LogoTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoTitle.png; sourceTree = "<group>"; };
@@ -958,15 +954,6 @@
 			name = CommentCell;
 			sourceTree = "<group>";
 		};
-		39721E571CD140F6008C963C /* Board */ = {
-			isa = PBXGroup;
-			children = (
-				39ADF1CB1CCC085100277847 /* BoardCell.swift */,
-				39ADF1CC1CCC085100277847 /* BoardCell.xib */,
-			);
-			name = Board;
-			sourceTree = "<group>";
-		};
 		39721E581CD140FE008C963C /* MakeBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -1176,7 +1163,6 @@
 		39D85EF11CC68F64002F017D /* BoardCell */ = {
 			isa = PBXGroup;
 			children = (
-				39721E571CD140F6008C963C /* Board */,
 				395F2BCC1CDE4A840082132B /* Agree */,
 				395F2BD11CDE4A970082132B /* Disagree */,
 			);
@@ -1410,7 +1396,6 @@
 				39295E131CCC98DF0002DD67 /* buttons-16.png in Resources */,
 				39295E161CCC98DF0002DD67 /* buttons-19.png in Resources */,
 				39295E1E1CCC98DF0002DD67 /* buttons-27.png in Resources */,
-				39ADF1CE1CCC085100277847 /* BoardCell.xib in Resources */,
 				395F2BD01CDE4A930082132B /* BoardDisagreeCell.xib in Resources */,
 				395010FA1CD4F16200E63DC4 /* profile-edit-03.png in Resources */,
 				39C6444B1CCCCE5100B43C13 /* mobile-login-for-may1st-03.png in Resources */,
@@ -1528,7 +1513,6 @@
 				392B1CB11CD606CE0038ECFC /* ProfilePointCell.swift in Sources */,
 				395F17651CCE0FDA007DAC66 /* CommentFormDismissButton.swift in Sources */,
 				39ADF1B31CCB8B1200277847 /* MakeBoardNumberLabel.swift in Sources */,
-				39ADF1CD1CCC085100277847 /* BoardCell.swift in Sources */,
 				3955E6461CC91FEC00E88BDC /* CommentProfileDisagreeImageView.swift in Sources */,
 				395010E41CD4C5BD00E63DC4 /* ProfileEditViewController.swift in Sources */,
 				395F2BB61CDCA67D0082132B /* HomeAgreeCell.swift in Sources */,
