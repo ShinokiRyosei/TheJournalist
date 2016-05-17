@@ -37,8 +37,6 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
         commentTable.rowHeight = UITableViewAutomaticDimension
         
         commentTable.tableFooterView = UIView()
-        
-        addRevoteView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,6 +53,14 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
         self.presentViewController(commentVC, animated: true, completion: nil)
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+        return ["", ""]
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dammy.count
     }
@@ -69,18 +75,5 @@ class BoardViewController: NavigationViewController, UITableViewDelegate, UITabl
             
             return cell
         }
-    }
-    
-    private func addRevoteView() {
-        let revoteView = UINib(nibName: "RevoteView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! RevoteView
-        revoteView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(revoteView)
-        self.view.addConstraint(NSLayoutConstraint(item: revoteView, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1, constant: 0))
-        self.view.addConstraint(NSLayoutConstraint(item: revoteView, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1, constant: 0))
-        self.view.addConstraint(NSLayoutConstraint(item: revoteView, attribute: .Right, relatedBy: .Equal, toItem: self.view, attribute: .Right, multiplier: 1, constant: 0))
-        self.view.addConstraint(NSLayoutConstraint(item: revoteView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .Height, multiplier: 1, constant: 112))
-        tableBottomLayout.active = false
-        self.view.addConstraint(NSLayoutConstraint(item: revoteView, attribute: .Top, relatedBy: .Equal, toItem: commentTable, attribute: .Bottom, multiplier: 1, constant: 0))
-        
     }
 }

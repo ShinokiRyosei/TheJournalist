@@ -70,6 +70,8 @@
 		392B1CBD1CD6DB7D0038ECFC /* OtherAccountPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B1CBB1CD6DB7D0038ECFC /* OtherAccountPointCell.swift */; };
 		392B1CBE1CD6DB7D0038ECFC /* OtherAccountPointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392B1CBC1CD6DB7D0038ECFC /* OtherAccountPointCell.xib */; };
 		392B1CC11CD6F0490038ECFC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392B1CC01CD6F0490038ECFC /* StringExtension.swift */; };
+		3935B1351CEB70860089D30A /* BoardRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3935B1331CEB70860089D30A /* BoardRecommendCell.swift */; };
+		3935B1361CEB70860089D30A /* BoardRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3935B1341CEB70860089D30A /* BoardRecommendCell.xib */; };
 		395010B11CD3504C00E63DC4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B01CD3504C00E63DC4 /* HistoryViewController.swift */; };
 		395010B31CD3518200E63DC4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010B21CD3518200E63DC4 /* SettingViewController.swift */; };
 		395010CF1CD4455100E63DC4 /* HistoryVoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */; };
@@ -294,6 +296,8 @@
 		392B1CBB1CD6DB7D0038ECFC /* OtherAccountPointCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAccountPointCell.swift; sourceTree = "<group>"; };
 		392B1CBC1CD6DB7D0038ECFC /* OtherAccountPointCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherAccountPointCell.xib; sourceTree = "<group>"; };
 		392B1CC01CD6F0490038ECFC /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3935B1331CEB70860089D30A /* BoardRecommendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardRecommendCell.swift; sourceTree = "<group>"; };
+		3935B1341CEB70860089D30A /* BoardRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardRecommendCell.xib; sourceTree = "<group>"; };
 		395010B01CD3504C00E63DC4 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		395010B21CD3518200E63DC4 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		395010CD1CD4455100E63DC4 /* HistoryVoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVoteCell.swift; sourceTree = "<group>"; };
@@ -463,6 +467,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391895CA1CE98F670029DC0C /* TiteCell */ = {
+			isa = PBXGroup;
+			children = (
+				391895C61CE98F340029DC0C /* BoardTitleCell.swift */,
+				391895C71CE98F340029DC0C /* BoardTitleCell.xib */,
+			);
+			name = TiteCell;
+			sourceTree = "<group>";
+		};
 		39295DDF1CCC98DF0002DD67 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,6 +640,15 @@
 				392B1CC01CD6F0490038ECFC /* StringExtension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		3935B1371CEB70910089D30A /* RecommendCell */ = {
+			isa = PBXGroup;
+			children = (
+				3935B1331CEB70860089D30A /* BoardRecommendCell.swift */,
+				3935B1341CEB70860089D30A /* BoardRecommendCell.xib */,
+			);
+			name = RecommendCell;
 			sourceTree = "<group>";
 		};
 		395010AD1CD2D28F00E63DC4 /* Authentication */ = {
@@ -1205,8 +1227,8 @@
 			children = (
 				395F2BCC1CDE4A840082132B /* Agree */,
 				395F2BD11CDE4A970082132B /* Disagree */,
-				391895C61CE98F340029DC0C /* BoardTitleCell.swift */,
-				391895C71CE98F340029DC0C /* BoardTitleCell.xib */,
+				391895CA1CE98F670029DC0C /* TiteCell */,
+				3935B1371CEB70910089D30A /* RecommendCell */,
 			);
 			name = BoardCell;
 			sourceTree = "<group>";
@@ -1360,6 +1382,7 @@
 				391895C51CE983AC0029DC0C /* support-icon-04.png in Resources */,
 				39A47F271CE0844200F4AD90 /* TopicAgreeCell.xib in Resources */,
 				39295E231CCC98DF0002DD67 /* buttons-32.png in Resources */,
+				3935B1361CEB70860089D30A /* BoardRecommendCell.xib in Resources */,
 				39C6444C1CCCCE5100B43C13 /* mobile-login-for-may1st-04.png in Resources */,
 				3955E6391CC91CCF00E88BDC /* icon-29@2x.png in Resources */,
 				39D85EE11CC676D9002F017D /* AxisStd-Regular.otf in Resources */,
@@ -1601,6 +1624,7 @@
 				39A47F301CE0847B00F4AD90 /* TopicYetCell.swift in Sources */,
 				39D85E931CC65891002F017D /* AppDelegate.swift in Sources */,
 				3955E6441CC91FD200E88BDC /* CommentProfileAgreeImageVIew.swift in Sources */,
+				3935B1351CEB70860089D30A /* BoardRecommendCell.swift in Sources */,
 				392B1C911CD573F20038ECFC /* RevoteView.swift in Sources */,
 				39ADF1D01CCC086900277847 /* BoardViewController.swift in Sources */,
 				395010F31CD4E13000E63DC4 /* ProfileEditImageView.swift in Sources */,
